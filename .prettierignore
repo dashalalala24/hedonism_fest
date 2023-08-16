@@ -1,0 +1,12 @@
+dist
+node_modules
+README.md
+.editorconfig
+.gitignore
+.husky/
+.prettierignore
+.prettierrc.json
+babel.config.js
+package-lock.json
+package.json
+webpack.config.js
