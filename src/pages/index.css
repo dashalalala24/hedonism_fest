@@ -1,10 +1,49 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
+/* @import url(../blocks/page/page.css);*/
 
-/* @import url(../blocks/page/page.css);
+/* -------------- UI -------------- */
 
-@import url(../blocks/header/header.css);
+/* -------------- text -------------- */
 
-@import url(../blocks/footer/footer.css);
+@import url(../ui/text/text.css);
+/* @import url(../ui/text/_size/text_size_primary.css);
+@import url(../ui/text/_size/text_size_secondary.css); */
+@import url(../ui/text/_size/text_size_link.css);
+/* @import url(../ui/text/_color/text_color_black.css);
+@import url(../ui/text/_color/text_color_red.css); */
+@import url(../ui/text/_color/text_color_white.css);
 
-@import url(../blocks/popup/popup.css); */
+/* -------------- title -------------- */
+
+/* @import url(../ui/title/title.css);
+... */
+
+/* -------------- button -------------- */
+
+@import url(../ui/button/button.css);
+@import url(../ui/button/_color/button_color_violet.css);
+
+/* -------------- BLOCKS -------------- */
+
+/* -------------- card -------------- */
+
+/* @import url(../blocks/card/card.css);
+... */
+
+/* -------------- popup -------------- */
+
+/* @import url(../blocks/popup/popup.css);
+... */
+
+/* -------------- SECTIONS -------------- */
+
+/* -------------- header -------------- */
+
+/* @import url(../blocks/header/header.css);
+... */
+
+/* -------------- footer -------------- */
+
+/* @import url(../blocks/footer/footer.css);
+... */

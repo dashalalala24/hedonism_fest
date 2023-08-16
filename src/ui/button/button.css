@@ -1,0 +1,10 @@
+.button {
+  display: flex;
+  min-width: 164px;
+  padding: 12px 24px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  border-radius: 26px;
+}
