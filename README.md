@@ -1,5 +1,5 @@
 # ГедонизмФест
-**✨ [Здесь будет ссылка на gh-pages](https://dashalalala24.github.io/hedonism_fest) ✨**
+**✨ [Ссылка на gh-pages](https://dashalalala24.github.io/hedonism_fest) ✨**
 
 
 
