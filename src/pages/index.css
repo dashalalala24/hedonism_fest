@@ -1,10 +1,66 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
+/* @import url(../blocks/page/page.css);*/
 
-/* @import url(../blocks/page/page.css);
+/* -------------- UI -------------- */
 
-@import url(../blocks/header/header.css);
+/* -------------- text -------------- */
+@import url(../ui/text/text.css);
 
-@import url(../blocks/footer/footer.css);
+@import url(../ui/text/_size/text_size_primary.css);
+@import url(../ui/text/_size/text_size_secondary.css);
 
-@import url(../blocks/popup/popup.css); */
+@import url(../ui/text/_color/text_color_black.css);
+@import url(../ui/text/_color/text_color_grey.css);
+@import url(../ui/text/_color/text_color_red.css);
+@import url(../ui/text/_color/text_color_violet.css);
+@import url(../ui/text/_color/text_color_white.css);
+
+/* -------------- title -------------- */
+@import url(../ui/title/title.css);
+
+@import url(../ui/title/_size/title_size_l.css);
+@import url(../ui/title/_size/title_size_m.css);
+@import url(../ui/title/_size/title_size_s.css);
+@import url(../ui/title/_size/title_size_xl.css);
+
+/* -------------- button -------------- */
+@import url(../ui/button/button.css);
+
+@import url(../ui/button/_border/button_border_black.css);
+
+@import url(../ui/button/_color/button_color_violet.css);
+@import url(../ui/button/_color/button_color_none.css);
+@import url(../ui/button/_color/button_color_transparent.css);
+
+/* -------------- icon -------------- */
+@import url(../ui/icon/icon.css);
+@import url(../ui/icon/_type/icon_type_arrow-black.css);
+@import url(../ui/icon/_type/icon_type_arrow-white.css);
+@import url(../ui/icon/_type/icon_type_menu.css);
+@import url(../ui/icon/_type/icon_type_heart.css);
+@import url(../ui/icon/_type/icon_type_link-black.css);
+
+/* -------------- BLOCKS -------------- */
+
+/* -------------- card -------------- */
+
+/* @import url(../blocks/card/card.css);
+... */
+
+/* -------------- popup -------------- */
+
+/* @import url(../blocks/popup/popup.css);
+... */
+
+/* -------------- SECTIONS -------------- */
+
+/* -------------- header -------------- */
+
+/* @import url(../blocks/header/header.css);
+... */
+
+/* -------------- footer -------------- */
+
+/* @import url(../blocks/footer/footer.css);
+... */
