@@ -1,0 +1,9 @@
+.icon_type_arrow {
+  width: 24px;
+  height: 21px;
+  background-image: url("../../../images/icons/button/heart.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
