@@ -1,0 +1,54 @@
+.button {
+  display: flex;
+  min-width: calc(
+    ((164 - 148) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) +
+      148px
+  );
+  padding: 12px 24px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  border-radius: 26px;
+  cursor: pointer;
+}
+
+.button:disabled {
+  cursor: auto;
+}
+
+.button:hover .text_color_black {
+  color: #5100b8;
+}
+
+.button:disabled .text_color_black {
+  color: #96949e;
+  cursor: auto;
+}
+
+.button:hover .icon_type_arrow-black {
+  background-image: url('../../images/icons/button/arrow-violent.svg');
+}
+
+.button:disabled .icon_type_arrow-black {
+  background-image: url('../../images/icons/button/arrow-grey.svg');
+  cursor: auto;
+}
+
+.button:hover .icon_type_heart {
+  background-image: url('../../images/icons/button/heart-violent.svg');
+}
+
+.button:disabled .icon_type_heart {
+  background-image: url('../../images/icons/button/heart-grey.svg');
+  cursor: auto;
+}
+
+.button:hover .icon_type_link-black {
+  background-image: url('../../images/icons/button/link-violent.svg');
+}
+
+.button:disabled .icon_type_link-black {
+  background-image: url('../../images/icons/button/link-grey.svg');
+  cursor: auto;
+}

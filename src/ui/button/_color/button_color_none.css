@@ -1,0 +1,7 @@
+.button_color_none {
+  background-color: white;
+}
+
+.button_color_none:disabled {
+  background-color: #ebe9ed;
+}

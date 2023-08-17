@@ -1,9 +1,5 @@
-.icon_type_arrow {
-  width: 24px;
-  height: 21px;
-  background-image: url("../../../images/icons/button/heart.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
+.icon_type_arrow-black {
+  width: 25px;
+  height: 14px;
+  background-image: url('../../../images/icons/button/arrow-black.svg');
 }
-
-
