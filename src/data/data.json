@@ -40,7 +40,7 @@
     "url": "https://source.unsplash.com/VLlkOJdzLG0",
     "city": "Санкт-Петербург",
     "coordinates": {
-      "latitude": 59.934280,
+      "latitude": 59.93428,
       "longitude": 30.335098
     }
   },
@@ -55,7 +55,7 @@
     "url": "https://source.unsplash.com/ZGj0_IjgXdo",
     "city": "Санкт-Петербург",
     "coordinates": {
-      "latitude": 59.957030,
+      "latitude": 59.95703,
       "longitude": 30.312421
     }
   },
@@ -175,8 +175,8 @@
     "url": "https://source.unsplash.com/KRjJUKirZpk",
     "city": "Калуга",
     "coordinates": {
-      "latitude": 54.529180,
-      "longitude": 36.275380
+      "latitude": 54.52918,
+      "longitude": 36.27538
     }
   },
   {
@@ -221,7 +221,7 @@
     "city": "Калуга",
     "coordinates": {
       "latitude": 54.515041,
-      "longitude": 36.251650
+      "longitude": 36.25165
     }
   },
   {
@@ -310,8 +310,8 @@
     "url": "https://source.unsplash.com/KRjJUKirZpk",
     "city": "Калуга",
     "coordinates": {
-      "latitude": 54.529180,
-      "longitude": 36.275380
+      "latitude": 54.52918,
+      "longitude": 36.27538
     }
   },
   {
@@ -356,7 +356,7 @@
     "city": "Калуга",
     "coordinates": {
       "latitude": 54.515041,
-      "longitude": 36.251650
+      "longitude": 36.25165
     }
   },
   {
