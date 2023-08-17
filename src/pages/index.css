@@ -33,6 +33,11 @@
 @import url(../ui/button/_color/button_color_none.css);
 @import url(../ui/button/_color/button_color_transparent.css);
 
+@import url(../ui/button/_size/button_size_flexible.css);
+@import url(../ui/button/_size/button_size_min-width.css);
+
+@import url(../ui/button/_type/button_type_filter.css);
+
 /* -------------- icon -------------- */
 @import url(../ui/icon/icon.css);
 @import url(../ui/icon/_type/icon_type_arrow-black.css);
@@ -40,6 +45,7 @@
 @import url(../ui/icon/_type/icon_type_menu.css);
 @import url(../ui/icon/_type/icon_type_heart.css);
 @import url(../ui/icon/_type/icon_type_link-black.css);
+@import url(../ui/icon/_type/icon_type_cross-white.css);
 
 /* -------------- BLOCKS -------------- */
 

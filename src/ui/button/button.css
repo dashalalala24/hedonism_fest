@@ -1,9 +1,9 @@
 .button {
   display: flex;
-  min-width: calc(
-    ((164 - 148) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) +
-      148px
-  );
+  /*min-width: calc(*/
+  /*  ((164 - 148) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) +*/
+  /*    148px*/
+  /*);*/
   padding: 12px 24px;
   align-items: center;
   justify-content: center;
