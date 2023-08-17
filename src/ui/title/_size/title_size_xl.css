@@ -1,0 +1,6 @@
+.title_size_xl {
+  font-size: calc(
+    ((96 - 44) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 44px
+  );
+  line-height: 1;
+}
