@@ -1,22 +1,60 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Сайт мероприятия ГедонизмФест" />
-    <meta name="author" content="Команда №2" />
-    <title>ГедонизмФест</title>
-  </head>
 
-  <body>
-    HedonismFest
-    <div>.</div>
-    <a href="./storybook.html">UI-компоненты</a>
-    <div>.</div>
-    <a href="./where-to-go.html">Ссылка на страницу "Куда пойти"</a>
-    <div>.</div>
-    <a href="./about.html">Ссылка на страницу "О фестивале"</a>
-    <div>.</div>
-    <a href="./join.html">Ссылка на страницу "Стать участником"</a>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Сайт мероприятия ГедонизмФест" />
+  <meta name="author" content="Команда №2" />
+  <title>ГедонизмФест</title>
+</head>
+
+<body>
+  HedonismFest
+  <div>.</div>
+  <a href="./storybook.html">UI-компоненты</a>
+  <div>.</div>
+  <a href="./where-to-go.html">Ссылка на страницу "Куда пойти"</a>
+  <div>.</div>
+  <a href="./about.html">Ссылка на страницу "О фестивале"</a>
+  <div>.</div>
+  <a href="./join.html">Ссылка на страницу "Стать участником"</a>
+
+  <!---TEMPlATES--->
+  <template id='card'>
+    <li class="card">
+      <button class="button button_type_image"></button>
+      <button class="button button_type_like" type="button"></button>
+      <div class="card card__caption">
+        <div class="card card__caption_type_date-type">
+          <p class="text text_color_grey text_size_secondary">лекция</p>
+          <p class="text text_color_grey text_size_secondary">
+            1 мая, 12:30-13:50
+          </p>
+        </div>
+        <div class="card card__caption_type_title">
+          <h2 class="title title_size_s title_align_left">
+            идентичность: почему нам сложно меняться?
+          </h2>
+        </div>
+        <div class="card card__caption_type_description">
+          <p class="text text_color_black text_size_secondary text_align_left">
+            лектор: Мария Бархатова
+          </p>
+        </div>
+        <div class="card card__caption_type_address-more">
+          <p class="text text_color_grey text_size_secondary text_overflow_ellipsis">
+            улица Блохина, 22
+          </p>
+          <button class="button button_color_transparent button_type_text">
+            <p class="text text_color_grey text_size_secondary text_clipping_no-wrap">
+              + ещё 3
+            </p>
+          </button>
+        </div>
+      </div>
+    </li>
+  </template>
+</body>
+
 </html>
