@@ -11,12 +11,13 @@ function openDropdown() {
 const buttonDropdown = document.querySelector('#button-dropdown');
 buttonDropdown.addEventListener('click', openDropdown);
 
-function closeDropdownOutside() {
-
-}
+function closeDropdownOutside() {}
 
 window.addEventListener('mousedown', (evt) => {
-    if (dropdownMenu.classList.contains('header__menu-list_show') && evt.target !== dropdownMenu) {
-      openDropdown();
+  if (
+    dropdownMenu.classList.contains('header__menu-list_show') &&
+    evt.target !== dropdownMenu
+  ) {
+    openDropdown();
   }
 });
