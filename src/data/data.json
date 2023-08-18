@@ -12,7 +12,7 @@
     "city": "Москва",
     "coordinates": {
       "latitude": 55.755826,
-      "longitude": 37.617300
+      "longitude": 37.6173
     },
     "price": 1000,
     "place": "Выставочный центр 'Кулинариум'",
@@ -32,7 +32,7 @@
     "url": "https://source.unsplash.com/1dW1vEJLlCQ",
     "city": "Санкт-Петербург",
     "coordinates": {
-      "latitude": 59.934280,
+      "latitude": 59.93428,
       "longitude": 30.335099
     },
     "price": 1500,
@@ -347,7 +347,7 @@
     "url": "https://source.unsplash.com/_L5MGd0w1FQ",
     "city": "Краснодар",
     "coordinates": {
-      "latitude": 45.035470,
+      "latitude": 45.03547,
       "longitude": 38.975313
     },
     "price": 1000,
@@ -410,7 +410,7 @@
     "url": "https://source.unsplash.com/TosUGwhXNRE",
     "city": "Санкт-Петербург",
     "coordinates": {
-      "latitude": 59.934280,
+      "latitude": 59.93428,
       "longitude": 30.335099
     },
     "price": 300,
@@ -599,7 +599,7 @@
     "url": "https://source.unsplash.com/j31L9THROJs",
     "city": "Воронеж",
     "coordinates": {
-      "latitude": 51.672040,
+      "latitude": 51.67204,
       "longitude": 39.184301
     },
     "price": 450,
@@ -726,7 +726,7 @@
     "city": "Иркутск",
     "coordinates": {
       "latitude": 52.286387,
-      "longitude": 104.280660
+      "longitude": 104.28066
     },
     "price": 350,
     "place": "Танцевальный комплекс 'Ритм'",
@@ -998,7 +998,7 @@
     "url": "https://source.unsplash.com/4gcqRf3-f2I",
     "city": "Омск",
     "coordinates": {
-      "latitude": 54.988480,
+      "latitude": 54.98848,
       "longitude": 73.324236
     },
     "price": 180,
@@ -1040,7 +1040,7 @@
     "url": "https://source.unsplash.com/lUaaKCUANVI",
     "city": "Краснодар",
     "coordinates": {
-      "latitude": 45.035470,
+      "latitude": 45.03547,
       "longitude": 38.975313
     },
     "price": 150,
@@ -1061,8 +1061,8 @@
     "url": "https://source.unsplash.com/hzgs56Ze49s",
     "city": "Воронеж",
     "coordinates": {
-      "latitude": 51.672040,
-      "longitude": 39.184300
+      "latitude": 51.67204,
+      "longitude": 39.1843
     },
     "price": 200,
     "place": "Летняя площадка 'Лунная ночь'",
@@ -1113,5 +1113,3 @@
     "donation": 5
   }
 ]
-
-
