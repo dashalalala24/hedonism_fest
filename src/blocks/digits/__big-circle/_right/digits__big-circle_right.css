@@ -7,7 +7,7 @@
 @media screen and (max-width: 360px) {
   .digits__big-circle_right {
     position: static;
-    background-image: url("../../../../images/digits/first-illustration.svg");
+    background-image: url('../../../../images/digits/first-illustration.svg');
     border-radius: 0;
     margin-top: 40px;
   }

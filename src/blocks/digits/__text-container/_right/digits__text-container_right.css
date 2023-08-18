@@ -4,7 +4,6 @@
   right: 240px;
 }
 
-
 @media screen and (max-width: 360px) {
   .digits__text-container_right {
     position: static;
