@@ -1,0 +1,8 @@
+.cards__text-without-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 460px;
+    max-height: 188px;
+    margin-right: 40px;
+}

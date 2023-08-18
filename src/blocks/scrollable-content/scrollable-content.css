@@ -1,0 +1,5 @@
+.scrollable-content {
+    grid-column: 1;
+    grid-row: 1/3;
+    background-color: #fff;
+}

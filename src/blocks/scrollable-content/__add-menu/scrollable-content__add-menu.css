@@ -1,0 +1,5 @@
+.scrollable-content__add-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
