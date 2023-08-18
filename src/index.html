@@ -85,4 +85,61 @@
   </div>
 </body>
 
+
+    <div class="button button_type_switcher button_color_grey">
+      <button
+        class="button button_type_switcher-tab button_color_violet"
+        disabled
+      >
+        <div class="icon icon_type_map icon_visibility_on"></div>
+        <p class="text text_size_primary text_color_white">карта</p>
+      </button>
+      <button class="button button_type_switcher-tab button_color_violet">
+        <div class="icon icon_type_menu-white icon_visibility_on"></div>
+        <p class="text text_size_primary text_color_white">список</p>
+      </button>
+    </div>
+
+    <!---TEMPlATES--->
+    <template id="card">
+      <li class="card">
+        <button class="button button_type_image"></button>
+        <button class="button button_type_like" type="button"></button>
+        <div class="card card__caption">
+          <div class="card card__caption_type_date-type">
+            <p class="text text_color_grey text_size_secondary">лекция</p>
+            <p class="text text_color_grey text_size_secondary">
+              1 мая, 12:30-13:50
+            </p>
+          </div>
+          <div class="card card__caption_type_title">
+            <h2 class="title title_size_s title_align_left">
+              идентичность: почему нам сложно меняться?
+            </h2>
+          </div>
+          <div class="card card__caption_type_description">
+            <p
+              class="text text_color_black text_size_secondary text_align_left"
+            >
+              лектор: Мария Бархатова
+            </p>
+          </div>
+          <div class="card card__caption_type_address-more">
+            <p
+              class="text text_color_grey text_size_secondary text_overflow_ellipsis"
+            >
+              улица Блохина, 22
+            </p>
+            <button class="button button_color_transparent button_type_text">
+              <p
+                class="text text_color_grey text_size_secondary text_clipping_no-wrap"
+              >
+                + ещё 3
+              </p>
+            </button>
+          </div>
+        </div>
+      </li>
+    </template>
+  </body>
 </html>
