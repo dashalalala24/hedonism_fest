@@ -4,7 +4,9 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: { main: './src/scripts/index.js' },
+  entry: {
+    main: './src/scripts/index.js',
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.js',
@@ -41,7 +43,20 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      filename: 'index.html',
       template: './src/index.html',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'where-to-go.html',
+      template: './src/where-to-go.html',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'about.html',
+      template: './src/about.html',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'join.html',
+      template: './src/join.html',
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(),
