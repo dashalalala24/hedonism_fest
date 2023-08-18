@@ -63,3 +63,14 @@
   background-image: url('../../images/icons/button/menu-grey.svg');
   cursor: auto;
 }
+
+.button .button_type_switcher-tab.button_color_violet:hover {
+  cursor: pointer;
+}
+.button.button_type_switcher .text_color_white:hover,
+.button.button_type_switcher .icon_type_menu-white:hover,
+.button.button_type_switcher .icon_type_map:hover {
+  cursor: pointer;
+}
+
+
