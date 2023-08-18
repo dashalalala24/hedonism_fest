@@ -36,10 +36,11 @@
 
 @import url(../ui/button/_size/button_size_flexible.css);
 @import url(../ui/button/_size/button_size_min-width.css);
+
 @import url(../ui/button/_type/button_type_switcher.css);
 @import url(../ui/button/_type/button_type_switcher-tab.css);
-
 @import url(../ui/button/_type/button_type_filter.css);
+@import url(../ui/button/_type/button_type_icon.css);
 
 /* -------------- icon -------------- */
 @import url(../ui/icon/icon.css);
@@ -50,6 +51,17 @@
 @import url(../ui/icon/_type/icon_type_link-black.css);
 @import url(../ui/icon/_type/icon_type_cross-white.css);
 @import url(../ui/icon/_type/icon_type_map.css);
+
+@import url(../ui/icon/_type/icon_type_event-marker-cafe.css);
+@import url(../ui/icon/_type/icon_type_event-marker-coffe.css);
+@import url(../ui/icon/_type/icon_type_event-marker-delivery.css);
+@import url(../ui/icon/_type/icon_type_event-marker-lection.css);
+@import url(../ui/icon/_type/icon_type_event-marker-more.css);
+@import url(../ui/icon/_type/icon_type_event-marker-museum.css);
+@import url(../ui/icon/_type/icon_type_event-marker-number.css);
+@import url(../ui/icon/_type/icon_type_event-marker-people.css);
+@import url(../ui/icon/_type/icon_type_event-marker-wine.css);
+
 @import url(../ui/icon/_visibility/icon_visibility_on.css);
 
 /* -------------- BLOCKS -------------- */
