@@ -1,0 +1,10 @@
+.digits__text {
+  text-align: start;
+}
+
+
+@media screen and (max-width: 375px) {
+  .digits__text {
+    text-align: center;
+  }
+}

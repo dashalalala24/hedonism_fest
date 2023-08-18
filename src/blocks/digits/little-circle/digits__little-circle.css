@@ -1,0 +1,15 @@
+.digits__little-circle {
+  width: 233px;
+  height: 149px;
+  position: absolute;
+  top: 130px;
+  left: 662px;
+  bottom: 441px;
+  right: 465px;
+}
+
+@media screen and (max-width: 360px) {
+  .digits__little-circle {
+    display: none;
+  }
+}

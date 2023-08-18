@@ -71,6 +71,23 @@
 /* @import url(../blocks/header/header.css);
 ... */
 
+/* -------------- digits -------------- */
+@import url(../blocks/digits/digits.css);
+@import url(../blocks/digits/title/digits__title.css);
+@import url(../blocks/digits/image/digits__image.css);
+@import url(../blocks/digits/big-circle/digits__big-circle.css);
+@import url(../blocks/digits/big-circle/_left/digits__big-circle_left.css);
+@import url(../blocks/digits/big-circle/_right/digits__big-circle_right.css);
+@import url(../blocks/digits/left-illustration/digits__left-illustration.css);
+@import url(../blocks/digits/right-illustration/digits__right-illustration.css);
+@import url(../blocks/digits/text-container/digits__text-container.css);
+@import url(../blocks/digits/text-container/_left/digits__text-container_left.css);
+@import url(../blocks/digits/text-container/_right/digits__text-container_right.css);
+@import url(../blocks/digits/text/digits__text.css);
+@import url(../blocks/digits/little-circle/digits__little-circle.css);
+@import url(../blocks/digits/three-lines/digits__three-lines.css);
+
+
 /* -------------- footer -------------- */
 
 /* @import url(../blocks/footer/footer.css);

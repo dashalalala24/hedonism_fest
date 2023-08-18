@@ -1,0 +1,13 @@
+.digits__right-illustration {
+  width: 543px;
+  height: 248px;
+  position: absolute;
+  top: 48px;
+  right: 0;
+}
+
+@media screen and (max-width: 375px){
+  .digits__right-illustration {
+    display: none;
+  }
+}

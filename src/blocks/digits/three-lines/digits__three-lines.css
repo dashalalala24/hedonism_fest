@@ -1,0 +1,15 @@
+.digits__three-lines {
+  width: 87.4px;
+  height: 143px;
+  position: absolute;
+  top: 577px;
+  left: 636px;
+  bottom: 0.42px;
+  right: 636.5px;
+}
+
+@media screen and (max-width: 360px) {
+  .digits__three-lines {
+    display: none;
+  }
+}

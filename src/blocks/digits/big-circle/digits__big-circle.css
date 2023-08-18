@@ -1,0 +1,19 @@
+.digits__big-circle {
+  /* background-image: url("../../../images/digits/big-circle.svg"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #FFD400;
+  border-radius: 100%;
+  width: 480px;
+  height: 480px;
+  position: relative;
+}
+
+@media screen and (max-width: 360px) {
+  .digits__big-circle {
+    max-width: 320px;
+    height: 320px;
+    background-color: transparent;
+  }
+}
