@@ -1,0 +1,5 @@
+.header__nav-link {
+  display: flex;
+  flex-direction: row;
+  column-gap: 44px;
+}
