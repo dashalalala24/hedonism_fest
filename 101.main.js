@@ -1,0 +1,1 @@
+(self.webpackChunkhedonism_fest=self.webpackChunkhedonism_fest||[]).push([[101],{101:()=>{console.log("Стать участником")}}]);

@@ -1,0 +1,1 @@
+(self.webpackChunkhedonism_fest=self.webpackChunkhedonism_fest||[]).push([[484],{484:()=>{console.log("Куда пойти")}}]);

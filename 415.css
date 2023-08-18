@@ -195,9 +195,9 @@ select {
  */
 
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button;
 }
 
@@ -206,9 +206,9 @@ button,
  */
 
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -218,9 +218,9 @@ button::-moz-focus-inner,
  */
 
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -269,8 +269,8 @@ textarea {
  * 2. Remove the padding in IE 10.
  */
 
-[type="checkbox"],
-[type="radio"] {
+[type='checkbox'],
+[type='radio'] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
@@ -279,8 +279,8 @@ textarea {
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
 
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -289,7 +289,7 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 
-[type="search"] {
+[type='search'] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
@@ -298,7 +298,7 @@ textarea {
  * Remove the inner padding in Chrome and Safari on macOS.
  */
 
-[type="search"]::-webkit-search-decoration {
+[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -350,12 +350,350 @@ template {
   display: none;
 }
 
+@font-face {
+  src:
+    url(4fa5192d62552f95c086.woff2) format('woff2'),
+    url(977c40822ea6f0f44143.woff) format('woff'),
+    url(0edefe0c1871c03378e4.ttf) format('ttf');
+  font-family: 'TT Firs Neue';
+  font-weight: 500;
+}
 
-/* @import url(../blocks/page/page.css);
+@font-face {
+  src:
+    url(c591f4d5eea51724b602.woff2) format('woff2'),
+    url(917545561fa3d7cffbc1.woff) format('woff'),
+    url(015eb3e5b65d62a4ea44.ttf) format('ttf');
+  font-family: 'TT Firs Neue';
+  font-weight: 400;
+}
 
-@import url(../blocks/header/header.css);
+.text {
+  font-family: TT Firs Neue;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  line-height: 24px;
+}
 
-@import url(../blocks/footer/footer.css);
+.text_size_primary {
+  font-size: calc(
+    ((18 - 16) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 16px
+  );
+  line-height: calc(
+    ((24 - 20) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 20px
+  );
+}
 
-@import url(../blocks/popup/popup.css); */
+.text_size_secondary {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.text_color_black {
+  color: #3b3748;
+}
+
+.text_color_grey {
+  color: #96949e;
+}
+
+.text_color_red {
+  color: #f40934;
+}
+
+.text_color_violet {
+  color: #7100ff;
+}
+
+.text_color_white {
+  color: white;
+}
+
+.title {
+  font-family: TT Firs Neue;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.title_size_l {
+  font-size: calc(
+    ((48 - 32) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 32px
+  );
+  line-height: 1;
+}
+
+.title_size_m {
+  font-size: calc(
+    ((42 - 24) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 24px
+  );
+  line-height: calc(
+    ((36 - 28) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 28px
+  );
+}
+
+.title_size_s {
+  font-size: calc(
+    ((24 - 20) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 20px
+  );
+  line-height: calc(
+    ((24 - 20) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 20px
+  );
+}
+
+.title_size_xl {
+  font-size: calc(
+    ((96 - 44) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 44px
+  );
+  line-height: 1;
+}
+
+.button {
+  display: flex;
+  padding: 12px 24px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  border-radius: 26px;
+  cursor: pointer;
+}
+
+.button:disabled {
+  cursor: auto;
+}
+
+.button:hover .text_color_black {
+  color: #5100b8;
+}
+
+.button:disabled .text_color_black {
+  color: #96949e;
+  cursor: auto;
+}
+
+.button:disabled .text_color_white {
+  color: #96949e;
+  cursor: auto;
+}
+
+.button:hover .icon_type_arrow-black {
+  background-image: url(9231e56756f2552c4a09.svg);
+}
+
+.button:disabled .icon_type_arrow-black {
+  background-image: url(d0a1a3fec958725b4960.svg);
+  cursor: auto;
+}
+
+.button:hover .icon_type_heart {
+  background-image: url(b1443d820e084c8a7780.svg);
+}
+
+.button:disabled .icon_type_heart {
+  background-image: url(8c301ebd976d0c2a909f.svg);
+  cursor: auto;
+}
+
+.button:hover .icon_type_link-black {
+  background-image: url(2671cbcc70e7e85ebf54.svg);
+}
+
+.button:disabled .icon_type_link-black {
+  background-image: url(63348106d043332fc86a.svg);
+  cursor: auto;
+}
+
+.button:disabled .icon_type_map {
+  background-image: url(f89d1d032eff84596771.svg);
+  cursor: auto;
+}
+
+.button:disabled .icon_type_menu-white {
+  background-image: url(30eb6e6f47a4cc53bd64.svg);
+  cursor: auto;
+}
+
+.button .button_type_switcher-tab.button_color_violet:hover {
+  cursor: pointer;
+}
+.button.button_type_switcher .text_color_white:hover,
+.button.button_type_switcher .icon_type_menu-white:hover,
+.button.button_type_switcher .icon_type_map:hover {
+  cursor: pointer;
+}
+
+.button_border_black {
+  border: solid 2px #3b3748;
+}
+
+.button_border_black:hover {
+  border: solid 2px #5100b8;
+}
+
+.button_border_black:disabled {
+  border: none;
+}
+
+.button_color_violet {
+  background-color: #7100ff;
+}
+
+.button_color_violet:hover {
+  background-color: #5100b8;
+}
+
+.button_color_violet:disabled {
+  background-color: #ebe9ed;
+}
+
+.button_color_none {
+  background-color: white;
+}
+
+.button_color_none:disabled {
+  background-color: #ebe9ed;
+}
+
+.button_color_transparent {
+  background-color: transparent;
+}
+
+.button_color_transparent:disabled {
+  background-color: #ebe9ed;
+}
+
+.button_color_grey {
+  background-color: #ebe9ed;
+}
+
+.button_size_flexible {
+  min-width: 0;
+}
+
+.button_size_min-width {
+  min-width: calc(
+    ((164 - 148) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) +
+      148px
+  );
+}
+
+.button_type_switcher {
+  width: calc(
+    ((282 - 180) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) +
+      180px
+  );
+  gap: 0;
+  padding: 3px 3px;
+  cursor: auto;
+}
+
+.button_type_switcher-tab {
+  width: calc(
+    ((141 - 95) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) +
+      95px
+  );
+}
+
+.button_type_filter {
+  padding: 8px 16px;
+}
+
+.icon {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.icon_type_arrow-black {
+  width: 25px;
+  height: 14px;
+  background-image: url(300b294d061d89a92d41.svg);
+}
+
+.icon_type_arrow-white {
+  width: 24px;
+  height: 24px;
+  background-image: url(49cd052db92582ef3585.svg);
+}
+
+.icon_type_menu-white {
+  width: 24px;
+  height: 24px;
+  background-image: url(717402be9d74aeeb458f.svg);
+}
+
+.icon_type_heart {
+  width: 24px;
+  height: 24px;
+  background-image: url(a0ab4374ec459263b0a5.svg);
+}
+
+.icon_type_link-black {
+  width: 24px;
+  height: 24px;
+  background-image: url(ec0761561952135a0f86.svg);
+}
+
+.icon_type_cross-white {
+  width: 13px;
+  height: 13px;
+  background-image: url(908696c2d00524177ee6.svg);
+}
+
+.icon_type_map {
+  width: 24px;
+  height: 24px;
+  background-image: url(bd5651ceaec056a96f6f.svg);
+}
+
+.icon_visibility_on {
+  display: block;
+}
+
+@media screen and (max-width: 1000px) {
+  .icon_visibility_on {
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* @import url(../blocks/page/page.css);*/
+
+/* -------------- UI -------------- */
+
+/* -------------- text -------------- */
+
+/* -------------- title -------------- */
+
+/* -------------- button -------------- */
+
+/* -------------- icon -------------- */
+
+/* -------------- BLOCKS -------------- */
+
+/* -------------- card -------------- */
+
+/* @import url(../blocks/card/card.css);
+... */
+
+/* -------------- popup -------------- */
+
+/* @import url(../blocks/popup/popup.css);
+... */
+
+/* -------------- SECTIONS -------------- */
+
+/* -------------- header -------------- */
+
+/* @import url(../blocks/header/header.css);
+... */
+
+/* -------------- footer -------------- */
+
+/* @import url(../blocks/footer/footer.css);
+... */
 

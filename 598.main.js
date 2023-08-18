@@ -1,0 +1,1 @@
+(self.webpackChunkhedonism_fest=self.webpackChunkhedonism_fest||[]).push([[598],{598:()=>{console.log("О фестивале")}}]);
