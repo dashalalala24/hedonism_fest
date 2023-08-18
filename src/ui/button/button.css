@@ -63,3 +63,7 @@
   background-image: url('../../images/icons/button/menu-grey.svg');
   cursor: auto;
 }
+
+.button.button_type_text:hover .text_size_secondary {
+  color: #5100b8;
+}

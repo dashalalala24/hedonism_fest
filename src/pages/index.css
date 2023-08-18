@@ -16,6 +16,12 @@
 @import url(../ui/text/_color/text_color_violet.css);
 @import url(../ui/text/_color/text_color_white.css);
 
+@import url(../ui/text/_align/text_align_left.css);
+@import url(../ui/text/_align/text_align_right.css);
+
+@import url(../ui/text/_clipping/text_clipping_ellipsis.css);
+@import url(../ui/text/_clipping/text_clipping_no-wrap.css);
+
 /* -------------- title -------------- */
 @import url(../ui/title/title.css);
 
@@ -23,6 +29,9 @@
 @import url(../ui/title/_size/title_size_m.css);
 @import url(../ui/title/_size/title_size_s.css);
 @import url(../ui/title/_size/title_size_xl.css);
+
+@import url(../ui/title/_align/title_align_left.css);
+@import url(../ui/title/_align/title_align_right.css);
 
 /* -------------- button -------------- */
 @import url(../ui/button/button.css);
@@ -36,10 +45,15 @@
 
 @import url(../ui/button/_size/button_size_flexible.css);
 @import url(../ui/button/_size/button_size_min-width.css);
+
+@import url(../ui/button/_state/button_state_active-like.css);
+
 @import url(../ui/button/_type/button_type_switcher.css);
 @import url(../ui/button/_type/button_type_switcher-tab.css);
-
 @import url(../ui/button/_type/button_type_filter.css);
+@import url(../ui/button/_type/button_type_like.css);
+@import url(../ui/button/_type/button_type_image.css);
+@import url(../ui/button/_type/button_type_text.css);
 
 /* -------------- icon -------------- */
 @import url(../ui/icon/icon.css);
@@ -51,6 +65,17 @@
 @import url(../ui/icon/_type/icon_type_cross-white.css);
 @import url(../ui/icon/_type/icon_type_map.css);
 @import url(../ui/icon/_visibility/icon_visibility_on.css);
+
+/* -------------- card -------------- */
+@import url(../ui/card/card.css);
+
+@import url(../ui/card/__caption/card__caption.css);
+
+@import url(../ui/card/__caption/_type/card__caption_type_address-more.css);
+@import url(../ui/card/__caption/_type/card__caption_type_date-type.css);
+@import url(../ui/card/__caption/_type/card__caption_type_description.css);
+@import url(../ui/card/__caption/_type/card__caption_type_title.css);
+
 
 /* -------------- BLOCKS -------------- */
 
