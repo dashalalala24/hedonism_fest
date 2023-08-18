@@ -1,0 +1,392 @@
+[
+  {
+    "title": "Фотографическая выставка 'Отражение моментов'",
+    "date": "2023-09-15",
+    "time": "15:00 - 18:00",
+    "summary": "Современные работы местных фотографов в уникальных ракурсах",
+    "address": "ул. Профессиональная, 42",
+    "type": "выставка",
+    "isLiked": true,
+    "url": "https://source.unsplash.com/F2KRf_QfCqw",
+    "city": "Москва",
+    "coordinates": {
+      "latitude": 55.755814,
+      "longitude": 37.617635
+    }
+  },
+  {
+    "title": "Лекция 'Искусство в XXI веке'",
+    "date": "2023-09-20",
+    "time": "18:30 - 20:00",
+    "summary": "Анализ современных течений в искусстве",
+    "address": "пр. Культуры, 15",
+    "type": "лекция",
+    "isLiked": false,
+    "url": "https://source.unsplash.com/1dW1vEJLlCQ",
+    "city": "Москва",
+    "coordinates": {
+      "latitude": 55.764049,
+      "longitude": 37.620124
+    }
+  },
+  {
+    "title": "Мастер-класс 'Техники акварели'",
+    "date": "2023-09-25",
+    "time": "14:00 - 16:30",
+    "summary": "Изучение основ акварельной живописи",
+    "address": "ул. Художников, 8",
+    "type": "мастер-класс",
+    "isLiked": true,
+    "url": "https://source.unsplash.com/VLlkOJdzLG0",
+    "city": "Санкт-Петербург",
+    "coordinates": {
+      "latitude": 59.93428,
+      "longitude": 30.335098
+    }
+  },
+  {
+    "title": "Вечер музыки и красок",
+    "date": "2023-09-12",
+    "time": "19:00 - 22:00",
+    "summary": "Симфонический оркестр и выставка художников",
+    "address": "ул. Просвещения, 22",
+    "type": "концерт",
+    "isLiked": true,
+    "url": "https://source.unsplash.com/ZGj0_IjgXdo",
+    "city": "Санкт-Петербург",
+    "coordinates": {
+      "latitude": 59.95703,
+      "longitude": 30.312421
+    }
+  },
+  {
+    "title": "Кулинарный мастер-класс 'Искусство десертов'",
+    "date": "2023-09-28",
+    "time": "16:00 - 19:00",
+    "summary": "Приготовление изысканных десертов от шеф-повара",
+    "address": "ул. Вкусная, 5",
+    "type": "мастер-класс",
+    "isLiked": false,
+    "url": "https://source.unsplash.com/FYNs98upHrA",
+    "city": "Сочи",
+    "coordinates": {
+      "latitude": 43.602807,
+      "longitude": 39.734154
+    }
+  },
+  {
+    "title": "Историческая экскурсия 'Тайны Кремля'",
+    "date": "2023-09-14",
+    "time": "10:00 - 13:00",
+    "summary": "Раскрываем загадки истории русской столицы",
+    "address": "Московский Кремль",
+    "type": "экскурсия",
+    "isLiked": true,
+    "url": "https://source.unsplash.com/mH_E0K581Yk",
+    "city": "Москва",
+    "coordinates": {
+      "latitude": 55.751667,
+      "longitude": 37.617778
+    }
+  },
+  {
+    "title": "Выставка современной живописи",
+    "date": "2023-09-18",
+    "time": "12:00 - 17:00",
+    "summary": "Работы молодых художников в разных жанрах",
+    "address": "пр. Художников, 30",
+    "type": "выставка",
+    "isLiked": false,
+    "url": "https://source.unsplash.com/R6xx6fnvPT8",
+    "city": "Екатеринбург",
+    "coordinates": {
+      "latitude": 56.838011,
+      "longitude": 60.597465
+    }
+  },
+  {
+    "title": "Вечер джаза под открытым небом",
+    "date": "2023-09-10",
+    "time": "19:30 - 22:00",
+    "summary": "Звуки джаза в атмосфере ночного парка",
+    "address": "ул. Парковая, 10",
+    "type": "концерт",
+    "isLiked": true,
+    "url": "https://source.unsplash.com/v0kQglce46E",
+    "city": "Екатеринбург",
+    "coordinates": {
+      "latitude": 56.839104,
+      "longitude": 60.610553
+    }
+  },
+  {
+    "title": "Поэтический вечер 'Слова души'",
+    "date": "2023-09-22",
+    "time": "18:00 - 20:30",
+    "summary": "Чтение современных и классических стихов",
+    "address": "ул. Литературная, 12",
+    "type": "лекция",
+    "isLiked": false,
+    "url": "https://source.unsplash.com/3ELAAwo8zVQ",
+    "city": "Сочи",
+    "coordinates": {
+      "latitude": 43.585525,
+      "longitude": 39.723062
+    }
+  },
+  {
+    "title": "Путешествие в мир космоса",
+    "date": "2023-09-19",
+    "time": "14:00 - 17:00",
+    "summary": "Интерактивная выставка о звездах и планетах",
+    "address": "пр. Галактический, 8",
+    "type": "музей",
+    "isLiked": true,
+    "url": "https://source.unsplash.com/6rTEBFx2fFs",
+    "city": "Калуга",
+    "coordinates": {
+      "latitude": 54.507014,
+      "longitude": 36.252983
+    }
+  },
+  {
+    "title": "Кулинарный фестиваль 'Вкусные истории'",
+    "date": "2023-09-23",
+    "time": "11:00 - 19:00",
+    "summary": "Пробуем блюда разных кухонь мира",
+    "address": "ул. Шеф-поварская, 14",
+    "type": "фестиваль",
+    "isLiked": false,
+    "url": "https://source.unsplash.com/qNhe2QXzLuo",
+    "city": "Санкт-Петербург",
+    "coordinates": {
+      "latitude": 59.940448,
+      "longitude": 30.313035
+    }
+  },
+  {
+    "title": "Интерактивное шоу 'Магия и фокусы'",
+    "date": "2023-09-17",
+    "time": "16:30 - 19:00",
+    "summary": "Удивительные трюки и иллюзии в исполнении профессионалов",
+    "address": "ул. Фокусов, 5",
+    "type": "шоу",
+    "isLiked": true,
+    "url": "https://source.unsplash.com/KRjJUKirZpk",
+    "city": "Калуга",
+    "coordinates": {
+      "latitude": 54.52918,
+      "longitude": 36.27538
+    }
+  },
+  {
+    "title": "Выставка скульптур 'Формы в движении'",
+    "date": "2023-09-16",
+    "time": "13:00 - 18:00",
+    "summary": "Искусство скульптуры в разных стилях",
+    "address": "ул. Искусствоведов, 9",
+    "type": "выставка",
+    "isLiked": false,
+    "url": "https://source.unsplash.com/KIE5A_tFeCs",
+    "city": "Сочи",
+    "coordinates": {
+      "latitude": 43.588348,
+      "longitude": 39.725053
+    }
+  },
+  {
+    "title": "Арт-кафе 'Цветные моменты'",
+    "date": "2023-09-21",
+    "time": "10:00 - 23:00",
+    "summary": "Уютное пространство для творчества и общения",
+    "address": "ул. Художественная, 18",
+    "type": "кафе",
+    "isLiked": true,
+    "url": "https://source.unsplash.com/BCuCOkDnzQA",
+    "city": "Екатеринбург",
+    "coordinates": {
+      "latitude": 56.844079,
+      "longitude": 60.614705
+    }
+  },
+  {
+    "title": "Концерт симфонического оркестра",
+    "date": "2023-09-13",
+    "time": "19:30 - 22:00",
+    "summary": "Известные мелодии в классической обработке",
+    "address": "ул. Музыкальная, 6",
+    "type": "концерт",
+    "isLiked": false,
+    "url": "https://source.unsplash.com/MfDkpPYo2Rc",
+    "city": "Калуга",
+    "coordinates": {
+      "latitude": 54.515041,
+      "longitude": 36.25165
+    }
+  },
+  {
+    "title": "Экскурсия в исторический центр",
+    "date": "2023-09-24",
+    "time": "11:00 - 14:00",
+    "summary": "Путешествие во времени через улицы города",
+    "address": "ул. Историческая, 2",
+    "type": "экскурсия",
+    "isLiked": true,
+    "url": "https://source.unsplash.com/vAtawkTGZKo",
+    "city": "Москва",
+    "coordinates": {
+      "latitude": 55.752023,
+      "longitude": 37.617499
+    }
+  },
+  {
+    "title": "Выставка фотографии 'Городские кадры'",
+    "date": "2023-09-27",
+    "time": "14:00 - 18:00",
+    "summary": "Отражение повседневной жизни в объективе фотографов",
+    "address": "ул. Фотографов, 12",
+    "type": "выставка",
+    "isLiked": false,
+    "url": "https://source.unsplash.com/3ELAAwo8zVQ",
+    "city": "Санкт-Петербург",
+    "coordinates": {
+      "latitude": 59.940448,
+      "longitude": 30.313035
+    }
+  },
+  {
+    "title": "Поэтический вечер 'Слова души'",
+    "date": "2023-09-22",
+    "time": "18:00 - 20:30",
+    "summary": "Чтение современных и классических стихов",
+    "address": "ул. Литературная, 12",
+    "type": "лекция",
+    "isLiked": false,
+    "url": "https://source.unsplash.com/hLOLcUwR0Y4",
+    "city": "Москва",
+    "coordinates": {
+      "latitude": 55.751667,
+      "longitude": 37.617778
+    }
+  },
+  {
+    "title": "Путешествие в мир космоса",
+    "date": "2023-09-19",
+    "time": "14:00 - 17:00",
+    "summary": "Интерактивная выставка о звездах и планетах",
+    "address": "пр. Галактический, 8",
+    "type": "музей",
+    "isLiked": true,
+    "url": "https://source.unsplash.com/6rTEBFx2fFs",
+    "city": "Калуга",
+    "coordinates": {
+      "latitude": 54.507014,
+      "longitude": 36.252983
+    }
+  },
+  {
+    "title": "Кулинарный фестиваль 'Вкусные истории'",
+    "date": "2023-09-23",
+    "time": "11:00 - 19:00",
+    "summary": "Пробуем блюда разных кухонь мира",
+    "address": "ул. Шеф-поварская, 14",
+    "type": "фестиваль",
+    "isLiked": false,
+    "url": "https://source.unsplash.com/qNhe2QXzLuo",
+    "city": "Санкт-Петербург",
+    "coordinates": {
+      "latitude": 59.940448,
+      "longitude": 30.313035
+    }
+  },
+  {
+    "title": "Интерактивное шоу 'Магия и фокусы'",
+    "date": "2023-09-17",
+    "time": "16:30 - 19:00",
+    "summary": "Удивительные трюки и иллюзии в исполнении профессионалов",
+    "address": "ул. Фокусов, 5",
+    "type": "шоу",
+    "isLiked": true,
+    "url": "https://source.unsplash.com/KRjJUKirZpk",
+    "city": "Калуга",
+    "coordinates": {
+      "latitude": 54.52918,
+      "longitude": 36.27538
+    }
+  },
+  {
+    "title": "Выставка скульптур 'Формы в движении'",
+    "date": "2023-09-16",
+    "time": "13:00 - 18:00",
+    "summary": "Искусство скульптуры в разных стилях",
+    "address": "ул. Искусствоведов, 9",
+    "type": "выставка",
+    "isLiked": false,
+    "url": "https://source.unsplash.com/KIE5A_tFeCs",
+    "city": "Сочи",
+    "coordinates": {
+      "latitude": 43.588348,
+      "longitude": 39.725053
+    }
+  },
+  {
+    "title": "Арт-кафе 'Цветные моменты'",
+    "date": "2023-09-21",
+    "time": "10:00 - 23:00",
+    "summary": "Уютное пространство для творчества и общения",
+    "address": "ул. Художественная, 18",
+    "type": "кафе",
+    "isLiked": true,
+    "url": "https://source.unsplash.com/BCuCOkDnzQA",
+    "city": "Екатеринбург",
+    "coordinates": {
+      "latitude": 56.844079,
+      "longitude": 60.614705
+    }
+  },
+  {
+    "title": "Концерт симфонического оркестра",
+    "date": "2023-09-13",
+    "time": "19:30 - 22:00",
+    "summary": "Известные мелодии в классической обработке",
+    "address": "ул. Музыкальная, 6",
+    "type": "концерт",
+    "isLiked": false,
+    "url": "https://source.unsplash.com/MfDkpPYo2Rc",
+    "city": "Калуга",
+    "coordinates": {
+      "latitude": 54.515041,
+      "longitude": 36.25165
+    }
+  },
+  {
+    "title": "Экскурсия в исторический центр",
+    "date": "2023-09-24",
+    "time": "11:00 - 14:00",
+    "summary": "Путешествие во времени через улицы города",
+    "address": "ул. Историческая, 2",
+    "type": "экскурсия",
+    "isLiked": true,
+    "url": "https://source.unsplash.com/vAtawkTGZKo",
+    "city": "Москва",
+    "coordinates": {
+      "latitude": 55.752023,
+      "longitude": 37.617499
+    }
+  },
+  {
+    "title": "Выставка фотографии 'Городские кадры'",
+    "date": "2023-09-27",
+    "time": "14:00 - 18:00",
+    "summary": "Отражение повседневной жизни в объективе фотографов",
+    "address": "ул. Фотографов, 12",
+    "type": "выставка",
+    "isLiked": false,
+    "url": "https://source.unsplash.com/3ELAAwo8zVQ",
+    "city": "Санкт-Петербург",
+    "coordinates": {
+      "latitude": 59.940448,
+      "longitude": 30.313035
+    }
+  }
+]
