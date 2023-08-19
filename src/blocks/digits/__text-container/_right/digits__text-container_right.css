@@ -1,11 +1,12 @@
 .digits__text-container_right {
   position: absolute;
-  top: 572px;
+  top: 332px;
   right: 240px;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 1024px) {
   .digits__text-container_right {
+    display: flex;
     position: static;
   }
 }

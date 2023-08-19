@@ -4,8 +4,9 @@
   left: 240px;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 1024px) {
   .digits__text-container_left {
+    display: flex;
     position: static;
   }
 }

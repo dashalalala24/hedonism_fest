@@ -4,7 +4,7 @@
   left: 0;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 1024px) {
   .digits__big-circle_left {
     position: static;
     background-image: url('../../../../images/digits/second-illustration.svg');

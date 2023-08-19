@@ -6,7 +6,7 @@
   left: 0;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1024px) {
   .digits__left-illustration {
     display: none;
   }

@@ -1,15 +1,16 @@
 .digits__image {
+  width: auto;
+  height: 720px;
   margin: 0;
   position: relative;
   max-width: 1360px;
-  max-height: 720px;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 1024px) {
   .digits__image {
     display: flex;
-    flex-direction: column;
-    /* row-gap: 40px; */
-    height: 864px;
+    flex-direction: column-reverse;
+    row-gap: 40px;
+    height: auto;
   }
 }

@@ -8,8 +8,9 @@
   right: 636.5px;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 1350px) {
   .digits__three-lines {
     display: none;
   }
 }
+

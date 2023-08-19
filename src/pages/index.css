@@ -75,6 +75,9 @@
 @import url(../blocks/digits/digits.css);
 @import url(../blocks/digits/__title/digits__title.css);
 @import url(../blocks/digits/__image/digits__image.css);
+@import url(../blocks/digits/__circle-container/digits__circle-container.css);
+@import url(../blocks/digits/__circle-container/_left/digits__circle-container_left.css);
+@import url(../blocks/digits/__circle-container/_right/digits__circle-container_right.css);
 @import url(../blocks/digits/__big-circle/digits__big-circle.css);
 @import url(../blocks/digits/__big-circle/_left/digits__big-circle_left.css);
 @import url(../blocks/digits/__big-circle/_right/digits__big-circle_right.css);
