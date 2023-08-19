@@ -7,6 +7,7 @@
   border: none;
   border-radius: 26px;
   cursor: pointer;
+  line-height: 0;
 }
 
 .button:disabled {
@@ -62,4 +63,23 @@
 .button:disabled .icon_type_menu-white {
   background-image: url('../../images/icons/button/menu-grey.svg');
   cursor: auto;
+}
+
+.button.button_type_text:hover .text_size_secondary {
+  color: #5100b8;
+}
+.button .button_type_switcher-tab.button_color_violet:hover {
+  cursor: pointer;
+}
+
+.button.button_type_switcher .icon_type_map:hover {
+  cursor: pointer;
+}
+
+.button.button_type_switcher .text_color_white:hover {
+  cursor: pointer;
+}
+
+.button.button_type_switcher .icon_type_menu-white:hover {
+  cursor: pointer;
 }
