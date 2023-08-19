@@ -1,0 +1,11 @@
+.promo__text {
+  text-align: start;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .promo__text {
+    color: #fff;
+    font-size: 16px;
+  }
+}
