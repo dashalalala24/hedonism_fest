@@ -1,0 +1,11 @@
+.header {
+	background-color: #ffd400;
+	max-width: 1440px;
+	left: 0;
+	top: 0;
+	padding: 20px 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}

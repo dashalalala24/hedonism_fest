@@ -1,0 +1,16 @@
+.button_type_image {
+	object-fit: cover;
+	width: 100%;
+	/*width: 316px;*/
+	height: 180px;
+
+	border-radius: 10px 10px 0 0;
+
+	background: url('https://source.unsplash.com/BCuCOkDnzQA') no-repeat center;
+	background-size: cover;
+	transition: background-image 0.3s ease-out;
+}
+
+.button_type_image:hover {
+	opacity: 80%;
+}

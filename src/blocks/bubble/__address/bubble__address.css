@@ -1,0 +1,4 @@
+.bubble__address {
+	display: flex;
+	justify-content: space-between;
+}

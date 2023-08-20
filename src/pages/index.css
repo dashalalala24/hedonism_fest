@@ -1,6 +1,8 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
-/* @import url(../blocks/page/page.css);*/
+@import url(../vendor/api-maps.css);
+
+@import url(../blocks/page/page.css);
 
 /* -------------- UI -------------- */
 
@@ -16,6 +18,12 @@
 @import url(../ui/text/_color/text_color_violet.css);
 @import url(../ui/text/_color/text_color_white.css);
 
+@import url(../ui/text/_align/text_align_left.css);
+@import url(../ui/text/_align/text_align_right.css);
+
+@import url(../ui/text/_clipping/text_clipping_ellipsis.css);
+@import url(../ui/text/_clipping/text_clipping_no-wrap.css);
+
 /* -------------- title -------------- */
 @import url(../ui/title/title.css);
 
@@ -23,6 +31,9 @@
 @import url(../ui/title/_size/title_size_m.css);
 @import url(../ui/title/_size/title_size_s.css);
 @import url(../ui/title/_size/title_size_xl.css);
+
+@import url(../ui/title/_align/title_align_left.css);
+@import url(../ui/title/_align/title_align_right.css);
 
 /* -------------- button -------------- */
 @import url(../ui/button/button.css);
@@ -36,10 +47,15 @@
 
 @import url(../ui/button/_size/button_size_flexible.css);
 @import url(../ui/button/_size/button_size_min-width.css);
+
+@import url(../ui/button/_state/button_state_active-like.css);
+
 @import url(../ui/button/_type/button_type_switcher.css);
 @import url(../ui/button/_type/button_type_switcher-tab.css);
-
 @import url(../ui/button/_type/button_type_filter.css);
+@import url(../ui/button/_type/button_type_like.css);
+@import url(../ui/button/_type/button_type_image.css);
+@import url(../ui/button/_type/button_type_text.css);
 
 /* -------------- icon -------------- */
 @import url(../ui/icon/icon.css);
@@ -50,14 +66,46 @@
 @import url(../ui/icon/_type/icon_type_link-black.css);
 @import url(../ui/icon/_type/icon_type_cross-white.css);
 @import url(../ui/icon/_type/icon_type_map.css);
+
 @import url(../ui/icon/_visibility/icon_visibility_on.css);
+
+/* -------------- card -------------- */
+@import url(../ui/card/card.css);
+
+@import url(../ui/card/__caption/card__caption.css);
+
+@import url(../ui/card/__caption/_type/card__caption_type_address-more.css);
+@import url(../ui/card/__caption/_type/card__caption_type_date-type.css);
+@import url(../ui/card/__caption/_type/card__caption_type_description.css);
+@import url(../ui/card/__caption/_type/card__caption_type_title.css);
 
 /* -------------- BLOCKS -------------- */
 
 /* -------------- card -------------- */
 
-/* @import url(../blocks/card/card.css);
-... */
+@import url(../blocks/catalog/catalog.css);
+@import url(../blocks/scrollable-content/scrollable-content.css);
+@import url(../blocks/scrollable-content/__filter/scrollable-content__filter.css);
+@import url(../blocks/scrollable-content/__title/scrollable-content__title.css);
+@import url(../blocks/scrollable-content/__text/scrollable-content__text.css);
+@import url(../blocks/scrollable-content/__button/scrollable-content__button.css);
+@import url(../blocks/scrollable-content/__button-text/scrollable-content__button-text.css);
+@import url(../blocks/scrollable-content/__sub-text/scrollable-content__sub-text.css);
+@import url(../blocks/scrollable-content/__add-menu/scrollable-content__add-menu.css);
+@import url(../blocks/control-panel/control-panel.css);
+@import url(../blocks/control-panel/__button/control-panel__button.css);
+@import url(../blocks/cards/cards.css);
+@import url(../blocks/cards/__map/cards__map.css);
+@import url(../blocks/cards/__map/_opened/cards__map_opened.css);
+@import url(../blocks/cards/__page-without-card/cards__page-without-card.css);
+@import url(../blocks/cards/__page-without-card/_opened/cards__page-without-card_opened.css);
+@import url(../blocks/cards/__text-without-card/cards__text-without-card.css);
+@import url(../blocks/cards/__image-without-card/cards__image-without-card.css);
+@import url(../blocks/bubble/bubble.css);
+@import url(../blocks/bubble/__event-type/bubble__event-type.css);
+@import url(../blocks/bubble/__event-name/bubble__event-name.css);
+@import url(../blocks/bubble/__event-date/bubble__event-date.css);
+@import url(../blocks/bubble/__address/bubble__address.css);
 
 /* -------------- popup -------------- */
 
@@ -68,8 +116,15 @@
 
 /* -------------- header -------------- */
 
-/* @import url(../blocks/header/header.css);
-... */
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__logo-location/header__logo-location.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__menu-list/header__menu-list.css);
+@import url(../blocks/header/__menu-list/_show/header__menu-list_show.css);
+@import url(../blocks/header/__list-item/header__list-item.css);
+@import url(../blocks/header/__nav-link/header__nav-link.css);
+@import url(../blocks/header/__user-action/header__user-action.css);
+@import url(../blocks/header/__user-action-go/header__user-action-go.css);
 
 /* -------------- digits -------------- */
 @import url(../blocks/digits/digits.css);
