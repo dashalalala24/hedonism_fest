@@ -1,11 +1,11 @@
 .button_border_black {
-  border: solid 2px #3b3748;
+	border: solid 2px #3b3748;
 }
 
 .button_border_black:hover {
-  border: solid 2px #5100b8;
+	border: solid 2px #5100b8;
 }
 
 .button_border_black:disabled {
-  border: none;
+	border: none;
 }

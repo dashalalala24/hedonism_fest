@@ -1,85 +1,85 @@
 .button {
-  display: flex;
-  padding: 12px 24px;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  border: none;
-  border-radius: 26px;
-  cursor: pointer;
-  line-height: 0;
+	display: flex;
+	padding: 12px 24px;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	border: none;
+	border-radius: 26px;
+	cursor: pointer;
+	line-height: 0;
 }
 
 .button:disabled {
-  cursor: auto;
+	cursor: auto;
 }
 
 .button:hover .text_color_black {
-  color: #5100b8;
+	color: #5100b8;
 }
 
 .button:disabled .text_color_black {
-  color: #96949e;
-  cursor: auto;
+	color: #96949e;
+	cursor: auto;
 }
 
 .button:disabled .text_color_white {
-  color: #96949e;
-  cursor: auto;
+	color: #96949e;
+	cursor: auto;
 }
 
 .button:hover .icon_type_arrow-black {
-  background-image: url('../../images/icons/button/arrow-violent.svg');
+	background-image: url('../../images/icons/button/arrow-violent.svg');
 }
 
 .button:disabled .icon_type_arrow-black {
-  background-image: url('../../images/icons/button/arrow-grey.svg');
-  cursor: auto;
+	background-image: url('../../images/icons/button/arrow-grey.svg');
+	cursor: auto;
 }
 
 .button:hover .icon_type_heart {
-  background-image: url('../../images/icons/button/heart-violent.svg');
+	background-image: url('../../images/icons/button/heart-violent.svg');
 }
 
 .button:disabled .icon_type_heart {
-  background-image: url('../../images/icons/button/heart-grey.svg');
-  cursor: auto;
+	background-image: url('../../images/icons/button/heart-grey.svg');
+	cursor: auto;
 }
 
 .button:hover .icon_type_link-black {
-  background-image: url('../../images/icons/button/link-violent.svg');
+	background-image: url('../../images/icons/button/link-violent.svg');
 }
 
 .button:disabled .icon_type_link-black {
-  background-image: url('../../images/icons/button/link-grey.svg');
-  cursor: auto;
+	background-image: url('../../images/icons/button/link-grey.svg');
+	cursor: auto;
 }
 
 .button:disabled .icon_type_map {
-  background-image: url('../../images/icons/button/map-grey.svg');
-  cursor: auto;
+	background-image: url('../../images/icons/button/map-grey.svg');
+	cursor: auto;
 }
 
 .button:disabled .icon_type_menu-white {
-  background-image: url('../../images/icons/button/menu-grey.svg');
-  cursor: auto;
+	background-image: url('../../images/icons/button/menu-grey.svg');
+	cursor: auto;
 }
 
 .button.button_type_text:hover .text_size_secondary {
-  color: #5100b8;
+	color: #5100b8;
 }
 .button .button_type_switcher-tab.button_color_violet:hover {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .button.button_type_switcher .icon_type_map:hover {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .button.button_type_switcher .text_color_white:hover {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .button.button_type_switcher .icon_type_menu-white:hover {
-  cursor: pointer;
+	cursor: pointer;
 }

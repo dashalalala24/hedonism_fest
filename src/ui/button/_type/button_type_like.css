@@ -1,17 +1,17 @@
 .button_type_like {
-  position: absolute;
-  top: 8px;
-  right: 8px;
+	position: absolute;
+	top: 8px;
+	right: 8px;
 
-  background-color: white;
-  width: 48px;
-  height: 48px;
+	background-color: white;
+	width: 48px;
+	height: 48px;
 
-  background: url('../../../images/icons/card/heart-black.svg') no-repeat center;
-  background-color: white;
-  transition: background-image 0.3s ease-out;
+	background: url('../../../images/icons/card/heart-black.svg') no-repeat center;
+	background-color: white;
+	transition: background-image 0.3s ease-out;
 }
 
 .button_type_like:hover {
-  background-image: url('../../../images/icons/card/heart-red.svg');
+	background-image: url('../../../images/icons/card/heart-red.svg');
 }

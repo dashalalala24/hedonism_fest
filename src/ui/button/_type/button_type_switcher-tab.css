@@ -1,6 +1,6 @@
 .button_type_switcher-tab {
-  width: calc(
-    ((141 - 95) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) +
-      95px
-  );
+	width: calc(
+		((141 - 95) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) +
+			95px
+	);
 }

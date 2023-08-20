@@ -1,11 +1,11 @@
 .button_color_violet {
-  background-color: #7100ff;
+	background-color: #7100ff;
 }
 
 .button_color_violet:hover {
-  background-color: #5100b8;
+	background-color: #5100b8;
 }
 
 .button_color_violet:disabled {
-  background-color: #ebe9ed;
+	background-color: #ebe9ed;
 }

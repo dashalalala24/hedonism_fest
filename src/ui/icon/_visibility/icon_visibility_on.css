@@ -1,11 +1,11 @@
 .icon_visibility_on {
-  display: block;
+	display: block;
 }
 
 @media screen and (max-width: 1000px) {
-  .icon_visibility_on {
-    display: none;
-    padding: 0;
-    margin: 0;
-  }
+	.icon_visibility_on {
+		display: none;
+		padding: 0;
+		margin: 0;
+	}
 }
