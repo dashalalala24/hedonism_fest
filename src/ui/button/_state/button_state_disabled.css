@@ -1,0 +1,12 @@
+.button_state_disabled {
+  background-color: #ebe9ed;
+  cursor: auto;
+  border: none;
+}
+
+.button_state_disabled:hover {
+  background-color: #ebe9ed;
+  color: #96949e;
+  border: none
+}
+
