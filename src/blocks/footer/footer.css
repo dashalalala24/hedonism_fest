@@ -1,8 +1,9 @@
 .footer {
   padding: 80px 40px 80px;
   display: flex;
-  justify-content: space-evenly;
-  background-color: #EBE9ED;
+  justify-content: space-between;
+  background-color: #ebe9ed;
+  column-gap: 40px;
 }
 
 @media screen and (max-width: 1280px) {
@@ -15,6 +16,6 @@
 
 @media screen and (max-width: 1024px) {
   .footer {
-    background-color: #FFD400;
+    background-color: #ffd400;
   }
 }

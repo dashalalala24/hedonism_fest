@@ -1,5 +1,6 @@
 .footer__text {
   text-align: start;
+  font-size: 18px;
 }
 
 @media screen and (max-width: 1280px) {

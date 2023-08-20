@@ -1,8 +1,10 @@
 .footer__illustration {
-  width: 193px;
+  min-width: 193px;
   height: 193px;
   background-image: url(../../../images/footer/footer-illustration.svg);
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 @media screen and (max-width: 1280px) {
