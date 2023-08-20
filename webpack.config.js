@@ -58,6 +58,10 @@ module.exports = {
       filename: 'join.html',
       template: './src/join.html',
     }),
+    new HtmlWebpackPlugin({
+      filename: 'storybook.html',
+      template: './src/storybook.html',
+    }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(),
   ],
