@@ -11,11 +11,11 @@ const map = document.querySelector('.cards__map');
 const list = document.querySelector('.cards__page-without-card');
 
 buttonMap.addEventListener('click', () => {
-    map.classList.add('cards__map_opened');
-    list.classList.remove('cards__page-without-card_opened');
+  map.classList.add('cards__map_opened');
+  list.classList.remove('cards__page-without-card_opened');
 });
 
 buttonList.addEventListener('click', () => {
-    map.classList.remove('cards__map_opened');
-    list.classList.add('cards__page-without-card_opened');
+  map.classList.remove('cards__map_opened');
+  list.classList.add('cards__page-without-card_opened');
 });

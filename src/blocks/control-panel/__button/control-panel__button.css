@@ -1,8 +1,8 @@
 .control-panel__button {
-    display: flex;
-    max-width: 282px;
-    max-height: 48px;
-    background-color: #EBE9ED;
-    border: 2px solid #EBE9ED;
-    border-radius: 24px;
+  display: flex;
+  max-width: 282px;
+  max-height: 48px;
+  background-color: #ebe9ed;
+  border: 2px solid #ebe9ed;
+  border-radius: 24px;
 }
