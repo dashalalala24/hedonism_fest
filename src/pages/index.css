@@ -126,6 +126,25 @@
 @import url(../blocks/header/__user-action/header__user-action.css);
 @import url(../blocks/header/__user-action-go/header__user-action-go.css);
 
+/* -------------- digits -------------- */
+@import url(../blocks/digits/digits.css);
+@import url(../blocks/digits/__title/digits__title.css);
+@import url(../blocks/digits/__image/digits__image.css);
+@import url(../blocks/digits/__circle-container/digits__circle-container.css);
+@import url(../blocks/digits/__circle-container/_left/digits__circle-container_left.css);
+@import url(../blocks/digits/__circle-container/_right/digits__circle-container_right.css);
+@import url(../blocks/digits/__big-circle/digits__big-circle.css);
+@import url(../blocks/digits/__big-circle/_left/digits__big-circle_left.css);
+@import url(../blocks/digits/__big-circle/_right/digits__big-circle_right.css);
+@import url(../blocks/digits/__left-illustration/digits__left-illustration.css);
+@import url(../blocks/digits/__right-illustration/digits__right-illustration.css);
+@import url(../blocks/digits/__text-container/digits__text-container.css);
+@import url(../blocks/digits/__text-container/_left/digits__text-container_left.css);
+@import url(../blocks/digits/__text-container/_right/digits__text-container_right.css);
+@import url(../blocks/digits/__text/digits__text.css);
+@import url(../blocks/digits/__little-circle/digits__little-circle.css);
+@import url(../blocks/digits/__three-lines/digits__three-lines.css);
+
 /* -------------- footer -------------- */
 
 /* @import url(../blocks/footer/footer.css);
