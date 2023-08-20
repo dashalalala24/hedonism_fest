@@ -1,0 +1,11 @@
+.promo__button {
+  background-color: #ffd400;
+  margin: 4px 0 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .promo__button {
+    background-color: #f40934;
+    border: #fff solid;
+  }
+}

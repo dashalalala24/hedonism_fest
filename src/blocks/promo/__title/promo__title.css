@@ -1,0 +1,17 @@
+.promo__title {
+  display: block;
+  flex-basis: 420px;
+  text-align: start;
+}
+
+@media screen and (max-width: 1117px) {
+  .promo__title {
+    flex-basis: content;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .promo__title {
+    font-size: 32px;
+  }
+}
