@@ -1,0 +1,9 @@
+.cards__page-without-card {
+  display: none;
+  z-index: 0;
+  opacity: 0;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 160px;
+}

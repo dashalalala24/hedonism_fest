@@ -1,0 +1,10 @@
+.scrollable-content__filter {
+  /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 36px, repeat(5, 1fr); */
+  display: flex;
+  row-gap: 12px;
+  column-gap: 10px;
+  flex-wrap: wrap;
+  padding: 16px 40px;
+}

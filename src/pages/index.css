@@ -1,5 +1,7 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
+@import url(../vendor/api-maps.css);
+
 @import url(../blocks/page/page.css);
 
 /* -------------- UI -------------- */
@@ -81,8 +83,29 @@
 
 /* -------------- card -------------- */
 
-/* @import url(../blocks/card/card.css);
-... */
+@import url(../blocks/catalog/catalog.css);
+@import url(../blocks/scrollable-content/scrollable-content.css);
+@import url(../blocks/scrollable-content/__filter/scrollable-content__filter.css);
+@import url(../blocks/scrollable-content/__title/scrollable-content__title.css);
+@import url(../blocks/scrollable-content/__text/scrollable-content__text.css);
+@import url(../blocks/scrollable-content/__button/scrollable-content__button.css);
+@import url(../blocks/scrollable-content/__button-text/scrollable-content__button-text.css);
+@import url(../blocks/scrollable-content/__sub-text/scrollable-content__sub-text.css);
+@import url(../blocks/scrollable-content/__add-menu/scrollable-content__add-menu.css);
+@import url(../blocks/control-panel/control-panel.css);
+@import url(../blocks/control-panel/__button/control-panel__button.css);
+@import url(../blocks/cards/cards.css);
+@import url(../blocks/cards/__map/cards__map.css);
+@import url(../blocks/cards/__map/_opened/cards__map_opened.css);
+@import url(../blocks/cards/__page-without-card/cards__page-without-card.css);
+@import url(../blocks/cards/__page-without-card/_opened/cards__page-without-card_opened.css);
+@import url(../blocks/cards/__text-without-card/cards__text-without-card.css);
+@import url(../blocks/cards/__image-without-card/cards__image-without-card.css);
+@import url(../blocks/bubble/bubble.css);
+@import url(../blocks/bubble/__event-type/bubble__event-type.css);
+@import url(../blocks/bubble/__event-name/bubble__event-name.css);
+@import url(../blocks/bubble/__event-date/bubble__event-date.css);
+@import url(../blocks/bubble/__address/bubble__address.css);
 
 /* -------------- popup -------------- */
 

@@ -1,0 +1,6 @@
+.scrollable-content__text {
+  grid-row: 1;
+  grid-column: 1/4;
+  min-width: 100%;
+  text-align: start;
+}

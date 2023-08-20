@@ -1,0 +1,9 @@
+.control-panel {
+  max-height: 88px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-left: 1px solid #ebe9ed;
+}
