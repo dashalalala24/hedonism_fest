@@ -58,37 +58,30 @@
 
 .button.button_state_disabled .text_color_white {
 	color: #96949e;
-	/*cursor: auto;*/
 }
 
 .button.button_state_disabled .icon_type_arrow-black {
 	background-image: url('../../images/icons/button/arrow-grey.svg');
-	/*cursor: auto;*/
 }
 
 .button.button_state_disabled .icon_type_heart {
 	background-image: url('../../images/icons/button/heart-grey.svg');
-	/*cursor: auto;*/
 }
 
 .button.button_state_disabled .icon_type_link-black {
 	background-image: url('../../images/icons/button/link-grey.svg');
-	/*cursor: auto;*/
 }
 
 .button.button_state_disabled .icon_type_map {
 	background-image: url('../../images/icons/button/map-grey.svg');
-	/*cursor: auto;*/
 }
 
 .button.button_state_disabled .icon_type_menu-white {
 	background-image: url('../../images/icons/button/menu-grey.svg');
-	/*cursor: auto;*/
 }
 
 /*UNCHECKED STATE*/
 button.button_state_filter-unchecked {
-  /*box-sizing: border-box;*/
   border: #3B3748 1px solid;
 
 }
