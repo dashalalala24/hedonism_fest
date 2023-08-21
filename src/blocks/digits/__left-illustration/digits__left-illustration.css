@@ -1,0 +1,13 @@
+.digits__left-illustration {
+  width: 480px;
+  height: 283px;
+  position: absolute;
+  top: 18px;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .digits__left-illustration {
+    display: none;
+  }
+}

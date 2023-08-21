@@ -1,0 +1,22 @@
+.promo {
+  background-color: #ffd400;
+  padding: 80px 40px 80px;
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+@media screen and (max-width: 1250px) {
+  .promo {
+    padding: 80px 60px 80px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .promo {
+    background-color: #f40934;
+    color: #fff;
+    padding: 40px 20px 40px;
+    max-height: 284px;
+  }
+}

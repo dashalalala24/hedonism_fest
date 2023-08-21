@@ -1,0 +1,12 @@
+.digits__circle-container_right {
+  position: absolute;
+  top: 240px;
+  right: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .digits__circle-container_right {
+    position: relative;
+    top: 0;
+  }
+}

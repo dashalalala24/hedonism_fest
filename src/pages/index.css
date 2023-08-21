@@ -2,6 +2,7 @@
 @import url(../vendor/fonts.css);
 @import url(../vendor/api-maps.css);
 
+
 @import url(../blocks/page/page.css);
 /* @import url(../blocks/page/page.css);*/
 
@@ -50,6 +51,8 @@
 @import url(../ui/button/_size/button_size_min-width.css);
 
 @import url(../ui/button/_state/button_state_active-like.css);
+@import url(../ui/button/_state/button_state_disabled.css);
+@import url(../ui/button/_state/button_state_filter-unchecked.css);
 
 @import url(../ui/button/_type/button_type_switcher.css);
 @import url(../ui/button/_type/button_type_switcher-tab.css);
@@ -129,7 +132,38 @@
 @import url(../blocks/header/__user-action/header__user-action.css);
 @import url(../blocks/header/__user-action-go/header__user-action-go.css);
 
-/* -------------- footer -------------- */
+/* -------------- digits -------------- */
+@import url(../blocks/digits/digits.css);
+@import url(../blocks/digits/__title/digits__title.css);
+@import url(../blocks/digits/__image/digits__image.css);
+@import url(../blocks/digits/__circle-container/digits__circle-container.css);
+@import url(../blocks/digits/__circle-container/_left/digits__circle-container_left.css);
+@import url(../blocks/digits/__circle-container/_right/digits__circle-container_right.css);
+@import url(../blocks/digits/__big-circle/digits__big-circle.css);
+@import url(../blocks/digits/__big-circle/_left/digits__big-circle_left.css);
+@import url(../blocks/digits/__big-circle/_right/digits__big-circle_right.css);
+@import url(../blocks/digits/__left-illustration/digits__left-illustration.css);
+@import url(../blocks/digits/__right-illustration/digits__right-illustration.css);
+@import url(../blocks/digits/__text-container/digits__text-container.css);
+@import url(../blocks/digits/__text-container/_left/digits__text-container_left.css);
+@import url(../blocks/digits/__text-container/_right/digits__text-container_right.css);
+@import url(../blocks/digits/__text/digits__text.css);
+@import url(../blocks/digits/__little-circle/digits__little-circle.css);
+@import url(../blocks/digits/__three-lines/digits__three-lines.css);
 
-/* @import url(../blocks/footer/footer.css);
-... */
+/* -------------- promo -------------- */
+@import url(../blocks/promo/promo.css);
+@import url(../blocks/promo/__container/promo__container.css);
+@import url(../blocks/promo/__title/promo__title.css);
+@import url(../blocks/promo/__description/promo__description.css);
+@import url(../blocks/promo/__text/promo__text.css);
+@import url(../blocks/promo/__button/promo__button.css);
+
+/* -------------- footer -------------- */
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__container/footer__container.css);
+@import url(../blocks/footer/__illustration/footer__illustration.css);
+@import url(../blocks/footer/__title/footer__title.css);
+@import url(../blocks/footer/__link/footer__link.css);
+@import url(../blocks/footer/__text/footer__text.css);
+@import url(../blocks/footer/__icon/footer__icon.css);

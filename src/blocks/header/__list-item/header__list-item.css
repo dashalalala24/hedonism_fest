@@ -1,13 +1,13 @@
 .header__list-item {
-  text-align: left;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  padding: 12px 24px;
-  box-sizing: border-box;
+	text-align: left;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	padding: 12px 24px;
+	box-sizing: border-box;
 }
 
 .header__list-item:hover {
-  cursor: pointer;
-  background-color: #ebe9ed;
+	cursor: pointer;
+	background-color: #ebe9ed;
 }
