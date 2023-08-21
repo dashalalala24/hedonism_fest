@@ -12,7 +12,7 @@ import {
 	haveCardsBeenDetected,
 } from '../components/utils';
 import { renderNumberCards } from '../components/control-panel';
-import { filterCards } from '../components/filter';
+// import { filterCards } from '../components/filter';
 
 const buttonMap = document.querySelector('.button-map');
 const buttonList = document.querySelector('.button-list');
@@ -65,5 +65,5 @@ if (document.getElementById('map')) {
 		buttonMap.classList.add('button_state_disabled');
 	});
 
-	console.log(filterCards());
+	// console.log(filterCards());
 }
