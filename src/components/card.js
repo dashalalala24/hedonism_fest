@@ -1,4 +1,4 @@
-import cards from '../data/data.json';
+// import cards from '../data/data.json';
 import { getWeekDay } from './utils';
 
 // функция создания карточки
@@ -72,15 +72,6 @@ function filterDateButton(source) {
 export function renderFilterDateButton(source) {
 	const dateFilter = document.querySelector('#filter-event-date');
 	dateFilter.append(filterDateButton(source));
-}
-
-// функция фильрации карточек мероприятий
-export function filterCards() {
-	const cardArr = cards.filter((el) => el.isLiked === true);
-	cardArr.forEach((res) => {
-		renderCard(res);
-	});
-	// cards.filter(el => el.type === лекции)
 }
 
 // function findTimeDifference() {

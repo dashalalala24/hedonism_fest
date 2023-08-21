@@ -2,8 +2,8 @@
 const geoLocation = [
 	{
 		city: 'Saint-Petersburg',
-		latitude: 59.93757368404912,
-		longitude: 30.30518260742183,
+		latitude: 59.939099,
+		longitude: 30.315877,
 	},
 	{
 		city: 'Moscow',

@@ -1,5 +1,6 @@
 import cards from '../data/data.json';
 import allEventMarkers from './markers';
+import geoLocation from './constant';
 
 export const ymaps = window.ymaps;
 
@@ -7,8 +8,8 @@ export const ymaps = window.ymaps;
 
 export function renderMap() {
 	let map = new ymaps.Map('map', {
-		center: [59.93757368404912, 30.30518260742183],
-		zoom: 13,
+		center: [geoLocation[1].latitude, geoLocation[1].longitude],
+		zoom: 11,
 	});
 
 	function eventDate(card) {

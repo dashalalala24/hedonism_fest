@@ -2,7 +2,6 @@ import('../pages/index.css');
 import cards from '../data/data.json';
 import { renderMap, ymaps } from '../components/map.js';
 import {
-	filterCards,
 	renderFilterButton,
 	renderFilterDateButton,
 } from '../components/card.js';
@@ -13,6 +12,7 @@ import {
 	haveCardsBeenDetected,
 } from '../components/utils';
 import { renderNumberCards } from '../components/control-panel';
+import { filterCards } from '../components/filter';
 
 const buttonMap = document.querySelector('.button-map');
 const buttonList = document.querySelector('.button-list');
@@ -51,11 +51,19 @@ if (document.getElementById('map')) {
 		renderFilterDateButton(el);
 	});
 
-	filterCards();
-
 	haveCardsBeenDetected();
 
-	buttonMap.addEventListener('click', openMapBlock);
+	buttonMap.addEventListener('click', () => {
+		openMapBlock();
+		buttonList.classList.add('button_state_disabled');
+		buttonMap.classList.remove('button_state_disabled');
+	});
 
-	buttonList.addEventListener('click', openListBlock);
+	buttonList.addEventListener('click', () => {
+		openListBlock();
+		buttonList.classList.remove('button_state_disabled');
+		buttonMap.classList.add('button_state_disabled');
+	});
+
+	console.log(filterCards());
 }
