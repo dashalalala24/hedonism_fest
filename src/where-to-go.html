@@ -183,31 +183,17 @@
     <button id="saint-beterburg">Питер</button>
     <button id="moscow">Москва</button>
     <button id="sochi">Сочи</button>
-<!-- 
-    <div class="bubble">
-      <p class="bubble__event-type text text_color_grey text_size_secondary">
-        лекция
-      </p>
-      <div class="bubble__event-about">
-        <h4 class="bubble__event-name title_size_s">
-          идентичность: почему нам сложно меняться?
-        </h4>
-        <p class="bubble__event-date text text_color_black text_size_secondary">
-          1 мая, 12:30-13:50
+
+    <template id="filter-button">
+      <button
+      class="scrollable-content__button button button_color_none button_border_black"
+    >
+        <p class="scrollable-content__button-text text text_color_black">
+        все
         </p>
-      </div>
-      <div class="bubble__address">
-        <p
-          class="bubble__event-address text text_color_grey text_size_secondary"
-        >
-          улица Блохина, 22
-        </p>
-        <p class="text text_color_grey text_size_secondary">+3</p>
-      </div>
-      <button class="bubble__button button button_color_violet">
-        <p class="text text_color_white">подробнее</p>
-      </button>
-    </div> -->
+    </button>
+    </template>
+
     <!---TEMPlATES--->
     <template id="card">
       <li class="card">
@@ -216,7 +202,7 @@
         <div class="card card__caption">
           <div class="card card__caption_type_date-type">
             <p class="card__event-type text text_color_grey text_size_secondary">лекция</p>
-            <p class="card__event-date text text_color_grey text_size_secondary">
+            <p class="card__event-date  text text_color_grey text_size_secondary">
               1 мая, 12:30-13:50
             </p>
           </div>
@@ -248,16 +234,6 @@
           </div>
         </div>
       </li>
-    </template>
-
-    <template id="filter-button">
-      <button
-      class="scrollable-content__button button button_color_none button_border_black"
-    >
-        <p class="scrollable-content__button-text text text_color_black">
-        все
-        </p>
-    </button>
     </template>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=9d774e8f-6471-4003-be6e-62a532de3666&load=package.standard&lang=ru-RU"></script>
   </body>
