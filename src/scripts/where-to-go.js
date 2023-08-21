@@ -1,21 +1,60 @@
-console.log('Куда пойти');
 import('../pages/index.css');
-import init from '../components/map.js';
-import { linkMarkers } from '../components/constant.js';
-
-ymaps.ready(init);
+import cards from '../data/data.json';
+import { renderMap, ymaps } from '../components/map.js';
+import {
+	filterCards,
+	renderFilterButton,
+	renderFilterDateButton,
+} from '../components/card.js';
+import {
+	getArrRange,
+	openMapBlock,
+	haveCardsBeenDetected,
+} from '../components/utils';
+import { renderNumberCards } from '../components/control-panel';
 
 const buttonMap = document.querySelector('.button-map');
 const buttonList = document.querySelector('.button-list');
-const map = document.querySelector('.cards__map');
-const list = document.querySelector('.cards__page-without-card');
+const uniqEvents = Array.from(
+	new Set(
+		cards
+			.map((el) => {
+				return el.type;
+			})
+			.sort()
+	)
+);
 
-buttonMap.addEventListener('click', () => {
-  map.classList.add('cards__map_opened');
-  list.classList.remove('cards__page-without-card_opened');
-});
+const uniqDateEvents = Array.from(
+	new Set(
+		cards.map((el) => {
+			return el.date;
+		})
+	)
+);
 
-buttonList.addEventListener('click', () => {
-  map.classList.remove('cards__map_opened');
-  list.classList.add('cards__page-without-card_opened');
-});
+if (document.getElementById('map')) {
+	// getArrRange(cards, 12, 1).forEach((el) => {
+	//   renderCard(el);
+	// });
+
+	ymaps.ready(renderMap);
+
+	renderNumberCards();
+
+	uniqEvents.forEach((el) => {
+		renderFilterButton(el);
+	});
+
+	getArrRange(uniqDateEvents, 12, 1).forEach((el) => {
+		renderFilterDateButton(el);
+	});
+
+	filterCards();
+
+	haveCardsBeenDetected();
+
+	buttonMap.addEventListener('click', openMapBlock);
+
+	buttonList.addEventListener('click', haveCardsBeenDetected);
+}

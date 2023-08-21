@@ -1,0 +1,6 @@
+.cards__page-with-card {
+    display: grid;
+    grid-template-columns: repeat(3, 277px);
+    column-gap: 20px;
+    row-gap: 20px;
+}

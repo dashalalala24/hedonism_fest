@@ -1,101 +1,124 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Сайт мероприятия ГедонизмФест" />
-    <meta name="author" content="Команда №2" />
-    <title>ГедонизмФест</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Сайт мероприятия ГедонизмФест" />
+  <meta name="author" content="Команда №2" />
+  <title>ГедонизмФест</title>
+</head>
 
-  <body>
-    HedonismFest
-    <div>.</div>
-    <a href="./where-to-go.html">Ссылка на страницу "Куда пойти"</a>
-    <div>.</div>
-    <a href="./about.html">Ссылка на страницу "О фестивале"</a>
-    <div>.</div>
-    <a href="./join.html">Ссылка на страницу "Стать участником"</a>
+<body class="page">
+  <header class="header">
+      <div class="header__logo-location">
+        <img
+          src="<%=require('./images/icons/logo.svg')%>"
+          alt="Логотип Гедонизм Фест"
+          class="header__logo"
+        />
+        <button id="button-dropdown" class="button button_color_transparent">
+          <img
+            src="<%=require('./images/icons/location.svg')%>"
+            alt="Иконка локации"
+          />
+          <p class="text text_color_black text_size_primary">Санкт-Петербург</p>
+        </button>
+        <div class="header__menu-list">
+          <a
+            href="#"
+            class="header__list-item text text_color_black text_size_primary"
+            >Москва</a
+          >
+          <a
+            href="#"
+            class="header__list-item text text_color_black text_size_primary"
+            >Санкт-Петербург</a
+          >
+          <a
+            href="#"
+            class="header__list-item text text_color_black text_size_primary"
+            >Сочи</a
+          >
+          <a
+            href="#"
+            class="header__list-item text text_color_black text_size_primary"
+            >Калуга</a
+          >
+          <a
+            href="#"
+            class="header__list-item text text_color_black text_size_primary"
+            >Екатеринбург</a
+          >
+        </div>
+      </div>
+      <nav class="header__nav-link">
+        <a href="#" class="text text_color_black text_size_primary"
+          >куда пойти</a
+        >
+        <a href="#" class="text text_color_black text_size_primary"
+          >стать участником</a
+        >
+        <a href="#" class="text text_color_black text_size_primary"
+          >о фестивале</a
+        >
+      </nav>
+      <div class="header__user-action">
+        <div class="header__user-action-go">
+          <img
+            src="<%=require('./images/icons/button/heart-black.svg')%>"
+            alt="Сердечко"
+          />
+          <p class="text text_color_black text_size_primary">хочу пойти</p>
+        </div>
+        <button class="button button_color_violet button_size_min-width">
+          <p class="text text_color_white text_size_primary">поддержать</p>
+        </button>
+      </div>
+    </header>
+  
+  <div>.</div>
+  <a href="./storybook.html">UI-компоненты</a>
+  <div>.</div>
+  <a href="./where-to-go.html">Ссылка на страницу "Куда пойти"</a>
+  <div>.</div>
+  <a href="./about.html">Ссылка на страницу "О фестивале"</a>
+  <div>.</div>
+  <a href="./join.html">Ссылка на страницу "Стать участником"</a>
 
-    <button class="button button_color_violet button_size_min-width">
-      <div class="icon icon_type_menu-white"></div>
-      <p class="text text_size_primary text_color_white">кнопка</p>
-    </button>
-
-    <button class="button button_color_violet button_size_min-width">
-      <p class="text text_size_primary text_color_white">кнопка</p>
-      <div class="icon icon_type_arrow-white"></div>
-    </button>
-
-    <button class="button button_color_violet button_size_min-width">
-      <p class="text text_size_primary text_color_white">кнопка</p>
-    </button>
-
-    <button
-      class="button button_color_none button_size_min-width button_border_black"
-    >
-      <div class="icon icon_type_heart"></div>
-      <p class="text text_size_primary text_color_black">кнопка</p>
-    </button>
-
-    <button
-      class="button button_color_none button_size_min-width button_border_black"
-    >
-      <p class="text text_color_black">кнопка</p>
-      <div class="icon text_size_primary icon_type_arrow-black"></div>
-    </button>
-
-    <button
-      class="button button_color_none button_size_min-width button_border_black"
-    >
-      <p class="text text_size_primary text_color_black">кнопка</p>
-    </button>
-
-    <button class="button button_color_transparent button_size_min-width">
-      <p class="text text_size_primary text_color_black">кнопка</p>
-    </button>
-
-    <button class="button button_color_transparent button_size_min-width">
-      <div class="icon icon_type_link-black"></div>
-      <p class="text text_size_primary text_color_black">кнопка</p>
-    </button>
-
-    <button class="button button_color_transparent button_size_min-width">
-      <p class="text text_size_primary text_color_black">кнопка</p>
-      <div class="icon icon_type_arrow-black"></div>
-    </button>
-
-    <button
-      class="button button_type_filter button_color_none button_size_flexible button_border_black"
-    >
-      <p class="text text_size_primary text_color_black">фильтр</p>
-    </button>
-
-    <button
-      class="button button_type_filter button_color_violet button_size_flexible"
-    >
-      <p class="text text_size_primary text_color_white">все</p>
-    </button>
-
-    <button
-      class="button button_type_filter button_color_violet button_size_flexible"
-    >
-      <p class="text text_size_primary text_color_white">фильтр</p>
-      <div class="icon icon_type_cross-white"></div>
-    </button>
-
-    <div class="button button_type_switcher button_color_grey">
-      <button
-        class="button button_type_switcher-tab button_color_violet"
-        disabled
-      >
-        <div class="icon icon_type_map icon_visibility_on"></div>
-        <p class="text text_size_primary text_color_white">карта</p>
-      </button>
-      <button class="button button_type_switcher-tab button_color_violet">
-        <div class="icon icon_type_menu-white icon_visibility_on"></div>
-        <p class="text text_size_primary text_color_white">список</p>
-      </button>
-    </div>
-  </body>
+  <!---TEMPlATES--->
+  <template id='card'>
+    <li class="card">
+      <button class="button button_type_image"></button>
+      <button class="button button_type_like" type="button"></button>
+      <div class="card card__caption">
+        <div class="card card__caption_type_date-type">
+          <p class="text text_color_grey text_size_secondary">лекция</p>
+          <p class="text text_color_grey text_size_secondary">
+            1 мая, 12:30-13:50
+          </p>
+        </div>
+        <div class="card card__caption_type_title">
+          <h2 class="title title_size_s title_align_left">
+            идентичность: почему нам сложно меняться?
+          </h2>
+        </div>
+        <div class="card card__caption_type_description">
+          <p class="text text_color_black text_size_secondary text_align_left">
+            лектор: Мария Бархатова
+          </p>
+        </div>
+        <div class="card card__caption_type_address-more">
+          <p class="text text_color_grey text_size_secondary text_overflow_ellipsis">
+            улица Блохина, 22
+          </p>
+          <button class="button button_color_transparent button_type_text">
+            <p class="text text_color_grey text_size_secondary text_clipping_no-wrap">
+              + ещё 3
+            </p>
+          </button>
+        </div>
+      </div>
+    </li>
+  </template>
+</body>
 </html>
