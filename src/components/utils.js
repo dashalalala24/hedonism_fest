@@ -2,6 +2,7 @@ import cards from '../data/data.json';
 
 const map = document.querySelector('.cards__map');
 const list = document.querySelector('.cards__page-without-card');
+const cardList = document.querySelector('.cards__page-with-card');
 
 export function getArrRange(array, range, part) {
 	const start = range * (part - 1);
@@ -12,11 +13,12 @@ export function getArrRange(array, range, part) {
 export function openMapBlock() {
 	map.classList.add('cards__map_opened');
 	list.classList.remove('cards__page-without-card_opened');
+	cardList.classList.remove('cards__page-with-card_opened');
 }
 
-export function openListBlock(clas) {
+export function openListBlock() {
 	map.classList.remove('cards__map_opened');
-	list.classList.add(clas);
+	haveCardsBeenDetected();
 }
 
 export function getWeekDay(date) {
@@ -27,10 +29,10 @@ export function getWeekDay(date) {
 
 export function haveCardsBeenDetected() {
 	if (cards.find((el) => el.isLiked === true)) {
-		openMapBlock();
-		console.log('есть лайки');
+		cardList.classList.add('cards__page-with-card_opened');
+		list.classList.remove('cards__page-without-card_opened');
 	} else {
-		openListBlock();
-		console.log('нет лайков');
+		cardList.classList.remove('cards__page-with-card_opened');
+		list.classList.list('cards__page-without-card_opened');
 	}
 }

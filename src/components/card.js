@@ -5,7 +5,7 @@ import { getWeekDay } from './utils';
 function createCard(source) {
 	const card = document.querySelector('#card').content.cloneNode(true);
 	// const imageEvent = card.querySelector('.button_type_image');
-	// const buttonLike = card.querySelector('.button_type_like');
+	const buttonLike = card.querySelector('.button_type_like');
 	const typeEvent = card.querySelector('.card__event-type');
 	const dateEvent = card.querySelector('.card__event-date');
 	const nameEvent = card.querySelector('.card__event-name');
@@ -21,6 +21,10 @@ function createCard(source) {
 	nameEvent.textContent = source.title;
 	descriptionEvent.textContent = source.description;
 	addressEvent.textContent = source.address;
+
+	if (source.isLiked === true) {
+		buttonLike.classList.add('button_state_active-like');
+	}
 
 	return card;
 }

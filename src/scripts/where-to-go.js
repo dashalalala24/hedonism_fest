@@ -9,6 +9,7 @@ import {
 import {
 	getArrRange,
 	openMapBlock,
+	openListBlock,
 	haveCardsBeenDetected,
 } from '../components/utils';
 import { renderNumberCards } from '../components/control-panel';
@@ -56,5 +57,5 @@ if (document.getElementById('map')) {
 
 	buttonMap.addEventListener('click', openMapBlock);
 
-	buttonList.addEventListener('click', haveCardsBeenDetected);
+	buttonList.addEventListener('click', openListBlock);
 }
