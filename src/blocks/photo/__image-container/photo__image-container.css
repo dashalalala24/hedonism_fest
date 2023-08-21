@@ -1,0 +1,9 @@
+.photo__image-container {
+  width: auto;
+}
+
+@media screen and (max-width: 1280px){
+  .photo__image-container {
+    width: 320px;
+  }
+}

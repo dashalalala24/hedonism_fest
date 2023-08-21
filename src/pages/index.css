@@ -103,8 +103,12 @@
 @import url(../blocks/photo/__title/photo__title.css);
 @import url(../blocks/photo/__text/photo__text.css);
 @import url(../blocks/photo/__gallery/photo__gallery.css);
+@import url(../blocks/photo/__image-container/photo__image-container.css);
 @import url(../blocks/photo/__image/photo__image.css);
 @import url(../blocks/photo/__image/_big/photo__image_big.css);
+@import url(../blocks/photo/__radio-button/photo__radio-button.css);
+@import url(../blocks/photo/__navigation/photo__navigation.css);
+@import url(../blocks/photo/__nav-button/photo__nav-button.css);
 
 /* -------------- footer -------------- */
 @import url(../blocks/footer/footer.css);

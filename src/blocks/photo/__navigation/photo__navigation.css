@@ -1,0 +1,12 @@
+.photo__navigation {
+  margin-top: 12px;
+  display: none;
+
+}
+
+@media screen and (max-width: 1280px) {
+  .photo__navigation {
+    display: flex;
+    justify-content: center;
+  }
+}
