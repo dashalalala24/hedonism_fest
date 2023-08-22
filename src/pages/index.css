@@ -109,6 +109,10 @@
 @import url(../blocks/cards/__page-with-card/cards__page-with-card.css);
 @import url(../blocks/cards/__page-with-card/_opened/cards__page-with-card_opened.css);
 @import url(../blocks/card/__event-description/card__event-description.css);
+@import url(../blocks/card/__event-address/card__event-address.css);
+@import url(../blocks/card/__event-date/card__event-date.css);
+@import url(../blocks/card/__event-name/card__event-name.css);
+@import url(../blocks/card/__event-type/card__event-type.css);
 @import url(../blocks/bubble/bubble.css);
 @import url(../blocks/bubble/__event-type/bubble__event-type.css);
 @import url(../blocks/bubble/__event-name/bubble__event-name.css);

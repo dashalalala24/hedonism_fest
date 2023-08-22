@@ -1,4 +1,4 @@
-.card__event-description {
+.card__event-name {
     text-overflow: ellipsis;
     overflow: hidden;
     display: -webkit-box;

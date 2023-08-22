@@ -11,6 +11,6 @@
 	transition: background-image 0.3s ease-out;
 }
 
-.card__image {
+.card__image:hover {
   opacity: 80%;
 }
