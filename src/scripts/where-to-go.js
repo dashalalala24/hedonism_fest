@@ -5,6 +5,7 @@ import {
 	renderFilterButton,
 	renderFilterDateButton,
 	renderCard,
+	setEventsListeners,
 } from '../components/card.js';
 import {
 	getArrRange,
@@ -13,7 +14,7 @@ import {
 	haveCardsBeenDetected,
 } from '../components/utils';
 import { renderNumberCards } from '../components/control-panel';
-// import { filterCards } from '../components/filter';
+import { filterCards } from '../components/filter';
 
 const buttonMap = document.querySelector('.button-map');
 const buttonList = document.querySelector('.button-list');
@@ -34,8 +35,6 @@ const uniqDateEvents = Array.from(
 		})
 	)
 );
-
-const allLikedCard = cards.filter((el) => el.isLiked === true);
 
 if (document.getElementById('map')) {
 	// getArrRange(cards, 12, 1).forEach((el) => {
@@ -72,9 +71,9 @@ if (document.getElementById('map')) {
 		buttonMap.classList.add('button_state_disabled');
 	});
 
-	allLikedCard.forEach((el) => {
+	filterCards(cards).forEach((el) => {
 		renderCard(el);
 	});
 
-	// console.log(filterCards());
+	setEventsListeners();
 }
