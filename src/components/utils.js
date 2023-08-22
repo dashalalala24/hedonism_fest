@@ -18,7 +18,7 @@ export function openMapBlock() {
 
 export function openListBlock() {
 	map.classList.remove('cards__map_opened');
-	haveCardsBeenDetected();
+	haveCardsBeenDetected(cards);
 }
 
 export function getWeekDay(date) {
@@ -27,12 +27,12 @@ export function getWeekDay(date) {
 	return dayOfWeek[date.getDay()];
 }
 
-export function haveCardsBeenDetected() {
-	if (cards.find((el) => el.isLiked === true)) {
+export function haveCardsBeenDetected(source) {
+	if (source.find((el) => el.isLiked === true)) {
 		cardList.classList.add('cards__page-with-card_opened');
 		list.classList.remove('cards__page-without-card_opened');
 	} else {
 		cardList.classList.remove('cards__page-with-card_opened');
-		list.classList.list('cards__page-without-card_opened');
+		list.classList.add('cards__page-without-card_opened');
 	}
 }

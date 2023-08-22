@@ -4,6 +4,7 @@ import { renderMap, ymaps } from '../components/map.js';
 import {
 	renderFilterButton,
 	renderFilterDateButton,
+	renderCard,
 } from '../components/card.js';
 import {
 	getArrRange,
@@ -34,6 +35,8 @@ const uniqDateEvents = Array.from(
 	)
 );
 
+const allLikedCard = cards.filter((el) => el.isLiked === true);
+
 if (document.getElementById('map')) {
 	// getArrRange(cards, 12, 1).forEach((el) => {
 	//   renderCard(el);
@@ -51,7 +54,11 @@ if (document.getElementById('map')) {
 		renderFilterDateButton(el);
 	});
 
-	haveCardsBeenDetected();
+	// cards.forEach((el) => {
+	// 	el.isLiked = false;
+	// });
+
+	haveCardsBeenDetected(cards);
 
 	buttonMap.addEventListener('click', () => {
 		openMapBlock();
@@ -63,6 +70,10 @@ if (document.getElementById('map')) {
 		openListBlock();
 		buttonList.classList.remove('button_state_disabled');
 		buttonMap.classList.add('button_state_disabled');
+	});
+
+	allLikedCard.forEach((el) => {
+		renderCard(el);
 	});
 
 	// console.log(filterCards());

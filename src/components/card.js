@@ -1,10 +1,12 @@
 // import cards from '../data/data.json';
+import cards from '../data/data.json';
 import { getWeekDay } from './utils';
+import { haveCardsBeenDetected } from './utils';
 
 // функция создания карточки
 function createCard(source) {
 	const card = document.querySelector('#card').content.cloneNode(true);
-	// const imageEvent = card.querySelector('.button_type_image');
+	const imageEvent = card.querySelector('.card__image');
 	const buttonLike = card.querySelector('.button_type_like');
 	const typeEvent = card.querySelector('.card__event-type');
 	const dateEvent = card.querySelector('.card__event-date');
@@ -13,9 +15,10 @@ function createCard(source) {
 	const addressEvent = card.querySelector('.card__event-address');
 	const newDate = new Date(source.date).toLocaleString('default', {
 		day: 'numeric',
-		month: 'long',
+		month: 'short',
 	});
 
+	imageEvent.style.backgroundImage = `url(${source.url})`;
 	typeEvent.textContent = source.type;
 	dateEvent.textContent = `${newDate}, ${source.timestart}-${source.timeend}`;
 	nameEvent.textContent = source.title;
@@ -26,7 +29,25 @@ function createCard(source) {
 		buttonLike.classList.add('button_state_active-like');
 	}
 
+	buttonLike.addEventListener('click', () => {
+		putAndLike(buttonLike, source);
+	});
+
 	return card;
+}
+
+// Функция лайка карточки
+
+function putAndLike(buttonLike, source) {
+	if (buttonLike.classList.contains('button_state_active-like')) {
+		buttonLike.classList.remove('button_state_active-like');
+		source.isLiked = false;
+		haveCardsBeenDetected(cards);
+	} else {
+		buttonLike.classList.add('button_state_active-like');
+		source.isLiked = true;
+		haveCardsBeenDetected(cards);
+	}
 }
 
 // функция рендера карточки
