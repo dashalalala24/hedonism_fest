@@ -1,14 +1,24 @@
 import cards from '../data/data.json';
-import ymaps from 'ymaps';
-// import linkMarkers from '../components/constant.js';
+import allEventMarkers from './markers';
+import geoLocation from './constant';
+
+export const ymaps = window.ymaps;
 
 // Функция отрисовки карты
 
-export default function init() {
+export function renderMap() {
 	let map = new ymaps.Map('map', {
-		center: [55.75241870157769, 37.62364760667579],
-		zoom: 13,
+		center: [geoLocation[1].latitude, geoLocation[1].longitude],
+		zoom: 11,
 	});
+
+	function eventDate(card) {
+		const newDate = new Date(card.date).toLocaleString('default', {
+			day: 'numeric',
+			month: 'long',
+		});
+		return newDate;
+	}
 
 	// Функция отрисовки маркеров карты
 	function doPlacemarks(card) {
@@ -17,13 +27,19 @@ export default function init() {
 			{
 				balloonContent: `
             <div class="bubble">
-            <p class="bubble__event-type text text_color_grey text_size_secondary">лекция</p>
+            <p class="bubble__event-type text text_color_grey text_size_secondary">${
+	card.type
+}</p>
             <div class="bubble__event-about">
-              <h4 class="bubble__event-name title_size_s">идентичность: почему нам сложно меняться?</h4>
-              <p class="bubble__event-date text text_color_black text_size_secondary">1 мая, 12:30-13:50</p>
+              <h4 class="bubble__event-name title_size_s">${card.title}</h4>
+              <p class="bubble__event-date text text_color_black text_size_secondary">${eventDate(
+		card
+	)}, ${card.timestart}-${card.timeend}</p>
             </div>
             <div class="bubble__address">
-              <p class="bubble__event-address text text_color_grey text_size_secondary">улица Блохина, 22</p>
+              <p class="bubble__event-address text text_color_grey text_size_secondary">${
+	card.address
+}</p>
               <p class="text text_color_grey text_size_secondary">+3</p>
             </div>
             <button class="bubble__button button button_color_violet">
@@ -33,10 +49,10 @@ export default function init() {
             `,
 			},
 			{
-				// iconLayout: 'default#image',
-				// iconImageHref: ``,
-				// iconImageSize: [36, 36],
-				// iconImageOffset: [0, 0]
+				iconLayout: 'default#image',
+				iconImageHref: `${allEventMarkers[0].link}`,
+				iconImageSize: [36, 36],
+				iconImageOffset: [0, 0],
 			}
 		);
 
