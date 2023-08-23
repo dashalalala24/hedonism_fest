@@ -18,25 +18,11 @@ export function filterCards(arr) {
 		arrCards = arr;
 	}
 
-	if (!allDateButton.classList.contains('scrollable-content__button_active')) {
+	if (allDateButton.classList.contains('scrollable-content__button_active')) {
+		arrDateCards = arrCards;
+	} else {
 		if (allActiveDateButton[0]) {
 			allActiveDateButton.forEach((evt) => {
-				// arrDateCards = arrCards.map((el) => {
-
-				//     const day = getWeekDay(new Date(el.date));
-				//     const shortDate = new Date(el.date).toLocaleString('default', {
-				//         day: 'numeric',
-				//         month: 'short',
-				//     });
-				//     const filterDay = `${day}, ${shortDate}`;
-
-				//     if (evt.querySelector('.scrollable-content__button-text').textContent === filterDay) {
-				//         return true;
-				//     } else {
-				//         return false;
-				//     }
-				// });
-
 				arrCards.forEach((el) => {
 					const day = getWeekDay(new Date(el.date));
 					const shortDate = new Date(el.date).toLocaleString('default', {
@@ -50,19 +36,12 @@ export function filterCards(arr) {
 						evt.querySelector('.scrollable-content__button-text').textContent
 					) {
 						arrDateCards.push(el);
-					} else {
-						// console.log('Искомое' + evt.querySelector('.scrollable-content__button-text').textContent);
-						// console.log('Искатель' + filterDay);
 					}
 				});
 			});
-
-			return arrDateCards;
 		}
 	}
 
-	// if (allEventButton.classList.contains('scrollable-content__button_active')) {
-	//     return arrCards
-	// } else {}
-	return arrCards;
+	console.log(arrDateCards);
+	return arrDateCards;
 }
