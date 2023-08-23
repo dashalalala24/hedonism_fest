@@ -1,5 +1,6 @@
 import { getWeekDay } from './utils';
 
+// функция фильтрации карточек
 export function filterCards(arr) {
 	let arrCards = [];
 	const filterEventPlace = document.querySelector('#filter-event-type');

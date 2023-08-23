@@ -105,6 +105,7 @@ export function renderFilterDateButton(source) {
 	dateFilter.append(button);
 }
 
+// Функция вешателя слушателя на кнопки фильтров
 export function setEventsListeners() {
 	const button = Array.from(
 		document.querySelectorAll('.scrollable-content__button')

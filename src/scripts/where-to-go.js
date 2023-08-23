@@ -37,10 +37,6 @@ const uniqDateEvents = Array.from(
 );
 
 if (document.getElementById('map')) {
-	// getArrRange(cards, 12, 1).forEach((el) => {
-	//   renderCard(el);
-	// });
-
 	ymaps.ready(renderMap);
 
 	renderNumberCards();
@@ -52,10 +48,6 @@ if (document.getElementById('map')) {
 	getArrRange(uniqDateEvents, 12, 1).forEach((el) => {
 		renderFilterDateButton(el);
 	});
-
-	// cards.forEach((el) => {
-	// 	el.isLiked = false;
-	// });
 
 	haveCardsBeenDetected(cards);
 
