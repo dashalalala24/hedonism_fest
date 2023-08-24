@@ -46,10 +46,8 @@ export function filterCards(arr) {
 	}
 
 	if (allEventButton.classList.contains('scrollable-content__button_active')) {
-		console.log('активна кнопка все');
 		arrEventCards = arrDateCards;
 	} else if (allActiveEventButton[0]) {
-		console.log('Есть активные кнопки');
 		allActiveEventButton.forEach((evt) => {
 			if (
 				wantEventButton.classList.contains('scrollable-content__button_active')
@@ -61,7 +59,6 @@ export function filterCards(arr) {
 						el.type ===
 						evt.querySelector('.scrollable-content__button-text').textContent
 					) {
-						console.log('Добавлена карточка');
 						arrEventCards.push(el);
 					}
 				});

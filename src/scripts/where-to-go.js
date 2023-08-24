@@ -5,7 +5,8 @@ import {
 	renderFilterButton,
 	renderFilterDateButton,
 	renderCard,
-	setEventsListeners,
+	setDateEventsListeners,
+	setTypeEventsListeners,
 } from '../components/card.js';
 import {
 	getArrRange,
@@ -67,5 +68,6 @@ if (document.getElementById('map')) {
 		renderCard(el);
 	});
 
-	setEventsListeners();
+	setDateEventsListeners();
+	setTypeEventsListeners();
 }

@@ -1,6 +1,7 @@
 import cards from '../data/data.json';
 import allEventMarkers from './markers';
 import geoLocation from './constant';
+// import { filterCards } from './filter';
 
 export const ymaps = window.ymaps;
 

@@ -95,6 +95,8 @@
 @import url(../blocks/scrollable-content/__text/scrollable-content__text.css);
 @import url(../blocks/scrollable-content/__button/scrollable-content__button.css);
 @import url(../blocks/scrollable-content/__button-text/scrollable-content__button-text.css);
+@import url(../blocks/scrollable-content/__button-cross/scrollable-content__button-cross.css);
+@import url(../blocks/scrollable-content/__button-cross/_active/scrollable-content__button-cross_active.css);
 @import url(../blocks/scrollable-content/__sub-text/scrollable-content__sub-text.css);
 @import url(../blocks/scrollable-content/__add-menu/scrollable-content__add-menu.css);
 @import url(../blocks/control-panel/control-panel.css);

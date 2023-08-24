@@ -42,11 +42,9 @@ function putAndLike(buttonLike, source) {
 	if (buttonLike.classList.contains('button_state_active-like')) {
 		buttonLike.classList.remove('button_state_active-like');
 		source.isLiked = false;
-		haveCardsBeenDetected(cards);
 	} else {
 		buttonLike.classList.add('button_state_active-like');
 		source.isLiked = true;
-		haveCardsBeenDetected(cards);
 	}
 }
 
@@ -67,7 +65,7 @@ export function deleteCard() {
 // функция создния кнопки фильтра мероприятий
 function filterButton(source) {
 	const buttonToFilter = document
-		.querySelector('#filter-button')
+		.querySelector('#filter-event-button')
 		.content.cloneNode(true);
 	buttonToFilter.querySelector('.scrollable-content__button-text').textContent =
 		source;
@@ -105,27 +103,28 @@ export function renderFilterDateButton(source) {
 	dateFilter.append(button);
 }
 
-// Функция вешателя слушателя на кнопки фильтров
-export function setEventsListeners() {
+// Функция вешателя слушателя на кнопки фильтров по датам
+export function setDateEventsListeners() {
+	const place = document.querySelector('#filter-event-date');
 	const button = Array.from(
-		document.querySelectorAll('.scrollable-content__button')
+		place.querySelectorAll('.scrollable-content__button')
 	);
 	button.forEach((el) => {
 		const text = el.querySelector('.text');
 		el.addEventListener('click', () => {
-			if (el.classList.contains('scrollable-content__button_active')) {
-				el.classList.remove('scrollable-content__button_active');
-				el.classList.remove('button_color_violet');
-				el.classList.add('button_color_none');
-				el.classList.add('button_border_black');
-				text.classList.add('text_color_black');
-				text.classList.remove('text_color_white');
-				// console.log(filterCards(cards));
-				deleteCard();
-				filterCards(cards).forEach((el) => {
-					renderCard(el);
-				});
-			} else {
+			if (!el.classList.contains('scrollable-content__button_active')) {
+				const activeButton = place.querySelector(
+					'.scrollable-content__button_active'
+				);
+				activeButton.classList.remove('scrollable-content__button_active');
+				activeButton.classList.remove('button_color_violet');
+				activeButton.classList.add('button_color_none');
+				activeButton.classList.add('button_border_black');
+				activeButton.querySelector('.text').classList.add('text_color_black');
+				activeButton
+					.querySelector('.text')
+					.classList.remove('text_color_white');
+
 				el.classList.add('scrollable-content__button_active');
 				el.classList.add('button_color_violet');
 				el.classList.remove('button_color_none');
@@ -137,6 +136,52 @@ export function setEventsListeners() {
 				filterCards(cards).forEach((el) => {
 					renderCard(el);
 				});
+				haveCardsBeenDetected(filterCards(cards));
+			}
+		});
+	});
+}
+
+// Функция вешателя слушателя на кнопки фильтров по типу событий
+export function setTypeEventsListeners() {
+	const place = document.querySelector('#filter-event-type');
+	const button = Array.from(
+		place.querySelectorAll('.scrollable-content__button')
+	);
+	button.forEach((el) => {
+		const text = el.querySelector('.text');
+		const crossButton = el.querySelector('.scrollable-content__button-cross');
+		el.addEventListener('click', () => {
+			if (!el.classList.contains('scrollable-content__button_active')) {
+				el.classList.add('scrollable-content__button_active');
+				el.classList.add('button_color_violet');
+				el.classList.remove('button_color_none');
+				el.classList.remove('button_border_black');
+				text.classList.add('text_color_white');
+				text.classList.remove('text_color_black');
+				crossButton.classList.add('scrollable-content__button-cross_active');
+				deleteCard();
+				filterCards(cards).forEach((el) => {
+					renderCard(el);
+				});
+				haveCardsBeenDetected(filterCards(cards));
+			} else {
+				if (el.classList.contains('scrollable-content__button_active')) {
+					el.classList.remove('scrollable-content__button_active');
+					el.classList.remove('button_color_violet');
+					el.classList.add('button_color_none');
+					el.classList.add('button_border_black');
+					text.classList.add('text_color_black');
+					text.classList.remove('text_color_white');
+					crossButton.classList.remove(
+						'scrollable-content__button-cross_active'
+					);
+					deleteCard();
+					filterCards(cards).forEach((el) => {
+						renderCard(el);
+					});
+					haveCardsBeenDetected(filterCards(cards));
+				}
 			}
 		});
 	});

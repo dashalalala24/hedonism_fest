@@ -28,7 +28,7 @@ export function getWeekDay(date) {
 }
 
 export function haveCardsBeenDetected(source) {
-	if (source.find((el) => el.isLiked === true)) {
+	if (source[0]) {
 		cardList.classList.add('cards__page-with-card_opened');
 		list.classList.remove('cards__page-without-card_opened');
 	} else {

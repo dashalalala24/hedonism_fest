@@ -91,12 +91,13 @@
             <p class="scrollable-content__button-text text text_color_black">
               все
             </p>
+            <div class="scrollable-content__button-cross icon icon_type_cross-white"></div>
           </button>
           <button id="want-button" class="scrollable-content__button scrollable-content__button_active button button_color_violet">
             <p class="scrollable-content__button-text text text_color_white">
               хочу пойти
             </p>
-            <div class="icon icon_type_cross-white"></div>
+            <div class="scrollable-content__button-cross scrollable-content__button-cross_active icon icon_type_cross-white"></div>
           </button>
         </div>
         <div id="filter-event-date" class="scrollable-content__filter">
@@ -257,6 +258,7 @@
       </div>
     </section>
 
+<!--  Темплейт с кнопкой фильтра дат -->
     <template id="filter-button">
       <button
       class="scrollable-content__button button button_color_none button_border_black"
@@ -264,6 +266,18 @@
         <p class="scrollable-content__button-text text text_color_black">
         все
         </p>
+    </button>
+    </template>
+
+    <!-- Темплейт с кнопкой фильтра событий -->
+    <template id="filter-event-button">
+      <button
+      class="scrollable-content__button button button_color_none button_border_black"
+    >
+        <p class="scrollable-content__button-text text text_color_black">
+        все
+        </p>
+        <div class="scrollable-content__button-cross icon icon_type_cross-white"></div>
     </button>
     </template>
 
