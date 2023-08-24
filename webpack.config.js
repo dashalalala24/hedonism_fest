@@ -39,6 +39,14 @@ module.exports = {
 					},
 				],
 			},
+			{
+				resourceQuery: /raw/,
+				type: 'asset/source',
+			},
+			{
+				resourceQuery: /template/,
+				loader: 'html-loader',
+			},
 		],
 	},
 	plugins: [

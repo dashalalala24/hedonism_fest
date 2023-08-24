@@ -140,12 +140,14 @@
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__logo-location/header__logo-location.css);
 @import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__location-button/header__location-button.css);
 @import url(../blocks/header/__menu-list/header__menu-list.css);
 @import url(../blocks/header/__menu-list/_show/header__menu-list_show.css);
 @import url(../blocks/header/__list-item/header__list-item.css);
 @import url(../blocks/header/__nav-link/header__nav-link.css);
 @import url(../blocks/header/__user-action/header__user-action.css);
 @import url(../blocks/header/__user-action-go/header__user-action-go.css);
+@import url(../blocks/header/__heart/header__heart.css);
 
 /* -------------- digits -------------- */
 @import url(../blocks/digits/digits.css);
