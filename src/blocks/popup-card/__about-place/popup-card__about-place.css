@@ -1,0 +1,6 @@
+.popup-card__about-place {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    text-align: start;
+}

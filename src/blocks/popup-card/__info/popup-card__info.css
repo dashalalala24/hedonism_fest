@@ -1,0 +1,6 @@
+.popup-card__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    min-height: 24px;
+}
