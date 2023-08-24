@@ -7,75 +7,7 @@
 	</head>
 
   <body class="page">
-    <h1>Куда пойти</h1>
-    <a href="./index.html">на главную</a>
-    <!-- Блок HEADER -->
-    <header class="header">
-      <div class="header__logo-location">
-        <img
-          src="<%=require('./images/icons/logo.svg')%>"
-          alt="Логотип Гедонизм Фест"
-          class="header__logo"
-        />
-        <button id="button-dropdown" class="button button_color_transparent">
-          <img
-            src="<%=require('./images/icons/location.svg')%>"
-            alt="Иконка локации"
-          />
-          <p class="text text_color_black text_size_primary">Санкт-Петербург</p>
-        </button>
-        <div class="header__menu-list">
-          <a
-            href="#"
-            class="header__list-item text text_color_black text_size_primary"
-            >Москва</a
-          >
-          <a
-            href="#"
-            class="header__list-item text text_color_black text_size_primary"
-            >Санкт-Петербург</a
-          >
-          <a
-            href="#"
-            class="header__list-item text text_color_black text_size_primary"
-            >Сочи</a
-          >
-          <a
-            href="#"
-            class="header__list-item text text_color_black text_size_primary"
-            >Калуга</a
-          >
-          <a
-            href="#"
-            class="header__list-item text text_color_black text_size_primary"
-            >Екатеринбург</a
-          >
-        </div>
-      </div>
-      <nav class="header__nav-link">
-        <a href="#" class="text text_color_black text_size_primary"
-          >куда пойти</a
-        >
-        <a href="#" class="text text_color_black text_size_primary"
-          >стать участником</a
-        >
-        <a href="#" class="text text_color_black text_size_primary"
-          >о фестивале</a
-        >
-      </nav>
-      <div class="header__user-action">
-        <div class="header__user-action-go">
-          <img
-            src="<%=require('./images/icons/button/heart-black.svg')%>"
-            alt="Сердечко"
-          />
-          <p class="text text_color_black text_size_primary">хочу пойти</p>
-        </div>
-        <button class="button button_color_violet button_size_min-width">
-          <p class="text text_color_white text_size_primary">поддержать</p>
-        </button>
-      </div>
-    </header>
+    <%= require('./header.html?raw') %>
     <!-- секция какталог -->
     <section class="catalog">
       <!-- Боковое меню фильтрации -->
@@ -86,14 +18,14 @@
             тип события
           </h3>
           <button
-            id="all-event-button" class="scrollable-content__button button button_color_none button_border_black"
+            id="all-event-button" class="scrollable-content__button button button_color_none button_border_black button_state_filter-unchecked"
           >
             <p class="scrollable-content__button-text text text_color_black">
               все
             </p>
             <div class="scrollable-content__button-cross icon icon_type_cross-white"></div>
           </button>
-          <button id="want-button" class="scrollable-content__button scrollable-content__button_active button button_color_violet">
+          <button id="want-button" class="scrollable-content__button scrollable-content__button_active button button_color_violet button_state_filter-unchecked">
             <p class="scrollable-content__button-text text text_color_white">
               хочу пойти
             </p>
@@ -102,27 +34,27 @@
         </div>
         <div id="filter-event-date" class="scrollable-content__filter">
           <h3 class="scrollable-content__text title title_size_s">дни</h3>
-          <button id="all-date-button" class="scrollable-content__button scrollable-content__button_active button button_color_violet">
+          <button id="all-date-button" class="scrollable-content__button scrollable-content__button_active button button_color_violet button_state_filter-unchecked">
             <p class="scrollable-content__button-text text text_color_white">
               все
             </p>
           </button>
           <button
-            class="scrollable-content__button button button_color_none button_border_black"
+            class="scrollable-content__button button button_color_none button_border_black button_state_filter-unchecked"
           >
             <p class="scrollable-content__button-text text text_color_black">
               сегодня
             </p>
           </button>
           <button
-            class="scrollable-content__button button button_color_none button_border_black"
+            class="scrollable-content__button button button_color_none button_border_black button_state_filter-unchecked"
           >
             <p class="scrollable-content__button-text text text_color_black">
               завтра
             </p>
           </button>
           <button
-            class="scrollable-content__button button button_color_none button_border_black"
+            class="scrollable-content__button button button_color_none button_border_black button_state_filter-unchecked"
           >
             <p class="scrollable-content__button-text text text_color_black">
               послезавтра
@@ -264,7 +196,7 @@
 <!--  Темплейт с кнопкой фильтра дат -->
     <template id="filter-button">
       <button
-      class="scrollable-content__button button button_color_none button_border_black"
+      class="scrollable-content__button button button_color_none button_border_black button_state_filter-unchecked"
     >
         <p class="scrollable-content__button-text text text_color_black">
         все
@@ -275,7 +207,7 @@
     <!-- Темплейт с кнопкой фильтра событий -->
     <template id="filter-event-button">
       <button
-      class="scrollable-content__button button button_color_none button_border_black"
+      class="scrollable-content__button button button_color_none button_border_black button_state_filter-unchecked"
     >
         <p class="scrollable-content__button-text text text_color_black">
         все

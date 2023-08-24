@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "core-js": "^3.32.0",
+    "html-loader": "^4.2.0",
     "husky": "^8.0.3",
     "ymaps": "^0.2.1"
   },

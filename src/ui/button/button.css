@@ -48,7 +48,7 @@
 }
 
 .button.button_state_filter-unchecked:hover {
-  border: none;
+  border: #3B3748 1px solid;
 }
 
 /*DISABLED STATE*/

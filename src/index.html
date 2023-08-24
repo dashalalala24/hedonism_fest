@@ -9,74 +9,7 @@
 	</head>
 
 	<body class="page">
-		<header class="header">
-			<div class="header__logo-location">
-				<img
-					src="<%=require('./images/icons/logo.svg')%>"
-					alt="Логотип Гедонизм Фест"
-					class="header__logo"
-				/>
-				<button id="button-dropdown" class="button button_color_transparent">
-					<img
-						src="<%=require('./images/icons/location.svg')%>"
-						alt="Иконка локации"
-					/>
-					<p class="text text_color_black text_size_primary">Санкт-Петербург</p>
-				</button>
-				<div class="header__menu-list">
-					<a
-						href="#"
-						class="header__list-item text text_color_black text_size_primary"
-						>Москва</a
-					>
-					<a
-						href="#"
-						class="header__list-item text text_color_black text_size_primary"
-						>Санкт-Петербург</a
-					>
-					<a
-						href="#"
-						class="header__list-item text text_color_black text_size_primary"
-						>Сочи</a
-					>
-					<a
-						href="#"
-						class="header__list-item text text_color_black text_size_primary"
-						>Калуга</a
-					>
-					<a
-						href="#"
-						class="header__list-item text text_color_black text_size_primary"
-						>Екатеринбург</a
-					>
-				</div>
-			</div>
-			<nav class="header__nav-link">
-				<a
-					href="./where-to-go.html"
-					class="text text_color_black text_size_primary"
-					>куда пойти</a
-				>
-				<a href="./join.html" class="text text_color_black text_size_primary"
-					>стать участником</a
-				>
-				<a href="./about.html" class="text text_color_black text_size_primary"
-					>о фестивале</a
-				>
-			</nav>
-			<div class="header__user-action">
-				<div class="header__user-action-go">
-					<img
-						src="<%=require('./images/icons/button/heart-black.svg')%>"
-						alt="Сердечко"
-					/>
-					<p class="text text_color_black text_size_primary">хочу пойти</p>
-				</div>
-				<button class="button button_color_violet button_size_min-width">
-					<p class="text text_color_white text_size_primary">поддержать</p>
-				</button>
-			</div>
-		</header>
+    <%= require('./header.html?raw') %>
     
     <div>.</div>
 		<a href="./storybook.html">UI-компоненты</a>
@@ -198,56 +131,8 @@
 
     </section>
 
-    <footer class="footer">
-      <div class="footer__illustration"></div>
-      <div class="footer__container">
-        <h3 class="title title_size_m footer__title">организатор:</h3>
-        <button
-          class="button button_color_transparent button_size_min-width footer__link"
-        >
-          <p class="text text_size_primary text_color_black footer__text">
-            Ночлежка
-          </p>
-          <div class="icon"></div>
-        </button>
-        <a href=""
-          ><p class="text text_size_primary text_color_violet footer__text">
-            info@hedonismfest.ru
-          </p></a
-        >
-      </div>
-      <div class="footer__container">
-        <h3 class="title title_size_m footer__title">сделано&nbsp;с&nbsp;любовью:</h3>
-        <button
-          class="button button_color_transparent button_size_min-width footer__link"
-        >
-          <p class="text text_size_primary text_color_black footer__text">
-            Fastsol Digital
-          </p>
-          <div class="icon"></div>
-        </button>
-        <button
-          class="button button_color_transparent button_size_min-width footer__link"
-        >
-          <p class="text text_size_primary text_color_black footer__text">
-            shishki.collective
-          </p>
-          <div class="icon"></div>
-        </button>
-        <button
-          class="button button_color_transparent button_size_min-width footer__link"
-        >
-          <p class="text text_size_primary text_color_black footer__text">
-            студентами Яндекс.Практикума
-          </p>
-          <div class="icon"></div>
-        </button>
-      </div>
-      <div class="footer__container">
-        <h3 class="title title_size_m footer__title">мы&nbsp;в&nbsp;соцсетях:</h3>
-        <a href=""><div class="footer__icon"></div></a>
-      </div>
-    </footer>
+  		<!-- БЛОК FOOTER -->
+      <%= require('./footer.html?raw') %>
 
     <button class="button button_color_violet button_size_min-width">
       <div class="icon icon_type_menu-white"></div>

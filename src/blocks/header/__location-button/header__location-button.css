@@ -1,0 +1,5 @@
+.header__location-button {
+    width: 22px;
+    height: 24px;
+    background-image: url('../../../images/icons/location.svg');
+}
