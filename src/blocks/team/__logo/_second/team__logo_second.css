@@ -1,0 +1,14 @@
+.team__logo_second {
+  min-width: 170px;
+  min-height: 170px;
+  background-image: url(../../../../images/team/Галерея.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 360px) {
+  .team__logo_second {
+    background-image: url(../../../../images/team/Галерея-black.svg);
+  }
+}

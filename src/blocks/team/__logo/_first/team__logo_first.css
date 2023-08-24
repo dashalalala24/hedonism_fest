@@ -1,0 +1,16 @@
+.team__logo_first {
+  width: 120px;
+  min-width: 120px;
+  min-height: 120px;
+  background-image: url(../../../../images/team/surf.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 360px) {
+  .team__logo_first {
+    background-image: url(../../../../images/team/surf-black.svg);
+
+  }
+}

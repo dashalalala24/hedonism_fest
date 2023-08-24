@@ -186,6 +186,15 @@
 @import url(../blocks/photo/__navigation/photo__navigation.css);
 @import url(../blocks/photo/__nav-button/photo__nav-button.css);
 
+/* -------------- team -------------- */
+@import url(../blocks/team/team.css);
+@import url(../blocks/team/__title/team__title.css);
+@import url(../blocks/team/__container/team__container.css);
+@import url(../blocks/team/__logo/team__logo.css);
+@import url(../blocks/team/__logo/_first/team__logo_first.css);
+@import url(../blocks/team/__logo/_second/team__logo_second.css);
+@import url(../blocks/team/__logo/_third/team__logo_third.css);
+
 /* -------------- footer -------------- */
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__container/footer__container.css);

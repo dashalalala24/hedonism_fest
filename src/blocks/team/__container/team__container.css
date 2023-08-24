@@ -1,0 +1,11 @@
+.team__container {
+  display: flex;
+  gap: 24px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+  .team__container {
+    gap: 20px;
+  }
+}

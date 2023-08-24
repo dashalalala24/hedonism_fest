@@ -42,6 +42,11 @@ const uniqDateEvents = Array.from(
 );
 
 if (document.getElementById('map')) {
+	if (!sessionStorage.getItem('city')) {
+		sessionStorage.setItem('city', 'Saint-Petersburg');
+		console.log('Теперь город появился');
+	}
+
 	piter.addEventListener('click', () => {
 		sessionStorage.setItem('city', 'Saint-Petersburg');
 	});
