@@ -1,0 +1,7 @@
+.popup-card__container {
+    max-width: 620px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}

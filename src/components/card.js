@@ -6,7 +6,7 @@ import { filterCards } from './filter';
 // функция создания карточки
 function createCard(source) {
 	const card = document.querySelector('#card').content.cloneNode(true);
-	const imageEvent = card.querySelector('.card__image');
+	// const imageEvent = card.querySelector('.card__image');
 	const buttonLike = card.querySelector('.button_type_like');
 	const typeEvent = card.querySelector('.card__event-type');
 	const dateEvent = card.querySelector('.card__event-date');
@@ -18,7 +18,7 @@ function createCard(source) {
 		month: 'short',
 	});
 
-	imageEvent.style.backgroundImage = `url(${source.url})`;
+	// imageEvent.style.backgroundImage = `url(${source.url})`;
 	typeEvent.textContent = source.type;
 	dateEvent.textContent = `${newDate}, ${source.timestart}-${source.timeend}`;
 	nameEvent.textContent = source.title;

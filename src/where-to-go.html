@@ -179,6 +179,83 @@
         <div id="map" class="cards__map"></div>
       </div>
     </section>
+    <section class="popup-card">
+      <div class="popup-card__image">
+        <button class="popup-card__button-cross"></button>
+      </div>
+      <div class="popup-card__container">
+        <div class="popup-card__info">
+          <p class="popup-card__type text text_size_primary text_color_grey">лекция</p>
+          <p class="popup-card__time text text_size_primary text_color_grey">1 мая, 12:30-13:50</p>
+        </div>
+        <div class="popup-card__about-place">
+          <h3 class="popup-card__title title title_size_s">Идентичность: почему нам сложно меняться?</h3>
+          <p class="popup-card__description text text_size_secondary">
+            Мы думаем и общаемся с помощью нарратива - историй. Вся наша жизнь состоит из их множества, каждая из них совершенно по разному влияет на нас, какие-то из них легко заметить, а какие-то могут годами прятаться. Далеко не в каждой из этих историй мы являемся авторами, но никогда не поздно обратить на это внимание и переписать их, сделав подлинно своими.
+            С психологом Марией Бархатовой рассмотрим идентичность с позиции нарративной практики:
+            На встрече поищем ваши желаемые черты и сделаем первые шаги к их укреплению. А домой заберём инструменты для успешного продолжения.
+          </p>
+        </div>
+        <div class="popup-card__data-place">
+          <div class="popup-card__info popup-card__info_color_grey">
+            <p class="text text_size_primary">длительность</p>
+            <p class="popup-card__time text text_size_primary">1 час 20 минут</p>
+          </div>
+          <div class="popup-card__info">
+            <p class="text text_size_primary">стоимость</p>
+            <p class="popup-card__time text text_size_primary">1 час 20 минут</p>
+          </div>
+          <div class="popup-card__info popup-card__info_color_grey">
+            <p class="text text_size_primary">площадка</p>
+            <p class="popup-card__time text text_size_primary">1 час 20 минут</p>
+          </div>
+          <div class="popup-card__info">
+            <p class="text text_size_primary">адрес</p>
+            <p class="popup-card__time text text_size_primary">1 час 20 минут</p>
+          </div>
+          <div class="popup-card__info popup-card__info_color_grey">
+            <p class="text text_size_primary">телефон</p>
+            <p class="popup-card__time text text_size_primary">1 час 20 минут</p>
+          </div>
+          <div class="popup-card__info">
+            <p class="text text_size_primary">соц. сети</p>
+            <p class="popup-card__time text text_size_primary">1 час 20 минут</p>
+          </div>
+        </div>
+        <div class="popup-card__social-place">
+          <p class="text text_size_primary">поделитесь событием в соцсетях:</p>
+          <div class="popup-card__social-links">
+            <a href="#">
+              <img class="popup-card__social-icon" src="<%=require('./images/icons/social-media/VK-icon.svg')%>" alt="Иконка вк">
+            </a>
+            <a href="#">
+              <img class="popup-card__social-icon" src="<%=require('./images/icons/social-media/VK-icon.svg')%>" alt="Иконка вк">
+            </a>
+            <a href="#">
+              <img class="popup-card__social-icon" src="<%=require('./images/icons/social-media/VK-icon.svg')%>" alt="Иконка вк">
+            </a>
+            <a href="#">
+              <img class="popup-card__social-icon" src="<%=require('./images/icons/social-media/VK-icon.svg')%>" alt="Иконка вк">
+            </a>
+          </div>
+          <button class="popup-card__copy-button">
+            <div class="icon text_size_primary icon_type_arrow-black"></div>
+            <p class="text text_size_primary">площадка</p>
+          </button>
+        </div>
+      </div>
+      <div class="popup-card__buttons">
+        <button
+        class="button button_color_none button_size_min-width button_border_black"
+      >
+        <div class="icon icon_type_heart"></div>
+        <p class="text text_size_primary text_color_black">хочу пойти</p>
+      </button>
+      <button class="button button_color_violet button_size_min-width">
+        <p class="text text_size_primary text_color_white">купить билет</p>
+      </button>
+      </div>
+    </section>
 
     <template id="filter-button">
       <button
