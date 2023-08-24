@@ -66,7 +66,7 @@ export function filterCards(arr) {
 		});
 	}
 
-	console.log(arrEventCards);
+	// console.log(arrEventCards);
 	return arrEventCards;
 
 	// console.log(arrDateCards);

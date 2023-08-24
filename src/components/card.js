@@ -2,6 +2,7 @@ import cards from '../data/data.json';
 import { getWeekDay } from './utils';
 import { haveCardsBeenDetected } from './utils';
 import { filterCards } from './filter';
+import { ymaps, renderMap } from './map';
 
 // функция создания карточки
 function createCard(source) {
@@ -124,11 +125,13 @@ export function setDateEventsListeners() {
 				activeButton
 					.querySelector('.text')
 					.classList.remove('text_color_white');
+				activeButton.removeAttribute('disabled');
 
 				el.classList.add('scrollable-content__button_active');
 				el.classList.add('button_color_violet');
 				el.classList.remove('button_color_none');
 				el.classList.remove('button_border_black');
+				el.setAttribute('disabled', 'disabled');
 				text.classList.add('text_color_white');
 				text.classList.remove('text_color_black');
 				// console.log(filterCards(cards));
@@ -137,6 +140,9 @@ export function setDateEventsListeners() {
 					renderCard(el);
 				});
 				haveCardsBeenDetected(filterCards(cards));
+				ymaps.ready(() => {
+					renderMap(filterCards(cards));
+				});
 			}
 		});
 	});
@@ -165,6 +171,9 @@ export function setTypeEventsListeners() {
 					renderCard(el);
 				});
 				haveCardsBeenDetected(filterCards(cards));
+				ymaps.ready(() => {
+					renderMap(filterCards(cards));
+				});
 			} else {
 				if (el.classList.contains('scrollable-content__button_active')) {
 					el.classList.remove('scrollable-content__button_active');
@@ -181,6 +190,9 @@ export function setTypeEventsListeners() {
 						renderCard(el);
 					});
 					haveCardsBeenDetected(filterCards(cards));
+					ymaps.ready(() => {
+						renderMap(filterCards(cards));
+					});
 				}
 			}
 		});

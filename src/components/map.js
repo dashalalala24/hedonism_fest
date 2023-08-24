@@ -1,4 +1,4 @@
-import cards from '../data/data.json';
+// import cards from '../data/data.json';
 import allEventMarkers from './markers';
 import geoLocation from './constant';
 // import { filterCards } from './filter';
@@ -7,9 +7,16 @@ export const ymaps = window.ymaps;
 
 // Функция отрисовки карты
 
-export function renderMap() {
+export function renderMap(arr) {
+	const allFilterButton = Array.from(
+		document.querySelectorAll('.scrollable-content__button')
+	);
+	const activeGeoLocation = geoLocation.find(
+		(el) => el.city === sessionStorage.getItem('city')
+	);
+
 	let map = new ymaps.Map('map', {
-		center: [geoLocation[1].latitude, geoLocation[1].longitude],
+		center: [activeGeoLocation.latitude, activeGeoLocation.longitude],
 		zoom: 11,
 	});
 
@@ -60,8 +67,18 @@ export function renderMap() {
 		map.geoObjects.add(placemark);
 	}
 
-	cards.forEach((el) => {
+	arr.forEach((el) => {
 		doPlacemarks(el);
+	});
+
+	document.querySelector('.button-list').addEventListener('click', () => {
+		map.destroy();
+	});
+
+	allFilterButton.forEach((el) => {
+		el.addEventListener('click', () => {
+			map.destroy();
+		});
 	});
 
 	map.controls.remove('geolocationControl'); // удаляем геолокацию

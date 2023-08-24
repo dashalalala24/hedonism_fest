@@ -17,6 +17,10 @@ import {
 import { renderNumberCards } from '../components/control-panel';
 import { filterCards } from '../components/filter';
 
+const piter = document.querySelector('.piter');
+const moscow = document.querySelector('.moscow');
+const sochi = document.querySelector('.sochi');
+
 const buttonMap = document.querySelector('.button-map');
 const buttonList = document.querySelector('.button-list');
 const uniqEvents = Array.from(
@@ -38,7 +42,18 @@ const uniqDateEvents = Array.from(
 );
 
 if (document.getElementById('map')) {
-	ymaps.ready(renderMap);
+	piter.addEventListener('click', () => {
+		sessionStorage.setItem('city', 'Saint-Petersburg');
+	});
+
+	moscow.addEventListener('click', () => {
+		sessionStorage.setItem('city', 'Moscow');
+	});
+
+	sochi.addEventListener('click', () => {
+		sessionStorage.setItem('city', 'Sochi');
+	});
+	// ymaps.ready(renderMap);
 
 	renderNumberCards();
 
@@ -53,15 +68,20 @@ if (document.getElementById('map')) {
 	haveCardsBeenDetected(cards);
 
 	buttonMap.addEventListener('click', () => {
+		ymaps.ready(() => {
+			renderMap(filterCards(cards));
+		});
 		openMapBlock();
 		buttonList.classList.add('button_state_disabled');
 		buttonMap.classList.remove('button_state_disabled');
+		buttonMap.setAttribute('disabled', 'disabled');
 	});
 
 	buttonList.addEventListener('click', () => {
 		openListBlock();
 		buttonList.classList.remove('button_state_disabled');
 		buttonMap.classList.add('button_state_disabled');
+		buttonMap.removeAttribute('disabled');
 	});
 
 	filterCards(cards).forEach((el) => {

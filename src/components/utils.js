@@ -28,11 +28,17 @@ export function getWeekDay(date) {
 }
 
 export function haveCardsBeenDetected(source) {
-	if (source[0]) {
-		cardList.classList.add('cards__page-with-card_opened');
-		list.classList.remove('cards__page-without-card_opened');
-	} else {
-		cardList.classList.remove('cards__page-with-card_opened');
-		list.classList.add('cards__page-without-card_opened');
+	if (
+		!document
+			.querySelector('.cards__map')
+			.classList.contains('cards__map_opened')
+	) {
+		if (source[0]) {
+			cardList.classList.add('cards__page-with-card_opened');
+			list.classList.remove('cards__page-without-card_opened');
+		} else {
+			cardList.classList.remove('cards__page-with-card_opened');
+			list.classList.add('cards__page-without-card_opened');
+		}
 	}
 }
