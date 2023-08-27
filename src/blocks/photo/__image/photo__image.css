@@ -1,0 +1,14 @@
+.photo__image {
+  width: 310px;
+  height: auto;
+}
+
+
+@media screen and (max-width:1280px) {
+  .photo__image {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    transition: all .6s ease;
+  }
+}

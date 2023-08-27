@@ -1,0 +1,12 @@
+.photo__nav-button {
+  width: 12px;
+  height: 12px;
+  margin-right: 12px;
+  cursor: pointer;
+  background-color: #96949E;
+  border-radius: 100%;
+}
+
+.photo__nav-button:last-child {
+  margin-right: 0;
+}

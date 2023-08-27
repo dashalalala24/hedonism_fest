@@ -9,74 +9,7 @@
 	</head>
 
 	<body class="page">
-		<header class="header">
-			<div class="header__logo-location">
-				<img
-					src="<%=require('./images/icons/logo.svg')%>"
-					alt="Логотип Гедонизм Фест"
-					class="header__logo"
-				/>
-				<button id="button-dropdown" class="button button_color_transparent">
-					<img
-						src="<%=require('./images/icons/location.svg')%>"
-						alt="Иконка локации"
-					/>
-					<p class="text text_color_black text_size_primary">Санкт-Петербург</p>
-				</button>
-				<div class="header__menu-list">
-					<a
-						href="#"
-						class="header__list-item text text_color_black text_size_primary"
-						>Москва</a
-					>
-					<a
-						href="#"
-						class="header__list-item text text_color_black text_size_primary"
-						>Санкт-Петербург</a
-					>
-					<a
-						href="#"
-						class="header__list-item text text_color_black text_size_primary"
-						>Сочи</a
-					>
-					<a
-						href="#"
-						class="header__list-item text text_color_black text_size_primary"
-						>Калуга</a
-					>
-					<a
-						href="#"
-						class="header__list-item text text_color_black text_size_primary"
-						>Екатеринбург</a
-					>
-				</div>
-			</div>
-			<nav class="header__nav-link">
-				<a
-					href="./where-to-go.html"
-					class="text text_color_black text_size_primary"
-					>куда пойти</a
-				>
-				<a href="./join.html" class="text text_color_black text_size_primary"
-					>стать участником</a
-				>
-				<a href="./about.html" class="text text_color_black text_size_primary"
-					>о фестивале</a
-				>
-			</nav>
-			<div class="header__user-action">
-				<div class="header__user-action-go">
-					<img
-						src="<%=require('./images/icons/button/heart-black.svg')%>"
-						alt="Сердечко"
-					/>
-					<p class="text text_color_black text_size_primary">хочу пойти</p>
-				</div>
-				<button class="button button_color_violet button_size_min-width">
-					<p class="text text_color_white text_size_primary">поддержать</p>
-				</button>
-			</div>
-		</header>
+  <%= require('./header.html?raw') %>
     <section class="lead">
       <div class="lead__screen"></div>
       <p class="lead__text text text_color_black text_size_primary">узнать больше</p>
@@ -166,61 +99,54 @@
       </div>
     </section>
 
-    <footer class="footer">
-      <div class="footer__illustration"></div>
-      <div class="footer__container">
-        <h3 class="title title_size_m footer__title">организатор:</h3>
-        <button
-          class="button button_color_transparent button_size_min-width footer__link"
-        >
-          <p class="text text_size_primary text_color_black footer__text">
-            Ночлежка
-          </p>
-          <div class="icon"></div>
-        </button>
-        <a href=""
-          ><p class="text text_size_primary text_color_violet footer__text">
-            info@hedonismfest.ru
-          </p></a
-        >
-      </div>
-      <div class="footer__container">
-        <h3 class="title title_size_m footer__title">сделано&nbsp;с&nbsp;любовью:</h3>
-        <button
-          class="button button_color_transparent button_size_min-width footer__link"
-        >
-          <p class="text text_size_primary text_color_black footer__text">
-            Fastsol Digital
-          </p>
-          <div class="icon"></div>
-        </button>
-        <button
-          class="button button_color_transparent button_size_min-width footer__link"
-        >
-          <p class="text text_size_primary text_color_black footer__text">
-            shishki.collective
-          </p>
-          <div class="icon"></div>
-        </button>
-        <button
-          class="button button_color_transparent button_size_min-width footer__link"
-        >
-          <p class="text text_size_primary text_color_black footer__text">
-            студентами Яндекс.Практикума
-          </p>
-          <div class="icon"></div>
-        </button>
-      </div>
-      <div class="footer__container">
-        <h3 class="title title_size_m footer__title">мы&nbsp;в&nbsp;соцсетях:</h3>
-        <a href=""><div class="footer__icon"></div></a>
-      </div>
-    </footer>
+    <section class="photo">
+      <h2 class="title title_size_l photo__title">#hedonismfest</h2>
+      <p class="text text_size_primary text_color_black photo__text">Ставь хештег и попади в ленту на сайте</p>
 
-    <button class="button button_color_violet button_size_min-width">
-      <div class="icon icon_type_menu-white"></div>
-      <p class="text text_size_primary text_color_white">кнопка</p>
-    </button>
+      <div class="photo__gallery">
+
+        <div class="photo__image-container"><img class="photo__image" src="<%=require('./images/photo/photo1.jpg')%>" alt=""></div>
+        <div class="photo__image-container"><img class="photo__image photo__image_big" src="<%=require('./images/photo/photo2.jpg')%>" alt=""></div>
+        <div class="photo__image-container"><img class="photo__image" src="<%=require('./images/photo/photo3.jpg')%>" alt=""></div>
+        <div class="photo__image-container"><img class="photo__image" src="<%=require('./images/photo/photo4.jpg')%>" alt=""></div>
+        <div class="photo__image-container"><img class="photo__image" src="<%=require('./images/photo/photo5.jpg')%>" alt=""></div>
+
+        <input class="photo__radio-button" type="radio" name="r" id="r1" checked>
+        <input class="photo__radio-button" type="radio" name="r" id="r2">
+        <input class="photo__radio-button" type="radio" name="r" id="r3">
+        <input class="photo__radio-button" type="radio" name="r" id="r4">
+        <input class="photo__radio-button" type="radio" name="r" id="r5">
+
+      </div>
+
+      <div class="photo__navigation">
+        <label for="r1" class="photo__nav-button"></label>
+        <label for="r2" class="photo__nav-button"></label>
+        <label for="r3" class="photo__nav-button"></label>
+        <label for="r4" class="photo__nav-button"></label>
+        <label for="r5" class="photo__nav-button"></label>
+      </div>
+    </section>
+
+    <section class="team">
+      <h2 class="title title_size_l team__title">уже в команде</h2>
+
+      <div class="team__container">
+        <div class="team__logo team__logo_first"></div>
+        <div class="team__logo team__logo_second"></div>
+        <div class="team__logo team__logo_third"></div>
+        <div class="team__logo team__logo_first"></div>
+        <div class="team__logo team__logo_second"></div>
+        <div class="team__logo team__logo_third"></div>
+        <div class="team__logo team__logo_first"></div>
+        <div class="team__logo team__logo_second"></div>
+        <div class="team__logo team__logo_third"></div>
+      </div>
+
+    </section>
+
+  		<!-- БЛОК FOOTER -->
+      <%= require('./footer.html?raw') %>
 
 		<!---TEMPlATES--->
 		<template id="card">
