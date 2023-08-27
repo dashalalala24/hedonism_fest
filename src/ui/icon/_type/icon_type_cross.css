@@ -1,0 +1,7 @@
+.icon_type_cross {
+	width: 13px;
+	height: 13px;
+	mask: url('../../../images/icons/button/cross.svg') no-repeat 100% 100%;
+	-webkit-mask: url('../../../images/icons/button/cross.svg') no-repeat 100%
+		100%;
+}

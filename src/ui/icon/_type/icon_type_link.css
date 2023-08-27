@@ -1,0 +1,6 @@
+.icon_type_link {
+	width: 25px;
+	height: 24px;
+	mask: url('../../../images/icons/button/link.svg') no-repeat 100% 100%;
+	-webkit-mask: url('../../../images/icons/button/link.svg') no-repeat 100% 100%;
+}

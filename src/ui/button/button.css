@@ -5,7 +5,7 @@
 	justify-content: center;
 	gap: 8px;
 	border: none;
-  box-sizing: border-box;
+	box-sizing: border-box;
 	border-radius: 26px;
 	cursor: pointer;
 	line-height: 0;
@@ -16,73 +16,10 @@
 	color: #5100b8;
 }
 
-.button:hover .icon_type_arrow-black {
-	background-image: url('../../images/icons/button/arrow-violent.svg');
+.button:hover .icon {
+	background-color: #5100b8;
 }
 
-.button:hover .icon_type_heart {
-	background-image: url('../../images/icons/button/heart-violent.svg');
+.button:hover .icon_color_white {
+	background-color: #fff;
 }
-
-.button:hover .icon_type_link-black {
-	background-image: url('../../images/icons/button/link-violent.svg');
-}
-
-.button.button_type_text:hover .text_size_secondary {
-	color: #5100b8;
-}
-.button .button_type_switcher-tab.button_color_violet:hover {
-	cursor: pointer;
-}
-
-.button.button_type_switcher .icon_type_map:hover {
-	cursor: pointer;
-}
-
-.button.button_type_switcher .text_color_white:hover {
-	cursor: pointer;
-}
-
-.button.button_type_switcher .icon_type_menu-white:hover {
-	cursor: pointer;
-}
-
-.button.button_state_filter-unchecked:hover {
-  border: #3B3748 1px solid;
-}
-
-/*DISABLED STATE*/
-.button.button_state_disabled .text_color_black  {
-	color: #96949e;
-}
-
-.button.button_state_disabled .text_color_white {
-	color: #96949e;
-}
-
-.button.button_state_disabled .icon_type_arrow-black {
-	background-image: url('../../images/icons/button/arrow-grey.svg');
-}
-
-.button.button_state_disabled .icon_type_heart {
-	background-image: url('../../images/icons/button/heart-grey.svg');
-}
-
-.button.button_state_disabled .icon_type_link-black {
-	background-image: url('../../images/icons/button/link-grey.svg');
-}
-
-.button.button_state_disabled .icon_type_map {
-	background-image: url('../../images/icons/button/map-grey.svg');
-}
-
-.button.button_state_disabled .icon_type_menu-white {
-	background-image: url('../../images/icons/button/menu-grey.svg');
-}
-
-/*UNCHECKED STATE*/
-button.button_state_filter-unchecked {
-  border: #3B3748 1px solid;
-
-}
-

@@ -1,0 +1,7 @@
+.icon_type_arrow {
+	width: 25px;
+	height: 14px;
+	mask: url('../../../images/icons/button/arrow.svg') no-repeat 100% 100%;
+	-webkit-mask: url('../../../images/icons/button/arrow.svg') no-repeat 100%
+		100%;
+}
