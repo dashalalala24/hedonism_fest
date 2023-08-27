@@ -1,0 +1,11 @@
+.about {
+  margin-top: 38px;
+  display: grid;
+  grid-template-columns: 280px 420px 40px 420px 280px;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  ". title . container ."
+  ". . . container ."
+  ". . . container ."
+  ;
+}

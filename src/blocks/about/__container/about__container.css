@@ -1,0 +1,6 @@
+.about__container {
+  grid-area: container;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
