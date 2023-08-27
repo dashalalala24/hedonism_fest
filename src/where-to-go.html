@@ -1,13 +1,14 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Куда пойти</title>
-	</head>
 
-  <body class="page">
-    <%= require('./header.html?raw') %>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Куда пойти</title>
+</head>
+
+<body class="page">
+  <%= require('./header.html?raw') %>
     <!-- секция какталог -->
     <section class="catalog">
       <!-- Боковое меню фильтрации -->
@@ -17,45 +18,41 @@
           <h3 class="scrollable-content__text title title_size_s">
             тип события
           </h3>
-          <button
-            id="all-event-button" class="scrollable-content__button button button_color_none button_border_black button_state_filter-unchecked"
-          >
+          <button id="all-event-button"
+            class="scrollable-content__button button button_type_filter button_color_none button_border_black">
             <p class="scrollable-content__button-text text text_color_black">
               все
             </p>
-            <div class="scrollable-content__button-cross icon icon_type_cross-white"></div>
+            <div class="scrollable-content__button-cross icon icon_type_cross"></div>
           </button>
-          <button id="want-button" class="scrollable-content__button scrollable-content__button_active button button_color_violet button_state_filter-unchecked">
+          <button id="want-button"
+            class="scrollable-content__button scrollable-content__button_active button button_type_filter button_color_violet">
             <p class="scrollable-content__button-text text text_color_white">
               хочу пойти
             </p>
-            <div class="scrollable-content__button-cross scrollable-content__button-cross_active icon icon_type_cross-white"></div>
+            <div class="scrollable-content__button-cross scrollable-content__button-cross_active icon icon_type_cross">
+            </div>
           </button>
         </div>
         <div id="filter-event-date" class="scrollable-content__filter">
           <h3 class="scrollable-content__text title title_size_s">дни</h3>
-          <button id="all-date-button" class="scrollable-content__button scrollable-content__button_active button button_color_violet button_state_filter-unchecked">
+          <button id="all-date-button"
+            class="scrollable-content__button scrollable-content__button_active button button_type_filter button_color_violet">
             <p class="scrollable-content__button-text text text_color_white">
               все
             </p>
           </button>
-          <button
-            class="scrollable-content__button button button_color_none button_border_black button_state_filter-unchecked"
-          >
+          <button class="scrollable-content__button button button_color_none button_border_black button_type_filter">
             <p class="scrollable-content__button-text text text_color_black">
               сегодня
             </p>
           </button>
-          <button
-            class="scrollable-content__button button button_color_none button_border_black button_state_filter-unchecked"
-          >
+          <button class="scrollable-content__button button button_color_none button_border_black button_type_filter">
             <p class="scrollable-content__button-text text text_color_black">
               завтра
             </p>
           </button>
-          <button
-            class="scrollable-content__button button button_color_none button_border_black button_state_filter-unchecked"
-          >
+          <button class="scrollable-content__button button button_color_none button_border_black button_type_filter">
             <p class="scrollable-content__button-text text text_color_black">
               послезавтра
             </p>
@@ -70,25 +67,23 @@
           </p>
           <button class="button button_color_none button_border_black">
             <p class="text text_color_black">узнать подробности</p>
-            <div class="icon icon_type_arrow-black"></div>
+            <div class="icon icon_type_arrow"></div>
           </button>
         </div>
       </div>
       <!-- Верхняя панель -->
       <div class="control-panel">
-          <div class="button button_type_switcher button_color_grey">
-            <button
-              class="button-map button button_type_switcher-tab button_color_violet button_state_disabled"
-            >
-              <div class="icon icon_type_map icon_visibility_on"></div>
-              <p class="text text_size_primary text_color_white">карта</p>
-            </button>
-            <button class="button-list button button_type_switcher-tab button_color_violet">
-              <div class="icon icon_type_menu-white icon_visibility_on"></div>
-              <p class="text text_size_primary text_color_white">список</p>
-            </button>
+        <div class="switcher">
+          <button class="button-map button button_type_switcher-tab button_color_violet button_state_disabled">
+            <div class="icon icon_type_map icon_color_white icon_visibility_on"></div>
+            <p class="text text_size_primary text_color_white">карта</p>
+          </button>
+          <button class="button-list button button_type_switcher-tab button_color_violet">
+            <div class="icon icon_type_menu icon_color_white icon_visibility_on"></div>
+            <p class="text text_size_primary text_color_white">список</p>
+          </button>
         </div>
-        
+
         <p class="control-panel__card-number text text_size_primary">показано 1-12 из 128</p>
       </div>
       <!-- Панель с карточками и картой -->
@@ -124,9 +119,13 @@
         <div class="popup-card__about-place">
           <h3 class="popup-card__title title title_size_s">Идентичность: почему нам сложно меняться?</h3>
           <p class="popup-card__description text text_size_secondary">
-            Мы думаем и общаемся с помощью нарратива - историй. Вся наша жизнь состоит из их множества, каждая из них совершенно по разному влияет на нас, какие-то из них легко заметить, а какие-то могут годами прятаться. Далеко не в каждой из этих историй мы являемся авторами, но никогда не поздно обратить на это внимание и переписать их, сделав подлинно своими.
+            Мы думаем и общаемся с помощью нарратива - историй. Вся наша жизнь состоит из их множества, каждая из них
+            совершенно по разному влияет на нас, какие-то из них легко заметить, а какие-то могут годами прятаться.
+            Далеко не в каждой из этих историй мы являемся авторами, но никогда не поздно обратить на это внимание и
+            переписать их, сделав подлинно своими.
             С психологом Марией Бархатовой рассмотрим идентичность с позиции нарративной практики:
-            На встрече поищем ваши желаемые черты и сделаем первые шаги к их укреплению. А домой заберём инструменты для успешного продолжения.
+            На встрече поищем ваши желаемые черты и сделаем первые шаги к их укреплению. А домой заберём инструменты для
+            успешного продолжения.
           </p>
         </div>
         <div class="popup-card__data-place">
@@ -159,104 +158,98 @@
           <p class="text text_size_primary">поделитесь событием в соцсетях:</p>
           <div class="popup-card__social-links">
             <a href="#">
-              <img class="popup-card__social-icon" src="<%=require('./images/icons/social-media/VK-icon.svg')%>" alt="Иконка вк">
+              <img class="popup-card__social-icon" src="<%=require('./images/icons/social-media/VK-icon.svg')%>"
+                alt="Иконка вк">
             </a>
             <a href="#">
-              <img class="popup-card__social-icon" src="<%=require('./images/icons/social-media/VK-icon.svg')%>" alt="Иконка вк">
+              <img class="popup-card__social-icon" src="<%=require('./images/icons/social-media/VK-icon.svg')%>"
+                alt="Иконка вк">
             </a>
             <a href="#">
-              <img class="popup-card__social-icon" src="<%=require('./images/icons/social-media/VK-icon.svg')%>" alt="Иконка вк">
+              <img class="popup-card__social-icon" src="<%=require('./images/icons/social-media/VK-icon.svg')%>"
+                alt="Иконка вк">
             </a>
             <a href="#">
-              <img class="popup-card__social-icon" src="<%=require('./images/icons/social-media/VK-icon.svg')%>" alt="Иконка вк">
+              <img class="popup-card__social-icon" src="<%=require('./images/icons/social-media/VK-icon.svg')%>"
+                alt="Иконка вк">
             </a>
           </div>
           <button class="popup-card__copy-button">
-            <div class="icon text_size_primary icon_type_arrow-black"></div>
+            <div class="icon text_size_primary icon_type_arrow"></div>
             <p class="text text_size_primary">площадка</p>
           </button>
         </div>
       </div>
       <div class="popup-card__buttons">
-        <button
-        class="button button_color_none button_size_min-width button_border_black"
-      >
-        <div class="icon icon_type_heart"></div>
-        <p class="text text_size_primary text_color_black">хочу пойти</p>
-      </button>
-      <button class="button button_color_violet button_size_min-width">
-        <p class="text text_size_primary text_color_white">купить билет</p>
-      </button>
+        <button class="button button_color_none button_size_min-width button_border_black">
+          <div class="icon icon_type_heart"></div>
+          <p class="text text_size_primary text_color_black">хочу пойти</p>
+        </button>
+        <button class="button button_color_violet button_size_min-width">
+          <p class="text text_size_primary text_color_white">купить билет</p>
+        </button>
       </div>
     </section>
     <button class="piter filter-geolocation">Питербург</button>
     <button class="moscow filter-geolocation">Москва</button>
     <button class="sochi filter-geolocation">Сочи</button>
 
-<!--  Темплейт с кнопкой фильтра дат -->
+    <!--  Темплейт с кнопкой фильтра дат -->
     <template id="filter-button">
-      <button
-      class="scrollable-content__button button button_color_none button_border_black button_state_filter-unchecked"
-    >
+      <button class="scrollable-content__button button button_type_filter button_color_none button_border_black">
         <p class="scrollable-content__button-text text text_color_black">
-        все
+          все
         </p>
-    </button>
+      </button>
     </template>
 
     <!-- Темплейт с кнопкой фильтра событий -->
     <template id="filter-event-button">
-      <button
-      class="scrollable-content__button button button_color_none button_border_black button_state_filter-unchecked"
-    >
+      <button class="scrollable-content__button button button_type_filter button_color_none button_border_black">
         <p class="scrollable-content__button-text text text_color_black">
-        все
+          все
         </p>
-        <div class="scrollable-content__button-cross icon icon_type_cross-white"></div>
-    </button>
+        <div class="scrollable-content__button-cross icon icon_type_cross"></div>
+      </button>
     </template>
 
-		<!---TEMPlATES--->
-		<template id="card">
-			<li class="card">
-				<div class="card card__image"></div>
-				<button class="button button_type_like" type="button"></button>
-				<div class="card card__caption">
-					<div class="card card__caption_type_date-type">
-						<p class="card__event-type text text_color_grey text_size_secondary">лекция</p>
-						<p class="card__event-date text text_color_grey text_size_secondary">
-							1 мая, 12:30-13:50
-						</p>
-					</div>
-					<div class="card card__caption_type_title">
-						<h2 class="card__event-name title title_size_s title_align_left">
-							идентичность: почему нам сложно меняться?
-						</h2>
-					</div>
-					<div class="card card__caption_type_description">
-						<p
-							class="card__event-description text text_color_black text_size_secondary text_align_left"
-						>
-							лектор: Мария Бархатова
-						</p>
-					</div>
-					<div class="card card__caption_type_address-more">
-						<p
-							class="card__event-address text text_color_grey text_size_secondary text_overflow_ellipsis"
-						>
-							улица Блохина, 22
-						</p>
-						<button class="button button_color_transparent button_type_text">
-							<p
-								class="text text_color_grey text_size_secondary text_clipping_no-wrap"
-							>
-								+ ещё 3
-							</p>
-						</button>
-					</div>
-				</div>
-			</li>
-		</template>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=9d774e8f-6471-4003-be6e-62a532de3666&load=package.standard&lang=ru-RU"></script>
-	</body>
+    <!---TEMPlATES--->
+    <template id="card">
+      <li class="card">
+        <div class="card card__image"></div>
+        <button class="button button_type_like" type="button"></button>
+        <div class="card card__caption">
+          <div class="card card__caption_type_date-type">
+            <p class="card__event-type text text_color_grey text_size_secondary">лекция</p>
+            <p class="card__event-date text text_color_grey text_size_secondary">
+              1 мая, 12:30-13:50
+            </p>
+          </div>
+          <div class="card card__caption_type_title">
+            <h2 class="card__event-name title title_size_s title_align_left">
+              идентичность: почему нам сложно меняться?
+            </h2>
+          </div>
+          <div class="card card__caption_type_description">
+            <p class="card__event-description text text_color_black text_size_secondary text_align_left">
+              лектор: Мария Бархатова
+            </p>
+          </div>
+          <div class="card card__caption_type_address-more">
+            <p class="card__event-address text text_color_grey text_size_secondary text_overflow_ellipsis">
+              улица Блохина, 22
+            </p>
+            <button class="button button_color_transparent button_type_text">
+              <p class="text text_color_grey text_size_secondary text_clipping_no-wrap">
+                + ещё 3
+              </p>
+            </button>
+          </div>
+        </div>
+      </li>
+    </template>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=9d774e8f-6471-4003-be6e-62a532de3666&load=package.standard&lang=ru-RU"></script>
+</body>
+
 </html>

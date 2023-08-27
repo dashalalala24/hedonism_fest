@@ -1,120 +1,116 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>storybook</title>
-	</head>
 
-	<body>
-		<div
-			style="
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>storybook</title>
+</head>
+
+<body>
+  <div style="
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
 				gap: 15px;
-			"
-		>
-			<h1 class="title title_size_xl">Заголовок xl</h1>
+			">
+    <h1 class="title title_size_xl">Заголовок xl</h1>
 
-			<h1 class="title title_size_l">
-				Заголовок l (на каких-то страницах он h1, а на каких-то h2)
-			</h1>
+    <h1 class="title title_size_l">
+      Заголовок l (на каких-то страницах он h1, а на каких-то h2)
+    </h1>
 
-			<h1 class="title title_size_m">
-				Заголовок m (сами определите уровень заголовка)
-			</h1>
+    <h1 class="title title_size_m">
+      Заголовок m (сами определите уровень заголовка)
+    </h1>
 
-			<h1 class="title title_size_s">Заголовок s (аналогично)</h1>
+    <h1 class="title title_size_s">Заголовок s (аналогично)</h1>
 
-			<p class="text text_size_primary">основной текст</p>
+    <p class="text text_size_primary">основной текст</p>
 
-			<p class="text text_size_secondary">дополнительный текст</p>
-		</div>
-		<button class="button button_color_violet button_size_min-width">
-			<div class="icon icon_type_menu-white"></div>
-			<p class="text text_size_primary text_color_white">кнопка</p>
-		</button>
+    <p class="text text_size_secondary">дополнительный текст</p>
+  </div>
+  <button class="button button_color_violet button_size_min-width">
+    <div class="icon icon_type_menu icon_color_white"></div>
+    <p class="text text_size_primary text_color_white">кнопка</p>
+  </button>
 
-		<button class="button button_color_violet button_size_min-width">
-			<p class="text text_size_primary text_color_white">кнопка</p>
-			<div class="icon icon_type_arrow-white"></div>
-		</button>
+  <button class="button button_color_violet button_size_min-width">
+    <p class="text text_size_primary text_color_white">кнопка</p>
+    <div class="icon icon_type_arrow icon_color_white"></div>
+  </button>
 
-		<button class="button button_color_violet button_size_min-width">
-			<p class="text text_size_primary text_color_white">кнопка</p>
-		</button>
+  <button class="button button_color_violet button_size_min-width button_state_disabled">
+    <p class="text text_size_primary text_color_white">кнопка</p>
+    <div class="icon icon_type_arrow icon_color_white"></div>
+  </button>
 
-		<button
-			class="button button_color_none button_size_min-width button_border_black"
-		>
-			<div class="icon icon_type_heart"></div>
-			<p class="text text_size_primary text_color_black">кнопка</p>
-		</button>
+  <button class="button button_color_violet button_size_min-width">
+    <p class="text text_size_primary text_color_white">кнопка</p>
+  </button>
 
-		<button
-			class="button button_color_none button_size_min-width button_border_black"
-		>
-			<p class="text text_color_black">кнопка</p>
-			<div class="icon text_size_primary icon_type_arrow-black"></div>
-		</button>
+  <button class="button button_color_none button_size_min-width button_border_black">
+    <div class="icon icon_type_heart"></div>
+    <p class="text text_size_primary text_color_black">кнопка</p>
+  </button>
 
-		<button
-			class="button button_color_none button_size_min-width button_border_black"
-		>
-			<p class="text text_size_primary text_color_black">кнопка</p>
-		</button>
+  <button class="button button_color_none button_size_min-width button_border_black button_state_disabled">
+    <div class="icon icon_type_heart"></div>
+    <p class="text text_size_primary text_color_black">кнопка</p>
+  </button>
 
-		<button class="button button_color_transparent button_size_min-width">
-			<p class="text text_size_primary text_color_black">кнопка</p>
-		</button>
+  <button class="button button_color_none button_size_min-width button_border_black">
+    <p class="text text_color_black">кнопка</p>
+    <div class="icon text_size_primary icon_type_arrow"></div>
+  </button>
 
-		<button class="button button_color_transparent button_size_min-width">
-			<div class="icon icon_type_link-black"></div>
-			<p class="text text_size_primary text_color_black">кнопка</p>
-		</button>
+  <button class="button button_color_none button_size_min-width button_border_black">
+    <p class="text text_size_primary text_color_black">кнопка</p>
+  </button>
 
-		<button class="button button_color_transparent button_size_min-width">
-			<p class="text text_size_primary text_color_black">кнопка</p>
-			<div class="icon icon_type_arrow-black"></div>
-		</button>
+  <button class="button button_color_transparent button_size_min-width">
+    <p class="text text_size_primary text_color_black">кнопка</p>
+  </button>
 
-		<button
-			class="button button_type_filter button_color_none button_size_flexible button_border_black"
-		>
-			<p class="text text_size_primary text_color_black">фильтр</p>
-		</button>
+  <button class="button button_color_transparent button_size_min-width">
+    <div class="icon icon_type_link"></div>
+    <p class="text text_size_primary text_color_black">кнопка</p>
+  </button>
 
-		<button
-			class="button button_type_filter button_color_violet button_size_flexible"
-		>
-			<p class="text text_size_primary text_color_white">все</p>
-		</button>
+  <button class="button button_color_transparent button_size_min-width button_state_disabled">
+    <div class="icon icon_type_link"></div>
+    <p class="text text_size_primary text_color_black">кнопка</p>
+  </button>
 
-		<button
-			class="button button_type_filter button_color_violet button_size_flexible button_state_filter-unchecked"
-		>
-			<p class="text text_size_primary text_color_white">фильтр</p>
-			<div class="icon icon_type_cross-white"></div>
-		</button>
-    <button
-			class="button button_type_filter button_color_violet button_size_flexible"
-		>
-			<p class="text text_size_primary text_color_white">фильтр</p>
-			<div class="icon icon_type_cross-white"></div>
-		</button>
+  <button class="button button_color_transparent button_size_min-width">
+    <p class="text text_size_primary text_color_black">кнопка</p>
+    <div class="icon icon_type_arrow"></div>
+  </button>
 
-		<div class="button button_type_switcher button_color_grey">
-			<button
-				class="button button_type_switcher-tab button_color_violet button_state_disabled"
-			>
-				<div class="icon icon_type_map icon_visibility_on"></div>
-				<p class="text text_size_primary text_color_white">карта</p>
-			</button>
-			<button class="button button_type_switcher-tab button_color_violet">
-				<div class="icon icon_type_menu-white icon_visibility_on"></div>
-				<p class="text text_size_primary text_color_white">список</p>
-			</button>
-		</div>
-	</body>
+  <button class="button button_type_filter button_color_none button_size_flexible button_border_black">
+    <p class="text text_size_primary text_color_black">фильтр</p>
+  </button>
+
+  <button class="button button_type_filter button_color_violet button_size_flexible">
+    <p class="text text_size_primary text_color_white">все</p>
+  </button>
+
+
+  <button class="button button_type_filter button_color_violet button_size_flexible">
+    <p class="text text_size_primary text_color_white">фильтр</p>
+    <div class="icon icon_type_cross icon_color_white"></div>
+  </button>
+
+  <div class="switcher">
+    <button class="button button_type_switcher-tab button_color_violet button_state_disabled">
+      <div class="icon icon_type_map icon_visibility_on"></div>
+      <p class="text text_size_primary text_color_white">карта</p>
+    </button>
+    <button class="button button_type_switcher-tab button_color_violet">
+      <div class="icon icon_type_menu icon_visibility_on icon_color_white"></div>
+      <p class="text text_size_primary text_color_white">список</p>
+    </button>
+  </div>
+</body>
+
 </html>

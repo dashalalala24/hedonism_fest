@@ -1,12 +1,27 @@
 .button_state_disabled {
-  background-color: #ebe9ed;
-  cursor: auto;
-  border: none;
+	background-color: #ebe9ed;
+	cursor: auto;
+	border: none;
+}
+
+.button_state_disabled .text {
+	color: #96949e;
+}
+
+.button_state_disabled .icon {
+	background-color: #96949e;
 }
 
 .button_state_disabled:hover {
-  background-color: #ebe9ed;
-  color: #96949e;
-  border: none
+	background-color: #ebe9ed;
+	color: #96949e;
+	border: none;
 }
 
+.button_state_disabled:hover .text {
+	color: #96949e;
+}
+
+.button_state_disabled:hover .icon {
+	background-color: #96949e;
+}

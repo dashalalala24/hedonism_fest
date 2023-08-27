@@ -1,3 +1,25 @@
 .button_type_filter {
 	padding: 8px 16px;
+	box-sizing: border-box;
+	border: 1px solid #3b3748;
+}
+
+.button_type_filter .icon {
+	background-color: white;
+}
+
+.button_type_filter:hover {
+	border: 1px solid #5100b8;
+}
+
+.button_type_filter:hover .text_color_white {
+	color: white;
+}
+
+.button_type_filter:hover .icon {
+	background-color: white;
+}
+
+.button_type_filter + .button_color_violet {
+	border: none;
 }

@@ -1,9 +1,12 @@
-.button_type_switcher {
+.switcher {
 	width: calc(
 		((282 - 180) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) +
 			180px
 	);
 	gap: 0;
-	padding: 3px 3px;
+	padding: 4px;
 	cursor: auto;
+	display: flex;
+	background-color: #ebe9ed;
+	border-radius: 100px;
 }
