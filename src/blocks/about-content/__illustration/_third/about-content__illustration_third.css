@@ -1,8 +1,6 @@
 .about-content__illustration_third {
+  background-color: transparent;
+  margin-top: 99px;
   width: 473px;
   height: 304px;
-  background-image: url(../../../../images/about-content/third-illustration.svg);
-  position: absolute;
-  top: 42px;
-  left: 901px;
 }

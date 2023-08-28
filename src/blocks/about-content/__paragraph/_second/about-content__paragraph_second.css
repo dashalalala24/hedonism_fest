@@ -1,7 +1,14 @@
 .about-content__paragraph_second {
-  height: 411px;
+  max-height: 480px;
+  min-height: 480px;
   position: relative;
-  padding: 69px 0 0 240px;
-  /* display: flex;
-  gap: 40px; */
+  padding: 0 0 0 240px;
+  flex-direction: row;
+  gap: 40px;
 }
+
+/* @media screen and (max-width: 1024px) {
+  .about-content__paragraph_second {
+
+  }
+} */

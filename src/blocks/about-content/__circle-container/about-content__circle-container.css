@@ -1,3 +1,5 @@
 .about-content__circle-container {
-  
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
 }
