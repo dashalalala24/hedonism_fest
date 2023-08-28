@@ -12,5 +12,6 @@
 @import url(../blocks/about-content/__text/about-content__text.css);
 @import url(../blocks/about-content/__button/about-content__button.css);
 @import url(../blocks/about-content/__circle-container/about-content__circle-container.css);
+@import url(../blocks/about-content/__circle-container/_right/about-content__circle-container_right.css);
 /* @import url(../blocks/about-content/__illustration/about-content__illustration.css); */
 @import url(../blocks/about-content/__illustration/_third/about-content__illustration_third.css);
