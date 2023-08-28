@@ -112,9 +112,14 @@
         <div id="map" class="cards__map"></div>
       </div>
     </section>
+    <!-- Секция попап -->
     <section class="popup-card">
       <div class="popup-card__image">
         <button class="popup-card__button-cross"></button>
+      </div>
+      <div class="popup-card__warning">
+        <div class="icon icon_type_warning"></div>
+        <p class="text text_size_secondary">перечисляем в пользу Ночлежки 10% от выручки </p>
       </div>
       <div class="popup-card__container">
         <div class="popup-card__info">
@@ -132,49 +137,48 @@
         <div class="popup-card__data-place">
           <div class="popup-card__info popup-card__info_color_grey">
             <p class="text text_size_primary">длительность</p>
-            <p class="popup-card__time text text_size_primary">1 час 20 минут</p>
+            <p class="popup-card__duration text text_size_primary">1 час 20 минут</p>
           </div>
           <div class="popup-card__info">
             <p class="text text_size_primary">стоимость</p>
-            <p class="popup-card__time text text_size_primary">1 час 20 минут</p>
+            <p class="popup-card__cost text text_size_primary">1 час 20 минут</p>
           </div>
           <div class="popup-card__info popup-card__info_color_grey">
             <p class="text text_size_primary">площадка</p>
-            <p class="popup-card__time text text_size_primary">1 час 20 минут</p>
+            <p class="popup-card__area text text_size_primary">1 час 20 минут</p>
           </div>
           <div class="popup-card__info">
             <p class="text text_size_primary">адрес</p>
-            <p class="popup-card__time text text_size_primary">1 час 20 минут</p>
+            <p class="popup-card__address text text_size_primary">1 час 20 минут</p>
+          </div>
+          <div class="popup-card__info">
+            <p class="text text_size_primary"></p>
+            <p class="popup-card__address-number text text_size_primary text_color_violet">+ 3</p>
           </div>
           <div class="popup-card__info popup-card__info_color_grey">
             <p class="text text_size_primary">телефон</p>
-            <p class="popup-card__time text text_size_primary">1 час 20 минут</p>
+            <p class="popup-card__phone text text_size_primary">1 час 20 минут</p>
           </div>
           <div class="popup-card__info">
             <p class="text text_size_primary">соц. сети</p>
-            <p class="popup-card__time text text_size_primary">1 час 20 минут</p>
+            <p class="popup-card__social text text_size_primary">1 час 20 минут</p>
           </div>
         </div>
         <div class="popup-card__social-place">
-          <p class="text text_size_primary">поделитесь событием в соцсетях:</p>
+          <p class="popup-card__social-text text text_size_primary">поделитесь событием в соцсетях:</p>
           <div class="popup-card__social-links">
             <a href="#">
               <img class="popup-card__social-icon" src="<%=require('./images/icons/social-media/VK-icon.svg')%>" alt="Иконка вк">
             </a>
-            <a href="#">
-              <img class="popup-card__social-icon" src="<%=require('./images/icons/social-media/VK-icon.svg')%>" alt="Иконка вк">
-            </a>
-            <a href="#">
-              <img class="popup-card__social-icon" src="<%=require('./images/icons/social-media/VK-icon.svg')%>" alt="Иконка вк">
-            </a>
-            <a href="#">
-              <img class="popup-card__social-icon" src="<%=require('./images/icons/social-media/VK-icon.svg')%>" alt="Иконка вк">
-            </a>
           </div>
-          <button class="popup-card__copy-button">
-            <div class="icon text_size_primary icon_type_arrow-black"></div>
-            <p class="text text_size_primary">площадка</p>
-          </button>
+          <button
+          class="popup-card__copy-button button button_color_transparent button_size_min-width"
+        >
+        <div class="icon icon_type_link-arrow"></div>
+          <p class="text text_size_secondary text_color_black">
+            скопировать ссылку
+          </p>
+        </button>
         </div>
       </div>
       <div class="popup-card__buttons">
@@ -188,6 +192,53 @@
         <p class="text text_size_primary text_color_white">купить билет</p>
       </button>
       </div>
+    </section>
+    <section class="donation-form">
+      <div class="donation-form__header">
+        <h2 class="donation-form__title title title_size_m">пожертвовать</h2>
+        <button class="donation-form__button-close"></button>
+      </div>
+      <div class="donation-form__main">
+        <h3 class="donation-form__subtitle title title_size_s">сумма</h3>
+        <div class="donation-form__prices">
+          <button class="button button_color_none button_size_min-width button_border_black">
+            <p class="text text_size_primary text_color_black">100 ₽</p>
+          </button>
+          <button class="button button_color_none button_size_min-width button_border_black">
+            <p class="text text_size_primary text_color_black">300 ₽</p>
+          </button>
+          <button class="button button_color_none button_size_min-width button_border_black">
+            <p class="text text_size_primary text_color_black">500 ₽</p>
+          </button>
+          <button class="button button_color_none button_size_min-width button_border_black">
+            <p class="text text_size_primary text_color_black">1000 ₽</p>
+          </button>
+          <button class="button button_color_none button_size_min-width button_border_black">
+            <p class="text text_size_primary text_color_black">3000 ₽</p>
+          </button>
+          <input type="text" class="button button_color_none button_size_min-width button_border_black">
+          </input>
+        </div>
+        <div class="donation-form__email-section">
+          <h3 class="donation-form__subtitle title title_size_s">email</h3>
+          <input type="email" value="укажите почту для отправки чека" class="donation-form__email button button_color_none button_size_min-width button_border_black">
+        </div>
+      </div>
+      <div class="donation-form__payment">
+        <h3 class="donation-form__subtitle title title_size_s">способ оплаты</h3>
+        <div class="donation-form__bank">
+          <input type="radio">
+          <p class="text text_size_primary">банковской картой</p>
+        </div>
+        <div class="donation-form__bank">
+          <input type="radio">
+          <p class="text text_size_primary">PayPal</p>
+        </div>
+      </div>
+      <p class="donation-form__approval text text_size_secondary"> Нажимая кнопку «пожертвовать» вы соглашаетесь с условиями оферты, политики в отношении обработки и защиты персональных данных и даёте согласие на их обработку</p>
+      <button class="donation-form__submit button button_color_violet button_size_min-width">
+        <p class="text text_size_primary text_color_white">купить билет</p>
+      </button>
     </section>
     <button class="piter filter-geolocation">Питербург</button>
     <button class="moscow filter-geolocation">Москва</button>

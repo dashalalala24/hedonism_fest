@@ -1,22 +1,22 @@
 .popup-card {
     display: none;
-    position: fixed;
+    flex-direction: column;
+    position: absolute;
     max-width: 50vw;
     top: 0;
     right: 0;
+    z-index: 1;
     background-color: #fff;
-    z-index: 3;
-    overflow-y: scroll;
-    overflow-x: hidden;
 }
 
-.popup-card::before {
-    /* content: '';
-    position: fixed;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    opacity: .8;
-    background-color: black;
-    z-index: 1; */
-}
+    .popup-card::before {
+        left: 0;
+        top: 0;
+        z-index: -1;
+        content: "";
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        opacity: .5;
+        background-color: #000;
+    }

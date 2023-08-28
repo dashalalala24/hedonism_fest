@@ -24,6 +24,15 @@ export function openListBlock() {
 	haveCardsBeenDetected(cards);
 }
 
+// Функция закрывающая попап
+export function closeCardPopup() {
+	const popup = document.querySelector('.popup-card');
+	const popupCloseButton = popup.querySelector('.popup-card__button-cross');
+	popupCloseButton.removeEventListener('click', closeCardPopup);
+
+	popup.classList.remove('popup-card_opened');
+}
+
 // Функция переводящяя день недели в сокращенный формат
 export function getWeekDay(date) {
 	const dayOfWeek = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
@@ -54,4 +63,37 @@ export function checkActiveButton(block) {
 	);
 
 	return actButton;
+}
+
+// функция которая находит разницу во времени
+export function findTimeDifference(firstDate, secondDate) {
+	let getDate = (string) =>
+		new Date(0, 0, 0, string.split(':')[0], string.split(':')[1]); //получение даты из строки (подставляются часы и минуты
+	let different;
+	if (firstDate < secondDate) {
+		different = getDate(secondDate) - getDate(firstDate);
+	} else {
+		different = getDate(firstDate) - getDate(secondDate);
+	}
+
+	let hours = Math.floor((different % 86400000) / 3600000);
+
+	if (hours > 12) {
+		hours = hours - 12;
+	}
+
+	let minutes = Math.round(((different % 86400000) % 3600000) / 60000);
+	if (minutes === 0) {
+		minutes = '00';
+	}
+
+	let result = `${hours} час ${minutes} минут`;
+
+	if (hours === 0 || hours >= 5) {
+		result = `${hours} часов ${minutes} минут`;
+	} else if (hours >= 2 && hours <= 4) {
+		result = `${hours} часа ${minutes} минут`;
+	}
+
+	return result;
 }

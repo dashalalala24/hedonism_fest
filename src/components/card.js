@@ -1,5 +1,6 @@
 import cards from '../data/data.json';
 import { getWeekDay } from './utils';
+import { openCardPopup } from './modal';
 import { haveCardsBeenDetected, checkActiveButton } from './utils';
 import { filterCards } from './filter';
 import { ymaps, renderMap } from './map';
@@ -7,7 +8,7 @@ import { ymaps, renderMap } from './map';
 // функция создания карточки
 function createCard(source) {
 	const card = document.querySelector('#card').content.cloneNode(true);
-	// const imageEvent = card.querySelector('.card__image');
+	const imageEvent = card.querySelector('.card__image');
 	const buttonLike = card.querySelector('.button_type_like');
 	const typeEvent = card.querySelector('.card__event-type');
 	const dateEvent = card.querySelector('.card__event-date');
@@ -29,6 +30,10 @@ function createCard(source) {
 	if (source.isLiked === true) {
 		buttonLike.classList.add('button_state_active-like');
 	}
+
+	imageEvent.addEventListener('click', () => {
+		openCardPopup(source.title);
+	});
 
 	buttonLike.addEventListener('click', () => {
 		putAndLike(buttonLike, source);
@@ -233,17 +238,3 @@ export function setTypeEventsListeners() {
 		});
 	});
 }
-
-// function findTimeDifference() {
-//     let firstDate = '11:43';
-//     let secondDate = '13:14';
-
-//     let getDate = (string) => new Date(0, 0,0, string.split(':')[0], string.split(':')[1]); //получение даты из строки (подставляются часы и минуты
-//     let different = (getDate(cards[0].timeend) - getDate(cards[0].timestart));
-
-//     let hours = Math.floor((different % 86400000) / 3600000);
-//     let minutes = Math.round(((different % 86400000) % 3600000) / 60000);
-//     let result = hours + ':' + minutes;
-
-//     console.log(result);
-// }

@@ -1,0 +1,8 @@
+.popup-card__copy-button {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    max-width: 175px;
+    max-height: 24px;
+    margin-left: auto;
+    align-self: center;
+}
