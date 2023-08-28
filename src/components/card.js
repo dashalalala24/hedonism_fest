@@ -1,6 +1,6 @@
 import cards from '../data/data.json';
 import { getWeekDay } from './utils';
-import { haveCardsBeenDetected } from './utils';
+import { haveCardsBeenDetected, checkActiveButton } from './utils';
 import { filterCards } from './filter';
 import { ymaps, renderMap } from './map';
 
@@ -121,6 +121,7 @@ export function setDateEventsListeners() {
 				activeButton.classList.remove('button_color_violet');
 				activeButton.classList.add('button_color_none');
 				activeButton.classList.add('button_border_black');
+				activeButton.classList.add('button_state_filter-unchecked');
 				activeButton.querySelector('.text').classList.add('text_color_black');
 				activeButton
 					.querySelector('.text')
@@ -131,6 +132,7 @@ export function setDateEventsListeners() {
 				el.classList.add('button_color_violet');
 				el.classList.remove('button_color_none');
 				el.classList.remove('button_border_black');
+				el.classList.remove('button_state_filter-unchecked');
 				el.setAttribute('disabled', 'disabled');
 				text.classList.add('text_color_white');
 				text.classList.remove('text_color_black');
@@ -157,15 +159,19 @@ export function setTypeEventsListeners() {
 	button.forEach((el) => {
 		const text = el.querySelector('.text');
 		const crossButton = el.querySelector('.scrollable-content__button-cross');
+		const allEvent = place.querySelector('#all-event-button');
 		el.addEventListener('click', () => {
 			if (!el.classList.contains('scrollable-content__button_active')) {
 				el.classList.add('scrollable-content__button_active');
 				el.classList.add('button_color_violet');
 				el.classList.remove('button_color_none');
 				el.classList.remove('button_border_black');
+				el.classList.remove('button_state_filter-unchecked');
 				text.classList.add('text_color_white');
 				text.classList.remove('text_color_black');
-				crossButton.classList.add('scrollable-content__button-cross_active');
+				if (crossButton) {
+					crossButton.classList.add('scrollable-content__button-cross_active');
+				}
 				deleteCard();
 				filterCards(cards).forEach((el) => {
 					renderCard(el);
@@ -180,11 +186,14 @@ export function setTypeEventsListeners() {
 					el.classList.remove('button_color_violet');
 					el.classList.add('button_color_none');
 					el.classList.add('button_border_black');
+					el.classList.add('button_state_filter-unchecked');
 					text.classList.add('text_color_black');
 					text.classList.remove('text_color_white');
-					crossButton.classList.remove(
-						'scrollable-content__button-cross_active'
-					);
+					if (crossButton) {
+						crossButton.classList.remove(
+							'scrollable-content__button-cross_active'
+						);
+					}
 					deleteCard();
 					filterCards(cards).forEach((el) => {
 						renderCard(el);
@@ -194,6 +203,32 @@ export function setTypeEventsListeners() {
 						renderMap(filterCards(cards));
 					});
 				}
+			}
+			if (!checkActiveButton(place)[0]) {
+				console.log(text);
+				allEvent.classList.add('scrollable-content__button_active');
+				allEvent.classList.add('button_color_violet');
+				allEvent.classList.remove('button_color_none');
+				allEvent.classList.remove('button_border_black');
+				allEvent.querySelector('.text').classList.remove('text_color_black');
+				allEvent.querySelector('.text').classList.add('text_color_white');
+				allEvent.classList.remove('button_state_filter-unchecked');
+				allEvent.setAttribute('disabled', 'disabled');
+				text.classList.remove('text_color_white');
+				text.classList.add('text_color_black');
+				if (crossButton) {
+					crossButton.classList.add('scrollable-content__button-cross_active');
+				}
+				deleteCard();
+				filterCards(cards).forEach((el) => {
+					renderCard(el);
+				});
+				haveCardsBeenDetected(filterCards(cards));
+				ymaps.ready(() => {
+					renderMap(filterCards(cards));
+				});
+			} else {
+				allEvent.removeAttribute('disabled');
 			}
 		});
 	});

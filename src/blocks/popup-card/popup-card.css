@@ -1,11 +1,13 @@
 .popup-card {
     display: none;
-    position: absolute;
+    position: fixed;
     max-width: 50vw;
     top: 0;
     right: 0;
     background-color: #fff;
     z-index: 3;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .popup-card::before {
