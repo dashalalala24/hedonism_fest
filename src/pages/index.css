@@ -68,6 +68,7 @@
 @import url(../ui/icon/_type/icon_type_menu-white.css);
 @import url(../ui/icon/_type/icon_type_heart.css);
 @import url(../ui/icon/_type/icon_type_link-black.css);
+@import url(../ui/icon/_type/icon_type_link-arrow.css);
 @import url(../ui/icon/_type/icon_type_cross-white.css);
 @import url(../ui/icon/_type/icon_type_map.css);
 
@@ -213,6 +214,7 @@
 
 /* -------------- footer -------------- */
 @import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__content/footer__content.css);
 @import url(../blocks/footer/__container/footer__container.css);
 @import url(../blocks/footer/__illustration/footer__illustration.css);
 @import url(../blocks/footer/__title/footer__title.css);
