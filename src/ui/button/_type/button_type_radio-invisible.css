@@ -1,0 +1,25 @@
+.button_type_radio-invisible {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(0 0 0 0);
+}
+
+.button_type_radio-invisible:checked + .button_type_radio-event{
+  border: #7100FF 2px solid;
+  background-color: #7100FF;
+}
+
+.button_type_radio-invisible:checked + .button_type_radio-event .text {
+  color: white;
+}
+
+.button_type_radio-invisible:hover + .button_type_radio-event{
+  border: #7100FF 2px solid;
+  background-color: #7100FF;
+}
+
+.button_type_radio-invisible:hover + .button_type_radio-event .text {
+  color: white;
+}

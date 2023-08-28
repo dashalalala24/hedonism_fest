@@ -1,0 +1,9 @@
+.icon_type_radio {
+  width: 24px;
+  height: 24px;
+  background-color: #3B3748;
+  mask: url('../../../images/icons/button/radio-unchecked.svg') no-repeat 100% 100%;
+  -webkit-mask: url('../../../images/icons/button/radio-unchecked.svg') no-repeat 100% 100%;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+}

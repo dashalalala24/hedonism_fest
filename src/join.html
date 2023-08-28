@@ -1,16 +1,182 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Стать участником</title>
-	</head>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Стать участником</title>
+</head>
 
-	<body>
-		<!-- БЛОК HEADER -->
-		<%= require('./header.html?raw') %>
+<body>
+<!-- БЛОК HEADER -->
+<!--<%= require('./header.html?raw') %>-->
+<main class="content">
+  <h1 class="title title_size_xl title_align_left title_type-intro">стать участником</h1>
 
-		<!-- БЛОК FOOTER -->
-		<%= require('./footer.html?raw') %>
-	</body>
+  <!-- HOW TO PARTICIPATE -->
+  <section class="intro">
+    <h2 class="title title_size_l title_align_left">как участвовать?</h2>
+    <ul class="intro__table">
+      <li class="intro__item">
+        <p class="title title_size_s title_align_left">1</p>
+        <h3 class="title title_size_s title_align_left">выбор категории</h3>
+        <p class="text text_size_secondary text_align_left text_grid-control_merged">Определите, как вы хотите
+          поддержать акцию: продавать
+          напитки, блюда, провести
+          мастер-класс или каким-то другим способом</p>
+      </li>
+      <li class="intro__item">
+        <p class="title title_size_s title_align_left">2</p>
+        <h3 class="title title_size_s title_align_left">фото и описание</h3>
+        <p class="text text_size_secondary text_align_left text_grid-control_merged">Подготовьте описание и фото вашего
+          заведения. Это нужно для
+          создания карточки в нашем каталоге событий</p>
+      </li>
+      <li class="intro__item">
+        <p class="title title_size_s title_align_left">3</p>
+        <h3 class="title title_size_s title_align_left">ссылки и соцсети</h3>
+        <p class="text text_size_secondary text_align_left text_grid-control_merged">Опубликуйте ссылку на вашу карточку
+          в соцсетях, расскажите у
+          себя на сайте, чтобы больше людей узнали о вашем участии</p>
+      </li>
+      <li class="intro__item">
+        <p class="title title_size_s title_align_left">4</p>
+        <h3 class="title title_size_s title_align_left">координатор</h3>
+        <p class="text text_size_secondary text_align_left text_grid-control_merged">Далее с вами свяжется координатор
+          акции, который будет
+          помогать по любым вопросам до и во время акции</p>
+      </li>
+      <li class="intro__item">
+        <p class="title title_size_s title_align_left">5</p>
+        <h3 class="title title_size_s title_align_left">перевод средств</h3>
+        <p class="text text_size_secondary text_align_left text_grid-control_merged">После акции переведите собранные
+          пожертвования в Ночлежку через сайт или по безналичному расчету</p>
+      </li>
+    </ul>
+    <button class="button button_color_violet button_size_min-width-to-full-size button_align-right">
+      <p class="text text_size_primary text_color_white">заполнить форму</p>
+    </button>
+  </section>
+
+  <!-- CATEGORY SELECTION -->
+  <section class="category-selection">
+    <h2 class="text text_size_primary text_align_left">шаг 1 из 4</h2>
+    <div class="form">
+      <div class="form__description">
+        <h2 class="title title_size_l title_align_left">выберите категорию</h2>
+        <p></p>
+      </div>
+      <fieldset class="form__fields">
+        <label for="cafe">
+          <input type="radio" class="button_type_radio-invisible" name="event-type" id="cafe" value="cafe">
+          <span class="button button_type_radio-event">
+            <p class="text text_size_primary">кафе/бар/ресторан</p>
+            <div class="icon_type_checked"></div>
+          </span>
+        </label>
+        <label for="master-class">
+          <input type="radio" class="button_type_radio-invisible" name="event-type" id="master-class"
+                 value="master-class">
+          <span class="button button_type_radio-event">
+            <p class="text text_size_primary">мастер-класс/лекция</p>
+            <div class="icon_type_checked"></div>
+          </span>
+        </label>
+        <label for="party">
+          <input type="radio" class="button_type_radio-invisible" name="event-type" id="party" value="party">
+          <span class="button button_type_radio-event">
+            <p class="text text_size_primary">посиделки/вечеринка</p>
+            <div class="icon_type_checked"></div>
+          </span>
+        </label>
+        <label for="other">
+          <input type="radio" class="button_type_radio-invisible" name="event-type" id="other" value="other">
+          <span class="button button_type_radio-event">
+            <p class="text text_size_primary">посиделки/вечеринка</p>
+            <div class="icon_type_checked"></div>
+          </span>
+        </label>
+      </fieldset>
+    </div>
+  </section>
+
+  <!-- FILL-IN FORM -->
+  <section class="fill-in-form">
+    <h2 class="text text_size_primary text_align_left">шаг 2 из 4</h2>
+    <div class="form">
+      <div class="form__description">
+        <h2 class="title title_size_l title_align_left">заполните форму</h2>
+        <p class="text text_size_primary text_align_left text_padding_top12px">Для участия вы можете выбрать:</p>
+        <ul class="list">
+          <li class="list_type_ul">определенную позицию из меню</li>
+          <li class="list_type_ul">группу позиций</li>
+          <li class="list_type_ul">процент от продаж определенных позиций или всего меню</li>
+        </ul>
+      </div>
+      <fieldset class="form__fields">
+        <span class="button button_type_radio-event button_stated_radio-event-checked">
+          <p class="text text_size_primary">кафе/бар/ресторан</p>
+          <div class="icon_type_checked"></div>
+        </span>
+
+        <label for="online">
+          <input type="radio" class="button_type_radio-invisible" name="offline-online" id="online" value="online">
+          <span class="button button_type_radio-online-offline">
+            <div class="icon_type_radio"></div>
+            <p class="text text_size_primary">онлайн</p>
+          </span>
+        </label>
+        <label for="offline">
+          <input type="radio" class="button_type_radio-invisible" name="offline" id="offline"
+                 value="offline">
+          <span class="button button_type_radio-event">
+            <p class="text text_size_primary">оффлайн</p>
+          </span>
+        </label>
+
+        <div class="form__fields_type_city">
+          <p class="text text_size_secondary text_color_grey text_align_left text_padding_left12px">город</p>
+          <button class="button button_type_cities-list">
+            <p class="text text_size_secondary text_color_grey">выберите из списка</p>
+            <div class="icon_type_triangle"></div>
+          </button>
+          <span class="text text_color_red text_type_warning text_type_invisible"><div class="icon_type_warning"></div>контекстное сообщение</span>
+        </div>
+        <div class="form__fields_type_place-name">
+          <p class="text text_size_secondary text_color_grey text_align_left text_padding_left12px">название заведения</p>
+          <input type="text" placeholder="введите название заведения" class="text text_size_primary text_align_left input-field">
+          <span class="text text_color_red text_type_warning text_type_invisible"><div class="icon_type_warning"></div>контекстное сообщение</span>
+        </div>
+        <div class="form__fields_type_contact-person">
+          <p class="text text_size_secondary text_color_grey text_align_left text_padding_left12px">контактное лицо</p>
+          <input type="text" placeholder="введите ФИО" class="text text_size_primary text_align_left input-field">
+          <span class="text text_color_red text_type_warning"><div class="icon_type_warning"></div>контекстное сообщение</span>
+        </div>
+        <div class="form__fields_type_phone">
+          <p class="text text_size_secondary text_color_grey text_align_left text_padding_left12px">телефон для связи с организатором</p>
+          <input type="text" placeholder="+7(" class="text text_size_primary text_align_left input-field">
+          <span class="text text_color_red text_type_warning"><div class="icon_type_warning"></div>контекстное сообщение</span>
+        </div>
+        <div class="form__fields_type_description">
+          <p class="text text_size_secondary text_color_grey text_align_left text_padding_left12px">описание</p>
+          <textarea placeholder="Укажите, что из меню будет принимать участие в акции" class="text text_size_primary text_align_left input-field textarea-field"></textarea>
+          <span class="text text_color_red text_type_warning"><div class="icon_type_warning"></div>контекстное сообщение</span>
+        </div>
+      </fieldset>
+    </div>
+  </section>
+
+
+  <!-- CONTROLLER -->
+  <div class="controller">
+    <button class="button button_color_none button_size_min-width button_border_black button_type-controller">
+      <p class="text text_size_primary text_color_black">отмена</p>
+    </button>
+    <button class="button button_color_violet button_size_min-width button_type-controller">
+      <p class="text text_size_primary text_color_white">далее</p>
+    </button>
+  </div>
+</main>
+<!-- БЛОК FOOTER -->
+<%= require('./footer.html?raw') %>
+</body>
 </html>

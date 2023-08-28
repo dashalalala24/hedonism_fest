@@ -1,0 +1,7 @@
+.button_type-controller {
+  margin: 0 0 0 6px;
+}
+
+.button_type-controller:first-of-type {
+  margin: 0;
+}
