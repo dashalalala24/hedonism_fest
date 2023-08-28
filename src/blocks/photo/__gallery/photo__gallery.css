@@ -12,5 +12,6 @@
     width: 320px;
     display: flex;
     overflow: hidden;
+    margin: 0 auto;
   }
 }

@@ -1,0 +1,6 @@
+.lead__link-image {
+  background-image: url(../../../images/lead/lead__link.svg);
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}

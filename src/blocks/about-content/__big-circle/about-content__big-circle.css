@@ -1,0 +1,10 @@
+.about-content__big-circle {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #ffd400;
+  border-radius: 100%;
+  width: 480px;
+  height: 480px;
+  position: relative;
+}

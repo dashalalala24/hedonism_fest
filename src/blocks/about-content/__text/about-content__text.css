@@ -1,0 +1,7 @@
+.about-content__text {
+  margin: 0 0 24px;
+}
+
+.about-content__text:last-child {
+  margin: 0;
+}
