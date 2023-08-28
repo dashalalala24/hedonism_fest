@@ -1,11 +1,12 @@
 .photo__title {
   text-align: start;
-  margin: 0 0 24px 0;
+  margin: 0 0 24px;
 }
 
 @media screen and (max-width: 1280px) {
   .photo__title {
     font-size: 32px;
-    margin: 0 0 12px 0;
+    margin: 0 auto 12px;
+    max-width: 320px;
   }
 }
