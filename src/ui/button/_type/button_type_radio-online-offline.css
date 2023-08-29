@@ -2,5 +2,15 @@
   border: none;
   justify-content: left;
   padding-left: 0;
-  width: min-content;
+  width: max-content;
+}
+
+.button_type_radio-online-offline:hover .icon_type_radio {
+  background-color: #5100b8;
+  color: #5100b8;
+  transition: background-color 1ms;
+}
+
+.button_type_radio-online-offline:hover .text {
+  color: #5100b8;
 }

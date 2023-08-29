@@ -1,0 +1,9 @@
+.icon_type_upload {
+  width: 24px;
+	height: 24px;
+
+  margin: 0 0 12px;
+
+	background: url('../../../images/icons/input-fields/upload.svg') no-repeat 100% 100%;
+  background-size: contain;
+}

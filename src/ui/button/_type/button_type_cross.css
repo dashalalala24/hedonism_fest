@@ -1,0 +1,24 @@
+.button_type_cross {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: calc(
+		((48 - 44) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 44px
+	);
+  height: calc(
+		((48 - 44) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 44px
+	);
+
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+
+  background: #FCFAF7 url("../../../images/icons/button/cross-black.svg") no-repeat center;
+  box-shadow: 0 2px 4px 0 #3B37481F;
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.button_type_cross:hover {
+  box-shadow: 0 6px 8px 0 #3B37481F;
+}
