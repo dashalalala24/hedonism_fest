@@ -1,0 +1,8 @@
+.contacts-and-working-hours {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 0 20px;
+  max-width: 920px;
+  border: seagreen solid 1px;
+}

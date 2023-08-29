@@ -1,0 +1,8 @@
+.button_type_cities-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: 2px #96949E solid;
+  background-color: white;
+  margin: 8px 0 8px;
+}
