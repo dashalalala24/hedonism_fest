@@ -1,3 +1,11 @@
 .about-content__title {
   margin: 0 0 40px;
 }
+
+@media screen and (max-width: 1024px) {
+  .about-content__title {
+    font-size: 44px;
+    width: 320px;
+    margin: 0 auto 20px;
+  }
+}

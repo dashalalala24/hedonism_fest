@@ -6,18 +6,12 @@
 @import url(../blocks/about-content/__paragraph/_second/about-content__paragraph_second.css);
 @import url(../blocks/about-content/__paragraph/_third/about-content__paragraph_third.css);
 @import url(../blocks/about-content/__paragraph/_fourth/about-content__paragraph_fourth.css);
+@import url(../blocks/about-content/__description/about-content__description.css);
 @import url(../blocks/about-content/__subtitle/about-content__subtitle.css);
 @import url(../blocks/about-content/__text-container/about-content__text-container.css);
 @import url(../blocks/about-content/__text/about-content__text.css);
 @import url(../blocks/about-content/__button/about-content__button.css);
 @import url(../blocks/about-content/__circle-container/about-content__circle-container.css);
-@import url(../blocks/about-content/__big-circle/about-content__big-circle.css);
-@import url(../blocks/about-content/__big-circle/_right/about-content__big-circle_right.css);
-@import url(../blocks/about-content/__big-circle/_left/about-content__big-circle_left.css);
-@import url(../blocks/about-content/__illustration/about-content__illustration.css);
-@import url(../blocks/about-content/__illustration/_first/about-content__illustration_first.css);
-@import url(../blocks/about-content/__illustration/_second/about-content__illustration_second.css);
+@import url(../blocks/about-content/__circle-container/_right/about-content__circle-container_right.css);
+/* @import url(../blocks/about-content/__illustration/about-content__illustration.css); */
 @import url(../blocks/about-content/__illustration/_third/about-content__illustration_third.css);
-@import url(../blocks/about-content/__image-description/about-content__image-description.css);
-@import url(../blocks/about-content/__image-description/_right/about-content__image-description_right.css);
-@import url(../blocks/about-content/__image-description/_left/about-content__image-description_left.css);

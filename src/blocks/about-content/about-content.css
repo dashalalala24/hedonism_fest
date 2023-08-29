@@ -4,3 +4,9 @@
   max-width: 1440px;
   position: relative;
 }
+
+@media screen and (max-width: 1024px) {
+  .about-content {
+    padding: 20px;
+  }
+}
