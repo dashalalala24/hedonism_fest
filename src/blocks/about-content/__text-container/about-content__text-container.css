@@ -1,0 +1,15 @@
+.about-content__text-container {
+  max-width: 537px;
+  margin: 24px 0 24px;
+}
+
+.about-content__text-container:first-of-type {
+  margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .about-content__text-container {
+    margin: 0 auto;
+    width: 320px;
+  }
+}

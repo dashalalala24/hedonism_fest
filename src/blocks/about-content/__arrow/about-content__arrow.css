@@ -1,0 +1,11 @@
+.about-content__arrow {
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  position: fixed;
+  top: 680px;
+  right: 40px;
+  border: none;
+  padding: 12px;
+  z-index: 2;
+}

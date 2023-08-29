@@ -1,0 +1,11 @@
+.popup-card__buttons {
+    display: grid;
+    width: 700px;
+    height: 88px;
+    grid-template-rows: 48px;
+    grid-template-columns: repeat(2, 304px);
+    background: var(--light-primary, #FCFAF7);
+    box-shadow: 0px -8px 32px 0px rgba(59, 55, 72, 0.12);
+    justify-content: space-around;
+    align-content: space-around;
+}

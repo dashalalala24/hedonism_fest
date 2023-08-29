@@ -1,0 +1,6 @@
+.lead__text {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -126px;
+}

@@ -1,0 +1,14 @@
+.about-content__illustration {
+  width: 480px;
+  height: 248px;
+  position: absolute;
+  top: 48px;
+  left: 0;
+}
+
+/* @media screen and (max-width: 1024px) {
+  .about-content__illustration {
+    width: 200px;
+    height: 193px;
+  }
+} */

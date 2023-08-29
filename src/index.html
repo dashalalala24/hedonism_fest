@@ -9,14 +9,28 @@
 	</head>
 
 	<body class="page">
-    <%= require('./header.html?raw') %>
-    
+  <%= require('./header.html?raw') %>
+    <section class="lead">
+      <div class="lead__screen"></div>
+      <p class="lead__text text text_color_black text_size_primary">узнать больше</p>
+      <a href="#about" class="lead__link">
+        <div class="lead__link-image"></div>
+      </a>
+    </section>
+    <section id="about" class="about">
+      <h2 class="about__title title title_size_l title_align_left">просто приятно помогать</h2>
+      <div class="about__container">
+        <p class="text text_size_primary text_align_left">Пейте кофе в любимых заведениях, посещайте интересные мероприятия, устраивайте домашние посиделки с друзьями — и помогайте бездомным!</p>
+        <p class="text text_size_primary text_align_left">Целую неделю 26 апреля — 2 мая вся выручка будет перечислена в пользу бездомных.</p>
+        <a href="#" class="about__button button button_border_black button_color_none text_color_black">узнать подробнее</a>
+      </div>
+    </section>
     <div>.</div>
 		<a href="./storybook.html">UI-компоненты</a>
 		<div>.</div>
 
     <section class="digits">
-      <h2 class="title title_size_l digits__title">цифры дня</h2>
+      <h2 class="title title_size_l title_align_left digits__title">цифры дня</h2>
 
       <div class="digits__image">
         <div class="digits__circle-container digits__circle-container_left">
@@ -42,7 +56,7 @@
             />
           </div>
           <div class="digits__text-container digits__text-container_right">
-            <h2 class="title title_size_l digits__title">15 000</h2>
+            <h2 class="title title_size_l title_align_left digits__title">15 000</h2>
             <p class="text text_size_primary text_color_black digits__text">
               cтолько печенья продали в поддержку акции
             </p>
@@ -126,18 +140,13 @@
         <div class="team__logo team__logo_third"></div>
         <div class="team__logo team__logo_first"></div>
         <div class="team__logo team__logo_second"></div>
-        <div class="team__logo team__logo_third"></div>
+        <!-- <div class="team__logo team__logo_third"></div> -->
       </div>
 
     </section>
 
   		<!-- БЛОК FOOTER -->
       <%= require('./footer.html?raw') %>
-
-    <button class="button button_color_violet button_size_min-width">
-      <div class="icon icon_type_menu-white"></div>
-      <p class="text text_size_primary text_color_white">кнопка</p>
-    </button>
 
 		<!---TEMPlATES--->
 		<template id="card">

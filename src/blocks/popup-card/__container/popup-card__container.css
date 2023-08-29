@@ -4,4 +4,8 @@
     display: flex;
     flex-direction: column;
     row-gap: 30px;
+    background: var(--light-primary, #FCFAF7);
+    overflow: hidden;
+    height: 35vh;
+    overflow-y: scroll;
 }

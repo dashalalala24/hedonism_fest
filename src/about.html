@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,6 +9,128 @@
 	<body>
 		<!-- БЛОК HEADER -->
 		<%= require('./header.html?raw') %>
+
+    <div class="about-content">
+      <a href="#">
+        <button class="button button_color_violet about-content__arrow">
+          <div class="icon icon_type_arrow-top"></div>
+        </button>
+      </a>
+
+      <h1 class="title title_size_xl title_align_left about-content__title">о фестивале</h1>
+
+      <!-- Paragraph 1 -->
+      <section class="about-content__paragraph about-content__paragraph_first">
+        <h2 class="title title_size_l title_align_left about-content__subtitle">помогать,&nbsp;просто наслаждаясь жизнью — это реальность.</h2>
+        <div class="about-content__text-container">
+          <p class="text text_size_primary text_color_black text_align_left about-content__text">ГедонизмФест — история о том, что благотворительность становится еще проще, приятнее, она идет рука об руку с повседневными, приятными мелочами. И это просто и приятно.</p>
+          <p class="text text_size_primary text_color_black text_align_left about-content__text">С 2014 года мы провели 15 акций Эспресс-помощь, за которые собрали 5 744 522 руб. С помощью специалистов по социальной работе, юристов и психологов 600 человек выбрались с улицы и начали новую жизнь.</p>
+          <p class="text text_size_primary text_color_black text_align_left about-content__text">Настало время расти. Наш фестиваль уже не умещался в привычных рамках и превратился из однодневной акции в целый недельный ГедонизмФест, и что это, если не удовольствие?</p>
+        </div>
+      </section>
+
+      <!-- Paragraph 2 -->
+      <section class="digits about-content__paragraph about-content__paragraph_second">
+        <div class="about-content__description">
+        <h2 class="title title_size_l title_align_left about-content__subtitle">зачем&nbsp;мы&nbsp;это&nbsp;делаем?</h2>
+        <div class="about-content__text-container">
+          <p class="text text_size_primary text_color_black text_align_left about-content__text">Бездомному человеку намного проще возвращаться к обычной жизни, когда есть возможность не волноваться каждый день о том, где сегодня ночевать и что сегодня есть.</p>
+          <p class="text text_size_primary text_color_black text_align_left about-content__text">Жизнь в человеческих условиях, поддержка наших специалистов по социальной работе, юристов и психологов — это всё элементы реабилитации после травм и тяжести уличных месяцев или лет.</p>
+        </div>
+        <a class="link" href="">
+          <button
+              class="button button_color_none button_size_min-width button_border_black about-content__button"
+            >
+              <p class="text text_size_primary text_color_black promo__text">
+                наши проекты
+              </p>
+              <div class="icon text_size_primary icon_type_arrow-black"></div>
+            </button>
+        </a>
+        </div>
+
+        <div class="digits__circle-container about-content__circle-container about-content__circle-container_right">
+          <div class="digits__big-circle">
+            <img
+              class="digits__left-illustration"
+              src="<%=require('./images/about-content/first-illustration.svg')%>"
+            />
+          </div>
+          <div class="digits__text-container digits__text-container_right">
+            <h2 class="title title_size_l digits__title">5 744 522 ₽</h2>
+            <p class="text text_size_primary text_color_black digits__text">
+              cтолько было собрано на работу Ночлежки
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Paragraph 3 -->
+      <section class="digits about-content__paragraph about-content__paragraph_third">
+
+        <div class="digits__circle-container about-content__circle-container">
+          <div class="digits__big-circle about-content__big-circle_left">
+            <img
+              class="digits__left-illustration"
+              src="<%=require('./images/about-content/second-illustration.svg')%>"
+            />
+          </div>
+          <div class="digits__text-container digits__text-container_left">
+            <h2 class="title title_size_l digits__title">600</h2>
+            <p class="text text_size_primary text_color_black digits__text">
+              человек выбрались с улицы и начали новую жизнь
+            </p>
+          </div>
+        </div>
+
+        <div class="about-content__description">
+        <h2 class="title title_size_l title_align_left about-content__subtitle">просто приятно помогать</h2>
+        <div class="about-content__text-container">
+          <p class="text text_size_primary text_color_black text_align_left about-content__text">Мы видим цель, и идем к ней вместе с вами — сейчас мы собираем деньги на работу Консультационной службы.</p>
+          <p class="text text_size_primary text_color_black text_align_left about-content__text">Сотрудники Консультационной службы в Москве и Санкт-Петербурге помогают людям, оказавшимся на грани бездомности, не оказаться на улице, а тем, кто уже попал в беду, — справиться с проблемами, которые привели человека на улицу.</p>
+          <p class="text text_size_primary text_color_black text_align_left about-content__text">В отличие от государственных служб, мы не смотрим, где у человека была последняя регистрация и какое у него гражданство. Мы помогаем всем, кому можем помочь.</p>
+        </div>
+
+        <a class="link" href="">
+          <button class="button button_color_violet button_size_min-width about-content__button">
+            <p class="text text_size_primary text_color_white">поддержать</p>
+          </button>
+        </a>
+        </div>
+
+      </section>
+
+      <!-- Paragraph 4 -->
+      <section class="digits about-content__paragraph about-content__paragraph_fourth">
+        <div class="about-content__description">
+        <h2 class="title title_size_l title_align_left about-content__subtitle">ночлежке 30 лет</h2>
+        <div class="about-content__text-container">
+          <p class="text text_size_primary text_color_black text_align_left about-content__text">Мы кормим нуждающихся людей, даём им крышу над головой, а наши специалисты помогают им выбраться с улицы и вернуться к обычной жизни. И наше главное богатство — это доверие людей.</p>
+          <p class="text text_size_primary text_color_black text_align_left about-content__text">На сайте мы выкладываем полные годовые отчёты и даже зарплаты всех сотрудников. Спасибо всем, кто верит нам, в нас и в то, что люди не должны оставаться один на один со своей бедой.</p>
+        </div>
+        <a class="link" href="">
+          <button
+              class="button button_color_none button_size_min-width button_border_black about-content__button"
+            >
+              <p class="text text_size_primary text_color_black promo__text">
+                перейти на сайт
+              </p>
+              <div class="icon text_size_primary icon_type_arrow-black"></div>
+            </button>
+        </a>
+        </div>
+
+        <div class="digits__circle-container about-content__circle-container">
+          <div class="digits__big-circle about-content__illustration_third">
+            <img
+              class="digits__left-illustration"
+              src="<%=require('./images/about-content/third-illustration.svg')%>"
+            />
+          </div>
+        </div>
+
+    </div>
+
 
 		<!-- БЛОК FOOTER -->
 		<%= require('./footer.html?raw') %>
