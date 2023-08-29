@@ -33,6 +33,15 @@ export function closeCardPopup() {
 	popup.classList.remove('popup-card_opened');
 }
 
+// Функция закрывающая форму пожертвования
+export function closeDonateForm() {
+	const form = document.querySelector('#donate-form');
+	form.classList.remove('donation-form_opened');
+
+	const closeButton = form.querySelector('.donation-form__button-close');
+	closeButton.removeEventListener('click', closeDonateForm);
+}
+
 // Функция переводящяя день недели в сокращенный формат
 export function getWeekDay(date) {
 	const dayOfWeek = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
@@ -57,6 +66,7 @@ export function haveCardsBeenDetected(source) {
 	}
 }
 
+// Функция собирающая все активные кнопки фильтров в массив
 export function checkActiveButton(block) {
 	const actButton = Array.from(
 		block.querySelectorAll('.scrollable-content__button_active')

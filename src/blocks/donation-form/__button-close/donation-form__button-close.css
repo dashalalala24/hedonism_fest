@@ -5,4 +5,9 @@
     border: 0;
     background-color: #0000;
     background-image: url(../../../images/icons/button/cross-black.svg);
+    cursor: pointer;
+}
+
+.donation-form__button-close:hover {
+    opacity: .6;
 }

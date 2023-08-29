@@ -16,11 +16,13 @@ import {
 } from '../components/utils';
 import { renderNumberCards } from '../components/control-panel';
 import { filterCards } from '../components/filter';
+import { openDonateForm } from '../components/modal';
 
 const piter = document.querySelector('.piter');
 const moscow = document.querySelector('.moscow');
 const sochi = document.querySelector('.sochi');
 
+const donateButton = document.querySelector('.header__donate-button');
 const buttonMap = document.querySelector('.button-map');
 const buttonList = document.querySelector('.button-list');
 const uniqEvents = Array.from(
@@ -95,4 +97,6 @@ if (document.getElementById('map')) {
 
 	setDateEventsListeners();
 	setTypeEventsListeners();
+
+	donateButton.addEventListener('click', openDonateForm);
 }

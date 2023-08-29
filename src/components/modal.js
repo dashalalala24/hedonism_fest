@@ -1,6 +1,7 @@
 import cards from '../data/data.json';
-import { findTimeDifference, closeCardPopup } from './utils';
+import { findTimeDifference, closeCardPopup, closeDonateForm } from './utils';
 
+// Функция открывающая попап с информацией из карточки
 export function openCardPopup(name) {
 	const popup = document.querySelector('.popup-card');
 	// const popupImage = popup.querySelector('.popup-card__image');
@@ -44,4 +45,15 @@ export function openCardPopup(name) {
 	popupCloseButton.addEventListener('click', closeCardPopup);
 
 	popup.classList.add('popup-card_opened');
+}
+
+// Функция открывающая форму с оплатой пожертвований
+export function openDonateForm() {
+	const donateForm = document.querySelector('#donate-form');
+	donateForm.classList.add('donation-form_opened');
+
+	const closeDonateButton = donateForm.querySelector(
+		'.donation-form__button-close'
+	);
+	closeDonateButton.addEventListener('click', closeDonateForm);
 }
