@@ -86,6 +86,9 @@
 
 @import url(../ui/card/__image/card__image.css);
 
+/* -------------- link -------------- */
+@import url(../ui/link/link.css);
+
 /* -------------- BLOCKS -------------- */
 
 /* -------------- card -------------- */
