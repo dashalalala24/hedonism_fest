@@ -4,7 +4,7 @@
 
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1380px) {
   .photo__navigation {
     display: flex;
     justify-content: center;
