@@ -1,0 +1,4 @@
+.popup-card__social-text {
+    grid-column: 1/3;
+    text-align: start;
+}

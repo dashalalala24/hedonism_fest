@@ -4,6 +4,7 @@
 
 
 @import url(../blocks/page/page.css);
+@import url(../blocks/page-where-to-go/page-where-to-go.css);
 /* @import url(../blocks/page/page.css);*/
 
 /* -------------- UI -------------- */
@@ -71,6 +72,7 @@
 @import url(../ui/icon/_type/icon_type_link-arrow.css);
 @import url(../ui/icon/_type/icon_type_cross-white.css);
 @import url(../ui/icon/_type/icon_type_map.css);
+@import url(../ui/icon/_type/icon_type_warning.css);
 
 @import url(../ui/icon/_visibility/icon_visibility_on.css);
 
@@ -128,12 +130,35 @@
 
 /* -------------- popup -------------- */
 @import url(../blocks/popup-card/popup-card.css);
+@import url(../blocks/popup-card/_opened/popup-card_opened.css);
 @import url(../blocks/popup-card/__image/popup-card__image.css);
 @import url(../blocks/popup-card/__button-cross/popup-card__button-cross.css);
+@import url(../blocks/popup-card/__warning/popup-card__warning.css);
+@import url(../blocks/popup-card/__title/popup-card__title.css);
+@import url(../blocks/popup-card/__description/popup-card__description.css);
 @import url(../blocks/popup-card/__container/popup-card__container.css);
 @import url(../blocks/popup-card/__about-place/popup-card__about-place.css);
 @import url(../blocks/popup-card/__info/popup-card__info.css);
 @import url(../blocks/popup-card/__info/_color/popup-card__info_color_grey.css);
+@import url(../blocks/popup-card/__social-icon/popup-card__social-icon.css);
+@import url(../blocks/popup-card/__social-place/popup-card__social-place.css);
+@import url(../blocks/popup-card/__social-links/popup-card__social-links.css);
+@import url(../blocks/popup-card/__copy-button/popup-card__copy-button.css);
+@import url(../blocks/popup-card/__social-text/popup-card__social-text.css);
+@import url(../blocks/popup-card/__buttons/popup-card__buttons.css);
+@import url(../blocks/popup-card/__address-number/popup-card__address-number.css);
+@import url(../blocks/donation-form/donation-form.css);
+@import url(../blocks/donation-form/_opened/donation-form_opened.css);
+@import url(../blocks/donation-form/__box/donation-form__box.css);
+@import url(../blocks/donation-form/__header/donation-form__header.css);
+@import url(../blocks/donation-form/__main/donation-form__main.css);
+@import url(../blocks/donation-form/__prices/donation-form__prices.css);
+@import url(../blocks/donation-form/__subtitle/donation-form__subtitle.css);
+@import url(../blocks/donation-form/__email/donation-form__email.css);
+@import url(../blocks/donation-form/__bank/donation-form__bank.css);
+@import url(../blocks/donation-form/__approval/donation-form__approval.css);
+@import url(../blocks/donation-form/__submit/donation-form__submit.css);
+@import url(../blocks//donation-form/__button-close/donation-form__button-close.css);
 
 /* @import url(../blocks/popup/popup.css);
 ... */

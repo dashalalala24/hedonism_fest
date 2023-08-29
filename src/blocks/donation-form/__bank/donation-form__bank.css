@@ -1,0 +1,5 @@
+.donation-form__bank {
+    display: flex;
+    column-gap: 8px;
+    margin-top: 16px;
+}
