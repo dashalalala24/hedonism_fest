@@ -3,46 +3,46 @@
     <a href="index.html">
       <div class="header__logo"></div>
     </a>
-      <button id="button-dropdown" class="button button_color_transparent">
+      <button id="button-dropdown" class="header__btn-dropdown button button_color_transparent">
         <div class="header__location-button"></div>
         <p class="text text_color_black text_size_primary">Санкт-Петербург</p>
       </button>
       <div class="header__menu-list">
-        <a
-          href="#"
-          class="header__list-item text text_color_black text_size_primary"
-          >Москва</a
-        >
-        <a
-          href="#"
-          class="header__list-item text text_color_black text_size_primary"
-          >Санкт-Петербург</a
-        >
-        <a
-          href="#"
-          class="header__list-item text text_color_black text_size_primary"
-          >Сочи</a
-        >
-        <a
-          href="#"
-          class="header__list-item text text_color_black text_size_primary"
-          >Калуга</a
-        >
-        <a
-          href="#"
-          class="header__list-item text text_color_black text_size_primary"
-          >Екатеринбург</a
-        >
+        <div class="header__list-item">
+          <input type="radio" id="moscow" value="moscow" name="city" class="header__input-item">
+          <label for="moscow" class="text text_size_primary">Москва</label>
+          <div class="header__checked-mark"></div>
+        </div>
+        <div class="header__list-item">
+          <input type="radio" id="st-peterburg" value="st-peterburg" name="city" class="header__input-item">
+          <label for="st-peterburg" class="text text_size_primary">Санкт-Петербург</label>
+          <div class="header__checked-mark header__checked-mark_checked"></div>
+        </div>
+        <div class="header__list-item">
+          <input type="radio" id="sochi" value="sochi" name="city" class="header__input-item">
+          <label for="sochi" class="text text_size_primary">Сочи</label>
+          <div class="header__checked-mark"></div>
+        </div>
+        <div class="header__list-item">
+          <input type="radio" id="kaluga" value="kaluga" name="city" class="header__input-item">
+          <label for="kaluga" class="text text_size_primary">Калуга</label>
+          <div class="header__checked-mark"></div>
+        </div>
+        <div class="header__list-item">
+          <input type="radio" id="ekaterinburg" value="ekaterinburg" name="city" class="header__input-item">
+          <label for="ekaterinburg" class="text text_size_primary">Екатеринбург</label>
+          <div class="header__checked-mark"></div>
+        </div>
       </div>
     </div>
     <nav class="header__nav-link">
-      <a href="./where-to-go.html" class="text text_color_black text_size_primary"
+      <a href="./where-to-go.html" class="header__link text text_color_black text_size_primary"
         >куда пойти</a
       >
-      <a href="./join.html" class="text text_color_black text_size_primary"
+      <a href="./join.html" class="header__link text text_color_black text_size_primary"
         >стать участником</a
       >
-      <a href="./about.html" class="text text_color_black text_size_primary"
+      <a href="./about.html" class="header__link text text_color_black text_size_primary"
         >о фестивале</a
       >
     </nav>
@@ -51,6 +51,7 @@
         <div class="header__heart"></div>
         <p class="text text_color_black text_size_primary">хочу пойти</p>
       </div>
+      <button class="header__btn-menu"></button>
       <button class="header__donate-button button button_color_violet button_size_min-width">
         <p class="text text_color_white text_size_primary">поддержать</p>
       </button>
