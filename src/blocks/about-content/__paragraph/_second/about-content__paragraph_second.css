@@ -7,8 +7,13 @@
   gap: 40px;
 }
 
-/* @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1330px) {
   .about-content__paragraph_second {
-
+    margin: 40px 0 0;
+    padding: 0;
+    flex-direction: column-reverse;
+    min-height: fit-content;
+    max-height: fit-content;
+    max-width: fit-content;
   }
-} */
+}

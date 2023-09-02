@@ -10,6 +10,12 @@
 @import url(../blocks/about-content/__subtitle/about-content__subtitle.css);
 @import url(../blocks/about-content/__text-container/about-content__text-container.css);
 @import url(../blocks/about-content/__text/about-content__text.css);
+@import url(../blocks/about-content/__mobile-image/about-content__mobile-image.css);
+@import url(../blocks/about-content/__mobile-illustration/about-content__mobile-illustration.css);
+@import url(../blocks/about-content/__mobile-illustration/_first/about-content__mobile-illustration_first.css);
+@import url(../blocks/about-content/__mobile-illustration/_second/about-content__mobile-illustration_second.css);
+@import url(../blocks/about-content/__mobile-illustration/_third/about-content__mobile-illustration_third.css);
+@import url(../blocks/about-content/__mobile-image-description/about-content__mobile-image-description.css);
 @import url(../blocks/about-content/__button/about-content__button.css);
 @import url(../blocks/about-content/__circle-container/about-content__circle-container.css);
 @import url(../blocks/about-content/__circle-container/_right/about-content__circle-container_right.css);
