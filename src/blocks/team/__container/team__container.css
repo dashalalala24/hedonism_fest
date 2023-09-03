@@ -1,8 +1,16 @@
 .team__container {
   display: flex;
   gap: 24px;
-  overflow: hidden;
-  overflow-x: scroll;
+  overflow: scroll;
+}
+
+.team__container::-webkit-scrollbar {
+  height: 4px;
+}
+
+.team__container::-webkit-scrollbar-thumb {
+  background-color: #7100FF;
+  border-radius: 100px;
 }
 
 @media screen and (max-width: 1024px) {
