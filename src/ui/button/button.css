@@ -16,6 +16,10 @@
 	color: #5100b8;
 }
 
+.button:hover .drop-down-list.text_color_black {
+	color: #3B3748;
+}
+
 .button:hover .icon_type_arrow-black {
 	background-image: url('../../images/icons/button/arrow-violent.svg');
 }

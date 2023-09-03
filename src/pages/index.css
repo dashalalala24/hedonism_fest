@@ -24,7 +24,7 @@
 @import url(../ui/text/_align/text_align_left.css);
 @import url(../ui/text/_align/text_align_right.css);
 
-@import url(../ui/text/_clipping/text_clipping_ellipsis.css);
+@import url(../ui/text/_clipping/text_overflow_ellipsis.css);
 @import url(../ui/text/_clipping/text_clipping_no-wrap.css);
 
 @import url(../ui/text/_grid-control/text_grid-control_merged.css);
@@ -76,18 +76,26 @@
 @import url(../ui/button/_type/button_type_cities-list.css);
 @import url(../ui/button/_type/button_type_radio-online-offline.css);
 @import url(../ui/button/_type/button_type_cross.css);
+@import url(../ui/button/_type/button_type_invisible.css);
 
 @import url(../ui/button/_state/button_state_active-like.css);
 @import url(../ui/button/_state/button_state_disabled.css);
 @import url(../ui/button/_state/button_state_filter-unchecked.css);
 @import url(../ui/button/_state/button_stated_radio-event-checked.css);
+@import url(../ui/button/_state/button_state_invisible.css);
 
 @import url(../ui/button/_align/button_align-right.css);
 
 /* -------------- input -------------- */
 @import url(../ui/input-field/input-field.css);
+@import url(../ui/input-field/_type/input-field_type_warning.css);
+@import url(../ui/input-field/_type/input-field_type_invisible.css);
 @import url(../ui/textarea-field/textarea-field.css);
 
+/* -------------- drop-down-list -------------- */
+@import url(../ui/drop-down-list/drop-down-list.css);
+@import url(../ui/drop-down-list/__item/drop-down-list__item.css);
+@import url(../ui/drop-down-list/_state/drop-down-list_state_visible.css);
 
 /* -------------- icon -------------- */
 @import url(../ui/icon/icon.css);
@@ -318,10 +326,12 @@
 @import url(../blocks/add-photo/add-photo.css);
 
 @import url(../blocks/add-photo/__drop-off-area/add-photo__drop-off-area.css);
+@import url(../blocks/add-photo/__drop-off-area/_type/add-photo__drop-off-area_type_dragged-over.css);
 
 @import url(../blocks/add-photo/__input/add-photo__input.css);
 
 @import url(../blocks/add-photo/__label/add-photo__label.css);
+@import url(../blocks/add-photo/__label/_type/add-photo__label_type_invisible.css);
 
 /* -------------- form -------------- */
 @import url(../blocks/form/form.css);
@@ -340,6 +350,7 @@
 @import url(../blocks/form/__fields/_type/form__fields_type_working-hours.css);
 @import url(../blocks/form/__fields/_type/form__fields_type_place-address.css);
 @import url(../blocks/form/__fields/_type/form__fields_type_place-phone.css);
+@import url(../blocks/form/__fields/_type/form__fields_type_booking-phone.css);
 @import url(../blocks/form/__fields/_type/form__fields_type_web-site.css);
 @import url(../blocks/form/__fields/_type/form__fields_type_social-networks.css);
 @import url(../blocks/form/__fields/_type/form__fields_type_event-description.css);
@@ -350,6 +361,9 @@
 @import url(../blocks/form/__fields/_type/form__fields_type_announcement-meeting.css);
 
 @import url(../blocks/form/__fields/_state/form__fields_state_invisible.css);
+
+/* -------------- section -------------- */
+@import url(../blocks/section/_state/section_state_invisible.css);
 
 /* -------------- controller -------------- */
 @import url(../blocks/controller/form__controller.css);
