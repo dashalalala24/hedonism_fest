@@ -815,7 +815,3 @@ document
 document
 	.getElementById('event-hours')
 	.addEventListener('keydown', hoursListenerHandler);
-
-//TODO city drop-down list
-//TODO drag-and-drop file upload functionality
-//TODO submit function and data collection
