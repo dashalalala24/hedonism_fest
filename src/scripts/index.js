@@ -7,12 +7,12 @@ console.log('HedonismFest');
 
 const dropdownMenu = document.querySelector('.header__menu-list');
 
-function openDropdown() {
+function openDropdownLocation() {
 	dropdownMenu.classList.toggle('header__menu-list_show');
 }
 
 const buttonDropdown = document.querySelector('#button-dropdown');
-buttonDropdown.addEventListener('click', openDropdown);
+buttonDropdown.addEventListener('click', openDropdownLocation);
 
 // function closeDropdownOutside() {}
 
@@ -21,6 +21,6 @@ window.addEventListener('mousedown', (evt) => {
 		dropdownMenu.classList.contains('header__menu-list_show') &&
 		evt.target !== dropdownMenu
 	) {
-		openDropdown();
+		openDropdownLocation();
 	}
 });

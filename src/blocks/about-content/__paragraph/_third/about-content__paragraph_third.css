@@ -7,3 +7,13 @@
   max-width: 1440px;
   min-height: 480px;
 }
+
+
+@media screen and (max-width: 1330px) {
+  .about-content__paragraph_third {
+    margin: 40px 0 0;
+    padding: 0;
+    flex-direction: column-reverse;
+    min-height: fit-content;
+  }
+}

@@ -7,9 +7,15 @@
   margin: 0;
 }
 
+@media screen and (max-width: 1330px) {
+  .about-content__text-container {
+    max-width: fit-content;
+  }
+}
+/* 
 @media screen and (max-width: 1024px) {
   .about-content__text-container {
     margin: 0 auto;
     width: 320px;
   }
-}
+} */

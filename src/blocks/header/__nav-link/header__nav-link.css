@@ -3,3 +3,9 @@
 	flex-direction: row;
 	column-gap: 44px;
 }
+
+@media screen and (max-width: 1168px) {
+  .header__nav-link {
+    display: none;
+  }
+}
