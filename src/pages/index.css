@@ -268,8 +268,12 @@
 @import url(../blocks/photo/__text/photo__text.css);
 @import url(../blocks/photo/__gallery/photo__gallery.css);
 @import url(../blocks/photo/__image-container/photo__image-container.css);
+@import url(../blocks/photo/__image-container/_first/photo__image-container_first.css);
+@import url(../blocks/photo/__image-container/_big/photo__image-container_big.css);
+@import url(../blocks/photo/__image-container/_third/photo__image-container_third.css);
+@import url(../blocks/photo/__image-container/_fourth/photo__image-container_fourth.css);
+@import url(../blocks/photo/__image-container/_fifth/photo__image-container_fifth.css);
 @import url(../blocks/photo/__image/photo__image.css);
-@import url(../blocks/photo/__image/_big/photo__image_big.css);
 @import url(../blocks/photo/__radio-button/photo__radio-button.css);
 @import url(../blocks/photo/__navigation/photo__navigation.css);
 @import url(../blocks/photo/__nav-button/photo__nav-button.css);
