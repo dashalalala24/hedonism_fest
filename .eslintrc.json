@@ -15,6 +15,7 @@
 	"rules": {
 		"indent": ["warn", "tab"],
 		"quotes": ["error", "single"],
-		"semi": ["error", "always"]
+		"semi": ["error", "always"],
+    "no-unused-vars": "off"
 	}
 }

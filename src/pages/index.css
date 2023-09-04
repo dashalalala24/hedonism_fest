@@ -1,6 +1,7 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
 @import url(../vendor/api-maps.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css);
 
 
 @import url(../blocks/page/page.css);
@@ -285,9 +286,10 @@
 @import url(../blocks/photo/__image-container/_fourth/photo__image-container_fourth.css);
 @import url(../blocks/photo/__image-container/_fifth/photo__image-container_fifth.css);
 @import url(../blocks/photo/__image/photo__image.css);
-@import url(../blocks/photo/__radio-button/photo__radio-button.css);
 @import url(../blocks/photo/__navigation/photo__navigation.css);
-@import url(../blocks/photo/__nav-button/photo__nav-button.css);
+@import url(../blocks/photo/__slider-container/photo__slider-container.css);
+@import url(../blocks/photo/__slider/photo__slider.css);
+@import url(../blocks/photo/__slider-item/photo__slider-item.css);
 
 /* -------------- team -------------- */
 @import url(../blocks/team/team.css);
