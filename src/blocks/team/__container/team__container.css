@@ -1,8 +1,18 @@
 .team__container {
   display: flex;
   gap: 24px;
-  overflow: hidden;
+  overflow-x: scroll;
 }
+
+.team__container::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* .team__container::-webkit-scrollbar-thumb {
+  background-color: #7100FF;
+  border-radius: 100px;
+} */
 
 @media screen and (max-width: 1024px) {
   .team__container {
