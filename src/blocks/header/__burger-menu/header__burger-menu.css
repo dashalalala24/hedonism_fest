@@ -1,0 +1,21 @@
+.header__burger-menu {
+  position: absolute;
+	top: 68px;
+	left: 0px;
+	display: flex;
+	width: 200%;
+  height: fit-content;
+	padding: 20px;
+	flex-direction: column;
+  row-gap: 20px;
+	align-items: flex-start;
+	z-index: 1;
+	background-color: #fff;
+  overflow-x: scroll;
+}
+
+@media screen and (min-width: 1169px) {
+  .header__burger-menu {
+    display: none;
+  }
+}

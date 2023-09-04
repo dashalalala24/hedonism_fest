@@ -103,6 +103,7 @@
 
 /* -------------- icon -------------- */
 @import url(../ui/icon/icon.css);
+@import url(../ui/icon/_type/icon_type_angle-small-right.css);
 @import url(../ui/icon/_type/icon_type_arrow-black.css);
 @import url(../ui/icon/_type/icon_type_arrow-white.css);
 @import url(../ui/icon/_type/icon_type_arrow-top.css);
@@ -218,8 +219,11 @@
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__logo-location/header__logo-location.css);
 @import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__logo-burger/header__logo-burger.css);
+@import url(../blocks/header/__burger-menu/header__burger-menu.css);
 @import url(../blocks/header/__location-button/header__location-button.css);
 @import url(../blocks/header/__btn-dropdown/header__btn-dropdown.css);
+@import url(../blocks/header/__btn-dropdown/_burger/header__btn-dropdown_burger.css);
 @import url(../blocks/header/__menu-list/header__menu-list.css);
 @import url(../blocks/header/__menu-list/_show/header__menu-list_show.css);
 @import url(../blocks/header/__list-item/header__list-item.css);
@@ -227,12 +231,15 @@
 @import url(../blocks/header/__checked-mark/_checked/header__checked-mark_checked.css);
 @import url(../blocks/header/__input-item/header__input-item.css);
 @import url(../blocks/header/__nav-link/header__nav-link.css);
+@import url(../blocks/header/__nav-link/_burger/header__nav-link_burger.css);
 @import url(../blocks/header/__link/header__link.css);
 @import url(../blocks/header/__user-action/header__user-action.css);
 @import url(../blocks/header/__user-action-go/header__user-action-go.css);
 @import url(../blocks/header/__donate-button/header__donate-button.css);
+@import url(../blocks/header/__donate-button/_burger/header__donate-button_burger.css);
 @import url(../blocks/header/__btn-menu/header__btn-menu.css);
 @import url(../blocks/header/__heart/header__heart.css);
+@import url(../blocks/header/__container/header__container.css);
 
 /* -------------- lead -------------- */
 @import url(../blocks/lead/lead.css);
