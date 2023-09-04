@@ -69,7 +69,7 @@ function handleClickOutside(element, callback) {
 			callback();
 		}
 	}
-});
+}
 
 if (document.getElementById('page')) {
 	var slider = tns({
@@ -83,10 +83,8 @@ if (document.getElementById('page')) {
 	});
 }
 
-	document.addEventListener('click', handleClick);
-}
+document.addEventListener('click', handleClickOutside);
 
 handleClickOutside(buttonDropdown, closeDropdownLocation);
 
 buttonDropdown.addEventListener('click', openDropdownLocation);
-
