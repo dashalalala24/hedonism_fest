@@ -15,6 +15,28 @@ const cityDropDownListButtonLabel = document.querySelector(
 );
 const dropDownInputList = document.getElementById('city');
 
+// input fields and error spans
+const inputFieldsList = Array.from(document.querySelectorAll('.input-field'));
+const eventDateInputField = document.querySelector(
+	'.form__fields_type_event-date input'
+);
+const organizerPhoneInputField = document.querySelector(
+	'.form__fields_type_organizer-phone input'
+);
+const placePhoneInputField = document.querySelector(
+	'.form__fields_type_place-phone input'
+);
+const bookingPhoneInputField = document.querySelector(
+	'.form__fields_type_booking-phone input'
+);
+const workingHoursInputField = document.querySelector(
+	'.form__fields_type_working-hours input'
+);
+const eventHoursInputField = document.querySelector(
+	'.form__fields_type_event-hours input'
+);
+const dateErrorSpan = document.querySelector('.event-date-error');
+
 // CONTROLLER
 const controllerBackCancelButton = document.querySelector(
 	'.button_type_cancel-back'
@@ -35,6 +57,7 @@ const contactsAndWorkingHoursSection = document.querySelector(
 	'.contacts-and-working-hours'
 );
 const addPhotoSection = document.querySelector('.add-photo');
+const applicationSection = document.querySelector('.application');
 
 // STEP 1
 const checkedTypeEventSpan = document.querySelector(
@@ -93,6 +116,7 @@ const dropZoneCross = document.querySelector('.button_type_cross');
 // КОНСТАНТЫ
 let step = 0;
 let fieldsToGetValidateState = null;
+const webPage = '/join.html';
 
 const controlInputFieldsDict = {
 	0: {
@@ -387,6 +411,7 @@ const hasInvalidInput = () => {
 	if (!fieldsToGetValidateState) {
 		return false;
 	}
+
 	return fieldsToGetValidateState.some((element) => {
 		return !element.validity.valid;
 	});
@@ -474,7 +499,9 @@ function submitData(e) {
 	}
 	console.log('formData', formData);
 	formParticipant.reset();
-	window.location.href = './index.html';
+
+	formParticipant.classList.add('content_type_invisible');
+	applicationSection.classList.remove('application_type_invisible');
 }
 
 // DROP-DOWN LIST
@@ -482,15 +509,18 @@ function showDropDownList() {
 	dropDownList.classList.add('drop-down-list_state_visible');
 }
 
-cityDropDownListButton.addEventListener('mousedown', showDropDownList);
+if (window.location.pathname === webPage) {
+	cityDropDownListButton.addEventListener('mousedown', showDropDownList);
 
-window.addEventListener('mousedown', (e) => {
-	if (e.target.classList.contains('drop-down-list__item')) {
-		dropDownInputList.value = e.target.textContent;
-		cityDropDownListButtonLabel.textContent = e.target.textContent;
-		dropDownList.classList.remove('drop-down-list_state_visible');
-	}
-});
+	window.addEventListener('mousedown', (e) => {
+		if (e.target.classList.contains('drop-down-list__item')) {
+			dropDownInputList.value = e.target.textContent;
+			cityDropDownListButtonLabel.textContent = e.target.textContent;
+			dropDownList.classList.remove('drop-down-list_state_visible');
+		}
+		handleToggleButton();
+	});
+}
 
 // VALIDATION FUNCTIONS
 function showInputError(inputField) {
@@ -529,9 +559,8 @@ function isValid(inputField) {
 	}
 }
 
-const setEventListeners = () => {
-	const inputList = Array.from(document.querySelectorAll('.input-field'));
-	inputList.forEach((inputField) => {
+const setValidationEventListeners = () => {
+	inputFieldsList.forEach((inputField) => {
 		inputField.addEventListener('input', () => {
 			isValid(inputField);
 		});
@@ -543,19 +572,17 @@ function validateDate(event) {
 	const enteredDate = new Date(event.target.value);
 	const today = new Date();
 
-	const inputField = document.getElementById('event-date');
-	const errorSpan = document.querySelector('.event-date-error');
-
 	if (enteredDate <= today) {
-		inputField.setCustomValidity('Введите значение позже сегодняшней даты');
-		errorSpan.textContent = 'Введите значение позже сегодняшней даты';
-		errorSpan.classList.remove('text_type_invisible');
-		showInputError(inputField);
+		eventDateInputField.setCustomValidity(
+			'Введите значение позже сегодняшней даты'
+		);
+		dateErrorSpan.textContent = 'Введите значение позже сегодняшней даты';
+		dateErrorSpan.classList.remove('text_type_invisible');
+		showInputError(eventDateInputField);
 	} else {
-		hideInputError(inputField);
-		errorSpan.textContent = '';
-		inputField.setCustomValidity('');
-		errorSpan.classList.add('text_type_invisible');
+		hideInputError(eventDateInputField);
+		eventDateInputField.setCustomValidity('');
+		dateErrorSpan.classList.add('text_type_invisible');
 	}
 	handleToggleButton();
 }
@@ -609,11 +636,7 @@ function phoneNumbersAccumulation(
 	const allowedKeys = [8, 46];
 	const errorSpan = document.querySelector(`.${inputField.id}-error`);
 	if (
-		!(
-			(keysDict.length === 0 && (keyCode === 55 || keyCode === 56)) || // 1st and 2nd number shall not be 7 or 8
-			allowedKeys.indexOf(keyCode) === 0 ||
-			keysDict.length >= 10
-		) // phone number shall not consist of more than 10 digits
+		!(allowedKeys.indexOf(keyCode) === 0 || keysDict.length >= 10) // phone number shall not consist of more than 10 digits
 	) {
 		keysDict.push(keyCode);
 	} else if (keyCode === 8) {
@@ -660,6 +683,7 @@ function hoursNumbersAccumulation(
 
 	if (keysDict.length % 8 === 0 && checkTimeIntervals(keysDict)) {
 		hideInputError(inputField);
+		inputField.setCustomValidity('');
 		errorSpan.classList.add('text_type_invisible');
 	} else {
 		inputField.setCustomValidity(errorMessage);
@@ -744,28 +768,33 @@ function hoursListenerHandler(e) {
 }
 
 // PHOTO UPLOAD
-dropZone.addEventListener('dragover', (e) => {
-	e.preventDefault();
-	dropZone.classList.add('add-photo__drop-off-area_type_dragged-over');
-});
+if (window.location.pathname === webPage) {
+	dropZone.addEventListener('dragover', (e) => {
+		e.preventDefault();
+		dropZone.classList.add('add-photo__drop-off-area_type_dragged-over');
+	});
 
-dropZone.addEventListener('dragleave', () => {
-	dropZone.classList.remove('add-photo__drop-off-area_type_dragged-over');
-});
+	dropZone.addEventListener('dragleave', () => {
+		dropZone.classList.remove('add-photo__drop-off-area_type_dragged-over');
+	});
 
-dropZone.addEventListener('drop', (e) => {
-	e.preventDefault();
-	dropZone.classList.remove('add-photo__drop-off-area_type_dragged-over');
-	const file = e.dataTransfer.files[0];
-	handleFile(file);
-});
+	dropZone.addEventListener('drop', (e) => {
+		e.preventDefault();
+		dropZone.classList.remove('add-photo__drop-off-area_type_dragged-over');
+		const file = e.dataTransfer.files[0];
+		handleFile(file);
+	});
 
-fileInput.addEventListener('change', () => {
-	const file = fileInput.files[0];
-	handleFile(file);
-});
+	fileInput.addEventListener('change', () => {
+		const file = fileInput.files[0];
+		handleFile(file);
+	});
+}
 
 function handleFile(file) {
+	if (file.size > 5 * 1024 * 1024) {
+		alert('Размер файла не может превышать 5МБ');
+	}
 	if (file && file.type.startsWith('image/')) {
 		dropZoneLabel.classList.add('add-photo__label_type_invisible');
 		dropZoneCross.classList.remove('button_type_invisible');
@@ -782,36 +811,35 @@ function handleFile(file) {
 	handleToggleButton();
 }
 
-dropZoneCross.addEventListener('click', () => {
-	dropZoneLabel.classList.remove('add-photo__label_type_invisible');
-	dropZoneCross.classList.add('button_type_invisible');
-	dropZone.style.backgroundImage = '';
-	fileInput.required = true;
-	fileInput.setCustomValidity('ERROR');
-	fileInput.value = '';
-	handleToggleButton();
-});
+if (window.location.pathname === webPage) {
+	dropZoneCross.addEventListener('click', () => {
+		dropZoneLabel.classList.remove('add-photo__label_type_invisible');
+		dropZoneCross.classList.add('button_type_invisible');
+		dropZone.style.backgroundImage = '';
+		fileInput.required = true;
+		fileInput.setCustomValidity('ERROR');
+		fileInput.value = '';
+		handleToggleButton();
+	});
+}
 
 // EVENT LISTENERS
-controlPage(step);
-controllerBackCancelButton.addEventListener('click', previousSection);
-controllerNextButton.addEventListener('click', nextSection);
-formParticipant.addEventListener('submit', submitData);
-setEventListeners();
-document.getElementById('event-date').addEventListener('input', validateDate);
-document
-	.getElementById('organizer-phone')
-	.addEventListener('keydown', phoneNumberListenerHandler);
-document
-	.getElementById('place-phone')
-	.addEventListener('keydown', phoneNumberListenerHandler);
-document
-	.getElementById('booking-phone')
-	.addEventListener('keydown', phoneNumberListenerHandler);
-
-document
-	.getElementById('working-hours')
-	.addEventListener('keydown', hoursListenerHandler);
-document
-	.getElementById('event-hours')
-	.addEventListener('keydown', hoursListenerHandler);
+if (window.location.pathname === webPage) {
+	controlPage(step);
+	setValidationEventListeners();
+	controllerBackCancelButton.addEventListener('click', previousSection);
+	controllerNextButton.addEventListener('click', nextSection);
+	formParticipant.addEventListener('submit', submitData);
+	eventDateInputField.addEventListener('input', validateDate);
+	organizerPhoneInputField.addEventListener(
+		'keydown',
+		phoneNumberListenerHandler
+	);
+	placePhoneInputField.addEventListener('keydown', phoneNumberListenerHandler);
+	bookingPhoneInputField.addEventListener(
+		'keydown',
+		phoneNumberListenerHandler
+	);
+	workingHoursInputField.addEventListener('keydown', hoursListenerHandler);
+	eventHoursInputField.addEventListener('keydown', hoursListenerHandler);
+}

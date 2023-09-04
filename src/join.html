@@ -161,7 +161,8 @@
                  class="input-field_type_invisible input-field_type_to-validate"
                  type="text"
                  name="city"
-                 >
+                 required
+          >
         </div>
 
         <div class="form__fields_type_place-name">
@@ -483,12 +484,6 @@
     </div>
   </section>
 
-  <!-- FINAL SCREEN -->
-  <section>
-
-  </section>
-
-
   <!-- CONTROLLER -->
   <div class="controller">
     <button type="button"
@@ -500,6 +495,27 @@
     </button>
   </div>
 </form>
+
+<!-- FINAL SCREEN -->
+<section class="application application_type_invisible">
+  <div class="application__description">
+    <p class="title title_align_left title_size_l text_color_white">спасибо за заявку!</p>
+    <p class="title title_align_left title_size_s text_color_white text_type_application">с вами свяжутся в ближайшее
+      время</p>
+    <a href="index.html" class="text_type_no-underline">
+      <button class="button button_color_transparent button_size_min-width button_border_white">
+        <p class="text text_color_white text_size_primary">на главную</p>
+      </button>
+    </a>
+  </div>
+  <div class="application__illustration">
+
+  </div>
+
+
+</section>
+
+
 <!-- БЛОК FOOTER -->
 <%= require('./footer.html?raw') %>
 </body>

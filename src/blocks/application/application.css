@@ -1,0 +1,18 @@
+.application {
+  background-color: #7100ff;
+  margin: auto;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 1440px;
+  padding-top: calc(((160 - 40) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 40px);
+  padding-bottom: calc(((160 - 40) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 40px);
+  padding-left: calc(((280 - 20) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 20px);
+  padding-right: calc(((280 - 20) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 20px);
+  display: flex;
+  flex-direction: row;
+  /*justify-content: space-between;*/
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap-reverse;
+}
