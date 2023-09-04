@@ -1,4 +1,5 @@
 .popup-card {
+    height: 100vh;
     display: none;
     flex-direction: column;
     position: fixed;
