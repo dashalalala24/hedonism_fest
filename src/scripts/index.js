@@ -26,7 +26,6 @@ window.addEventListener('mousedown', (evt) => {
 	}
 });
 
-/* eslint-disable no-unused-vars */
 if (document.getElementById('page')) {
 	var slider = tns({
 		container: '.photo__slider',
@@ -38,4 +37,3 @@ if (document.getElementById('page')) {
 		mouseDrag: true,
 	});
 }
-/* eslint-enable no-unused-vars */
