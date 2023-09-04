@@ -4,3 +4,9 @@
   position: relative;
   top: -126px;
 }
+
+@media screen and (max-width: 670px) {
+  .lead__text {
+    top: 18px;
+  }
+}

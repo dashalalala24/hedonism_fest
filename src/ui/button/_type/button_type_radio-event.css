@@ -1,0 +1,9 @@
+.button_type_radio-event {
+  border: #3B3748 solid 2px;
+  background-color: white;
+  width: 100%;
+  justify-content: space-between;
+  transition: background-color 0.3s ease, border 0.1s ease;
+  margin: 12px 0 0;
+}
+

@@ -1,17 +1,12 @@
 .footer {
   padding: 80px 40px 80px;
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
+  box-sizing: border-box;
   background-color: #ebe9ed;
   column-gap: 40px;
-}
-
-@media screen and (max-width: 1280px) {
-  .footer {
-    flex-direction: column;
-    padding: 40px 20px 40px;
-    row-gap: 48px;
-  }
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 1024px) {

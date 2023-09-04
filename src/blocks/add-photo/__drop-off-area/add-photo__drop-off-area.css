@@ -1,0 +1,21 @@
+.add-photo__drop-off-area {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: calc(
+		((298 - 220) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 220px
+	);
+  /*padding: 20px;*/
+  border: #96949E 2px solid;
+  border-radius: 22px;
+  /*transition: border 0.3s ease-in-out;*/
+  transition: background-color 0.3s ease-in-out;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+}

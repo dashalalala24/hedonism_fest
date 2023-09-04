@@ -1,0 +1,7 @@
+.application__illustration {
+  width: 385px;
+  height: 333px;
+  background-size: contain;
+  background: url("../../../images/join/champain.svg") no-repeat center center;
+  margin-bottom: 43px;
+}

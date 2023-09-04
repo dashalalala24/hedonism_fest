@@ -1,0 +1,9 @@
+.button_stated_radio-event-checked {
+  border: #7100FF 2px solid;
+  background-color: #7100FF;
+  margin-bottom: 20px;
+}
+
+.button_stated_radio-event-checked .text {
+  color: white;
+}

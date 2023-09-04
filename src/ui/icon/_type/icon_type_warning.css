@@ -1,0 +1,7 @@
+.icon_type_warning {
+  width: 24px;
+  height: 24px;
+  background: url("../../../images/icons/input-fields/warning.svg") no-repeat center center;
+  padding-left: 20px;
+  padding-right: 8px;
+}

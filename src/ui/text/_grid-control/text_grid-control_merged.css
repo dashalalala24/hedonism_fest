@@ -1,0 +1,7 @@
+@media screen and (max-width: 700px) {
+  .text_grid-control_merged {
+    grid-column: 1 / span 2;
+  }
+}
+
+

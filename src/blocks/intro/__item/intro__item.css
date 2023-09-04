@@ -1,0 +1,19 @@
+.intro__item {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 77fr 306fr 417fr;
+  column-gap: calc(
+    ((40 - 0) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 0px
+  );;
+  row-gap: 20px;
+  padding: 20px 0;
+  box-shadow: 0 -1px 0 0 #EBE9ED inset;
+
+}
+
+@media screen and (max-width: 700px) {
+  .intro__item {
+    grid-template-columns: 68fr 252fr;
+    grid-template-rows: auto auto;
+  }
+}
