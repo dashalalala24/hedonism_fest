@@ -2,6 +2,7 @@ import('../pages/index.css');
 import('./where-to-go');
 import('./about');
 import('./join');
+import { tns } from '../../node_modules/tiny-slider';
 
 console.log('HedonismFest');
 
@@ -24,3 +25,17 @@ window.addEventListener('mousedown', (evt) => {
 		openDropdown();
 	}
 });
+
+/* eslint-disable no-unused-vars */
+if (document.getElementById('page')) {
+	var slider = tns({
+		container: '.photo__slider',
+		items: 1,
+		slideBy: 'page',
+		autoplay: false,
+		controls: false,
+		navPosition: 'bottom',
+		mouseDrag: true,
+	});
+}
+/* eslint-enable no-unused-vars */
