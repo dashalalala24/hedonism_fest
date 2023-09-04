@@ -2,12 +2,14 @@ import('../pages/about.css');
 
 console.log('О фестивале');
 
-const arrowTop = document.querySelector('.about-content__arrow');
+if (document.getElementById('about-page')) {
+	const arrowTop = document.querySelector('.about-content__arrow');
 
-arrowTop.onclick = () => {
-	window.scrollTo(scrollY, 0);
-};
+	arrowTop.onclick = () => {
+		window.scrollTo(scrollY, 0);
+	};
 
-window.addEventListener('scroll', function () {
-	arrowTop.hidden = this.scrollY < document.documentElement.clientHeight;
-});
+	window.addEventListener('scroll', function () {
+		arrowTop.hidden = this.scrollY < document.documentElement.clientHeight;
+	});
+}
