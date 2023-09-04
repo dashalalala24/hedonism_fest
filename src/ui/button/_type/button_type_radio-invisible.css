@@ -4,6 +4,7 @@
   height: 1px;
   overflow: hidden;
   clip-path: inset(0 0 0 0);
+  appearance: none;
 }
 
 .button_type_radio-invisible:checked + .button_type_radio-event{

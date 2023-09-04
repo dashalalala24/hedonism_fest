@@ -8,7 +8,7 @@
 		<title>ГедонизмФест</title>
 	</head>
 
-	<body class="page">
+	<body class="page" id="page">
   <%= require('./header.html?raw') %>
     <section class="lead">
       <div class="lead__screen"></div>
@@ -133,9 +133,9 @@
       </button>
       </div>
     </section>
-    <div>.</div>
-		<a href="./storybook.html">UI-компоненты</a>
-		<div>.</div>
+<!--    <div>.</div>-->
+<!--		<a href="./storybook.html">UI-компоненты</a>-->
+<!--		<div>.</div>-->
 
     <section class="digits">
       <h2 class="title title_size_l title_align_left digits__title">цифры дня</h2>
@@ -212,28 +212,22 @@
       <p class="text text_size_primary text_color_black photo__text">Ставь хештег и попади в ленту на сайте</p>
 
       <div class="photo__gallery">
-
         <div class="photo__image-container photo__image-container_first"><img class="photo__image" src="<%=require('./images/photo/photo1.jpg')%>" alt="пикник в парке"></div>
         <div class="photo__image-container photo__image-container_big"><img class="photo__image" src="<%=require('./images/photo/photo2.jpg')%>" alt="девушка в кафе"></div>
         <div class="photo__image-container photo__image-container_third"><img class="photo__image" src="<%=require('./images/photo/photo3.jpg')%>" alt="коктейли в бокалах"></div>
         <div class="photo__image-container photo__image-container_fourth"><img class="photo__image" src="<%=require('./images/photo/photo4.jpg')%>" alt="девушка в картинной галерее"></div>
         <div class="photo__image-container photo__image-container_fifth"><img class="photo__image" src="<%=require('./images/photo/photo5.jpg')%>" alt="компания девушек с напитками"></div>
-
-        <input class="photo__radio-button" type="radio" name="r" id="r1" checked>
-        <input class="photo__radio-button" type="radio" name="r" id="r2">
-        <input class="photo__radio-button" type="radio" name="r" id="r3">
-        <input class="photo__radio-button" type="radio" name="r" id="r4">
-        <input class="photo__radio-button" type="radio" name="r" id="r5">
-
       </div>
 
-      <div class="photo__navigation">
-        <label for="r1" class="photo__nav-button"></label>
-        <label for="r2" class="photo__nav-button"></label>
-        <label for="r3" class="photo__nav-button"></label>
-        <label for="r4" class="photo__nav-button"></label>
-        <label for="r5" class="photo__nav-button"></label>
+      <div class="photo__slider-container">
+      <div class="photo__slider">
+        <img class="photo__slider-item" src="<%=require('./images/photo/photo1.jpg')%>" alt="пикник в парке">
+        <img class="photo__slider-item" src="<%=require('./images/photo/photo2.jpg')%>" alt="девушка в кафе">
+        <img class="photo__slider-item" src="<%=require('./images/photo/photo3.jpg')%>" alt="коктейли в бокалах">
+        <img class="photo__slider-item" src="<%=require('./images/photo/photo4.jpg')%>" alt="девушка в картинной галерее">
+        <img class="photo__slider-item" src="<%=require('./images/photo/photo5.jpg')%>" alt="компания девушек с напитками">
       </div>
+    </div>
     </section>
 
     <section class="team">

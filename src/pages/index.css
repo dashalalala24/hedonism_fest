@@ -1,6 +1,7 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
 @import url(../vendor/api-maps.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css);
 
 
 @import url(../blocks/page/page.css);
@@ -34,6 +35,7 @@
 
 @import url(../ui/text/_type/text_type_warning.css);
 @import url(../ui/text/_type/text_type_raido-comment.css);
+@import url(../ui/text/_type/text_type_no-underline.css);
 
 @import url(../ui/text/_state/text_type_invisible.css);
 
@@ -49,11 +51,13 @@
 @import url(../ui/title/_align/title_align_right.css);
 
 @import url(../ui/title/_type/title_type-intro.css);
+@import url(../ui/title/_type/text_type_application.css);
 
 /* -------------- button -------------- */
 @import url(../ui/button/button.css);
 
 @import url(../ui/button/_border/button_border_black.css);
+@import url(../ui/button/_border/button_border_white.css);
 
 @import url(../ui/button/_color/button_color_violet.css);
 @import url(../ui/button/_color/button_color_none.css);
@@ -289,9 +293,10 @@
 @import url(../blocks/photo/__image-container/_fourth/photo__image-container_fourth.css);
 @import url(../blocks/photo/__image-container/_fifth/photo__image-container_fifth.css);
 @import url(../blocks/photo/__image/photo__image.css);
-@import url(../blocks/photo/__radio-button/photo__radio-button.css);
 @import url(../blocks/photo/__navigation/photo__navigation.css);
-@import url(../blocks/photo/__nav-button/photo__nav-button.css);
+@import url(../blocks/photo/__slider-container/photo__slider-container.css);
+@import url(../blocks/photo/__slider/photo__slider.css);
+@import url(../blocks/photo/__slider-item/photo__slider-item.css);
 
 /* -------------- team -------------- */
 @import url(../blocks/team/team.css);
@@ -314,6 +319,8 @@
 
 /* -------------- content -------------- */
 @import url(../blocks/content/content.css);
+
+@import url(../blocks/content/_type/content_type_invisible.css);
 
 /* -------------- intro -------------- */
 @import url(../blocks/intro/intro.css);
@@ -375,3 +382,10 @@
 /* -------------- controller -------------- */
 @import url(../blocks/controller/form__controller.css);
 
+/* -------------- application -------------- */
+@import url(../blocks/application/application.css);
+
+@import url(../blocks/application/__description/application__description.css);
+@import url(../blocks/application/__illustration/application__illustration.css);
+
+@import url(../blocks/application/_type/application_type_invisible.css);
