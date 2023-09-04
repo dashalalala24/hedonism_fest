@@ -1,97 +1,219 @@
 <header class="header">
-    <div class="header__logo-location">
-    <a href="index.html">
-      <div class="header__logo"></div>
-    </a>
-      <button id="button-dropdown" class="header__btn-dropdown button button_color_transparent">
-        <div class="header__location-button"></div>
-        <p class="text text_color_black text_size_primary">Санкт-Петербург</p>
-      </button>
-      <div class="header__menu-list">
+	<div class="header__logo-location">
+		<a href="index.html">
+			<div class="header__logo"></div>
+		</a>
+		<button
+			id="button-dropdown"
+			class="header__btn-dropdown button button_color_transparent"
+		>
+			<div class="header__location-button"></div>
+			<p class="text text_color_black text_size_primary">Санкт-Петербург</p>
+		</button>
+		<div class="header__menu-list">
+			<div class="header__list-item">
+				<input
+					type="radio"
+					id="moscow"
+					value="moscow"
+					name="city"
+					class="header__input-item"
+				/>
+				<label for="moscow" class="text text_size_primary">Москва</label>
+				<div class="header__checked-mark"></div>
+			</div>
+			<div class="header__list-item">
+				<input
+					type="radio"
+					id="st-peterburg"
+					value="st-peterburg"
+					name="city"
+					class="header__input-item"
+				/>
+				<label for="st-peterburg" class="text text_size_primary"
+					>Санкт-Петербург</label
+				>
+				<div class="header__checked-mark header__checked-mark_checked"></div>
+			</div>
+			<div class="header__list-item">
+				<input
+					type="radio"
+					id="sochi"
+					value="sochi"
+					name="city"
+					class="header__input-item"
+				/>
+				<label for="sochi" class="text text_size_primary">Сочи</label>
+				<div class="header__checked-mark"></div>
+			</div>
+			<div class="header__list-item">
+				<input
+					type="radio"
+					id="kaluga"
+					value="kaluga"
+					name="city"
+					class="header__input-item"
+				/>
+				<label for="kaluga" class="text text_size_primary">Калуга</label>
+				<div class="header__checked-mark"></div>
+			</div>
+			<div class="header__list-item">
+				<input
+					type="radio"
+					id="ekaterinburg"
+					value="ekaterinburg"
+					name="city"
+					class="header__input-item"
+				/>
+				<label for="ekaterinburg" class="text text_size_primary"
+					>Екатеринбург</label
+				>
+				<div class="header__checked-mark"></div>
+			</div>
+		</div>
+	</div>
+	<nav class="header__nav-link">
+		<a
+			href="./where-to-go.html"
+			class="header__link text text_color_black text_size_primary"
+			>куда пойти</a
+		>
+		<a
+			href="./join.html"
+			class="header__link text text_color_black text_size_primary"
+			>стать участником</a
+		>
+		<a
+			href="./about.html"
+			class="header__link text text_color_black text_size_primary"
+			>о фестивале</a
+		>
+	</nav>
+	<div class="header__user-action">
+		<div class="header__user-action-go">
+			<div class="header__heart"></div>
+			<a
+				href="./where-to-go.html"
+				class="link text text_color_black text_size_primary"
+				>хочу пойти</a
+			>
+		</div>
+		<button class="header__btn-menu"></button>
+		<button
+			class="header__donate-button button button_color_violet button_size_min-width"
+		>
+			<p class="text text_color_white text_size_primary">поддержать</p>
+		</button>
+	</div>
+	<div class="header__burger-menu">
+		<div class="header__container">
+			<p class="text text_align_left text_color_grey text_size_secondary">
+				ваш город:
+			</p>
+			<button
+				class="header__btn-dropdown_burger button button_color_transparent"
+			>
+				<p class="title title_align_left text_color_black title_size_s">
+					Санкт-Петербург
+				</p>
+				<div class="icon icon_type_angle-small-right"></div>
+			</button>
+			<div class="header__nav-link_burger">
+				<p class="text text_align_left text_color_grey text_size_secondary">
+					навигация
+				</p>
+				<a
+					href="./where-to-go.html"
+					class="header__link title text_color_black title_size_s title_align_left"
+					>куда пойти</a
+				>
+				<a
+					href="./join.html"
+					class="header__link title text_color_black title_size_s title_align_left"
+					>стать участником</a
+				>
+				<a
+					href="./about.html"
+					class="header__link title text_color_black title_size_s title_align_left"
+					>о фестивале</a
+				>
+			</div>
+			<div class="header__logo-burger"></div>
+			<p class="text text_color_grey text_size_primary">
+				благотворительная организация
+			</p>
+			<button
+				class="header__donate-button_burger button button_color_violet button_size_min-width"
+			>
+				<p class="text text_color_white text_size_primary">поддержать</p>
+			</button>
+		</div>
+    <div class="header__container">
+      <div class="header__btn-back"><div class="icon icon_type_arrow-left"></div><p class="text text_size_primary text_align_left">назад</p></div>
+      <p class="text text_align_left text_color_grey text_size_secondary header__text">
+				ваш город:
+			</p>
+      <div class="header__menu-list_burger">
         <div class="header__list-item">
-          <input type="radio" id="moscow" value="moscow" name="city" class="header__input-item">
-          <label for="moscow" class="text text_size_primary">Москва</label>
+          <input
+            type="radio"
+            id="moscow"
+            value="moscow"
+            name="city"
+            class="header__input-item"
+          />
+          <label for="moscow" class="title text_color_black title_size_s title_align_left">Москва</label>
           <div class="header__checked-mark"></div>
         </div>
         <div class="header__list-item">
-          <input type="radio" id="st-peterburg" value="st-peterburg" name="city" class="header__input-item">
-          <label for="st-peterburg" class="text text_size_primary">Санкт-Петербург</label>
+          <input
+            type="radio"
+            id="st-peterburg"
+            value="st-peterburg"
+            name="city"
+            class="header__input-item"
+          />
+          <label for="st-peterburg" class="title text_color_black title_size_s title_align_left"
+            >Санкт-Петербург</label
+          >
           <div class="header__checked-mark header__checked-mark_checked"></div>
         </div>
         <div class="header__list-item">
-          <input type="radio" id="sochi" value="sochi" name="city" class="header__input-item">
-          <label for="sochi" class="text text_size_primary">Сочи</label>
+          <input
+            type="radio"
+            id="sochi"
+            value="sochi"
+            name="city"
+            class="header__input-item"
+          />
+          <label for="sochi" class="title text_color_black title_size_s title_align_left">Сочи</label>
           <div class="header__checked-mark"></div>
         </div>
         <div class="header__list-item">
-          <input type="radio" id="kaluga" value="kaluga" name="city" class="header__input-item">
-          <label for="kaluga" class="text text_size_primary">Калуга</label>
+          <input
+            type="radio"
+            id="kaluga"
+            value="kaluga"
+            name="city"
+            class="header__input-item"
+          />
+          <label for="kaluga" class="title text_color_black title_size_s title_align_left">Калуга</label>
           <div class="header__checked-mark"></div>
         </div>
         <div class="header__list-item">
-          <input type="radio" id="ekaterinburg" value="ekaterinburg" name="city" class="header__input-item">
-          <label for="ekaterinburg" class="text text_size_primary">Екатеринбург</label>
+          <input
+            type="radio"
+            id="ekaterinburg"
+            value="ekaterinburg"
+            name="city"
+            class="header__input-item"
+          />
+          <label for="ekaterinburg" class="title text_color_black title_size_s title_align_left"
+            >Екатеринбург</label
+          >
           <div class="header__checked-mark"></div>
         </div>
       </div>
     </div>
-    <nav class="header__nav-link">
-      <a href="./where-to-go.html" class="header__link text text_color_black text_size_primary"
-        >куда пойти</a
-      >
-      <a href="./join.html" class="header__link text text_color_black text_size_primary"
-        >стать участником</a
-      >
-      <a href="./about.html" class="header__link text text_color_black text_size_primary"
-        >о фестивале</a
-      >
-    </nav>
-    <div class="header__user-action">
-      <div class="header__user-action-go">
-        <div class="header__heart"></div>
-        <a href="./where-to-go.html" class="link text text_color_black text_size_primary">хочу пойти</a>
-      </div>
-      <button class="header__btn-menu"></button>
-      <button class="header__donate-button button button_color_violet button_size_min-width">
-        <p class="text text_color_white text_size_primary">поддержать</p>
-      </button>
-    </div>
-    <div class="header__burger-menu">
-      <div class="header__container">
-        <p class="text text_align_left text_color_grey text_size_secondary">ваш город:</p>
-        <button
-        class="header__btn-dropdown_burger button button_color_transparent"
-      >
-        <p class="title title_align_left text_color_black title_size_s">Санкт-Петербург</p>
-        <div class="icon icon_type_angle-small-right"></div>
-      </button>
-      </div>
-      <div class="header__nav-link_burger">
-        <p class="text text_align_left text_color_grey text_size_secondary">навигация</p>
-        <a
-          href="./where-to-go.html"
-          class="header__link title text_color_black title_size_s title_align_left"
-          >куда пойти</a
-        >
-        <a
-          href="./join.html"
-          class="header__link title text_color_black title_size_s title_align_left"
-          >стать участником</a
-        >
-        <a
-          href="./about.html"
-          class="header__link title text_color_black title_size_s title_align_left"
-          >о фестивале</a
-        >
-      </div>
-      <div class="header__container">
-        <div class="header__logo-burger"></div>
-        <p class="text text_color_grey text_size_primary">благотворительная организация</p>
-        <button
-        class="header__donate-button_burger button button_color_violet button_size_min-width"
-      >
-        <p class="text text_color_white text_size_primary">поддержать</p>
-      </button>
-      </div>
-    </div>
-  </header>
+	</div>
+</header>

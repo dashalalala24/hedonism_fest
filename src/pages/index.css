@@ -105,6 +105,7 @@
 @import url(../ui/icon/icon.css);
 @import url(../ui/icon/_type/icon_type_angle-small-right.css);
 @import url(../ui/icon/_type/icon_type_arrow-black.css);
+@import url(../ui/icon/_type/icon_type_arrow-left.css);
 @import url(../ui/icon/_type/icon_type_arrow-white.css);
 @import url(../ui/icon/_type/icon_type_arrow-top.css);
 @import url(../ui/icon/_type/icon_type_menu-white.css);
@@ -221,6 +222,7 @@
 @import url(../blocks/header/__logo/header__logo.css);
 @import url(../blocks/header/__logo-burger/header__logo-burger.css);
 @import url(../blocks/header/__burger-menu/header__burger-menu.css);
+@import url(../blocks/header/__burger-menu/_opened/header__burger-menu_opened.css);
 @import url(../blocks/header/__location-button/header__location-button.css);
 @import url(../blocks/header/__btn-dropdown/header__btn-dropdown.css);
 @import url(../blocks/header/__btn-dropdown/_burger/header__btn-dropdown_burger.css);
@@ -240,6 +242,8 @@
 @import url(../blocks/header/__btn-menu/header__btn-menu.css);
 @import url(../blocks/header/__heart/header__heart.css);
 @import url(../blocks/header/__container/header__container.css);
+@import url(../blocks/header/__btn-back/header__btn-back.css);
+@import url(../blocks/header/__text/header__text.css);
 
 /* -------------- lead -------------- */
 @import url(../blocks/lead/lead.css);
