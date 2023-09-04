@@ -1,0 +1,7 @@
+.button_border_white {
+	border: solid 2px white;
+}
+
+.button_border_black:hover {
+	border: solid 2px #96949E;
+}

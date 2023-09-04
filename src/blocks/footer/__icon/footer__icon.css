@@ -3,3 +3,8 @@
   width: 48px;
   height: 48px;
 }
+
+.footer__icon:hover {
+  opacity: .7;
+  transition: .4s;
+}

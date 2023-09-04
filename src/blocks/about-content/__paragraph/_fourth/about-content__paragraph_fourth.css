@@ -1,0 +1,19 @@
+.about-content__paragraph_fourth {
+  max-height: 480px;
+  min-height: 480px;
+  padding: 0 0 0 240px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+@media screen and (max-width: 1330px) {
+  .about-content__paragraph_fourth {
+    margin: 40px 0 0;
+    padding: 0;
+    flex-direction: column-reverse;
+    min-height: fit-content;
+    max-width: fit-content;
+  }
+}

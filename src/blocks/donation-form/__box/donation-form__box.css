@@ -1,0 +1,12 @@
+.donation-form__box {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 10%;
+    left: 30%;
+    z-index: 1;
+    background-color: #fff;
+    max-width: 532px;
+    padding: 40px;
+    border-radius: 24px;
+}

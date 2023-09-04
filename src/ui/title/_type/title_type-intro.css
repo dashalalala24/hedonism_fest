@@ -1,0 +1,9 @@
+.title_type-intro {
+
+}
+
+@media screen and (max-width: 600px) {
+  .title_type-intro {
+    display: none;
+  }
+}

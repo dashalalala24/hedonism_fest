@@ -1,0 +1,7 @@
+.intro {
+  margin: auto;
+  max-width: 880px;
+  padding-left: calc(((80 - 60) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 20px);
+  padding-right: calc(((80 - 60) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 20px);
+  padding-bottom: calc(((80 - 60) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 20px);
+}

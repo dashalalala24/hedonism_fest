@@ -8,6 +8,6 @@
   .footer__content {
     flex-direction: column;
     row-gap: 48px;
-    width: 360px;
+    width: 320px;
   }
 }

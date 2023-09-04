@@ -1,0 +1,9 @@
+.icon_type_triangle {
+  width: 24px;
+  height: 24px;
+  background-color: black;
+  mask: url('../../../images/icons/button/triangle.svg') no-repeat 100% 100%;
+  -webkit-mask: url('../../../images/icons/button/triangle.svg') no-repeat 100% 100%;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+}

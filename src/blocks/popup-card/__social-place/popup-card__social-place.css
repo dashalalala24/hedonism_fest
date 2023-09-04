@@ -1,0 +1,6 @@
+.popup-card__social-place {
+    display: grid;
+    column-gap: 50px;
+    row-gap: 16px;
+    grid-template-columns: repeat(2, 285px);
+}
