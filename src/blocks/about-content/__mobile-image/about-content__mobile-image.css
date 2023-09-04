@@ -1,0 +1,15 @@
+.about-content__mobile-image {
+  margin: 0 0 24px 0;
+  width: 320px;
+  /* height: 412px; */
+  display: none;
+}
+
+@media screen and (max-width: 1330px) {
+  .about-content__mobile-image {
+    margin: 0 auto 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}

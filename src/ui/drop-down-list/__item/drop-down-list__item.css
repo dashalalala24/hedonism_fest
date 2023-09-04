@@ -1,0 +1,19 @@
+.drop-down-list__item {
+  padding: 12px 24px;
+}
+
+.drop-down-list__item:hover {
+  background-color: #EBE9ED;
+  color: #7100ff;
+}
+
+.drop-down-list__item:first-of-type:hover {
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+.drop-down-list__item:last-of-type:hover {
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
