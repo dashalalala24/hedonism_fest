@@ -1,0 +1,9 @@
+.application__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+
+  max-height: 240px;
+  max-width: 420px;
+}

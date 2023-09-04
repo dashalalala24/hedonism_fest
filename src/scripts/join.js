@@ -57,6 +57,7 @@ const contactsAndWorkingHoursSection = document.querySelector(
 	'.contacts-and-working-hours'
 );
 const addPhotoSection = document.querySelector('.add-photo');
+const applicationSection = document.querySelector('.application');
 
 // STEP 1
 const checkedTypeEventSpan = document.querySelector(
@@ -410,10 +411,6 @@ const hasInvalidInput = () => {
 	if (!fieldsToGetValidateState) {
 		return false;
 	}
-	fieldsToGetValidateState.forEach((element) => {
-		console.log('hasInvalidInput', element.name, element.validity.valid);
-	});
-	console.log('------------------');
 
 	return fieldsToGetValidateState.some((element) => {
 		return !element.validity.valid;
@@ -502,7 +499,9 @@ function submitData(e) {
 	}
 	console.log('formData', formData);
 	formParticipant.reset();
-	window.location.href = './index.html';
+
+	formParticipant.classList.add('content_type_invisible');
+	applicationSection.classList.remove('application_type_invisible');
 }
 
 // DROP-DOWN LIST
@@ -510,7 +509,6 @@ function showDropDownList() {
 	dropDownList.classList.add('drop-down-list_state_visible');
 }
 
-console.log('window.location.pathname', window.location.pathname);
 if (window.location.pathname === webPage) {
 	cityDropDownListButton.addEventListener('mousedown', showDropDownList);
 
@@ -583,7 +581,6 @@ function validateDate(event) {
 		showInputError(eventDateInputField);
 	} else {
 		hideInputError(eventDateInputField);
-		dateErrorSpan.textContent = '';
 		eventDateInputField.setCustomValidity('');
 		dateErrorSpan.classList.add('text_type_invisible');
 	}
@@ -694,7 +691,6 @@ function hoursNumbersAccumulation(
 		showInputError(inputField);
 	}
 	handleToggleButton();
-	console.log('hoursNumbersAccumulation - here!!!');
 	return keysDict;
 }
 
@@ -759,7 +755,6 @@ function phoneNumberListenerHandler(e) {
 }
 
 function hoursListenerHandler(e) {
-	console.log('hoursListenerHandler - QQQQ');
 	const errorMessage = 'Ведите корректный временной интервал.';
 	const maskToRemove = /[-:,\s]/g;
 	return validateFieldBasedOnKeys(

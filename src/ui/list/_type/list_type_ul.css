@@ -1,5 +1,6 @@
 .list_type_ul {
-  list-style-position: inside;
+  list-style-position: outside;
+  list-style-type: '·';
   padding-left: 10px;
   text-align: left;
   line-height: 1.5;
