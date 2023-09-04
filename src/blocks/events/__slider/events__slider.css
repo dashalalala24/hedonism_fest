@@ -1,0 +1,15 @@
+.events__slider {
+  display: flex;
+  gap: 24px;
+  overflow-x: scroll;
+}
+
+.events__slider::-webkit-scrollbar {
+  background-color: #FCFAF7;
+  height: 4px;
+}
+
+.events__slider::-webkit-scrollbar-thumb {
+  background-color: #7100FF;
+  border-radius: 100px;
+}

@@ -2,8 +2,12 @@ import('../pages/index.css');
 import('./where-to-go');
 import('./about');
 import('./join');
+import { renderCard } from '../components/card';
+import cards from '../data/data.json';
 
 console.log('HedonismFest');
+
+cards.forEach((el) => renderCard(el, '.events__slider'));
 
 const dropdownMenu = document.querySelector('.header__menu-list');
 

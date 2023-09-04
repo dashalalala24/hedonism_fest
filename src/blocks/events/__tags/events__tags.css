@@ -1,0 +1,8 @@
+.events__tags {
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  row-gap: 16px;
+  column-gap: 12px;
+  flex-wrap: wrap;
+}

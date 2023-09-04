@@ -1,5 +1,6 @@
 .about {
   margin-top: 38px;
+  padding-bottom: 80px;
   display: grid;
   grid-template-columns: 6fr 10fr 1fr 10fr 6fr;
   grid-template-rows: 1fr;

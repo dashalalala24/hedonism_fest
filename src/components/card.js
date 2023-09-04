@@ -55,8 +55,8 @@ function putAndLike(buttonLike, source) {
 }
 
 // функция рендера карточки
-export function renderCard(source) {
-	const cardStorage = document.querySelector('.cards__page-with-card');
+export function renderCard(source, selector = '.cards__page-with-card') {
+	const cardStorage = document.querySelector(selector);
 	const fullCard = createCard(source);
 	cardStorage.append(fullCard);
 }

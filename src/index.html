@@ -22,7 +22,115 @@
       <div class="about__container">
         <p class="text text_size_primary text_align_left">Пейте кофе в любимых заведениях, посещайте интересные мероприятия, устраивайте домашние посиделки с друзьями — и помогайте бездомным!</p>
         <p class="text text_size_primary text_align_left">Целую неделю 26 апреля — 2 мая вся выручка будет перечислена в пользу бездомных.</p>
-        <a href="#" class="about__button button button_border_black button_color_none text_color_black">узнать подробнее</a>
+        <button class="about__button button button_color_none button_size_min-width button_border_black">узнать подробнее</и>
+      </div>
+    </section>
+    <section class="events">
+      <h2 class="events__title title title_size_l title_align_left">гедонизм-фест — это целая неделя, во время которой просто приятно</h2>
+      <div class="events__tags">
+          <button data-id="briefing" class="events__tag button button_color_transparent button_size_min-width button_border_black">
+            <p class="text text_color_black">посетить мастер-класс</p>
+            <div class="icon text_size_primary icon_type_arrow-black"></div>
+          </button>
+          <button data-id="сoffee" class="events__tag button button_color_transparent button_size_min-width button_border_black">
+            <p class="text text_color_black">выпить кофе</p>
+            <div class="icon text_size_primary icon_type_arrow-black"></div>
+          </button>
+          <button data-id="home" class="events__tag button button_color_transparent button_size_min-width button_border_black">
+            <p class="text text_color_black">не выходить из дома</p>
+            <div class="icon text_size_primary icon_type_arrow-black"></div>
+          </button>
+          <button data-id="excursion" class="events__tag button button_color_transparent button_size_min-width button_border_black">
+            <p class="text text_color_black">сходить на экскурсию</p>
+            <div class="icon text_size_primary icon_type_arrow-black"></div>
+          </button>
+          <button data-id="museum" class="events__tag button button_color_transparent button_size_min-width button_border_black">
+            <p class="text text_color_black">побывать в музее</p>
+            <div class="icon text_size_primary icon_type_arrow-black"></div>
+          </button>
+      </div>
+      <div class="events__slider">
+
+      </div>
+    </section>
+    <section class="popup-card">
+      <div class="popup-card__image">
+        <button class="popup-card__button-cross"></button>
+      </div>
+      <div class="popup-card__warning">
+        <div class="icon icon_type_warning"></div>
+        <p class="text text_size_secondary">перечисляем в пользу Ночлежки 10% от выручки </p>
+      </div>
+      <div class="popup-card__container">
+        <div class="popup-card__info">
+          <p class="popup-card__type text text_size_primary text_color_grey">лекция</p>
+          <p class="popup-card__time text text_size_primary text_color_grey">1 мая, 12:30-13:50</p>
+        </div>
+        <div class="popup-card__about-place">
+          <h3 class="popup-card__title title title_size_s">Идентичность: почему нам сложно меняться?</h3>
+          <p class="popup-card__description text text_size_secondary">
+            Мы думаем и общаемся с помощью нарратива - историй. Вся наша жизнь состоит из их множества, каждая из них совершенно по разному влияет на нас, какие-то из них легко заметить, а какие-то могут годами прятаться. Далеко не в каждой из этих историй мы являемся авторами, но никогда не поздно обратить на это внимание и переписать их, сделав подлинно своими.
+            С психологом Марией Бархатовой рассмотрим идентичность с позиции нарративной практики:
+            На встрече поищем ваши желаемые черты и сделаем первые шаги к их укреплению. А домой заберём инструменты для успешного продолжения.
+          </p>
+        </div>
+        <div class="popup-card__data-place">
+          <div class="popup-card__info popup-card__info_color_grey">
+            <p class="text text_size_primary">длительность</p>
+            <p class="popup-card__duration text text_size_primary">1 час 20 минут</p>
+          </div>
+          <div class="popup-card__info">
+            <p class="text text_size_primary">стоимость</p>
+            <p class="popup-card__cost text text_size_primary">1 час 20 минут</p>
+          </div>
+          <div class="popup-card__info popup-card__info_color_grey">
+            <p class="text text_size_primary">площадка</p>
+            <p class="popup-card__area text text_size_primary">1 час 20 минут</p>
+          </div>
+          <div class="popup-card__info">
+            <p class="text text_size_primary">адрес</p>
+            <p class="popup-card__address text text_size_primary">1 час 20 минут</p>
+          </div>
+          <div class="popup-card__info">
+            <p class="text text_size_primary"></p>
+            <p class="popup-card__address-number text text_size_primary text_color_violet">+ 3</p>
+          </div>
+          <div class="popup-card__info popup-card__info_color_grey">
+            <p class="text text_size_primary">телефон</p>
+            <p class="popup-card__phone text text_size_primary">1 час 20 минут</p>
+          </div>
+          <div class="popup-card__info">
+            <p class="text text_size_primary">соц. сети</p>
+            <p class="popup-card__social text text_size_primary">1 час 20 минут</p>
+          </div>
+        </div>
+        <div class="popup-card__social-place">
+          <p class="popup-card__social-text text text_size_primary">поделитесь событием в соцсетях:</p>
+          <div class="popup-card__social-links">
+            <a href="#">
+              <img class="popup-card__social-icon" src="<%=require('./images/icons/social-media/VK-icon.svg')%>" alt="Иконка вк">
+            </a>
+          </div>
+          <button
+          class="popup-card__copy-button button button_color_transparent button_size_min-width"
+        >
+        <div class="icon icon_type_link-arrow"></div>
+          <p class="text text_size_secondary text_color_black">
+            скопировать ссылку
+          </p>
+        </button>
+        </div>
+      </div>
+      <div class="popup-card__buttons">
+        <button
+        class="button button_color_none button_size_min-width button_border_black"
+      >
+        <div class="icon icon_type_heart"></div>
+        <p class="text text_size_primary text_color_black">хочу пойти</p>
+      </button>
+      <button class="button button_color_violet button_size_min-width">
+        <p class="text text_size_primary text_color_white">купить билет</p>
+      </button>
       </div>
     </section>
     <div>.</div>
@@ -150,31 +258,31 @@
 
 		<!---TEMPlATES--->
 		<template id="card">
-			<li class="card">
-				<button class="button button_type_image"></button>
+			<li class="events__card card">
+				<div class="card card__image"></div>
 				<button class="button button_type_like" type="button"></button>
 				<div class="card card__caption">
 					<div class="card card__caption_type_date-type">
-						<p class="text text_color_grey text_size_secondary">лекция</p>
-						<p class="text text_color_grey text_size_secondary">
+						<p class="card__event-type text text_color_grey text_size_secondary">лекция</p>
+						<p class="card__event-date text text_color_grey text_size_secondary">
 							1 мая, 12:30-13:50
 						</p>
 					</div>
 					<div class="card card__caption_type_title">
-						<h2 class="title title_size_s title_align_left">
+						<h2 class="card__event-name title title_size_s title_align_left">
 							идентичность: почему нам сложно меняться?
 						</h2>
 					</div>
 					<div class="card card__caption_type_description">
 						<p
-							class="text text_color_black text_size_secondary text_align_left"
+							class="card__event-description text text_color_black text_size_secondary text_align_left"
 						>
 							лектор: Мария Бархатова
 						</p>
 					</div>
 					<div class="card card__caption_type_address-more">
 						<p
-							class="text text_color_grey text_size_secondary text_overflow_ellipsis"
+							class="card__event-address text text_color_grey text_size_secondary text_overflow_ellipsis"
 						>
 							улица Блохина, 22
 						</p>
