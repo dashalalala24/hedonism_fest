@@ -7,5 +7,6 @@
 @media screen and (max-width: 1024px){
   .team {
     padding: 40px 20px 40px;
+    background-color: #EBE9ED;
   }
 }
