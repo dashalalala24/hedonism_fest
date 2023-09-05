@@ -1,6 +1,7 @@
 // ELEMENTS
 // flow selector
 const eventTypeRadioButtons = document.getElementsByName('event-type');
+const titleIntro = document.querySelector('.title_type-intro');
 
 // form
 const formParticipant = document.querySelector('.content');
@@ -335,11 +336,21 @@ function showHideSection(step) {
 		contactsAndWorkingHoursSection,
 		addPhotoSection,
 	];
+	const screenWidth =
+		window.innerWidth ||
+		document.documentElement.clientWidth ||
+		document.body.clientWidth;
 	for (let i = 0; i < sections.length; i++) {
 		if (step === i) {
 			sections[i].classList.remove('section_state_invisible');
 		} else {
 			sections[i].classList.add('section_state_invisible');
+		}
+		console.log('step', step, screenWidth);
+		if (step > 0 && screenWidth < 600) {
+			titleIntro.classList.add('title_type_invisible');
+		} else {
+			titleIntro.classList.remove('title_type_invisible');
 		}
 	}
 }
@@ -463,9 +474,13 @@ function removeToggleButtonEventListeners() {
 	});
 }
 
-function previousSection() {
+function previousSection(e) {
+	e.preventDefault();
 	removeToggleButtonEventListeners();
 	step -= 1;
+	if (step === 0) {
+		resetFields();
+	}
 	if (step >= 0) {
 		fieldsToGetValidateState = getInputFieldsToValidate();
 		controlPage(step);
@@ -480,6 +495,16 @@ function nextSection() {
 		controlPage(step);
 		setToggleButtonEventListeners();
 		handleToggleButton();
+	}
+}
+
+function resetFields() {
+	const formElements = formParticipant.elements;
+	for (let i = 0; i < formElements.length; i++) {
+		const element = formElements[i];
+		if (element.type !== 'button' && element.type !== 'submit') {
+			element.value = element.defaultValue;
+		}
 	}
 }
 
@@ -498,10 +523,10 @@ function submitData(e) {
 		}
 	}
 	console.log('formData', formData);
-	formParticipant.reset();
 
 	formParticipant.classList.add('content_type_invisible');
 	applicationSection.classList.remove('application_type_invisible');
+	formParticipant.reset();
 }
 
 // DROP-DOWN LIST

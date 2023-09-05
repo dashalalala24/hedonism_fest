@@ -52,6 +52,7 @@
 
 @import url(../ui/title/_type/title_type-intro.css);
 @import url(../ui/title/_type/text_type_application.css);
+@import url(../ui/title/_type/title_type_invisible.css);
 
 /* -------------- button -------------- */
 @import url(../ui/button/button.css);
