@@ -1,17 +1,17 @@
 .team__container {
   display: flex;
   gap: 24px;
-  overflow: scroll;
+  overflow-x: scroll;
 }
 
 .team__container::-webkit-scrollbar {
-  height: 4px;
+  display: none;
 }
 
-.team__container::-webkit-scrollbar-thumb {
+/* .team__container::-webkit-scrollbar-thumb {
   background-color: #7100FF;
   border-radius: 100px;
-}
+} */
 
 @media screen and (max-width: 1024px) {
   .team__container {
