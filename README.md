@@ -23,15 +23,13 @@
 > [Дарья Лазарчук](https://github.com/dashalalala24) 
 
 **Разработчики**
-> [Виктор Стволов](https://github.com/) 
+> [Даниил Шаховцев](https://github.com/DanieShah)
 > 
-> [Даниил Шаховцев](https://github.com/)
+> [Лидия Ясыркина](https://github.com/Li7252)
 > 
-> [Лидия Ясыркина](https://github.com/)
+> [Даниела Двоеглазова](https://github.com/danieladvg)
 > 
-> [Даниела Двоеглазова](https://github.com/)
-> 
-> [Николай Солоп](https://github.com/)
+> [Николай Солоп](https://github.com/NikolaySolop)
 
 
 ## Технологии
@@ -76,6 +74,7 @@ npm run dev
 * При разработке сайта использованы технологии [grid](https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout) и [flex](https://developer.mozilla.org/ru/docs/Learn/CSS/CSS_layout/Flexbox), поддерживаемые большинством современных браузеров в последней версии;
 * При разработке сайта использован язык программирования [JavaScript](https://ru.wikipedia.org/wiki/JavaScript);
 * Проект собран с помощью сборщика модулей [Webpack](https://webpack.js.org/);
-* Файловая структура: [БЭМ Nested](https://ru.bem.info/methodology/filestructure/#nested).  
+* Файловая структура: [БЭМ Nested](https://ru.bem.info/methodology/filestructure/#nested).
+* использована библиотека для создания слайдера [Tiny-Slider](https://github.com/ganlanyuan/tiny-slider)
 
 *[Узнать подробности о поддержке проекта браузерами](https://caniuse.com/)*
