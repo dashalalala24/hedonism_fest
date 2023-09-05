@@ -1,0 +1,29 @@
+.header__burger-menu {
+  position: absolute;
+	top: 68px;
+	left: 0px;
+	display: none;
+	width: calc(200% - 40px);
+  height: fit-content;
+	padding: 20px;
+	flex-direction: row;
+  column-gap: 20px;
+	align-items: flex-start;
+	z-index: 1;
+	background-color: #FCFAF7;
+  transition: transform 0.7s ease-in-out 0.2s;
+}
+
+.header__burger-menu_open {
+  transform: translateX(-50%);
+}
+
+.header__burger-menu_close {
+  transform: translateX(0);
+}
+
+@media screen and (min-width: 1169px) {
+  .header__burger-menu {
+    display: none;
+  }
+}

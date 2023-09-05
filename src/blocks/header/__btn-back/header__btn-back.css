@@ -1,0 +1,6 @@
+.header__btn-back {
+  display: flex;
+  flex-direction: row;
+  column-gap: 8px;
+  margin: 20px;
+}

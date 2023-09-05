@@ -88,3 +88,22 @@ document.addEventListener('click', handleClickOutside);
 handleClickOutside(buttonDropdown, closeDropdownLocation);
 
 buttonDropdown.addEventListener('click', openDropdownLocation);
+
+const buttonBurgerCity = document.querySelector('.header__btn-dropdown_burger');
+const burgerMenu = document.querySelector('.header__burger-menu');
+const burgerButtonBack = document.querySelector('.header__btn-back');
+const headerButtonMenu = document.querySelector('.header__btn-menu');
+
+headerButtonMenu.addEventListener('click', function () {
+	burgerMenu.classList.toggle('header__burger-menu_opened');
+});
+
+buttonBurgerCity.addEventListener('click', function () {
+	burgerMenu.classList.remove('header__burger-menu_close');
+	burgerMenu.classList.add('header__burger-menu_open');
+});
+
+burgerButtonBack.addEventListener('click', function () {
+	burgerMenu.classList.remove('header__burger-menu_open');
+	burgerMenu.classList.add('header__burger-menu_close');
+});
