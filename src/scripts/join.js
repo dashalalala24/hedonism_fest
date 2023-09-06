@@ -346,7 +346,6 @@ function showHideSection(step) {
 		} else {
 			sections[i].classList.add('section_state_invisible');
 		}
-		console.log('step', step, screenWidth);
 		if (step > 0 && screenWidth < 600) {
 			titleIntro.classList.add('title_type_invisible');
 		} else {
