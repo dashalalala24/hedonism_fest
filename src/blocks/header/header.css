@@ -1,5 +1,8 @@
 .header {
+  margin: auto;
+  box-sizing: border-box;
 	background-color: #ffd400;
+  margin: 0 auto;
 	max-width: 1440px;
 	left: 0;
 	top: 0;
@@ -8,4 +11,10 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+}
+
+@media screen and (max-width: 1168px) {
+  .header{
+    padding: 12px 20px;
+  }
 }

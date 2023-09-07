@@ -8,6 +8,7 @@ import markerWine from '../images/icons/marker/event-marker-wine.svg';
 import markerMore from '../images/icons/marker/event-marker-more.svg';
 import markerNumber from '../images/icons/marker/event-marker-number.svg';
 
+// Маркеры событий
 const allEventMarkers = [
 	{ name: 'cafe', link: markerCafe },
 	{ name: 'coffee', link: markerCoffe },

@@ -1,0 +1,19 @@
+.controller {
+  display: flex;
+  padding: 32px 20px;
+  justify-content: flex-end;
+  margin: auto;
+  max-width: 920px;
+}
+
+@media screen and (max-width: 600px) {
+  .controller {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    background-color: #FCFAF7;
+    padding: 20px 0;
+    box-shadow: 0 -8px 32px 0 rgba(59, 55, 72, 0.12);
+  }
+}

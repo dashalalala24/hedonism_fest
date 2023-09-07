@@ -38,6 +38,7 @@
     "core-js": "^3.32.0",
     "html-loader": "^4.2.0",
     "husky": "^8.0.3",
+    "tiny-slider": "^2.9.4",
     "ymaps": "^0.2.1"
   },
   "lint-staged": {

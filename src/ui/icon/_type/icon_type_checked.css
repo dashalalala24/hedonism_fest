@@ -1,0 +1,11 @@
+.icon_type_checked {
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  mask: url('../../../images/icons/button/checked.svg') no-repeat 100% 100%;
+  -webkit-mask: url('../../../images/icons/button/checked.svg') no-repeat 100% 100%;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+}
+
+

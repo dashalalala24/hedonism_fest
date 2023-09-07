@@ -1,0 +1,11 @@
+.about-content__circle-container {
+  position: relative;
+  display: flex;
+}
+
+@media screen and (max-width: 1330px) {
+  .about-content__circle-container {
+    margin: 0 auto;
+    display: none;
+  }
+}

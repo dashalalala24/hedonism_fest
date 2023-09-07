@@ -1,0 +1,19 @@
+.about-content__subtitle {
+  /* width: 537px; */
+  margin: 0 0 24px;
+}
+
+@media screen and (max-width: 1330px) {
+  .about-content__subtitle {
+    margin: 0;
+    margin: 0 0 12px 0;
+  }
+}
+
+/* @media screen and (max-width: 1024px) {
+  .about-content__subtitle {
+    font-size: 32px;
+    width: 320px;
+    margin: 0 auto;
+  }
+} */
