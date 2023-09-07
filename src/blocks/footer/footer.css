@@ -1,15 +1,25 @@
 .footer {
   padding: 80px 40px 80px;
-  /* display: flex;
-  justify-content: space-between; */
   background-color: #ebe9ed;
-  column-gap: 40px;
   max-width: 1440px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: min-content 310px 427px 310px;
+  grid-template-rows: 1fr;
+  justify-content: space-between;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1330px) {
+  .footer {
+    grid-template-columns: repeat(3, min-content);
+  }
+}
+
+@media screen and (max-width: 768px) {
   .footer {
     background-color: #ffd400;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, min-content);
+    row-gap: 48px;
   }
 }
