@@ -1,10 +1,7 @@
 .header__burger-menu {
-  position: absolute;
-	top: 68px;
-	left: 0px;
-	display: none;
+	display: flex;
 	width: calc(200% - 40px);
-  height: fit-content;
+  height: 614px;
 	padding: 20px;
 	flex-direction: row;
   column-gap: 20px;
@@ -25,5 +22,11 @@
 @media screen and (min-width: 1169px) {
   .header__burger-menu {
     display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header__burger-menu {
+    height: 100vh;
   }
 }

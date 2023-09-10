@@ -222,13 +222,15 @@
 @import url(../blocks/header/__logo-location/header__logo-location.css);
 @import url(../blocks/header/__logo/header__logo.css);
 @import url(../blocks/header/__logo-burger/header__logo-burger.css);
+@import url(../blocks/header/__burger-menu-container/header__burger-menu-container.css);
+@import url(../blocks/header/__burger-menu-container/_opened/header__burger-menu-container_opened.css);
 @import url(../blocks/header/__burger-menu/header__burger-menu.css);
-@import url(../blocks/header/__burger-menu/_opened/header__burger-menu_opened.css);
 @import url(../blocks/header/__location-button/header__location-button.css);
+@import url(../blocks/header/__dropdown-menu/header__dropdown-menu.css);
+@import url(../blocks/header/__dropdown-menu/_opened/header__dropdown-menu_opened.css);
 @import url(../blocks/header/__btn-dropdown/header__btn-dropdown.css);
 @import url(../blocks/header/__btn-dropdown/_burger/header__btn-dropdown_burger.css);
 @import url(../blocks/header/__menu-list/header__menu-list.css);
-@import url(../blocks/header/__menu-list/_show/header__menu-list_show.css);
 @import url(../blocks/header/__list-item/header__list-item.css);
 @import url(../blocks/header/__checked-mark/header__checked-mark.css);
 @import url(../blocks/header/__checked-mark/_checked/header__checked-mark_checked.css);

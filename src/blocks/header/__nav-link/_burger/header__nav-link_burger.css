@@ -3,4 +3,5 @@
 	flex-direction: column;
 	row-gap: 24px;
   justify-content: flex-start;
+  margin-top: 20px;
 }

@@ -12,3 +12,8 @@
 	cursor: pointer;
 	background-color: #ebe9ed;
 }
+
+.header__list-item:active {
+  cursor: pointer;
+  background-color: #7100FF;
+}
