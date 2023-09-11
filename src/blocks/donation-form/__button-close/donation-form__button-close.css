@@ -6,6 +6,8 @@
     background-color: #0000;
     background-image: url(../../../images/icons/button/cross-black.svg);
     cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .donation-form__button-close:hover {

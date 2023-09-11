@@ -1,6 +1,6 @@
 .popup-card__warning {
     padding: 8px 50px;
-    max-height: 20px;
+    max-height: min-content;
     max-width: 600px;
     display: flex;
     column-gap: 12px;

@@ -1,4 +1,4 @@
-.button_size_204px {
+.button_size_fix-width {
   min-width: calc(
 		((204 - 153) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) +
 			153px
