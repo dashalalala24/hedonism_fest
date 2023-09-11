@@ -12,7 +12,7 @@ const cityDropDownListButton = document.querySelector(
 	'.button_type_cities-list'
 );
 const cityDropDownListButtonLabel = document.querySelector(
-	'.button_type_cities-list p'
+	'.button_type_cities-list span'
 );
 const dropDownInputList = document.getElementById('city');
 

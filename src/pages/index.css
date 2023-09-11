@@ -68,7 +68,7 @@
 @import url(../ui/button/_size/button_size_flexible.css);
 @import url(../ui/button/_size/button_size_min-width.css);
 @import url(../ui/button/_size/button_size_min-width-to-full-size.css);
-@import url(../ui/button/_size/button_size_204px.css);
+@import url(../ui/button/_size/button_size_fix-width.css);
 
 @import url(../ui/button/_type/button_type_switcher.css);
 @import url(../ui/button/_type/button_type_switcher-tab.css);
@@ -265,8 +265,10 @@
 @import url(../blocks/events/events.css);
 @import url(../blocks/events/__title/events__title.css);
 @import url(../blocks/events/__tags/events__tags.css);
+@import url(../blocks/events/__slider-container/events__slider-container.css);
 @import url(../blocks/events/__slider/events__slider.css);
 @import url(../blocks/events/__card/events__card.css);
+@import url(../blocks/events/__button/events__button.css);
 
 /* -------------- digits -------------- */
 @import url(../blocks/digits/digits.css);
