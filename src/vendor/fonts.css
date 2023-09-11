@@ -3,7 +3,7 @@
 		url(fonts/TT_Firs_Neue_Medium.woff2) format('woff2'),
 		url(fonts/TT_Firs_Neue_Medium.woff) format('woff'),
 		url(fonts/TT_Firs_Neue_Medium.ttf) format('ttf');
-	font-family: 'TT Firs Neue';
+	font-family: 'TT Firs Neue', Arial, sans-serif;
 	font-weight: 500;
 }
 
@@ -12,6 +12,6 @@
 		url(fonts/TT_Firs_Neue_Regular.woff2) format('woff2'),
 		url(fonts/TT_Firs_Neue_Regular.woff) format('woff'),
 		url(fonts/TT_Firs_Neue_Regular.ttf) format('ttf');
-	font-family: 'TT Firs Neue';
+    font-family: 'TT Firs Neue', Arial, sans-serif;
 	font-weight: 400;
 }

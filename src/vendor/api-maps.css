@@ -7,7 +7,7 @@
 }
 
 [class*='ymaps-2-1-79-balloon__content'] {
-	font-family: 'TT Firs Neue' !important;
+	font-family: 'TT Firs Neue', Arial, sans-serif !important;
 	margin: 0 !important;
 	padding: 0 !important;
 }
