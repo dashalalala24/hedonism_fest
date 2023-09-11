@@ -1,0 +1,4167 @@
+/*!***********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/pages/index.css ***!
+  \***********************************************************************/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css);
+/*!****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/vendor/normalize.css ***!
+  \****************************************************************************/
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+	line-height: 1.15; /* 1 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+	margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+	display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+	box-sizing: content-box; /* 1 */
+	height: 0; /* 1 */
+	overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+	font-family: monospace, monospace; /* 1 */
+	font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+	background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+	border-bottom: none; /* 1 */
+	text-decoration: underline; /* 2 */
+	text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+	font-family: monospace, monospace; /* 1 */
+	font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+	font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+	border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit; /* 1 */
+	font-size: 100%; /* 1 */
+	line-height: 1.15; /* 1 */
+	margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input {
+	/* 1 */
+	overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select {
+	/* 1 */
+	text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+	-webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+	padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+	box-sizing: border-box; /* 1 */
+	color: inherit; /* 2 */
+	display: table; /* 1 */
+	max-width: 100%; /* 1 */
+	padding: 0; /* 3 */
+	white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+	vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+	overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type='checkbox'],
+[type='radio'] {
+	box-sizing: border-box; /* 1 */
+	padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type='search'] {
+	-webkit-appearance: textfield; /* 1 */
+	outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type='search']::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button; /* 1 */
+	font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+	display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+	display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+	display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+	display: none;
+}
+
+/*!************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/vendor/fonts.css ***!
+  \************************************************************************/
+@font-face {
+	src:
+		url(4fa5192d62552f95c086.woff2) format('woff2'),
+		url(977c40822ea6f0f44143.woff) format('woff'),
+		url(0edefe0c1871c03378e4.ttf) format('ttf');
+	font-family: 'TT Firs Neue';
+	font-weight: 500;
+}
+
+@font-face {
+	src:
+		url(c591f4d5eea51724b602.woff2) format('woff2'),
+		url(917545561fa3d7cffbc1.woff) format('woff'),
+		url(015eb3e5b65d62a4ea44.ttf) format('ttf');
+    font-family: 'TT Firs Neue';
+	font-weight: 400;
+}
+
+/*!***************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/vendor/api-maps.css ***!
+  \***************************************************************************/
+[class*='ymaps-2-1-79-balloon__close'] {
+	display: none !important;
+}
+
+[class*='ymaps-2-1-79-balloon__tail'] {
+	display: none !important;
+}
+
+[class*='ymaps-2-1-79-balloon__content'] {
+	font-family: 'TT Firs Neue', Arial, sans-serif !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+[class*='ymaps-2-1-79-balloon__layout'] {
+	border-radius: 10px !important;
+}
+
+[class*='ymaps-2-1-79-balloon ymaps-2-1-79-balloon_layout_normal ymaps-2-1-79-balloon_to_top ymaps-2-1-79-i-custom-scroll'] {
+	border-radius: 10px !important;
+}
+
+/*!****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/page/page.css ***!
+  \****************************************************************************/
+.page {
+	width: 100%;
+	background-color: #fff;
+	font-family: 'TT Firs Neue', Arial, sans-serif;
+	box-sizing: border-box;
+	overflow-y: scroll;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/*!****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/page-where-to-go/page-where-to-go.css ***!
+  \****************************************************************************************************/
+.page-where-to-go {
+	width: 100%;
+	background-color: #ebe9ed;
+	font-family: 'TT Firs Neue', Arial, sans-serif;
+	box-sizing: border-box;
+	overflow-y: scroll;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+}
+
+/*!************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/text/text.css ***!
+  \************************************************************************/
+.text {
+	font-family: 'TT Firs Neue', Arial, sans-serif;
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	line-height: 24px;
+}
+
+/*!*******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/text/_size/text_size_primary.css ***!
+  \*******************************************************************************************/
+.text_size_primary {
+	font-size: calc(
+		((18 - 16) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 16px
+	);
+	line-height: calc(
+		((24 - 20) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 20px
+	);
+}
+
+/*!*********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/text/_size/text_size_secondary.css ***!
+  \*********************************************************************************************/
+.text_size_secondary {
+	font-size: 16px;
+	line-height: 20px;
+}
+
+/*!*******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/text/_color/text_color_black.css ***!
+  \*******************************************************************************************/
+.text_color_black {
+	color: #3b3748;
+}
+
+/*!******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/text/_color/text_color_grey.css ***!
+  \******************************************************************************************/
+.text_color_grey {
+	color: #96949e;
+}
+
+/*!*****************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/text/_color/text_color_red.css ***!
+  \*****************************************************************************************/
+.text_color_red {
+	color: #f40934;
+}
+
+/*!********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/text/_color/text_color_violet.css ***!
+  \********************************************************************************************/
+.text_color_violet {
+	color: #7100ff;
+}
+
+/*!*******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/text/_color/text_color_white.css ***!
+  \*******************************************************************************************/
+.text_color_white {
+	color: white;
+}
+
+/*!******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/text/_align/text_align_left.css ***!
+  \******************************************************************************************/
+.text_align_left {
+	text-align: left;
+}
+
+/*!*******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/text/_align/text_align_right.css ***!
+  \*******************************************************************************************/
+.text_align_right {
+	text-align: right;
+}
+
+/*!****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/text/_clipping/text_overflow_ellipsis.css ***!
+  \****************************************************************************************************/
+.text_overflow_ellipsis {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/*!***************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/text/_clipping/text_clipping_no-wrap.css ***!
+  \***************************************************************************************************/
+.text_clipping_no-wrap {
+	white-space: nowrap;
+}
+
+/*!**********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/text/_grid-control/text_grid-control_merged.css ***!
+  \**********************************************************************************************************/
+@media screen and (max-width: 700px) {
+  .text_grid-control_merged {
+    grid-column: 1 / span 2;
+  }
+}
+
+
+
+/*!*************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/text/_padding/text_padding_top12px.css ***!
+  \*************************************************************************************************/
+.text_padding_top12px {
+  padding: 12px 0 0;
+}
+
+/*!**************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/text/_padding/text_padding_left12px.css ***!
+  \**************************************************************************************************/
+.text_padding_left12px {
+  padding-left: 12px;
+}
+
+/*!*******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/text/_type/text_type_warning.css ***!
+  \*******************************************************************************************/
+.text_type_warning {
+  display: flex;
+  align-content: center;
+  padding-bottom: 4px;
+}
+
+/*!*************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/text/_type/text_type_raido-comment.css ***!
+  \*************************************************************************************************/
+.text_type_radio-comment {
+padding: 0 24px 0;
+}
+
+/*!************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/text/_type/text_type_no-underline.css ***!
+  \************************************************************************************************/
+.text_type_no-underline {
+  text-decoration: none;
+}
+
+/*!**********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/text/_state/text_type_invisible.css ***!
+  \**********************************************************************************************/
+.text_type_invisible {
+  display: flex;
+  visibility: hidden;
+}
+
+/*!**************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/title/title.css ***!
+  \**************************************************************************/
+.title {
+	font-family: 'TT Firs Neue', Arial, sans-serif;
+	font-weight: 500;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+/*!***************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/title/_size/title_size_l.css ***!
+  \***************************************************************************************/
+.title_size_l {
+	font-size: calc(
+		((48 - 32) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 32px
+	);
+	line-height: 1;
+}
+
+/*!***************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/title/_size/title_size_m.css ***!
+  \***************************************************************************************/
+.title_size_m {
+	font-size: calc(
+		((42 - 24) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 24px
+	);
+	line-height: calc(
+		((36 - 28) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 28px
+	);
+}
+
+/*!***************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/title/_size/title_size_s.css ***!
+  \***************************************************************************************/
+.title_size_s {
+	font-size: calc(
+		((24 - 20) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 20px
+	);
+	line-height: calc(
+		((24 - 20) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 20px
+	);
+}
+
+/*!****************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/title/_size/title_size_xl.css ***!
+  \****************************************************************************************/
+.title_size_xl {
+  padding: calc(
+		((40 - 20) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 20px
+	);
+	font-size: calc(
+		((96 - 44) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 44px
+	);
+	line-height: 1;
+}
+
+/*!********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/title/_align/title_align_left.css ***!
+  \********************************************************************************************/
+.title_align_left {
+	text-align: left;
+}
+
+/*!*********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/title/_align/title_align_right.css ***!
+  \*********************************************************************************************/
+.title_align_right {
+	text-align: right;
+}
+
+/*!*******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/title/_type/title_type-intro.css ***!
+  \*******************************************************************************************/
+.title_type-intro {
+  display: block;
+}
+
+/*!************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/title/_type/text_type_application.css ***!
+  \************************************************************************************************/
+.text_type_application {
+  padding: 16px 0 24px;
+}
+
+/*!***********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/title/_type/title_type_invisible.css ***!
+  \***********************************************************************************************/
+.title_type_invisible {
+  display: none;
+}
+
+/*!****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/button/button.css ***!
+  \****************************************************************************/
+.button {
+	display: flex;
+	padding: 12px 24px;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	border: none;
+  box-sizing: border-box;
+	border-radius: 26px;
+	cursor: pointer;
+	line-height: 0;
+}
+
+/*HOVER STATE*/
+.button:hover .text_color_black {
+	color: #5100b8;
+}
+
+.button:hover .drop-down-list.text_color_black {
+	color: #3B3748;
+}
+
+.button:hover .icon_type_arrow-black {
+	background-image: url(9231e56756f2552c4a09.svg);
+}
+
+.button:hover .icon_type_heart {
+	background-image: url(b1443d820e084c8a7780.svg);
+}
+
+.button:hover .icon_type_link-black {
+	background-image: url(2671cbcc70e7e85ebf54.svg);
+}
+
+.button.button_type_text:hover .text_size_secondary {
+	color: #5100b8;
+}
+.button .button_type_switcher-tab.button_color_violet:hover {
+	cursor: pointer;
+}
+
+.button.button_type_switcher .icon_type_map:hover {
+	cursor: pointer;
+}
+
+.button.button_type_switcher .text_color_white:hover {
+	cursor: pointer;
+}
+
+.button.button_type_switcher .icon_type_menu-white:hover {
+	cursor: pointer;
+}
+
+.button.button_state_filter-unchecked:hover {
+  border: #3B3748 1px solid;
+}
+
+/*DISABLED STATE*/
+.button.button_state_disabled .text_color_black  {
+	color: #96949e;
+}
+
+.button.button_state_disabled .text_color_white {
+	color: #96949e;
+}
+
+.button.button_state_disabled .icon_type_arrow-black {
+	background-image: url(d0a1a3fec958725b4960.svg);
+}
+
+.button.button_state_disabled .icon_type_heart {
+	background-image: url(8c301ebd976d0c2a909f.svg);
+}
+
+.button.button_state_disabled .icon_type_link-black {
+	background-image: url(63348106d043332fc86a.svg);
+}
+
+.button.button_state_disabled .icon_type_map {
+	background-image: url(f89d1d032eff84596771.svg);
+}
+
+.button.button_state_disabled .icon_type_menu-white {
+	background-image: url(30eb6e6f47a4cc53bd64.svg);
+}
+
+/*UNCHECKED STATE*/
+button.button_state_filter-unchecked {
+  border: #3B3748 1px solid;
+
+}
+
+
+/*!*************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/button/_border/button_border_black.css ***!
+  \*************************************************************************************************/
+.button_border_black {
+	border: solid 2px #3b3748;
+}
+
+.button_border_black:hover {
+	border: solid 2px #5100b8;
+}
+
+/*.button_border_black:disabled {*/
+/*	border: none;*/
+/*}*/
+
+/*!*************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/button/_border/button_border_white.css ***!
+  \*************************************************************************************************/
+.button_border_white {
+	border: solid 2px white;
+}
+
+.button_border_black:hover {
+	border: solid 2px #96949E;
+}
+
+/*!************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/button/_color/button_color_violet.css ***!
+  \************************************************************************************************/
+.button_color_violet {
+	background-color: #7100ff;
+}
+
+.button_color_violet:hover {
+	background-color: #5100b8;
+}
+
+/*.button_color_violet .button_state_disabled {*/
+/*	background-color: #ebe9ed;*/
+/*}*/
+
+/*!**********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/button/_color/button_color_none.css ***!
+  \**********************************************************************************************/
+.button_color_none {
+	background-color: white;
+}
+
+/*.button_color_none:disabled {*/
+/*	background-color: #ebe9ed;*/
+/*}*/
+
+/*!*****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/button/_color/button_color_transparent.css ***!
+  \*****************************************************************************************************/
+.button_color_transparent {
+	background-color: transparent;
+}
+
+.button_color_transparent:disabled {
+	background-color: #ebe9ed;
+}
+
+/*!**********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/button/_color/button_color_grey.css ***!
+  \**********************************************************************************************/
+.button_color_grey {
+	background-color: #ebe9ed;
+}
+
+/*!************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/button/_size/button_size_flexible.css ***!
+  \************************************************************************************************/
+.button_size_flexible {
+	min-width: 0;
+}
+
+/*!*************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/button/_size/button_size_min-width.css ***!
+  \*************************************************************************************************/
+.button_size_min-width {
+	min-width: calc(
+		((164 - 148) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) +
+			148px
+	);
+}
+
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/button/_size/button_size_min-width-to-full-size.css ***!
+  \**************************************************************************************************************/
+.button_size_min-width-to-full-size {
+	min-width: calc(
+		((197 - 280) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) +
+			280px
+	);
+}
+
+
+/*!*********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/button/_size/button_size_204px.css ***!
+  \*********************************************************************************************/
+.button_size_204px {
+  min-width: calc(
+		((204 - 153) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) +
+			153px
+	);
+}
+
+/*!************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/button/_type/button_type_switcher.css ***!
+  \************************************************************************************************/
+.button_type_switcher {
+	width: calc(
+		((282 - 180) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) +
+			180px
+	);
+	gap: 0;
+	padding: 3px 3px;
+	cursor: auto;
+}
+
+/*!****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/button/_type/button_type_switcher-tab.css ***!
+  \****************************************************************************************************/
+.button_type_switcher-tab {
+	width: calc(
+		((141 - 95) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) +
+			95px
+	);
+}
+
+/*!**********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/button/_type/button_type_filter.css ***!
+  \**********************************************************************************************/
+.button_type_filter {
+	padding: 8px 16px;
+}
+
+/*!********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/button/_type/button_type_like.css ***!
+  \********************************************************************************************/
+.button_type_like {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+
+	background-color: white;
+	width: 48px;
+	height: 48px;
+
+	background: url(e53756f9c9c44c8d7613.svg) no-repeat center;
+	background-color: white;
+	transition: background-image 0.3s ease-out;
+}
+
+.button_type_like:hover {
+	background-image: url(02675da8e47b50ef8238.svg);
+}
+
+/*!********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/button/_type/button_type_text.css ***!
+  \********************************************************************************************/
+.button_type_text {
+	padding: 0;
+}
+
+/*!***************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/button/_type/button_type_radio-event.css ***!
+  \***************************************************************************************************/
+.button_type_radio-event {
+  border: #3B3748 solid 2px;
+  background-color: white;
+  width: 100%;
+  justify-content: space-between;
+  transition: background-color 0.3s ease, border 0.1s ease;
+  margin: 12px 0 0;
+}
+
+
+/*!*******************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/button/_type/button_type_radio-invisible.css ***!
+  \*******************************************************************************************************/
+.button_type_radio-invisible {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(0 0 0 0);
+  appearance: none;
+}
+
+.button_type_radio-invisible:checked + .button_type_radio-event{
+  border: #7100FF 2px solid;
+  background-color: #7100FF;
+}
+
+.button_type_radio-invisible:checked + .button_type_radio-event .text {
+  color: white;
+}
+
+.button_type_radio-invisible:hover + .button_type_radio-event{
+  border: #7100FF 2px solid;
+  background-color: #7100FF;
+}
+
+.button_type_radio-invisible:hover + .button_type_radio-event .text {
+  color: white;
+}
+
+.button_type_radio-invisible:checked + .button_type_radio-online-offline .icon_type_radio{
+  mask: url(3e5061165410e964edc7.svg) no-repeat 100% 100%;
+  -webkit-mask: url(3e5061165410e964edc7.svg) no-repeat 100% 100%;
+  background-color: #7100FF;
+}
+
+/*!**************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/button/_type/button_type-controller.css ***!
+  \**************************************************************************************************/
+.button_type-controller {
+  margin: 0 0 0 6px;
+}
+
+.button_type-controller:first-of-type {
+  margin: 0;
+}
+
+/*!***************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/button/_type/button_type_cities-list.css ***!
+  \***************************************************************************************************/
+.button_type_cities-list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: 2px #96949E solid;
+  background-color: white;
+  margin: 8px 0 8px;
+}
+
+/*!************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/button/_type/button_type_radio-online-offline.css ***!
+  \************************************************************************************************************/
+.button_type_radio-online-offline {
+  border: none;
+  justify-content: left;
+  padding-left: 0;
+  width: max-content;
+}
+
+.button_type_radio-online-offline:hover .icon_type_radio {
+  background-color: #5100b8;
+  color: #5100b8;
+  transition: background-color 1ms;
+}
+
+.button_type_radio-online-offline:hover .text {
+  color: #5100b8;
+}
+
+/*!*********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/button/_type/button_type_cross.css ***!
+  \*********************************************************************************************/
+.button_type_cross {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: calc(
+		((48 - 44) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 44px
+	);
+  height: calc(
+		((48 - 44) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 44px
+	);
+
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+
+  background: #FCFAF7 url(b82896b30722d6701a82.svg) no-repeat center;
+  box-shadow: 0 2px 4px 0 #3B37481F;
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.button_type_cross:hover {
+  box-shadow: 0 6px 8px 0 #3B37481F;
+}
+
+/*!*************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/button/_type/button_type_invisible.css ***!
+  \*************************************************************************************************/
+.button_type_invisible {
+  display: none;
+}
+
+/*!*****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/button/_state/button_state_active-like.css ***!
+  \*****************************************************************************************************/
+.button_state_active-like {
+  background: url(02675da8e47b50ef8238.svg) white no-repeat center;
+}
+
+/*!**************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/button/_state/button_state_disabled.css ***!
+  \**************************************************************************************************/
+.button_state_disabled {
+  background-color: #ebe9ed;
+  cursor: auto;
+  border: none;
+}
+
+.button_state_disabled:hover {
+  background-color: #ebe9ed;
+  color: #96949e;
+  border: none
+}
+
+
+/*!**********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/button/_state/button_state_filter-unchecked.css ***!
+  \**********************************************************************************************************/
+.button_state_filter-unchecked {
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.button_state_filter-unchecked .text_color_white {
+  color: #3b3748;
+}
+
+.button_state_filter-unchecked .icon_type_cross-white {
+  display: none;
+}
+
+.button_state_filter-unchecked:hover .text_color_white{
+  color: white;
+}
+
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/button/_state/button_stated_radio-event-checked.css ***!
+  \**************************************************************************************************************/
+.button_stated_radio-event-checked {
+  border: #7100FF 2px solid;
+  background-color: #7100FF;
+  margin-bottom: 20px;
+}
+
+.button_stated_radio-event-checked .text {
+  color: white;
+}
+
+/*!***************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/button/_state/button_state_invisible.css ***!
+  \***************************************************************************************************/
+.button_state_invisible {
+  display: none;
+}
+
+/*!***********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/button/_align/button_align-right.css ***!
+  \***********************************************************************************************/
+.button_align-right {
+  margin-left: auto;
+}
+
+
+/*!**************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/input-field/input-field.css ***!
+  \**************************************************************************************/
+.input-field {
+  display: flex;
+  padding: 12px 24px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-sizing: border-box;
+  border-radius: 26px;
+  cursor: pointer;
+
+  width: 100%;
+  border: 2px #96949E solid;
+  background-color: white;
+  margin: 8px 0 8px;
+}
+
+.input-field:focus {
+  outline-color: #7100FF;
+}
+
+/*!*********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/input-field/_type/input-field_type_warning.css ***!
+  \*********************************************************************************************************/
+.input-field_type_warning {
+  border-color: #F40934;
+}
+
+/*!***********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/input-field/_type/input-field_type_invisible.css ***!
+  \***********************************************************************************************************/
+.input-field_type_invisible {
+  display: none;
+}
+
+/*!********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/textarea-field/textarea-field.css ***!
+  \********************************************************************************************/
+.textarea-field {
+  resize: vertical;
+  min-height: 132px;
+  white-space: pre-wrap;
+
+  display: flex;
+  padding: 12px 24px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-sizing: border-box;
+  border-radius: 26px;
+  cursor: pointer;
+
+  width: 100%;
+  border: 2px #96949E solid;
+  background-color: white;
+  margin: 8px 0 8px;
+}
+
+.textarea-field:focus {
+  outline-color: #7100FF;
+}
+
+
+
+
+/*!********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/drop-down-list/drop-down-list.css ***!
+  \********************************************************************************************/
+.drop-down-list {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: white;
+  width: 100%;
+
+  border-radius: 24px;
+  box-shadow: 0 4px 12px 0 #3B37481F;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+/*!*********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/drop-down-list/__item/drop-down-list__item.css ***!
+  \*********************************************************************************************************/
+.drop-down-list__item {
+  padding: 12px 24px;
+}
+
+.drop-down-list__item:hover {
+  background-color: #EBE9ED;
+  color: #7100ff;
+}
+
+.drop-down-list__item:first-of-type:hover {
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+.drop-down-list__item:last-of-type:hover {
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+
+/*!*****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/drop-down-list/_state/drop-down-list_state_visible.css ***!
+  \*****************************************************************************************************************/
+.drop-down-list_state_visible {
+  display: block;
+}
+
+/*!************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/icon/icon.css ***!
+  \************************************************************************/
+.icon {
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+/*!*****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/icon/_type/icon_type_angle-small-right.css ***!
+  \*****************************************************************************************************/
+.icon_type_angle-small-right {
+	width: 24px;
+	height: 24px;
+	background-image: url(671174753a22575b9734.svg);
+}
+
+/*!***********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/icon/_type/icon_type_arrow-black.css ***!
+  \***********************************************************************************************/
+.icon_type_arrow-black {
+	width: 25px;
+	height: 14px;
+	background-image: url(300b294d061d89a92d41.svg);
+}
+
+/*!**********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/icon/_type/icon_type_arrow-left.css ***!
+  \**********************************************************************************************/
+.icon_type_arrow-left {
+  width: 20px;
+  height: 20px;
+  background-image: url(818fad8bad8dd3ce4cb4.svg);
+}
+
+/*!***********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/icon/_type/icon_type_arrow-white.css ***!
+  \***********************************************************************************************/
+.icon_type_arrow-white {
+	width: 24px;
+	height: 24px;
+	background-image: url(49cd052db92582ef3585.svg);
+}
+
+/*!*********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/icon/_type/icon_type_arrow-top.css ***!
+  \*********************************************************************************************/
+.icon_type_arrow-top {
+  background-image: url(8d668bdc45665112175e.svg);
+  background-position: center;
+  width: 20px;
+  height: 20px;
+}
+
+/*!**********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/icon/_type/icon_type_menu-white.css ***!
+  \**********************************************************************************************/
+.icon_type_menu-white {
+	width: 24px;
+	height: 24px;
+	background-image: url(717402be9d74aeeb458f.svg);
+}
+
+/*!*****************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/icon/_type/icon_type_heart.css ***!
+  \*****************************************************************************************/
+.icon_type_heart {
+	width: 24px;
+	height: 24px;
+	background-image: url(a0ab4374ec459263b0a5.svg);
+}
+
+/*!**********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/icon/_type/icon_type_link-black.css ***!
+  \**********************************************************************************************/
+.icon_type_link-black {
+	width: 24px;
+	height: 24px;
+	background-image: url(ec0761561952135a0f86.svg);
+}
+
+/*!**********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/icon/_type/icon_type_link-arrow.css ***!
+  \**********************************************************************************************/
+.icon_type_link-arrow {
+  background-image: url(a01fa59e3c5b6a2b14ff.svg);
+  width: 24px;
+  height: 24px;
+}
+
+.icon_type_link-arrow:hover {
+  opacity: .7;
+  transition: .4s;
+}
+
+@media screen and (max-width: 1280px) {
+  .icon_type_link-arrow {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/*!***********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/icon/_type/icon_type_cross-white.css ***!
+  \***********************************************************************************************/
+.icon_type_cross-white {
+	width: 13px;
+	height: 13px;
+	background-image: url(908696c2d00524177ee6.svg);
+}
+
+/*!***************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/icon/_type/icon_type_map.css ***!
+  \***************************************************************************************/
+.icon_type_map {
+	width: 24px;
+	height: 24px;
+	background-image: url(bd5651ceaec056a96f6f.svg);
+}
+
+/*!*******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/icon/_type/icon_type_checked.css ***!
+  \*******************************************************************************************/
+.icon_type_checked {
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  mask: url(d23285e57e20aabdc203.svg) no-repeat 100% 100%;
+  -webkit-mask: url(d23285e57e20aabdc203.svg) no-repeat 100% 100%;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+}
+
+
+
+/*!********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/icon/_type/icon_type_triangle.css ***!
+  \********************************************************************************************/
+.icon_type_triangle {
+  width: 24px;
+  height: 24px;
+  background-color: black;
+  mask: url(a4b5e85b2f6145d171be.svg) no-repeat 100% 100%;
+  -webkit-mask: url(a4b5e85b2f6145d171be.svg) no-repeat 100% 100%;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+}
+
+/*!*******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/icon/_type/icon_type_warning.css ***!
+  \*******************************************************************************************/
+.icon_type_warning {
+  width: 24px;
+  height: 24px;
+  background: url(cb68056e6cf41922ecad.svg) no-repeat center center;
+  padding-left: 20px;
+  padding-right: 8px;
+}
+
+/*!*****************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/icon/_type/icon_type_radio.css ***!
+  \*****************************************************************************************/
+.icon_type_radio {
+  width: 24px;
+  height: 24px;
+  background-color: #3B3748;
+  mask: url(6ed3e52621f060ab1b90.svg) no-repeat 100% 100%;
+  -webkit-mask: url(6ed3e52621f060ab1b90.svg) no-repeat 100% 100%;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+}
+
+/*!******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/icon/_type/icon_type_upload.css ***!
+  \******************************************************************************************/
+.icon_type_upload {
+  width: 24px;
+	height: 24px;
+
+  margin: 0 0 12px;
+
+	background: url(48b965029e1b35bf0d47.svg) no-repeat 100% 100%;
+  background-size: contain;
+}
+
+/*!**************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/icon/_visibility/icon_visibility_on.css ***!
+  \**************************************************************************************************/
+.icon_visibility_on {
+	display: block;
+}
+
+@media screen and (max-width: 1000px) {
+	.icon_visibility_on {
+		display: none;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+/*!************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/card/card.css ***!
+  \************************************************************************/
+.card {
+	position: relative;
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+/*!*******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/card/__caption/card__caption.css ***!
+  \*******************************************************************************************/
+.card__caption {
+	display: flex;
+	flex-direction: column;
+
+	width: 100%;
+	box-sizing: border-box;
+	height: 208px;
+	padding: 20px;
+	background-color: #ffffff;
+
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+/*!*******************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/card/__caption/_type/card__caption_type_address-more.css ***!
+  \*******************************************************************************************************************/
+.card__caption_type_address-more {
+	margin-top: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/*!****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/card/__caption/_type/card__caption_type_date-type.css ***!
+  \****************************************************************************************************************/
+.card__caption_type_date-type {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 0 0 8px;
+}
+
+/*!******************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/card/__caption/_type/card__caption_type_description.css ***!
+  \******************************************************************************************************************/
+.card__caption_type_description {
+	align-self: flex-start;
+}
+
+/*!************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/card/__caption/_type/card__caption_type_title.css ***!
+  \************************************************************************************************************/
+.card__caption_type_title {
+	align-self: flex-start;
+	padding: 0 0 8px;
+}
+
+/*!***************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/card/__image/card__image.css ***!
+  \***************************************************************************************/
+.card__image {
+  object-fit: cover;
+	width: 100%;
+	height: 180px;
+
+	border-radius: 10px 10px 0 0;
+
+	background: url('https://p0.pxfuel.com/preview/273/441/304/guitar-guitarist-guitar-player-guitar-grip.jpg') no-repeat center;
+	background-size: cover;
+	transition: background-image 0.3s ease-out;
+}
+
+.card__image:hover {
+  opacity: 80%;
+}
+
+/*!************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/link/link.css ***!
+  \************************************************************************/
+.link {
+  text-decoration: none;
+}
+
+/*!************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/list/list.css ***!
+  \************************************************************************/
+.list {
+	font-family: 'TT Firs Neue', Arial, sans-serif;
+	font-weight: 400;
+	padding: 12px 0 0;
+	margin: 0;
+	text-align: left;
+  font-size: 18px;
+	line-height: 24px;
+}
+
+
+/*!**************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ui/list/_type/list_type_ul.css ***!
+  \**************************************************************************************/
+.list_type_ul {
+  list-style-position: outside;
+  list-style-type: '·';
+  padding-left: 10px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+/*!**********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/catalog/catalog.css ***!
+  \**********************************************************************************/
+.catalog {
+	display: grid;
+	grid-template-columns: 370px calc(100% - 370px);
+	grid-template-rows: 88px calc(100% - 88px);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/*!********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/scrollable-content/scrollable-content.css ***!
+  \********************************************************************************************************/
+.scrollable-content {
+	grid-column: 1;
+	grid-row: 1/3;
+	background-color: #fff;
+}
+
+/*!*************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/scrollable-content/__filter/scrollable-content__filter.css ***!
+  \*************************************************************************************************************************/
+.scrollable-content__filter {
+	/* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 36px, repeat(5, 1fr); */
+	display: flex;
+	row-gap: 12px;
+	column-gap: 10px;
+	flex-wrap: wrap;
+	padding: 16px 40px;
+}
+
+/*!***********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/scrollable-content/__title/scrollable-content__title.css ***!
+  \***********************************************************************************************************************/
+.scrollable-content__title {
+	text-align: start;
+	padding: 16px 40px;
+}
+
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/scrollable-content/__text/scrollable-content__text.css ***!
+  \*********************************************************************************************************************/
+.scrollable-content__text {
+	grid-row: 1;
+	grid-column: 1/4;
+	min-width: 100%;
+	text-align: start;
+}
+
+/*!*************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/scrollable-content/__button/scrollable-content__button.css ***!
+  \*************************************************************************************************************************/
+.scrollable-content__button {
+	padding: 8px 16px;
+	min-width: 0;
+}
+
+/*!***********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/scrollable-content/__button-text/scrollable-content__button-text.css ***!
+  \***********************************************************************************************************************************/
+.scrollable-content__button-text {
+	min-width: none;
+}
+
+/*!*************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/scrollable-content/__button-cross/scrollable-content__button-cross.css ***!
+  \*************************************************************************************************************************************/
+.scrollable-content__button-cross {
+    display: none;
+}
+/*!****************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/scrollable-content/__button-cross/_active/scrollable-content__button-cross_active.css ***!
+  \****************************************************************************************************************************************************/
+.scrollable-content__button-cross_active {
+    display: block;
+}
+/*!*****************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/scrollable-content/__sub-text/scrollable-content__sub-text.css ***!
+  \*****************************************************************************************************************************/
+.scrollable-content__sub-text {
+	text-align: start;
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+/*!*****************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/scrollable-content/__add-menu/scrollable-content__add-menu.css ***!
+  \*****************************************************************************************************************************/
+.scrollable-content__add-menu {
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+}
+
+/*!**********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/control-panel/control-panel.css ***!
+  \**********************************************************************************************/
+.control-panel {
+	max-height: 88px;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 40px;
+	border-left: 1px solid #ebe9ed;
+}
+
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/control-panel/__button/control-panel__button.css ***!
+  \***************************************************************************************************************/
+.control-panel__button {
+	display: flex;
+	max-width: 282px;
+	max-height: 48px;
+	background-color: #ebe9ed;
+	border: 2px solid #ebe9ed;
+	border-radius: 24px;
+}
+
+/*!******************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/cards/cards.css ***!
+  \******************************************************************************/
+.cards {
+}
+
+/*!*****************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/cards/__map/cards__map.css ***!
+  \*****************************************************************************************/
+.cards__map {
+	display: none;
+	max-width: 100%;
+	height: 100%;
+}
+
+/*!********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/cards/__map/_opened/cards__map_opened.css ***!
+  \********************************************************************************************************/
+.cards__map_opened {
+	display: block;
+}
+
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/cards/__page-without-card/cards__page-without-card.css ***!
+  \*********************************************************************************************************************/
+.cards__page-without-card {
+	display: none;
+	z-index: 0;
+	opacity: 0;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 160px;
+}
+
+/*!************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/cards/__page-without-card/_opened/cards__page-without-card_opened.css ***!
+  \************************************************************************************************************************************/
+.cards__page-without-card_opened {
+	display: flex;
+	z-index: 1;
+	opacity: 1;
+	transition: z-index 5s;
+}
+
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/cards/__text-without-card/cards__text-without-card.css ***!
+  \*********************************************************************************************************************/
+.cards__text-without-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 460px;
+	max-height: 188px;
+	margin-right: 40px;
+}
+
+/*!***********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/cards/__image-without-card/cards__image-without-card.css ***!
+  \***********************************************************************************************************************/
+.cards__image-without-card {
+	width: 410px;
+	height: 316px;
+	background-image: url(61add2c0d09c75b6c097.svg);
+}
+
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/cards/__page-with-card/cards__page-with-card.css ***!
+  \***************************************************************************************************************/
+.cards__page-with-card {
+    display: none;
+    grid-template-columns: repeat(3, 277px);
+    column-gap: 20px;
+    row-gap: 20px;
+    max-width: 871px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*!******************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/cards/__page-with-card/_opened/cards__page-with-card_opened.css ***!
+  \******************************************************************************************************************************/
+.cards__page-with-card_opened {
+    display: grid;
+}
+/*!*******************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/card/__event-description/card__event-description.css ***!
+  \*******************************************************************************************************************/
+.card__event-description {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+/*!***********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/card/__event-address/card__event-address.css ***!
+  \***********************************************************************************************************/
+.card__event-address {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+/*!*****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/card/__event-date/card__event-date.css ***!
+  \*****************************************************************************************************/
+.card__event-date {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+/*!*****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/card/__event-name/card__event-name.css ***!
+  \*****************************************************************************************************/
+.card__event-name {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+/*!*****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/card/__event-type/card__event-type.css ***!
+  \*****************************************************************************************************/
+.card__event-type {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+/*!********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/bubble/bubble.css ***!
+  \********************************************************************************/
+.bubble {
+	max-width: 320px;
+	max-height: 212px;
+	border-radius: 10px;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	row-gap: 16px;
+}
+
+/*!*********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/bubble/__event-type/bubble__event-type.css ***!
+  \*********************************************************************************************************/
+.bubble__event-type {
+	text-align: start;
+}
+
+/*!*********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/bubble/__event-name/bubble__event-name.css ***!
+  \*********************************************************************************************************/
+.bubble__event-name {
+	margin: 0;
+}
+
+/*!*********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/bubble/__event-date/bubble__event-date.css ***!
+  \*********************************************************************************************************/
+.bubble__event-date {
+	margin: 0;
+	text-align: start;
+}
+
+/*!***************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/bubble/__address/bubble__address.css ***!
+  \***************************************************************************************************/
+.bubble__address {
+	display: flex;
+	justify-content: space-between;
+}
+
+/*!****************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/popup-card/popup-card.css ***!
+  \****************************************************************************************/
+.popup-card {
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    max-width: 50vw;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.popup-card::before {
+    left: 0;
+    top: 0;
+    z-index: -1;
+    content: "";
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+    background-color: #000;
+}
+
+/*!*******************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/popup-card/_opened/popup-card_opened.css ***!
+  \*******************************************************************************************************/
+.popup-card_opened {
+    display: flex;
+}
+/*!*******************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/popup-card/__image/popup-card__image.css ***!
+  \*******************************************************************************************************/
+.popup-card__image {
+    max-width: 50vw;
+    height: 320px;
+    background: url(https://p0.pxfuel.com/preview/273/441/304/guitar-guitarist-guitar-player-guitar-grip.jpg) no-repeat center;
+}
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/popup-card/__button-cross/popup-card__button-cross.css ***!
+  \*********************************************************************************************************************/
+.popup-card__button-cross {
+    position: absolute;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: #0000;
+    background: url(2d6d98d5a86bb36f8018.svg) no-repeat center;;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 52px;
+    cursor: pointer;
+}
+
+.popup-card__button-cross:hover {
+    opacity: .8;
+}
+/*!***********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/popup-card/__warning/popup-card__warning.css ***!
+  \***********************************************************************************************************/
+.popup-card__warning {
+    padding: 8px 50px;
+    max-height: 20px;
+    max-width: 600px;
+    display: flex;
+    column-gap: 12px;
+    justify-content: flex-start;
+    background-color: #ffd400;
+}
+/*!*******************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/popup-card/__title/popup-card__title.css ***!
+  \*******************************************************************************************************/
+.popup-card__title {
+    text-align: start;
+}
+/*!*******************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/popup-card/__description/popup-card__description.css ***!
+  \*******************************************************************************************************************/
+.popup-card__description {
+    text-align: start;
+}
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/popup-card/__container/popup-card__container.css ***!
+  \***************************************************************************************************************/
+.popup-card__container {
+    max-width: 620px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    background: var(--light-primary, #FCFAF7);
+    overflow: hidden;
+    height: 35vh;
+    overflow-y: scroll;
+}
+/*!*******************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/popup-card/__about-place/popup-card__about-place.css ***!
+  \*******************************************************************************************************************/
+.popup-card__about-place {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    text-align: start;
+}
+/*!*****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/popup-card/__info/popup-card__info.css ***!
+  \*****************************************************************************************************/
+.popup-card__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    min-height: 24px;
+}
+/*!***********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/popup-card/__info/_color/popup-card__info_color_grey.css ***!
+  \***********************************************************************************************************************/
+.popup-card__info_color_grey {
+    background-color: #ebe9ed;  
+}
+/*!*******************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/popup-card/__social-icon/popup-card__social-icon.css ***!
+  \*******************************************************************************************************************/
+.popup-card__social-icon {
+    width: 48px;
+    height: 48px;
+}
+
+.popup-card__social-icon:hover {
+    opacity: .8;
+}
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/popup-card/__social-place/popup-card__social-place.css ***!
+  \*********************************************************************************************************************/
+.popup-card__social-place {
+    display: grid;
+    column-gap: 50px;
+    row-gap: 16px;
+    grid-template-columns: repeat(2, 285px);
+}
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/popup-card/__social-links/popup-card__social-links.css ***!
+  \*********************************************************************************************************************/
+.popup-card__social-links {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+/*!*******************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/popup-card/__copy-button/popup-card__copy-button.css ***!
+  \*******************************************************************************************************************/
+.popup-card__copy-button {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    max-width: 175px;
+    max-height: 24px;
+    margin-left: auto;
+    align-self: center;
+}
+/*!*******************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/popup-card/__social-text/popup-card__social-text.css ***!
+  \*******************************************************************************************************************/
+.popup-card__social-text {
+    grid-column: 1/3;
+    text-align: start;
+}
+/*!***********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/popup-card/__buttons/popup-card__buttons.css ***!
+  \***********************************************************************************************************/
+.popup-card__buttons {
+    display: grid;
+    width: 700px;
+    height: 88px;
+    grid-template-rows: 48px;
+    grid-template-columns: repeat(2, 304px);
+    background: var(--light-primary, #FCFAF7);
+    box-shadow: 0px -8px 32px 0px rgba(59, 55, 72, 0.12);
+    justify-content: space-around;
+    align-content: space-around;
+}
+/*!*************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/popup-card/__address-number/popup-card__address-number.css ***!
+  \*************************************************************************************************************************/
+.popup-card__address-number {
+    cursor: pointer;
+}
+/*!**********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/donation-form/donation-form.css ***!
+  \**********************************************************************************************/
+.donation-form {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.donation-form::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+    background-color: #000;
+}
+
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/donation-form/_opened/donation-form_opened.css ***!
+  \*************************************************************************************************************/
+.donation-form_opened {
+    display: block;
+}
+/*!*********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/donation-form/__box/donation-form__box.css ***!
+  \*********************************************************************************************************/
+.donation-form__box {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 10%;
+    left: 30%;
+    z-index: 1;
+    background-color: #fff;
+    max-width: 532px;
+    padding: 40px;
+    border-radius: 24px;
+}
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/donation-form/__header/donation-form__header.css ***!
+  \***************************************************************************************************************/
+.donation-form__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+/*!***********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/donation-form/__main/donation-form__main.css ***!
+  \***********************************************************************************************************/
+.donation-form__main {
+    display: flex;
+    flex-direction: column;
+}
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/donation-form/__prices/donation-form__prices.css ***!
+  \***************************************************************************************************************/
+.donation-form__prices {
+    display: grid;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    grid-template-columns: repeat(3, 169px);
+    grid-template-rows: repeat(2, 48px);
+    column-gap: 12px;
+    row-gap: 12px;
+}
+/*!*******************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/donation-form/__subtitle/donation-form__subtitle.css ***!
+  \*******************************************************************************************************************/
+.donation-form__subtitle {
+    text-align: start;
+}
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/donation-form/__email/donation-form__email.css ***!
+  \*************************************************************************************************************/
+.donation-form__email {
+    width: 532px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+/*!***********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/donation-form/__bank/donation-form__bank.css ***!
+  \***********************************************************************************************************/
+.donation-form__bank {
+    display: flex;
+    column-gap: 8px;
+    margin-top: 16px;
+}
+/*!*******************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/donation-form/__approval/donation-form__approval.css ***!
+  \*******************************************************************************************************************/
+.donation-form__approval {
+    text-align: start;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/donation-form/__submit/donation-form__submit.css ***!
+  \***************************************************************************************************************/
+.donation-form__submit {
+    width: 532px;
+}
+/*!***************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/donation-form/__button-close/donation-form__button-close.css ***!
+  \***************************************************************************************************************************/
+.donation-form__button-close {
+    height: 24px;
+    width: 24px;
+    padding: 0;
+    border: 0;
+    background-color: #0000;
+    background-image: url(b82896b30722d6701a82.svg);
+    cursor: pointer;
+}
+
+.donation-form__button-close:hover {
+    opacity: .6;
+}
+/*!********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/header/header.css ***!
+  \********************************************************************************/
+.header {
+  margin: auto;
+  box-sizing: border-box;
+	background-color: #ffd400;
+  margin: 0 auto;
+	max-width: 1440px;
+	left: 0;
+	top: 0;
+	padding: 20px 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media screen and (max-width: 1168px) {
+  .header{
+    padding: 12px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+  }
+}
+
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/header/__logo-location/header__logo-location.css ***!
+  \***************************************************************************************************************/
+.header__logo-location {
+	display: flex;
+	flex-direction: row;
+	column-gap: 32px;
+}
+
+/*!*********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/header/__logo/header__logo.css ***!
+  \*********************************************************************************************/
+.header__logo {
+	width: 60px;
+	height: 44px;
+	/* background-color: #000; */
+	background-image: url(9038faa74b4969f466eb.svg);
+}
+
+/*!***********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/header/__logo-burger/header__logo-burger.css ***!
+  \***********************************************************************************************************/
+.header__logo-burger {
+  align-self: center;
+  margin-top: 190px;
+  width: 152px;
+  height: 20px;
+  background-image: url(2d0a25715c529c426dc7.svg);
+}
+
+/*!*******************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/header/__burger-menu-container/header__burger-menu-container.css ***!
+  \*******************************************************************************************************************************/
+.header__burger-menu-container {
+	position: fixed;
+	display: none;
+	top: 68px;
+	left: 0px;
+	width: 200%;
+	height: 100%;
+	overflow: hidden;
+	z-index: 2;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (min-width: 1169px) {
+	.header__burger-menu-container {
+		display: none;
+	}
+}
+
+/*!**********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/header/__burger-menu-container/_opened/header__burger-menu-container_opened.css ***!
+  \**********************************************************************************************************************************************/
+.header__burger-menu-container_opened {
+  display: flex;
+}
+
+/*!***********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/header/__burger-menu/header__burger-menu.css ***!
+  \***********************************************************************************************************/
+.header__burger-menu {
+	display: flex;
+	width: calc(200% - 40px);
+  height: 614px;
+	padding: 20px;
+	flex-direction: row;
+  column-gap: 20px;
+	align-items: flex-start;
+	z-index: 1;
+	background-color: #FCFAF7;
+  transition: transform 0.7s ease-in-out 0.2s;
+}
+
+.header__burger-menu_open {
+  transform: translateX(-50%);
+}
+
+.header__burger-menu_close {
+  transform: translateX(0);
+}
+
+@media screen and (min-width: 1169px) {
+  .header__burger-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header__burger-menu {
+    height: 100vh;
+  }
+}
+
+/*!*******************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/header/__location-button/header__location-button.css ***!
+  \*******************************************************************************************************************/
+.header__location-button {
+    width: 22px;
+    height: 24px;
+    background-image: url(f1fb055d1d357484d8ca.svg);
+}
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/header/__dropdown-menu/header__dropdown-menu.css ***!
+  \***************************************************************************************************************/
+.header__dropdown-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 1;
+}
+
+/*!******************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/header/__dropdown-menu/_opened/header__dropdown-menu_opened.css ***!
+  \******************************************************************************************************************************/
+.header__dropdown-menu_opened {
+	display: flex;
+}
+
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/header/__btn-dropdown/header__btn-dropdown.css ***!
+  \*************************************************************************************************************/
+.header__btn-dropdown {
+  width: 234px;
+}
+
+@media screen and (max-width: 1168px) {
+  .header__btn-dropdown {
+    display: none;
+  }
+}
+
+/*!****************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/header/__btn-dropdown/_burger/header__btn-dropdown_burger.css ***!
+  \****************************************************************************************************************************/
+.header__btn-dropdown_burger {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 1169px) {
+  .header__btn-dropdown_burger {
+    display: none;
+  }
+}
+
+/*!*******************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/header/__menu-list/header__menu-list.css ***!
+  \*******************************************************************************************************/
+.header__menu-list {
+	position: absolute;
+	top: 72px;
+	left: 172px;
+	display: flex;
+	width: 320px;
+	padding: 24px 0;
+	flex-direction: column;
+	align-items: flex-start;
+	z-index: 1;
+	border-radius: 24px;
+	background-color: #fff;
+	box-shadow: 0px 4px 12px 0px rgba(59, 55, 72, 0.12);
+  z-index: 2;
+}
+
+/*!*******************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/header/__list-item/header__list-item.css ***!
+  \*******************************************************************************************************/
+.header__list-item {
+	display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	padding: 12px 24px;
+	box-sizing: border-box;
+}
+
+.header__list-item:hover {
+	cursor: pointer;
+	background-color: #ebe9ed;
+}
+
+.header__list-item:active {
+  cursor: pointer;
+  background-color: #7100FF;
+}
+
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/header/__checked-mark/header__checked-mark.css ***!
+  \*************************************************************************************************************/
+.header__checked-mark {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url(62491cbc00e0c2d05f0b.svg);
+  opacity: 0;
+}
+
+/*!******************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/header/__checked-mark/_checked/header__checked-mark_checked.css ***!
+  \******************************************************************************************************************************/
+.header__checked-mark_checked {
+  opacity: 1;
+}
+
+/*!*********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/header/__input-item/header__input-item.css ***!
+  \*********************************************************************************************************/
+.header__input-item {
+  opacity: 0;
+  position: absolute;
+}
+
+/*!*****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/header/__nav-link/header__nav-link.css ***!
+  \*****************************************************************************************************/
+.header__nav-link {
+	display: flex;
+	flex-direction: row;
+	column-gap: 44px;
+}
+
+@media screen and (max-width: 1250px) {
+  .header__nav-link {
+    column-gap: 22px;
+  }
+}
+
+@media screen and (max-width: 1168px) {
+  .header__nav-link {
+    display: none;
+  }
+}
+
+/*!********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/header/__nav-link/_burger/header__nav-link_burger.css ***!
+  \********************************************************************************************************************/
+.header__nav-link_burger {
+	display: flex;
+	flex-direction: column;
+	row-gap: 24px;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+/*!*********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/header/__link/header__link.css ***!
+  \*********************************************************************************************/
+.header__link {
+  text-decoration: none;
+}
+
+/*!***********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/header/__user-action/header__user-action.css ***!
+  \***********************************************************************************************************/
+.header__user-action {
+	display: flex;
+	flex-direction: row;
+  align-items: center;
+	column-gap: 32px;
+}
+
+/*!*****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/header/__user-action-go/header__user-action-go.css ***!
+  \*****************************************************************************************************************/
+.header__user-action-go {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	column-gap: 8px;
+}
+
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/header/__donate-button/header__donate-button.css ***!
+  \***************************************************************************************************************/
+@media screen and (max-width: 1168px) {
+  .header__donate-button {
+    display: none;
+  }
+}
+
+/*!******************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/header/__donate-button/_burger/header__donate-button_burger.css ***!
+  \******************************************************************************************************************************/
+.header__donate-button_burger {
+  margin: 20px;
+}
+
+@media screen and (min-width: 1169px) {
+  .header__donate-button_burger {
+    display: none;
+  }
+}
+
+/*!*****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/header/__btn-menu/header__btn-menu.css ***!
+  \*****************************************************************************************************/
+.header__btn-menu {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  width: 20px;
+  height: 20px;
+  background-image: url(11fc4a138e7c3b1e562d.svg);
+  display: none;
+}
+
+@media screen and (max-width: 1168px) {
+  .header__btn-menu {
+    display: flex;
+  }
+}
+
+/*!***********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/header/__heart/header__heart.css ***!
+  \***********************************************************************************************/
+.header__heart {
+    width: 25px;
+    height: 22px;
+    background-image: url(a0ab4374ec459263b0a5.svg);
+}
+/*!*******************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/header/__container/header__container.css ***!
+  \*******************************************************************************************************/
+.header__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+@media screen and (min-width: 1169px) {
+  .header__container {
+    display: none;
+  }
+}
+
+/*!*****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/header/__btn-back/header__btn-back.css ***!
+  \*****************************************************************************************************/
+.header__btn-back {
+  display: flex;
+  flex-direction: row;
+  column-gap: 8px;
+  margin: 20px;
+}
+
+/*!*********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/header/__text/header__text.css ***!
+  \*********************************************************************************************/
+.header__text {
+  margin-left: 20px;
+}
+
+/*!****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/lead/lead.css ***!
+  \****************************************************************************/
+.lead {
+  margin: 10px auto 0;
+  max-width: 1440px;
+  max-height: 720px;
+  min-height: 600px;
+}
+
+
+/*!*********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/lead/__screen/lead__screen.css ***!
+  \*********************************************************************************************/
+.lead__screen {
+  width: 100%;
+  background-image: url(fcd1972ca6aa12102922.svg);
+  background-size: cover;
+  background-position: center;
+  min-height: 720px;
+}
+
+@media screen and (max-width: 670px) {
+  .lead__screen {
+    background-image: url(bc13536e1a9399994799.svg);
+    min-height: 600px;
+  }
+}
+
+/*!*****************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/lead/__text/lead__text.css ***!
+  \*****************************************************************************************/
+.lead__text {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -126px;
+}
+
+@media screen and (max-width: 670px) {
+  .lead__text {
+    top: 18px;
+  }
+}
+
+/*!*****************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/lead/__link/lead__link.css ***!
+  \*****************************************************************************************/
+.lead__link {
+  top: -120px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  background-color: #7100FF;
+  box-shadow: 0px 4px 12px 0px rgba(59, 55, 72, 0.12);
+}
+
+@media screen and (max-width: 670px) {
+  .lead__link {
+    top: 26px;
+  }
+}
+
+/*!*****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/lead/__link-image/lead__link-image.css ***!
+  \*****************************************************************************************************/
+.lead__link-image {
+  background-image: url(d0d5b2d4848d10134483.svg);
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}
+
+/*!******************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/about/about.css ***!
+  \******************************************************************************/
+.about {
+  max-width: 1440px;
+  margin: 38px auto 0;
+  padding-bottom: 80px;
+  display: grid;
+  grid-template-columns: 6fr 10fr 1fr 10fr 6fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  ". title . container ."
+  ". . . container ."
+  ". . . container ."
+  ;
+}
+
+@media screen and (max-width: 670px) {
+  .about {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    grid-template-areas:
+    "title"
+    "container"
+    "container"
+    ;
+    row-gap: 12px;
+    margin: 70px 36px 0;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .about {
+    margin: 70px 12px 0;
+  }
+}
+
+/*!*********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/about/__title/about__title.css ***!
+  \*********************************************************************************************/
+.about__title {
+  grid-area: title;
+}
+
+/*!*****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/about/__container/about__container.css ***!
+  \*****************************************************************************************************/
+.about__container {
+  grid-area: container;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+/*!***********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/about/__button/about__button.css ***!
+  \***********************************************************************************************/
+.about__button {
+  text-decoration: none;
+  font-weight: 500;
+  width: 204px;
+  height: 48px;
+}
+
+/*!********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/events/events.css ***!
+  \********************************************************************************/
+.events {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  background-color: #EBE9ED;
+}
+
+@media screen and (max-width: 360px) {
+  .events {
+    padding: 40px 20px;
+    row-gap: 12px;
+  }
+}
+
+/*!***********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/events/__title/events__title.css ***!
+  \***********************************************************************************************/
+.events__title {
+  max-width: 840px;
+}
+
+/*!*********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/events/__tags/events__tags.css ***!
+  \*********************************************************************************************/
+.events__tags {
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  row-gap: 16px;
+  column-gap: 12px;
+  flex-wrap: wrap;
+}
+
+/*!*************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/events/__slider/events__slider.css ***!
+  \*************************************************************************************************/
+.events__slider {
+  display: flex;
+  gap: 24px;
+  overflow-x: scroll;
+}
+
+.events__slider::-webkit-scrollbar {
+  background-color: #FCFAF7;
+  height: 4px;
+}
+
+.events__slider::-webkit-scrollbar-thumb {
+  background-color: #7100FF;
+  border-radius: 100px;
+}
+
+/*!*********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/events/__card/events__card.css ***!
+  \*********************************************************************************************/
+.events__card {
+  min-width: 320px;
+  padding-bottom: 24px;
+}
+
+/*!********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/digits/digits.css ***!
+  \********************************************************************************/
+.digits {
+  margin: 0 auto;
+  padding: 80px 40px 80px 40px;
+  max-width: 1440px;
+  min-height: 812px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+  .digits {
+    padding: 40px 20px 40px;
+    row-gap: 20px;
+    margin: 0 auto;
+    max-width: 360px;
+  }
+}
+
+/*!***********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/digits/__title/digits__title.css ***!
+  \***********************************************************************************************/
+.digits__title {
+  margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .digits__title {
+    max-width: 100%;
+    font-size: 32px;
+  }
+}
+
+/*!***********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/digits/__image/digits__image.css ***!
+  \***********************************************************************************************/
+.digits__image {
+  width: auto;
+  height: 720px;
+  margin: 0;
+  position: relative;
+  max-width: 1360px;
+}
+
+@media screen and (max-width: 1024px) {
+  .digits__image {
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 40px;
+    height: auto;
+  }
+}
+
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/digits/__circle-container/digits__circle-container.css ***!
+  \*********************************************************************************************************************/
+.digits__circle-container {
+  width: 543px;
+  height: 480px;
+}
+
+@media screen and (max-width: 1024px) {
+  .digits__circle-container {
+    width: 320px;
+    height: auto;
+  }
+}
+
+/*!********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/digits/__circle-container/_left/digits__circle-container_left.css ***!
+  \********************************************************************************************************************************/
+.digits__circle-container_left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .digits__circle-container_left {
+    position: relative;
+  }
+}
+
+/*!**********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/digits/__circle-container/_right/digits__circle-container_right.css ***!
+  \**********************************************************************************************************************************/
+.digits__circle-container_right {
+  position: absolute;
+  top: 240px;
+  right: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .digits__circle-container_right {
+    position: relative;
+    top: 0;
+  }
+}
+
+/*!*********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/digits/__big-circle/digits__big-circle.css ***!
+  \*********************************************************************************************************/
+.digits__big-circle {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #ffd400;
+  border-radius: 100%;
+  width: 480px;
+  height: 480px;
+  position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+  .digits__big-circle {
+    max-width: 320px;
+    height: 320px;
+    background-color: transparent;
+  }
+}
+
+/*!********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/digits/__big-circle/_left/digits__big-circle_left.css ***!
+  \********************************************************************************************************************/
+.digits__big-circle_left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .digits__big-circle_left {
+    position: static;
+    background-image: url(bee309e79369dff7ab9d.svg);
+    border-radius: 0;
+  }
+}
+
+/*!**********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/digits/__big-circle/_right/digits__big-circle_right.css ***!
+  \**********************************************************************************************************************/
+.digits__big-circle_right {
+  position: absolute;
+  top: 0px;
+  right: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .digits__big-circle_right {
+    position: static;
+    background-image: url(a393960f5256fd1c6890.svg);
+    border-radius: 0;
+  }
+}
+
+/*!***********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/digits/__left-illustration/digits__left-illustration.css ***!
+  \***********************************************************************************************************************/
+.digits__left-illustration {
+  width: 480px;
+  height: 283px;
+  position: absolute;
+  top: 18px;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .digits__left-illustration {
+    display: none;
+  }
+}
+
+/*!*************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/digits/__right-illustration/digits__right-illustration.css ***!
+  \*************************************************************************************************************************/
+.digits__right-illustration {
+  width: 543px;
+  height: 248px;
+  position: absolute;
+  top: 48px;
+  right: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .digits__right-illustration {
+    display: none;
+  }
+}
+
+/*!*****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/digits/__text-container/digits__text-container.css ***!
+  \*****************************************************************************************************************/
+.digits__text-container {
+  width: 303px;
+  height: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 8px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .digits__text-container {
+    align-items: center;
+    margin-top: 12px;
+    row-gap: 4px;
+    width: 320px;
+    height: 80px;
+  }
+}
+
+/*!****************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/digits/__text-container/_left/digits__text-container_left.css ***!
+  \****************************************************************************************************************************/
+.digits__text-container_left {
+  position: absolute;
+  top: 332px;
+  left: 240px;
+}
+
+@media screen and (max-width: 1024px) {
+  .digits__text-container_left {
+    display: flex;
+    position: static;
+  }
+}
+
+/*!******************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/digits/__text-container/_right/digits__text-container_right.css ***!
+  \******************************************************************************************************************************/
+.digits__text-container_right {
+  position: absolute;
+  top: 332px;
+  right: 240px;
+}
+
+@media screen and (max-width: 1024px) {
+  .digits__text-container_right {
+    display: flex;
+    position: static;
+  }
+}
+
+/*!*********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/digits/__text/digits__text.css ***!
+  \*********************************************************************************************/
+.digits__text {
+  text-align: start;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .digits__text {
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/digits/__little-circle/digits__little-circle.css ***!
+  \***************************************************************************************************************/
+.digits__little-circle {
+  width: 233px;
+  height: 149px;
+  position: absolute;
+  top: 130px;
+  left: 662px;
+  bottom: 441px;
+  right: 465px;
+}
+
+@media screen and (max-width: 1350px) {
+  .digits__little-circle {
+    display: none;
+  }
+}
+
+/*!***********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/digits/__three-lines/digits__three-lines.css ***!
+  \***********************************************************************************************************/
+.digits__three-lines {
+  width: 87.4px;
+  height: 143px;
+  position: absolute;
+  top: 577px;
+  left: 636px;
+  bottom: 0.42px;
+  right: 636.5px;
+}
+
+@media screen and (max-width: 1350px) {
+  .digits__three-lines {
+    display: none;
+  }
+}
+
+/*!******************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/promo/promo.css ***!
+  \******************************************************************************/
+.promo {
+  background-color: #ffd400;
+  padding: 80px 40px 80px;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1250px) {
+  .promo {
+    padding: 80px 60px 80px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .promo {
+    background-color: #f40934;
+    color: #fff;
+    padding: 40px 20px 40px;
+    max-height: 284px;
+  }
+}
+
+/*!*****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/promo/__container/promo__container.css ***!
+  \*****************************************************************************************************/
+.promo__container {
+  margin: 0 240px 0;
+  display: flex;
+  column-gap: 40px;
+  justify-content: space-between;
+  min-width: 320px;
+}
+
+@media screen and (max-width: 1436px) {
+  .promo__container {
+    margin: 0 40px 0;
+    column-gap: 80px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1156px) {
+  .promo__container {
+    column-gap: 40px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .promo__container {
+    flex-direction: column;
+    flex-basis: content;
+    row-gap: 12px;
+    min-width: 320px;
+  }
+}
+
+/*!*********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/promo/__title/promo__title.css ***!
+  \*********************************************************************************************/
+.promo__title {
+  display: block;
+  flex-basis: 420px;
+  text-align: start;
+}
+
+@media screen and (max-width: 1117px) {
+  .promo__title {
+    flex-basis: content;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .promo__title {
+    font-size: 32px;
+  }
+}
+
+/*!*********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/promo/__description/promo__description.css ***!
+  \*********************************************************************************************************/
+.promo__description {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  flex-basis: 420px;
+  text-align: start;
+}
+
+@media screen and (max-width: 1024px) {
+  .promo__description {
+    flex-basis: content;
+  }
+}
+
+/*!*******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/promo/__text/promo__text.css ***!
+  \*******************************************************************************************/
+.promo__text {
+  text-align: start;
+}
+
+@media screen and (max-width: 1024px) {
+  .promo__text {
+    color: #fff;
+    font-size: 16px;
+  }
+}
+
+/*!***********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/promo/__button/promo__button.css ***!
+  \***********************************************************************************************/
+.promo__button {
+  background-color: #ffd400;
+  margin: 4px 0 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .promo__button {
+    background-color: #f40934;
+    border: #fff solid;
+  }
+}
+
+/*!******************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/photo/photo.css ***!
+  \******************************************************************************/
+.photo {
+  padding: 80px 40px 0;
+  width: auto;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1380px) {
+  .photo {
+    padding: 40px 20px 40px;
+  }
+}
+
+/*!*********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/photo/__title/photo__title.css ***!
+  \*********************************************************************************************/
+.photo__title {
+  text-align: start;
+  margin: 0 0 24px;
+}
+
+@media screen and (max-width: 1024px) {
+  .photo__title {
+    font-size: 32px;
+    margin: 0 auto 12px;
+    max-width: 320px;
+  }
+}
+
+/*!*******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/photo/__text/photo__text.css ***!
+  \*******************************************************************************************/
+.photo__text {
+  margin: 0 0 40px;
+  text-align: start;
+}
+
+@media screen and (max-width: 1024px) {
+  .photo__text {
+    font-size: 16px;
+    margin: 0 auto 20px;
+    max-width: 320px;
+  }
+}
+
+/*!*************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/photo/__gallery/photo__gallery.css ***!
+  \*************************************************************************************************/
+.photo__gallery {
+  max-width: 1360px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, min-content);
+  grid-template-areas:
+    "first big big ."
+    ". big big third"
+    "fourth fifth . .";
+  gap: 20px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .photo__gallery {
+    width: 320px;
+    height: 320px;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    display: none;
+  }
+}
+
+/*!*****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/photo/__image-container/photo__image-container.css ***!
+  \*****************************************************************************************************************/
+.photo__image-container {
+  width: auto;
+}
+
+/* @media screen and (max-width: 1380px){
+  .photo__image-container {
+    width: 320px;
+  }
+} */
+
+/*!******************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/photo/__image-container/_first/photo__image-container_first.css ***!
+  \******************************************************************************************************************************/
+.photo__image-container_first {
+  grid-area: first;
+}
+
+/*!**************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/photo/__image-container/_big/photo__image-container_big.css ***!
+  \**************************************************************************************************************************/
+.photo__image-container_big {
+  grid-area: big;
+}
+
+/*!******************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/photo/__image-container/_third/photo__image-container_third.css ***!
+  \******************************************************************************************************************************/
+.photo__image-container_third {
+  grid-area: third;
+}
+
+/*!********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/photo/__image-container/_fourth/photo__image-container_fourth.css ***!
+  \********************************************************************************************************************************/
+.photo__image-container_fourth {
+  grid-area: fourth;
+}
+
+/*!******************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/photo/__image-container/_fifth/photo__image-container_fifth.css ***!
+  \******************************************************************************************************************************/
+.photo__image-container_fifth {
+  grid-area: fifth;
+}
+
+/*!*********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/photo/__image/photo__image.css ***!
+  \*********************************************************************************************/
+.photo__image {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/*!*******************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/photo/__navigation/photo__navigation.css ***!
+  \*******************************************************************************************************/
+.photo__navigation {
+  margin-top: 12px;
+  display: none;
+
+}
+
+@media screen and (max-width: 1024px) {
+  .photo__navigation {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*!*******************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/photo/__slider-container/photo__slider-container.css ***!
+  \*******************************************************************************************************************/
+.photo__slider-container {
+  margin: 0 auto;
+  max-width: 320px;
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .photo__slider-container {
+    display: block;
+  }
+}
+
+/*!***********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/photo/__slider/photo__slider.css ***!
+  \***********************************************************************************************/
+.photo__slider {
+  display: none;
+  width: 320px;
+  height: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1024px){
+  .photo__slider {
+    display: block;
+  }
+}
+
+.tns-nav {
+  text-align: center;
+  margin: 12px 0 0 ;
+}
+
+.tns-nav button {
+  width: 12px;
+  height: 12px;
+  background-color: #96949E;
+  border: none;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.tns-nav .tns-nav-active {
+  background-color: #3B3748;
+}
+
+/*!*********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/photo/__slider-item/photo__slider-item.css ***!
+  \*********************************************************************************************************/
+.photo__slider-item {
+  object-fit: cover;
+  width: 320px;
+  height: 320px;
+}
+
+/*!****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/team/team.css ***!
+  \****************************************************************************/
+.team {
+  padding: 80px 40px 80px;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+@media screen and (max-width: 1024px){
+  .team {
+    padding: 40px 20px 40px;
+    background-color: #EBE9ED;
+  }
+}
+
+/*!*******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/team/__title/team__title.css ***!
+  \*******************************************************************************************/
+.team__title {
+  margin: 0 0 12px 0;
+  text-align: start;
+}
+
+/*!***************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/team/__container/team__container.css ***!
+  \***************************************************************************************************/
+.team__container {
+  display: flex;
+  gap: 24px;
+  overflow-x: scroll;
+}
+
+.team__container::-webkit-scrollbar {
+  display: none;
+}
+
+/* .team__container::-webkit-scrollbar-thumb {
+  background-color: #7100FF;
+  border-radius: 100px;
+} */
+
+@media screen and (max-width: 1024px) {
+  .team__container {
+    gap: 20px;
+  }
+}
+
+/*!*****************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/team/__logo/team__logo.css ***!
+  \*****************************************************************************************/
+.team__logo {
+  width: 170px;
+  height: 170px;
+  align-self: center;
+  mix-blend-mode: multiply;
+}
+
+/*!******************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/team/__logo/_first/team__logo_first.css ***!
+  \******************************************************************************************************/
+.team__logo_first {
+  width: 120px;
+  min-width: 120px;
+  min-height: 120px;
+  background-image: url(4aa6c4adf399fd550862.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 360px) {
+  .team__logo_first {
+    background-image: url(9f79904f4c8b26d61ff3.svg);
+
+  }
+}
+
+/*!********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/team/__logo/_second/team__logo_second.css ***!
+  \********************************************************************************************************/
+.team__logo_second {
+  min-width: 170px;
+  min-height: 170px;
+  background-image: url(c815c4f965ea946961f7.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 360px) {
+  .team__logo_second {
+    background-image: url(3512dcdc1c97227f8596.svg);
+  }
+}
+
+/*!******************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/team/__logo/_third/team__logo_third.css ***!
+  \******************************************************************************************************/
+.team__logo_third {
+  min-width: 170px;
+  min-height: 170px;
+  background-image: url(4bf58367193fd5421c24.svg);
+}
+
+/*!********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/footer/footer.css ***!
+  \********************************************************************************/
+.footer {
+  padding: 80px 40px 80px;
+  background-color: #ebe9ed;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: min-content 310px 427px 310px;
+  grid-template-rows: 1fr;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1330px) {
+  .footer {
+    grid-template-columns: repeat(3, min-content);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    background-color: #ffd400;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, min-content);
+    row-gap: 48px;
+  }
+}
+
+/*!*******************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/footer/__container/footer__container.css ***!
+  \*******************************************************************************************************/
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/footer/__illustration/footer__illustration.css ***!
+  \*************************************************************************************************************/
+.footer__illustration {
+  min-width: 193px;
+  height: 193px;
+  background-image: url(9f00f60610da2eb388f2.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+@media screen and (max-width: 1330px) {
+  .footer__illustration {
+    display: none;
+  }
+}
+
+/*!***********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/footer/__title/footer__title.css ***!
+  \***********************************************************************************************/
+.footer__title {
+  margin: 0 0 20px 0;
+  font-size: 32px;
+  text-align: start;
+}
+
+@media screen and (max-width: 1280px) {
+  .footer__title {
+    margin: 0 0 12px 0;
+    font-size: 24px;
+  }
+}
+
+/*!*********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/footer/__link/footer__link.css ***!
+  \*********************************************************************************************/
+.footer__link {
+  padding: 12px 24px 12px 0;
+  display: block;
+  text-align: start;
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__link {
+    justify-content: space-between;
+  }
+}
+
+/*!*********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/footer/__text/footer__text.css ***!
+  \*********************************************************************************************/
+.footer__text {
+  text-align: start;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1280px) {
+  .footer__text {
+    font-size: 16px;
+  }
+}
+
+/*!*********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/footer/__icon/footer__icon.css ***!
+  \*********************************************************************************************/
+.footer__icon {
+  background-image: url(bdee952130d47aaef2a9.svg);
+  width: 48px;
+  height: 48px;
+}
+
+.footer__icon:hover {
+  opacity: .7;
+  transition: .4s;
+}
+
+/*!**********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/content/content.css ***!
+  \**********************************************************************************/
+.content {
+  margin: auto;
+  max-width: 1440px;
+  min-height: 752px;
+}
+
+/*!*******************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/content/_type/content_type_invisible.css ***!
+  \*******************************************************************************************************/
+.content_type_invisible {
+  display: none;
+}
+
+/*!******************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/intro/intro.css ***!
+  \******************************************************************************/
+.intro {
+  margin: auto;
+  max-width: 880px;
+  padding-left: calc(((80 - 60) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 20px);
+  padding-right: calc(((80 - 60) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 20px);
+  padding-bottom: calc(((80 - 60) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 20px);
+}
+
+/*!*********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/intro/__table/intro__table.css ***!
+  \*********************************************************************************************/
+.intro__table {
+  line-height: 0;
+  margin: 0 0 32px 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/*!*******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/intro/__item/intro__item.css ***!
+  \*******************************************************************************************/
+.intro__item {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 77fr 306fr 417fr;
+  column-gap: calc(
+    ((40 - 0) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 0px
+  );;
+  row-gap: 20px;
+  padding: 20px 0;
+  box-shadow: 0 -1px 0 0 #EBE9ED inset;
+
+}
+
+@media screen and (max-width: 700px) {
+  .intro__item {
+    grid-template-columns: 68fr 252fr;
+    grid-template-rows: auto auto;
+  }
+}
+
+/*!********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/category-selection/category-selection.css ***!
+  \********************************************************************************************************/
+.category-selection {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 20px 20px 0;
+  max-width: 920px;
+}
+
+/*!********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/fill-in-form/fill-in-form.css ***!
+  \********************************************************************************************/
+.fill-in-form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 20px 20px 0;
+  max-width: 920px;
+}
+
+/*!************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/contacts-and-working-hours/contacts-and-working-hours.css ***!
+  \************************************************************************************************************************/
+.contacts-and-working-hours {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 20px 20px 0;
+  max-width: 920px;
+}
+
+/*!**************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/add-photo/add-photo.css ***!
+  \**************************************************************************************/
+.add-photo {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 20px 20px 0;
+  max-width: 920px;
+}
+
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/add-photo/__drop-off-area/add-photo__drop-off-area.css ***!
+  \*********************************************************************************************************************/
+.add-photo__drop-off-area {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: calc(
+		((298 - 220) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 220px
+	);
+  /*padding: 20px;*/
+  border: #96949E 2px solid;
+  border-radius: 22px;
+  /*transition: border 0.3s ease-in-out;*/
+  transition: background-color 0.3s ease-in-out;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+}
+
+/*!*********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/add-photo/__drop-off-area/_type/add-photo__drop-off-area_type_dragged-over.css ***!
+  \*********************************************************************************************************************************************/
+.add-photo__drop-off-area_type_dragged-over {
+  background-color: #EBE9ED;
+  border: #5100b8 3px dashed;
+}
+
+/*!*****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/add-photo/__input/add-photo__input.css ***!
+  \*****************************************************************************************************/
+.add-photo__input {
+  display: none;
+}
+
+/*!*****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/add-photo/__label/add-photo__label.css ***!
+  \*****************************************************************************************************/
+.add-photo__label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 22px;
+  padding: 20px;
+}
+
+/*!**************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/add-photo/__label/_type/add-photo__label_type_invisible.css ***!
+  \**************************************************************************************************************************/
+.add-photo__label_type_invisible {
+  display: none;
+}
+
+/*!****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/form/form.css ***!
+  \****************************************************************************/
+.form {
+  display: grid;
+  padding: 12px 0 0;
+  grid-template-columns: 309fr 531fr;
+  column-gap: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*!*******************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/form/__description/form__description.css ***!
+  \*******************************************************************************************************/
+.form__description {
+
+}
+
+/*!*********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/form/__fields/form__fields.css ***!
+  \*********************************************************************************************/
+.form__fields {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/form/__fields/_type/form__fields_type_city.css ***!
+  \*************************************************************************************************************/
+.form__fields_type_city {
+  padding-top: 20px;
+  padding-bottom: 32px;
+}
+
+/*!***********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/form/__fields/_type/form__fields_type_contact-person.css ***!
+  \***********************************************************************************************************************/
+.form__fields_type_contact-person {
+
+}
+
+/*!************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/form/__fields/_type/form__fields_type_organizer-phone.css ***!
+  \************************************************************************************************************************/
+.form__fields_type_organizer-phone {
+
+}
+
+/*!*******************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/form/__fields/_type/form__fields_type_place-name.css ***!
+  \*******************************************************************************************************************/
+.form__fields_type_place-name {
+
+}
+
+/*!*************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/form/__fields/_type/form__fields_type_menu-description.css ***!
+  \*************************************************************************************************************************/
+.form__fields_type_menu-description {
+
+}
+
+/*!***********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/form/__fields/_type/form__fields_type_offline-online.css ***!
+  \***********************************************************************************************************************/
+.form__fields_type_offline-online {
+  padding: 20px 0;
+  border-bottom: #EBE9ED solid 1px;
+  border-top: #EBE9ED solid 1px;
+}
+
+/*!*******************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/form/__fields/_type/form__fields_type_event-name.css ***!
+  \*******************************************************************************************************************/
+.form__fields_type_event-name {
+
+}
+
+/*!**********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/form/__fields/_type/form__fields_type_opened-closed.css ***!
+  \**********************************************************************************************************************/
+.form__fields_type_opened-closed {
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-top: #EBE9ED solid 1px;
+  border-bottom: #EBE9ED solid 1px;
+}
+
+/*!*******************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/form/__fields/_type/form__fields_type_event-date.css ***!
+  \*******************************************************************************************************************/
+.form__fields_type_event-date {
+
+}
+
+/*!**********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/form/__fields/_type/form__fields_type_working-hours.css ***!
+  \**********************************************************************************************************************/
+.form__fields_type_working-hours {
+
+}
+
+/*!**********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/form/__fields/_type/form__fields_type_place-address.css ***!
+  \**********************************************************************************************************************/
+.form__fields_type_place-address {
+
+}
+
+/*!********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/form/__fields/_type/form__fields_type_place-phone.css ***!
+  \********************************************************************************************************************/
+.form__fields_type_place-phone {
+
+}
+
+/*!**********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/form/__fields/_type/form__fields_type_booking-phone.css ***!
+  \**********************************************************************************************************************/
+
+/*!*****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/form/__fields/_type/form__fields_type_web-site.css ***!
+  \*****************************************************************************************************************/
+.form__fields_type_web-site {
+
+}
+
+/*!************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/form/__fields/_type/form__fields_type_social-networks.css ***!
+  \************************************************************************************************************************/
+
+/*!**************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/form/__fields/_type/form__fields_type_event-description.css ***!
+  \**************************************************************************************************************************/
+.form__fields_type_event-description {
+
+}
+
+/*!**********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/form/__fields/_type/form__fields_type_event-address.css ***!
+  \**********************************************************************************************************************/
+.form__fields_type_event-address {
+
+}
+
+/*!********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/form/__fields/_type/form__fields_type_event-price.css ***!
+  \********************************************************************************************************************/
+.form__fields_type_event-price {
+
+}
+
+/*!***************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/form/__fields/_type/form__fields_type_announcement-place.css ***!
+  \***************************************************************************************************************************/
+.form__fields_type_announcement-place {
+
+}
+
+/*!***************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/form/__fields/_type/form__fields_type_announcement-event.css ***!
+  \***************************************************************************************************************************/
+.form__fields_type_announcement-event {
+
+}
+
+/*!*****************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/form/__fields/_type/form__fields_type_announcement-meeting.css ***!
+  \*****************************************************************************************************************************/
+.form__fields_type_announcement-meeting {
+
+}
+
+/*!********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/form/__fields/_state/form__fields_state_invisible.css ***!
+  \********************************************************************************************************************/
+.form__fields_state_invisible {
+  display: none;
+}
+
+/*!*********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/section/_state/section_state_invisible.css ***!
+  \*********************************************************************************************************/
+.section_state_invisible {
+  display: none;
+}
+
+/*!**********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/controller/form__controller.css ***!
+  \**********************************************************************************************/
+.controller {
+  display: flex;
+  padding: 32px 20px;
+  justify-content: flex-end;
+  margin: auto;
+  max-width: 920px;
+}
+
+@media screen and (max-width: 600px) {
+  .controller {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    background-color: #FCFAF7;
+    padding: 20px 0;
+    box-shadow: 0 -8px 32px 0 rgba(59, 55, 72, 0.12);
+  }
+}
+
+/*!******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/application/application.css ***!
+  \******************************************************************************************/
+.application {
+  background-color: #7100ff;
+  margin: auto;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 1440px;
+  min-height: calc(100vh - 88px);
+  padding-top: calc(((160 - 40) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 40px);
+  padding-bottom: calc(((160 - 40) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 40px);
+  padding-left: calc(((280 - 20) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 20px);
+  padding-right: calc(((280 - 20) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) + 20px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap-reverse;
+}
+
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/application/__description/application__description.css ***!
+  \*********************************************************************************************************************/
+.application__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+
+  max-height: 240px;
+  max-width: 420px;
+}
+
+/*!***********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/application/__illustration/application__illustration.css ***!
+  \***********************************************************************************************************************/
+.application__illustration {
+  width: 385px;
+  height: 333px;
+  background-size: contain;
+  background: url(66fed8adbf79a89107ea.svg) no-repeat center center;
+  margin-bottom: 43px;
+}
+
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/application/_type/application_type_invisible.css ***!
+  \***************************************************************************************************************/
+.application_type_invisible {
+  display: none;
+}
+
+/*!***************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/pages/index.css (1) ***!
+  \***************************************************************************/
+/* @import url(../blocks/page/page.css);*/
+
+/* -------------- UI -------------- */
+
+/* -------------- text -------------- */
+
+/* -------------- title -------------- */
+
+/* -------------- button -------------- */
+
+/* -------------- input -------------- */
+
+/* -------------- drop-down-list -------------- */
+
+/* -------------- icon -------------- */
+
+/* -------------- card -------------- */
+
+/* -------------- link -------------- */
+
+/* -------------- list -------------- */
+
+/* -------------- BLOCKS -------------- */
+
+/* -------------- card -------------- */
+
+/* -------------- popup -------------- */
+
+/* @import url(../blocks/popup/popup.css);
+... */
+
+/* -------------- SECTIONS -------------- */
+
+/* -------------- header -------------- */
+
+/* -------------- lead -------------- */
+
+/* -------------- about -------------- */
+
+/* -------------- events -------------- */
+
+/* -------------- digits -------------- */
+
+/* -------------- promo -------------- */
+
+/* -------------- photo -------------- */
+
+/* -------------- team -------------- */
+
+/* -------------- footer -------------- */
+
+/* -------------- content -------------- */
+
+/* -------------- intro -------------- */
+
+/* -------------- category -------------- */
+
+/* -------------- fill-in-form -------------- */
+
+/* -------------- contacts-and-working-hours -------------- */
+
+/* -------------- add-photo -------------- */
+
+/* -------------- form -------------- */
+
+/* -------------- section -------------- */
+
+/* -------------- controller -------------- */
+
+/* -------------- application -------------- */
+

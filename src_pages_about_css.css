@@ -1,0 +1,345 @@
+/*!**********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/about-content/about-content.css ***!
+  \**********************************************************************************************/
+.about-content {
+  margin: 0 auto;
+  padding: 40px 40px 80px;
+  max-width: 1440px;
+  position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+  .about-content {
+    padding: 20px;
+  }
+}
+
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/about-content/__arrow/about-content__arrow.css ***!
+  \*************************************************************************************************************/
+.about-content__arrow {
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 60px;
+  right: 40px;
+  border: none;
+  padding: 12px;
+  z-index: 2;
+}
+
+[hidden] {
+  display: none;
+}
+
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/about-content/__title/about-content__title.css ***!
+  \*************************************************************************************************************/
+.about-content__title {
+  margin: 0 0 40px;
+}
+
+@media screen and (max-width: 1330px) {
+  .about-content__title {
+    margin: 0 0 20px;
+  }
+}
+
+/* @media screen and (max-width: 1024px) {
+  .about-content__title {
+    font-size: 44px;
+    width: 320px;
+    margin: 0 auto 20px;
+  }
+} */
+
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/about-content/__paragraph/about-content__paragraph.css ***!
+  \*********************************************************************************************************************/
+.about-content__paragraph {
+  margin: 80px 0 0;
+}
+
+/*!**********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/about-content/__paragraph/_first/about-content__paragraph_first.css ***!
+  \**********************************************************************************************************************************/
+.about-content__paragraph_first {
+  margin: 0 240px 0;
+  /* display: flex; */
+  gap: 40px;
+  display: grid;
+  grid-template-columns: 420px 420px;
+}
+
+@media screen and (max-width: 1330px) {
+  .about-content__paragraph_first {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 0;
+    gap: 0;
+  }
+}
+
+/*!************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/about-content/__paragraph/_second/about-content__paragraph_second.css ***!
+  \************************************************************************************************************************************/
+.about-content__paragraph_second {
+  max-height: 480px;
+  min-height: 480px;
+  position: relative;
+  padding: 0 0 0 240px;
+  flex-direction: row;
+  gap: 40px;
+}
+
+@media screen and (max-width: 1330px) {
+  .about-content__paragraph_second {
+    margin: 40px 0 0;
+    padding: 0;
+    flex-direction: column-reverse;
+    min-height: fit-content;
+    max-height: fit-content;
+    max-width: fit-content;
+  }
+}
+
+/*!**********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/about-content/__paragraph/_third/about-content__paragraph_third.css ***!
+  \**********************************************************************************************************************************/
+.about-content__paragraph_third {
+  position: relative;
+  padding: 0 240px 0 0;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  max-width: 1440px;
+  min-height: 480px;
+}
+
+
+@media screen and (max-width: 1330px) {
+  .about-content__paragraph_third {
+    margin: 40px 0 0;
+    padding: 0;
+    flex-direction: column-reverse;
+    min-height: fit-content;
+  }
+}
+
+/*!************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/about-content/__paragraph/_fourth/about-content__paragraph_fourth.css ***!
+  \************************************************************************************************************************************/
+.about-content__paragraph_fourth {
+  max-height: 480px;
+  min-height: 480px;
+  padding: 0 0 0 240px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+@media screen and (max-width: 1330px) {
+  .about-content__paragraph_fourth {
+    margin: 40px 0 0;
+    padding: 0;
+    flex-direction: column-reverse;
+    min-height: fit-content;
+    max-width: fit-content;
+  }
+}
+
+/*!*************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/about-content/__description/about-content__description.css ***!
+  \*************************************************************************************************************************/
+.about-content__description {
+  align-self: center;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+/*!*******************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/about-content/__subtitle/about-content__subtitle.css ***!
+  \*******************************************************************************************************************/
+.about-content__subtitle {
+  /* width: 537px; */
+  margin: 0 0 24px;
+}
+
+@media screen and (max-width: 1330px) {
+  .about-content__subtitle {
+    margin: 0;
+    margin: 0 0 12px 0;
+  }
+}
+
+/* @media screen and (max-width: 1024px) {
+  .about-content__subtitle {
+    font-size: 32px;
+    width: 320px;
+    margin: 0 auto;
+  }
+} */
+
+/*!*******************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/about-content/__text-container/about-content__text-container.css ***!
+  \*******************************************************************************************************************************/
+.about-content__text-container {
+  max-width: 537px;
+  margin: 24px 0 24px;
+}
+
+.about-content__text-container:first-of-type {
+  margin: 0;
+}
+
+@media screen and (max-width: 1330px) {
+  .about-content__text-container {
+    max-width: fit-content;
+  }
+}
+/* 
+@media screen and (max-width: 1024px) {
+  .about-content__text-container {
+    margin: 0 auto;
+    width: 320px;
+  }
+} */
+
+/*!***********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/about-content/__text/about-content__text.css ***!
+  \***********************************************************************************************************/
+.about-content__text {
+  margin: 0 0 24px;
+}
+
+.about-content__text:last-child {
+  margin: 0;
+}
+
+@media screen and (max-width: 1330px) {
+  .about-content__text {
+    margin: 0 0 16px 0;
+  }
+}
+
+/* @media screen and (max-width: 1024px) {
+  .about-content__text {
+    margin: 0 0 20px;
+    font-size: 16px;
+  }
+} */
+
+/*!***************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/about-content/__mobile-image/about-content__mobile-image.css ***!
+  \***************************************************************************************************************************/
+.about-content__mobile-image {
+  margin: 0 0 24px 0;
+  width: 320px;
+  /* height: 412px; */
+  display: none;
+}
+
+@media screen and (max-width: 1330px) {
+  .about-content__mobile-image {
+    margin: 0 auto 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+/*!*****************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/about-content/__mobile-illustration/about-content__mobile-illustration.css ***!
+  \*****************************************************************************************************************************************/
+.about-content__mobile-illustration {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 320px;
+  height: 320px;
+}
+
+/*!******************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/about-content/__mobile-illustration/_first/about-content__mobile-illustration_first.css ***!
+  \******************************************************************************************************************************************************/
+.about-content__mobile-illustration_first {
+  background-image: url(cc4b0ca5888e8ee8f350.svg);
+}
+
+/*!********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/about-content/__mobile-illustration/_second/about-content__mobile-illustration_second.css ***!
+  \********************************************************************************************************************************************************/
+.about-content__mobile-illustration_second {
+  background-image: url(b12a94bcf023b226d5e7.svg);
+}
+
+/*!******************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/about-content/__mobile-illustration/_third/about-content__mobile-illustration_third.css ***!
+  \******************************************************************************************************************************************************/
+.about-content__mobile-illustration_third {
+  background-image: url(a3575ce6c9c1cad228b0.svg);
+}
+
+/*!***************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/about-content/__mobile-image-description/about-content__mobile-image-description.css ***!
+  \***************************************************************************************************************************************************/
+.about-content__mobile-image-description {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/about-content/__button/about-content__button.css ***!
+  \***************************************************************************************************************/
+.about-content__button {
+  margin: 24px 0 0;
+  width: 240px;
+}
+
+/*!***********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/about-content/__circle-container/about-content__circle-container.css ***!
+  \***********************************************************************************************************************************/
+.about-content__circle-container {
+  position: relative;
+  display: flex;
+}
+
+@media screen and (max-width: 1330px) {
+  .about-content__circle-container {
+    margin: 0 auto;
+    display: none;
+  }
+}
+
+/*!************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/about-content/__circle-container/_right/about-content__circle-container_right.css ***!
+  \************************************************************************************************************************************************/
+.about-content__circle-container_right {
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 1330px) {
+  .about-content__circle-container_right {
+    margin: 0 auto;
+    display: none;
+  }
+}
+
+/*!****************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/about-content/__illustration/_third/about-content__illustration_third.css ***!
+  \****************************************************************************************************************************************/
+.about-content__illustration_third {
+  background-color: transparent;
+  margin-top: 99px;
+  width: 473px;
+  height: 304px;
+}
+
+/*!***********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/pages/about.css ***!
+  \***********************************************************************/
+/* @import url(../blocks/about-content/__illustration/about-content__illustration.css); */
+
