@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Сайт мероприятия ГедонизмФест" />
+		<meta name="author" content="Команда №2" />
+		<title>ГедонизмФест</title>
+	</head>
+
+	<body class="page" id="page">
+  <%= require('./header.html?raw') %>
+  <main>
+    <section class="lead">
+      <div class="lead__screen"></div>
+      <p class="lead__text text text_color_black text_size_primary">узнать больше</p>
+      <a href="#about" class="lead__link">
+        <div class="lead__link-image"></div>
+      </a>
+    </section>
+    <section id="about" class="about">
+      <h1 class="about__title title title_size_l title_align_left">просто приятно помогать</h1>
+      <div class="about__container">
+        <p class="text text_size_primary text_align_left">Пейте кофе в любимых заведениях, посещайте интересные мероприятия, устраивайте домашние посиделки с друзьями — и помогайте бездомным!</p>
+        <p class="text text_size_primary text_align_left">Целую неделю 26 апреля — 2 мая вся выручка будет перечислена в пользу бездомных.</p>
+        <a href="./about.html" class="about__button text_color_black button button_color_none button_size_min-width button_border_black">узнать подробнее</a>
+      </div>
+    </section>
+    <section class="events">
+      <h2 class="events__title title title_size_l title_align_left">гедонизм-фест — это целая неделя, во время которой просто приятно</h2>
+      <div class="events__tags">
+          <button data-id="briefing" class="events__tag button button_color_transparent button_size_min-width button_border_black">
+            <p class="text text_color_black">посетить мастер-класс</p>
+            <div class="icon text_size_primary icon_type_arrow-black"></div>
+          </button>
+          <button data-id="сoffee" class="events__tag button button_color_transparent button_size_min-width button_border_black">
+            <p class="text text_color_black">выпить кофе</p>
+            <div class="icon text_size_primary icon_type_arrow-black"></div>
+          </button>
+          <button data-id="home" class="events__tag button button_color_transparent button_size_min-width button_border_black">
+            <p class="text text_color_black">не выходить из дома</p>
+            <div class="icon text_size_primary icon_type_arrow-black"></div>
+          </button>
+          <button data-id="excursion" class="events__tag button button_color_transparent button_size_min-width button_border_black">
+            <p class="text text_color_black">сходить на экскурсию</p>
+            <div class="icon text_size_primary icon_type_arrow-black"></div>
+          </button>
+          <button data-id="museum" class="events__tag button button_color_transparent button_size_min-width button_border_black">
+            <p class="text text_color_black">побывать в музее</p>
+            <div class="icon text_size_primary icon_type_arrow-black"></div>
+          </button>
+      </div>
+      <div class="events__slider-container">
+        <div class="events__slider">
+
+        </div>
+        <a href="./where-to-go.html" class="events__button button button_color_violet link text text_color_white">смотреть все события</a>
+      </div>
+    </section>
+    <section class="popup-card">
+      <div class="popup-card__image">
+        <button class="popup-card__button-cross"></button>
+      </div>
+      <div class="popup-card__warning">
+        <div class="icon icon_type_warning"></div>
+        <p class="text text_size_secondary">перечисляем в пользу Ночлежки 10% от выручки </p>
+      </div>
+      <div class="popup-card__container">
+        <div class="popup-card__info">
+          <p class="popup-card__type text text_size_primary text_color_grey">лекция</p>
+          <p class="popup-card__time text text_size_primary text_color_grey">1 мая, 12:30-13:50</p>
+        </div>
+        <div class="popup-card__about-place">
+          <h3 class="popup-card__title title title_size_s">Идентичность: почему нам сложно меняться?</h3>
+          <p class="popup-card__description text text_size_secondary">
+            Мы думаем и общаемся с помощью нарратива - историй. Вся наша жизнь состоит из их множества, каждая из них совершенно по разному влияет на нас, какие-то из них легко заметить, а какие-то могут годами прятаться. Далеко не в каждой из этих историй мы являемся авторами, но никогда не поздно обратить на это внимание и переписать их, сделав подлинно своими.
+            С психологом Марией Бархатовой рассмотрим идентичность с позиции нарративной практики:
+            На встрече поищем ваши желаемые черты и сделаем первые шаги к их укреплению. А домой заберём инструменты для успешного продолжения.
+          </p>
+        </div>
+        <div class="popup-card__data-place">
+          <div class="popup-card__info popup-card__info_color_grey">
+            <p class="text text_size_primary">длительность</p>
+            <p class="popup-card__duration text text_size_primary">1 час 20 минут</p>
+          </div>
+          <div class="popup-card__info">
+            <p class="text text_size_primary">стоимость</p>
+            <p class="popup-card__cost text text_size_primary">1 час 20 минут</p>
+          </div>
+          <div class="popup-card__info popup-card__info_color_grey">
+            <p class="text text_size_primary">площадка</p>
+            <p class="popup-card__area text text_size_primary">1 час 20 минут</p>
+          </div>
+          <div class="popup-card__info">
+            <p class="text text_size_primary">адрес</p>
+            <p class="popup-card__address text text_size_primary">1 час 20 минут</p>
+          </div>
+          <div class="popup-card__info">
+            <p class="text text_size_primary"></p>
+            <p class="popup-card__address-number text text_size_primary text_color_violet">+ 3</p>
+          </div>
+          <div class="popup-card__info popup-card__info_color_grey">
+            <p class="text text_size_primary">телефон</p>
+            <p class="popup-card__phone text text_size_primary">1 час 20 минут</p>
+          </div>
+          <div class="popup-card__info">
+            <p class="text text_size_primary">соц. сети</p>
+            <p class="popup-card__social text text_size_primary">1 час 20 минут</p>
+          </div>
+        </div>
+        <div class="popup-card__social-place">
+          <p class="popup-card__social-text text text_size_primary">поделитесь событием в соцсетях:</p>
+          <div class="popup-card__social-links">
+            <a href="#">
+              <img class="popup-card__social-icon" src="<%=require('./images/icons/social-media/VK-icon.svg')%>" alt="Иконка вк">
+            </a>
+          </div>
+          <button
+          class="popup-card__copy-button button button_color_transparent button_size_min-width"
+        >
+        <div class="icon icon_type_link-arrow"></div>
+          <p class="text text_size_secondary text_color_black">
+            скопировать ссылку
+          </p>
+        </button>
+        </div>
+      </div>
+      <div class="popup-card__buttons">
+        <button
+        class="button button_color_none button_size_min-width button_border_black"
+      >
+        <div class="icon icon_type_heart"></div>
+        <p class="text text_size_primary text_color_black">хочу пойти</p>
+      </button>
+      <button class="button button_color_violet button_size_min-width">
+        <p class="text text_size_primary text_color_white">купить билет</p>
+      </button>
+      </div>
+    </section>
+<!--    <div>.</div>-->
+<!--		<a href="./storybook.html">UI-компоненты</a>-->
+<!--		<div>.</div>-->
+
+    <section class="digits">
+      <h2 class="title title_size_l title_align_left digits__title">цифры дня</h2>
+
+      <div class="digits__image">
+        <div class="digits__circle-container digits__circle-container_left">
+          <div class="digits__big-circle digits__big-circle_left">
+            <img
+              class="digits__left-illustration"
+              src="<%=require('./images/digits/left-illustration.svg')%>" alt="иллюстрация"
+            />
+          </div>
+          <div class="digits__text-container digits__text-container_left">
+            <h2 class="title title_size_l digits__title">2 500</h2>
+            <p class="text text_size_primary text_color_black digits__text">
+              cтолько обедов приготовили для нуждающихся
+            </p>
+          </div>
+        </div>
+
+        <div class="digits__circle-container digits__circle-container_right">
+          <div class="digits__big-circle digits__big-circle_right">
+            <img
+              class="digits__right-illustration"
+              src="<%=require('./images/digits/right-illustration.svg')%>" alt="иллюстрация"
+            />
+          </div>
+          <div class="digits__text-container digits__text-container_right">
+            <h2 class="title title_size_l title_align_left digits__title">15 000</h2>
+            <p class="text text_size_primary text_color_black digits__text">
+              cтолько печенья продали в поддержку акции
+            </p>
+          </div>
+        </div>
+
+        <img
+          class="digits__little-circle"
+          src="<%=require('./images/digits/little-circle.svg')%>" alt="иллюстрация"
+        />
+        <img
+          class="digits__three-lines"
+          src="<%=require('./images/digits/three-lines.svg')%>" alt="иллюстрация"
+        />
+      </div>
+    </section>
+
+    <section class="promo">
+      <div class="promo__container">
+        <h2 class="title title_size_l promo__title">примите акцию у себя</h2>
+        <div class="promo__description">
+          <p class="text text_size_primary text_color_black promo__text">
+            Кто может принять участие в акции?
+          </p>
+          <p class="text text_size_primary text_color_black promo__text">
+            Абсолютно все. Продавайте кофе в своем кафе, устройте мастер-класс
+            по вязанию или соберите друзей у себя дома. Помогать просто, узнайте
+            подробности и заполните форму
+          </p>
+
+          <a class="link" href="./join.html"
+            ><button
+              class="button button_color_none button_size_min-width button_border_black promo__button"
+            >
+              <p class="text text_size_primary text_color_black promo__text">
+                стать участником
+              </p>
+            </button></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="photo">
+      <h2 class="title title_size_l photo__title">#hedonismfest</h2>
+      <p class="text text_size_primary text_color_black photo__text">Ставь хештег и попади в ленту на сайте</p>
+
+      <div class="photo__gallery">
+        <div class="photo__image-container photo__image-container_first"><img class="photo__image" src="<%=require('./images/photo/photo1.jpg')%>" alt="пикник в парке"></div>
+        <div class="photo__image-container photo__image-container_big"><img class="photo__image" src="<%=require('./images/photo/photo2.jpg')%>" alt="девушка в кафе"></div>
+        <div class="photo__image-container photo__image-container_third"><img class="photo__image" src="<%=require('./images/photo/photo3.jpg')%>" alt="коктейли в бокалах"></div>
+        <div class="photo__image-container photo__image-container_fourth"><img class="photo__image" src="<%=require('./images/photo/photo4.jpg')%>" alt="девушка в картинной галерее"></div>
+        <div class="photo__image-container photo__image-container_fifth"><img class="photo__image" src="<%=require('./images/photo/photo5.jpg')%>" alt="компания девушек с напитками"></div>
+      </div>
+
+      <div class="photo__slider-container">
+      <div class="photo__slider">
+        <img class="photo__slider-item" src="<%=require('./images/photo/photo1.jpg')%>" alt="пикник в парке">
+        <img class="photo__slider-item" src="<%=require('./images/photo/photo2.jpg')%>" alt="девушка в кафе">
+        <img class="photo__slider-item" src="<%=require('./images/photo/photo3.jpg')%>" alt="коктейли в бокалах">
+        <img class="photo__slider-item" src="<%=require('./images/photo/photo4.jpg')%>" alt="девушка в картинной галерее">
+        <img class="photo__slider-item" src="<%=require('./images/photo/photo5.jpg')%>" alt="компания девушек с напитками">
+      </div>
+    </div>
+    </section>
+
+    <section class="team">
+      <h2 class="title title_size_l team__title">уже в команде</h2>
+
+      <div class="team__container">
+        <div class="team__logo team__logo_first"></div>
+        <div class="team__logo team__logo_second"></div>
+        <div class="team__logo team__logo_third"></div>
+        <div class="team__logo team__logo_first"></div>
+        <div class="team__logo team__logo_second"></div>
+        <div class="team__logo team__logo_third"></div>
+        <div class="team__logo team__logo_first"></div>
+        <div class="team__logo team__logo_second"></div>
+        <!-- <div class="team__logo team__logo_third"></div> -->
+      </div>
+
+    </section>
+  </main>
+
+  		<!-- БЛОК FOOTER -->
+      <%= require('./footer.html?raw') %>
+
+		<!---TEMPlATES--->
+		<template id="card">
+			<li class="events__card card">
+				<div class="card card__image"></div>
+				<button class="button button_type_like" type="button"></button>
+				<div class="card card__caption">
+					<div class="card card__caption_type_date-type">
+						<p class="card__event-type text text_color_grey text_size_secondary">лекция</p>
+						<p class="card__event-date text text_color_grey text_size_secondary">
+							1 мая, 12:30-13:50
+						</p>
+					</div>
+					<div class="card card__caption_type_title">
+						<h2 class="card__event-name title title_size_s title_align_left">
+							идентичность: почему нам сложно меняться?
+						</h2>
+					</div>
+					<div class="card card__caption_type_description">
+						<p
+							class="card__event-description text text_color_black text_size_secondary text_align_left"
+						>
+							лектор: Мария Бархатова
+						</p>
+					</div>
+					<div class="card card__caption_type_address-more">
+						<p
+							class="card__event-address text text_color_grey text_size_secondary text_overflow_ellipsis"
+						>
+							улица Блохина, 22
+						</p>
+						<button class="button button_color_transparent button_type_text">
+							<p
+								class="text text_color_grey text_size_secondary text_clipping_no-wrap"
+							>
+								+ ещё 3
+							</p>
+						</button>
+					</div>
+				</div>
+			</li>
+		</template>
+	</body>
+</html>

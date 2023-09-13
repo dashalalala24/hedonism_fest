@@ -1,0 +1,21 @@
+[class*='ymaps-2-1-79-balloon__close'] {
+	display: none !important;
+}
+
+[class*='ymaps-2-1-79-balloon__tail'] {
+	display: none !important;
+}
+
+[class*='ymaps-2-1-79-balloon__content'] {
+	font-family: 'TT Firs Neue', Arial, sans-serif !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+[class*='ymaps-2-1-79-balloon__layout'] {
+	border-radius: 10px !important;
+}
+
+[class*='ymaps-2-1-79-balloon ymaps-2-1-79-balloon_layout_normal ymaps-2-1-79-balloon_to_top ymaps-2-1-79-i-custom-scroll'] {
+	border-radius: 10px !important;
+}

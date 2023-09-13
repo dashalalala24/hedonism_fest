@@ -1,0 +1,6 @@
+.cards__page-without-card_opened {
+	display: flex;
+	z-index: 1;
+	opacity: 1;
+	transition: z-index 5s;
+}

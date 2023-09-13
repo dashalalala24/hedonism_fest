@@ -1,0 +1,9 @@
+.popup-card__warning {
+    padding: 8px 50px;
+    max-height: min-content;
+    max-width: 600px;
+    display: flex;
+    column-gap: 12px;
+    justify-content: flex-start;
+    background-color: #ffd400;
+}

@@ -1,0 +1,20 @@
+.about-content__text {
+  margin: 0 0 24px;
+}
+
+.about-content__text:last-child {
+  margin: 0;
+}
+
+@media screen and (max-width: 1330px) {
+  .about-content__text {
+    margin: 0 0 16px 0;
+  }
+}
+
+/* @media screen and (max-width: 1024px) {
+  .about-content__text {
+    margin: 0 0 20px;
+    font-size: 16px;
+  }
+} */

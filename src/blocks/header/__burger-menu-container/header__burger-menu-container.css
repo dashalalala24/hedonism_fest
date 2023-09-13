@@ -1,0 +1,17 @@
+.header__burger-menu-container {
+	position: fixed;
+	display: none;
+	top: 68px;
+	left: 0px;
+	width: 200%;
+	height: 100%;
+	overflow: hidden;
+	z-index: 2;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (min-width: 1169px) {
+	.header__burger-menu-container {
+		display: none;
+	}
+}

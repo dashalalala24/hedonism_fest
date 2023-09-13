@@ -1,0 +1,13 @@
+.digits__big-circle_right {
+  position: absolute;
+  top: 0px;
+  right: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .digits__big-circle_right {
+    position: static;
+    background-image: url('../../../../images/digits/first-illustration.svg');
+    border-radius: 0;
+  }
+}

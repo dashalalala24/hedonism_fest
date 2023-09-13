@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Стать участником</title>
+</head>
+
+<body>
+<!-- БЛОК HEADER -->
+<%= require('./header.html?raw') %>
+<main>
+  <form class="content" novalidate>
+    <h1 class="title title_size_xl title_align_left title_type-intro">стать участником</h1>
+
+    <!-- HOW TO PARTICIPATE -->
+    <section class="intro">
+      <h2 class="title title_size_l title_align_left">как участвовать?</h2>
+      <ul class="intro__table">
+        <li class="intro__item">
+          <p class="title title_size_s title_align_left">1</p>
+          <h3 class="title title_size_s title_align_left">выбор категории</h3>
+          <p class="text text_size_secondary text_align_left text_grid-control_merged">Определите, как вы хотите
+            поддержать акцию: продавать
+            напитки, блюда, провести
+            мастер-класс или каким-то другим способом</p>
+        </li>
+        <li class="intro__item">
+          <p class="title title_size_s title_align_left">2</p>
+          <h3 class="title title_size_s title_align_left">фото и описание</h3>
+          <p class="text text_size_secondary text_align_left text_grid-control_merged">Подготовьте описание и фото
+            вашего
+            заведения. Это нужно для
+            создания карточки в нашем каталоге событий</p>
+        </li>
+        <li class="intro__item">
+          <p class="title title_size_s title_align_left">3</p>
+          <h3 class="title title_size_s title_align_left">ссылки и соцсети</h3>
+          <p class="text text_size_secondary text_align_left text_grid-control_merged">Опубликуйте ссылку на вашу
+            карточку
+            в соцсетях, расскажите у
+            себя на сайте, чтобы больше людей узнали о вашем участии</p>
+        </li>
+        <li class="intro__item">
+          <p class="title title_size_s title_align_left">4</p>
+          <h3 class="title title_size_s title_align_left">координатор</h3>
+          <p class="text text_size_secondary text_align_left text_grid-control_merged">Далее с вами свяжется координатор
+            акции, который будет
+            помогать по любым вопросам до и во время акции</p>
+        </li>
+        <li class="intro__item">
+          <p class="title title_size_s title_align_left">5</p>
+          <h3 class="title title_size_s title_align_left">перевод средств</h3>
+          <p class="text text_size_secondary text_align_left text_grid-control_merged">После акции переведите собранные
+            пожертвования в Ночлежку через сайт или по безналичному расчету</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- CATEGORY SELECTION -->
+    <section class="category-selection section_state_invisible">
+      <h2 class="text text_size_primary text_align_left">шаг 1 из 4</h2>
+      <div class="form">
+        <div class="form__description">
+          <h2 class="title title_size_l title_align_left">выберите категорию</h2>
+          <p></p>
+        </div>
+        <fieldset class="form__fields">
+          <label for="cafe">
+            <input
+              type="radio"
+              class="button_type_radio-invisible"
+              name="event-type"
+              id="cafe"
+              value="cafe"
+              checked>
+            <span class="button button_type_radio-event">
+            <span class="text text_color_black text_size_primary">кафе/бар/ресторан</span>
+              <span class="icon_type_checked"></span>
+          </span>
+          </label>
+          <label for="master-class">
+            <input
+              type="radio"
+              class="button_type_radio-invisible"
+              name="event-type"
+              id="master-class"
+              value="masterClass">
+            <span class="button button_type_radio-event">
+              <span class="text text_color_black text_size_primary">мастер-класс/лекция</span>
+              <span class="icon_type_checked"></span>
+          </span>
+          </label>
+          <label for="party">
+            <input type="radio" class="button_type_radio-invisible" name="event-type" id="party" value="party">
+            <span class="button button_type_radio-event">
+            <span class="text text_color_black text_size_primary">посиделки/вечеринка</span>
+            <span class="icon_type_checked"></span>
+          </span>
+          </label>
+          <label for="other">
+            <input type="radio" class="button_type_radio-invisible" name="event-type" id="other" value="other">
+            <span class="button button_type_radio-event">
+              <span class="text text_color_black text_size_primary">другое</span>
+            <span class="icon_type_checked"></span>
+          </span>
+          </label>
+        </fieldset>
+      </div>
+    </section>
+
+    <!-- FILL-IN FORM -->
+    <section class="fill-in-form section_state_invisible">
+      <h2 class="text text_size_primary text_align_left">шаг 2 из 4</h2>
+      <div class="form">
+        <div class="form__description">
+          <h2 class="title title_size_l title_align_left">заполните форму</h2>
+          <p class="text text_size_primary text_align_left text_padding_top12px">Для участия вы можете выбрать:</p>
+          <ul class="list">
+            <li class="list_type_ul">определенную позицию из меню</li>
+            <li class="list_type_ul">группу позиций</li>
+            <li class="list_type_ul">процент от продаж определенных позиций или всего меню</li>
+          </ul>
+        </div>
+        <fieldset class="form__fields">
+        <span class="button button_type_radio-event button_stated_radio-event-checked">
+          <span class="text text_size_primary">кафе/бар/ресторан</span>
+          <span class="icon_type_checked"></span>
+        </span>
+
+          <div class="form__fields_type_offline-online">
+            <label for="online">
+              <input type="radio" class="button_type_radio-invisible" name="offline-online" id="online" value="online"
+                     checked>
+              <span class="button button_type_radio-online-offline">
+            <span class="icon_type_radio"></span>
+            <span class="text text_color_black text_size_primary">онлайн</span>
+          </span>
+            </label>
+            <label for="offline">
+              <input type="radio" class="button_type_radio-invisible" name="offline-online" id="offline"
+                     value="offline">
+              <span class="button button_type_radio-online-offline">
+            <span class="icon_type_radio"></span>
+            <span class="text text_color_black text_size_primary">оффлайн</span>
+          </span>
+            </label>
+          </div>
+
+          <div class="form__fields_type_city">
+            <label class="text text_size_secondary text_color_grey text_align_left text_padding_left12px">город</label>
+            <button type="button" class="button button_type_cities-list">
+              <span class="text text_size_primary text_color_black">выберите из списка</span>
+              <span class="icon_type_triangle"></span>
+              <ul class="drop-down-list text text_color_black text_align_left">
+                <li class="drop-down-list__item text_overflow_ellipsis text_clipping_no-wrap">Москва</li>
+                <li class="drop-down-list__item text_overflow_ellipsis text_clipping_no-wrap">Санкт-Петербург</li>
+                <li class="drop-down-list__item text_overflow_ellipsis text_clipping_no-wrap">Сочи</li>
+                <li class="drop-down-list__item text_overflow_ellipsis text_clipping_no-wrap">Калуга</li>
+                <li class="drop-down-list__item text_overflow_ellipsis text_clipping_no-wrap">Екатеринбург</li>
+              </ul>
+            </button>
+            <input id="city"
+                   class="input-field_type_invisible input-field_type_to-validate"
+                   type="text"
+                   name="city"
+                   required
+            >
+          </div>
+
+          <div class="form__fields_type_place-name">
+            <label class="text text_size_secondary text_color_grey text_align_left text_padding_left12px">название
+              заведения</label>
+            <input id="place-name"
+                   class="text text_size_primary text_color_black text_align_left input-field  input-field_type_to-validate"
+                   type="text"
+                   name="place-name"
+                   placeholder="введите название заведения"
+                   minlength="2"
+                   maxlength="40"
+                   pattern="[0-9a-zA-Zа-яА-Я\-\s]+$"
+                   data-error-message="Поле может содержать только латинские буквы, кириллические буквы, цифры, знаки дефиса и пробелы."
+                   required>
+            <span class="place-name-error text text_color_red text_align_left text_type_invisible"><span
+              class="icon_type_warning"></span>контекстное сообщение</span>
+          </div>
+
+          <div class="form__fields_type_event-name">
+            <label class="text text_size_secondary text_color_grey text_align_left text_padding_left12px">название
+              мероприятия</label>
+            <input id="event-name"
+                   type="text"
+                   class="text text_size_primary text_color_black text_align_left input-field  input-field_type_to-validate"
+                   name="event-name"
+                   placeholder="введите название"
+                   minlength="2"
+                   maxlength="40"
+                   data-error-message="Поле может содержать только латинские буквы, кириллические буквы, цифры, знаки препинания и пробелы."
+                   pattern="[.,0-9a-zA-Zа-яА-Я\-\s]+$"
+                   required>
+            <span class="event-name-error text text_color_red text_align_left text_type_invisible"><span
+              class="icon_type_warning"></span>контекстное сообщение</span>
+          </div>
+
+          <div class="form__fields_type_opened-closed">
+            <label for="opened">
+              <input id="opened"
+                     type="radio"
+                     class="button_type_radio-invisible"
+                     name="opened-closed"
+                     value="opened"
+              >
+              <span class="button button_type_radio-online-offline">
+                <span class="icon_type_radio"></span>
+            <span class="text text_color_black text_size_primary">открытое мероприятие</span>
+          </span>
+              <span class="text text_size_primary text_color_grey text_align_left text_type_radio-comment">адрес отобразим
+                в
+                карточке события</span>
+            </label>
+            <label for="closed">
+              <input id="closed"
+                     type="radio"
+                     class="button_type_radio-invisible"
+                     name="opened-closed"
+                     value="closed">
+              <span class="button button_type_radio-online-offline">
+            <span class="icon_type_radio"></span>
+            <span class="text  text_color_black text_size_primary">закрытое мероприятие</span>
+          </span>
+              <span class="text text_size_primary text_color_grey text_align_left text_type_radio-comment">адрес увидят
+                только, те кому вы оправите ссылку на событие</span>
+            </label>
+          </div>
+
+          <div class="form__fields_type_event-date">
+            <label class="text text_size_secondary text_color_grey text_align_left text_padding_left12px">дата
+              проведения</label>
+            <input id="event-date"
+                   type="date"
+                   class="text text_color_black text_size_primary text_align_left input-field input-field_type_to-validate"
+                   name="event-date"
+                   placeholder="укажите дату в формате дд.мм.гггг"
+                   required>
+            <span class="event-date-error text text_color_red text_align_left text_type_invisible"><span
+              class="icon_type_warning"></span>контекстное сообщение</span>
+          </div>
+
+          <div class="form__fields_type_contact-person">
+            <label class="text text_size_secondary text_color_grey text_align_left text_padding_left12px">контактное
+              лицо</label>
+            <input id="contact-person"
+                   class="text text_color_black text_size_primary text_align_left input-field input-field_type_to-validate"
+                   type="text"
+                   name="contact-person"
+                   minlength="2"
+                   pattern="[а-яА-Я\-\s]+$"
+                   data-error-message="Поле может содержать только кириллические буквы, знаки дефиса и пробелы."
+                   placeholder="введите ФИО"
+                   required>
+            <span class="contact-person-error text text_color_red text_align_left text_type_invisible"><span
+              class="icon_type_warning"></span>контекстное сообщение</span>
+          </div>
+
+          <div class="form__fields_type_organizer-phone">
+            <label class="text text_size_secondary text_color_grey text_align_left text_padding_left12px">телефон для
+              связи с
+              организатором</label>
+            <input id="organizer-phone"
+                   class="text text_color_black text_size_primary text_align_left input-field input-field_type_to-validate"
+                   type="tel"
+                   name="organizer-phone"
+                   data-error-message="Введите 10 цифр номера телефона."
+                   placeholder="+7("
+                   required>
+            <span class="organizer-phone-error text text_color_red text_align_left text_type_invisible"><span
+              class="icon_type_warning"></span>контекстное сообщение</span>
+          </div>
+
+          <div class="form__fields_type_menu-description">
+            <label
+              class="text text_size_secondary text_color_black text_align_left text_padding_left12px">описание</label>
+            <textarea placeholder="Укажите, что из меню будет принимать участие в акции"
+                      class="text text_size_primary text_align_left textarea-field input-field_type_to-validate"
+                      name="menu-description"></textarea>
+          </div>
+
+        </fieldset>
+      </div>
+    </section>
+
+    <!-- CONTACTS AND WORKING HOURS -->
+    <section class="contacts-and-working-hours section_state_invisible">
+      <h2 class="text text_size_primary text_align_left">шаг 3 из 4</h2>
+      <div class="form">
+        <div class="form__description">
+          <h2 class="title title_size_l title_align_left">укажите контакты и часы работы</h2>
+          <p class="text text_size_primary text_align_left text_padding_top12px">Эти данные появятся в описании карточки
+            вашего мероприятия в нашем каталоге событий</p>
+        </div>
+        <fieldset class="form__fields">
+          <div class="form__fields_type_working-hours">
+            <label class="text text_size_secondary text_color_grey text_align_left text_padding_left12px">часы работы
+              заведения</label>
+            <input id="working-hours"
+                   type="text"
+                   class="text text_color_black text_size_primary text_align_left input-field input-field_type_to-validate"
+                   name="working-hours"
+                   placeholder="например: 10:00-13:00, 13:00-19:00"
+                   required>
+            <span class="working-hours-error text text_color_red text_align_left text_type_invisible"><span
+              class="icon_type_warning"></span>контекстное сообщение</span>
+          </div>
+
+          <div class="form__fields_type_event-hours">
+            <label class="text text_size_secondary text_color_grey text_align_left text_padding_left12px">время
+              проведения</label>
+            <input id="event-hours"
+                   type="text"
+                   class="text text_color_black text_size_primary text_align_left input-field input-field_type_to-validate"
+                   name="event-hours"
+                   placeholder="например: 18:00-22:00"
+                   required>
+            <span class="event-hours-error text text_color_red text_align_left text_type_invisible"><span
+              class="icon_type_warning"></span>контекстное сообщение</span>
+          </div>
+
+          <div class="form__fields_type_event-address">
+            <label class="text text_size_secondary text_color_grey text_align_left text_padding_left12px">адрес
+              заведения</label>
+            <input id="event-address"
+                   type="text"
+                   class="text text_color_black text_size_primary text_align_left input-field input-field_type_to-validate"
+                   name="event-address"
+                   minlength="2"
+                   pattern="[.,\-0-9а-яА-Я\-\s]+$"
+                   data-error-message="Поле может содержать только латинские буквы, кириллические буквы, цифры, знаки препинания и пробелы."
+                   placeholder="каждый адрес с новой строки"
+                   required>
+            <span class="event-address-error text text_color_red text_align_left text_type_invisible"><span
+              class="icon_type_warning"></span>контекстное сообщение</span>
+          </div>
+
+          <div class="form__fields_type_place-address">
+            <label class="text text_size_secondary text_color_grey text_align_left text_padding_left12px">адрес
+              проведения</label>
+            <input id="place-address"
+                   type="text"
+                   class="text text_color_black text_size_primary text_align_left input-field input-field_type_to-validate"
+                   name="place-address"
+                   minlength="2"
+                   pattern="[.,\-0-9а-яА-Я\-\s]+$"
+                   data-error-message="Поле может содержать только латинские буквы, кириллические буквы, цифры, знаки препинания и пробелы."
+                   placeholder="каждый адрес с новой строки"
+                   required>
+            <span class="place-address-error text text_color_red text_align_left text_type_invisible"><span
+              class="icon_type_warning"></span>контекстное сообщение</span>
+          </div>
+
+          <div class="form__fields_type_place-phone">
+            <label class="text text_size_secondary text_color_grey text_align_left text_padding_left12px">номер телефона
+              заведения</label>
+            <input id="place-phone"
+                   type="tel"
+                   class="text text_color_black text_size_primary text_align_left input-field input-field_type_to-validate"
+                   name="place-phone"
+                   data-error-message="Введите 10 цифр номера телефона."
+                   placeholder="+7("
+                   required>
+            <span class="place-phone-error text text_color_red text_align_left text_type_invisible"><span
+              class="icon_type_warning"></span>контекстное сообщение</span>
+          </div>
+
+          <div class="form__fields_type_booking-phone">
+            <label class="text text_size_secondary text_color_grey text_align_left text_padding_left12px">номер телефона
+              для бронирования</label>
+            <input id="booking-phone"
+                   type="tel"
+                   class="text text_color_black text_size_primary text_align_left input-field input-field_type_to-validate"
+                   name="booking-phone"
+                   data-error-message="Введите 10 цифр номера телефона."
+                   placeholder="+7("
+                   required>
+            <span class="booking-phone-error text text_color_red text_align_left text_type_invisible"><span
+              class="icon_type_warning"></span>контекстное сообщение</span>
+          </div>
+
+          <div class="form__fields_type_event-price">
+            <label class="text text_size_secondary text_color_grey text_align_left text_padding_left12px">стоимость
+              участия</label>
+            <input id="event-price"
+                   type="number"
+                   class="text text_color_black text_size_primary text_align_left input-field input-field_type_to-validate"
+                   name="event-price"
+                   placeholder="укажите стоимость в рублях"
+                   required>
+            <span class="event-price-error text text_color_red text_align_left text_type_invisible"><span
+              class="icon_type_warning"></span>контекстное сообщение</span>
+          </div>
+
+          <div class="form__fields_type_web-site">
+            <label class="text text_size_secondary text_color_grey text_align_left text_padding_left12px">ссылка на
+              сайт</label>
+            <input id="web-site"
+                   type="url"
+                   class="text text_color_black text_size_primary text_align_left input-field input-field_type_to-validate"
+                   name="web-site"
+                   placeholder="https://"
+                   required>
+            <span class="web-site-error text text_color_red text_align_left text_type_invisible"><span
+              class="icon_type_warning"></span>контекстное сообщение</span>
+          </div>
+
+          <div class="form__fields_type_social-networks">
+            <label class="text text_size_secondary text_color_grey text_align_left text_padding_left12px">ссылки на
+              соцсети</label>
+            <input id="social-networks"
+                   type="text"
+                   class="text text_color_black text_size_primary text_align_left input-field input-field_type_to-validate"
+                   name="social-networks"
+                   placeholder="каждую ссылку с новой строки"
+                   required>
+            <span class="social-networks-error text text_color_red text_align_left text_type_invisible"><span
+              class="icon_type_warning"></span>контекстное сообщение</span>
+          </div>
+
+          <div class="form__fields_type_announcement-place">
+            <label
+              class="text text_size_secondary text_color_grey text_align_left text_padding_left12px">описание</label>
+            <textarea
+              name="announcement-place"
+              placeholder="Напишите небольшое приглашение своим посетителям. Людям нравятся простые обращения, дружественный тон"
+              class="text text_color_black text_size_primary text_align_left textarea-field input-field_type_to-validate
+"></textarea>
+          </div>
+
+          <div class="form__fields_type_announcement-event">
+            <label
+              class="text text_size_secondary text_color_grey text_align_left text_padding_left12px">описание</label>
+            <textarea
+              name="announcement-event"
+              placeholder="Напишите небольшой анонс вашего мастер-класса или лекции. Чем мероприятие будет полезно, чему посвящено"
+              class="text text_color_black text_size_primary text_align_left textarea-field input-field_type_to-validate"></textarea>
+          </div>
+
+          <div class="form__fields_type_announcement-meeting">
+            <label
+              class="text text_size_secondary text_color_grey text_align_left text_padding_left12px">описание</label>
+            <textarea
+              name="announcement-meeting"
+              placeholder="Напишите небольшой анонс вашего мероприятия. Чем оно будет полезно/чему посвящено"
+              class="text text_color_black text_size_primary text_align_left textarea-field input-field_type_to-validate"></textarea>
+          </div>
+
+        </fieldset>
+      </div>
+    </section>
+
+    <!-- ADD PHOTO -->
+    <section class="add-photo section_state_invisible">
+      <h2 class="text text_size_primary text_align_left">шаг 4 из 4</h2>
+      <div class="form">
+        <div class="form__description">
+          <h2 class="title title_size_l title_align_left">добавьте фото</h2>
+          <p class="text text_size_primary text_align_left text_padding_top12px">Как правило, профессиональные фото
+            выглядят более привлекательно.</p>
+          <p class="text text_size_primary text_align_left text_padding_top12px">Технические требования:</p>
+          <ul class="list">
+            <li class="list_type_ul">формат: jpeg, png</li>
+            <li class="list_type_ul">вес: не более 5 МБ</li>
+            <li class="list_type_ul">альбомная ориентация</li>
+            <li class="list_type_ul">соотношение сторон: 16:9</li>
+            <li class="list_type_ul">ширина не менее 1600 пикселей</li>
+          </ul>
+        </div>
+        <fieldset class="add-photo__drop-off-area">
+          <button type="button" class="button_type_cross button_type_invisible"></button>
+          <label for="photoElem" class="add-photo__label">
+            <span class="icon_type_upload"></span>
+            <span class="text text_color_black text_size_primary">перетащите фото сюда или загрузите с устройства</span>
+            <input
+              id="photoElem"
+              type="file"
+              class="add-photo__input input-field_type_to-validate"
+              name="photo"
+              accept="image/jpeg, image/png"
+              required>
+          </label>
+        </fieldset>
+
+      </div>
+    </section>
+
+    <!-- CONTROLLER -->
+    <div class="controller">
+      <button type="button"
+              class="button button_color_none button_size_fix-width button_border_black button_type-controller button_type_cancel-back">
+        <span class="text text_size_primary text_color_black">отмена</span>
+      </button>
+      <button type="button"
+              class="button button_color_violet button_size_fix-width button_type-controller button_type_next">
+        <span class="text text_size_primary text_color_white">далее</span>
+      </button>
+    </div>
+  </form>
+
+  <!-- FINAL SCREEN -->
+  <section class="application application_type_invisible">
+    <div class="application__description">
+      <p class="title title_align_left title_size_l text_color_white">спасибо за заявку!</p>
+      <p class="title title_align_left title_size_s text_color_white text_type_application">с вами свяжутся в ближайшее
+        время</p>
+      <a href="index.html" class="text_type_no-underline">
+        <div class="button button_color_transparent button_size_min-width button_border_white">
+          <span class="text text_color_white text_size_primary">на главную</span>
+        </div>
+      </a>
+    </div>
+    <div class="application__illustration">
+
+    </div>
+  </section>
+</main>
+
+
+<!-- БЛОК FOOTER -->
+<%= require('./footer.html?raw') %>
+</body>
+</html>

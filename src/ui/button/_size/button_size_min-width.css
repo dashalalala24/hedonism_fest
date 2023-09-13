@@ -1,0 +1,6 @@
+.button_size_min-width {
+	min-width: calc(
+		((164 - 148) / (1024 - 360)) * (min(max(100vw, 360px), 1024px) - 360px) +
+			148px
+	);
+}

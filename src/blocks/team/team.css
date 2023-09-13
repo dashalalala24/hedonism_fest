@@ -1,0 +1,12 @@
+.team {
+  padding: 80px 40px 80px;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+@media screen and (max-width: 1024px){
+  .team {
+    padding: 40px 20px 40px;
+    background-color: #EBE9ED;
+  }
+}

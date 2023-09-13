@@ -1,0 +1,8 @@
+.popup-card__social-icon {
+    width: 48px;
+    height: 48px;
+}
+
+.popup-card__social-icon:hover {
+    opacity: .8;
+}

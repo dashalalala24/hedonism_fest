@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Куда пойти</title>
+	</head>
+
+  <body class="page-where-to-go">
+    <%= require('./header.html?raw') %>
+    <main>
+
+    <!-- секция какталог -->
+    <section class="catalog">
+      <!-- Боковое меню фильтрации -->
+      <div class="scrollable-content">
+        <h1 class="scrollable-content__title title title_size_l">куда пойти</h1>
+        <div id="filter-event-type" class="scrollable-content__filter">
+          <h3 class="scrollable-content__text title title_size_s">
+            тип события
+          </h3>
+          <button
+            id="all-event-button" class="scrollable-content__button button button_color_none button_border_black button_state_filter-unchecked"
+          >
+            <p class="scrollable-content__button-text text text_color_black">
+              все
+            </p>
+            <!-- <div class="scrollable-content__button-cross icon icon_type_cross-white"></div> -->
+          </button>
+          <button id="want-button" class="scrollable-content__button scrollable-content__button_active button button_color_violet">
+            <p class="scrollable-content__button-text text text_color_white">
+              хочу пойти
+            </p>
+            <div class="scrollable-content__button-cross scrollable-content__button-cross_active icon icon_type_cross-white"></div>
+          </button>
+        </div>
+        <div id="filter-event-date" class="scrollable-content__filter">
+          <h3 class="scrollable-content__text title title_size_s">дни</h3>
+          <button id="all-date-button" class="scrollable-content__button scrollable-content__button_active button button_color_violet">
+            <p class="scrollable-content__button-text text text_color_white">
+              все
+            </p>
+          </button>
+          <button
+            class="scrollable-content__button button button_color_none button_border_black button_state_filter-unchecked"
+          >
+            <p class="scrollable-content__button-text text text_color_black">
+              сегодня
+            </p>
+          </button>
+          <button
+            class="scrollable-content__button button button_color_none button_border_black button_state_filter-unchecked"
+          >
+            <p class="scrollable-content__button-text text text_color_black">
+              завтра
+            </p>
+          </button>
+          <button
+            class="scrollable-content__button button button_color_none button_border_black button_state_filter-unchecked"
+          >
+            <p class="scrollable-content__button-text text text_color_black">
+              послезавтра
+            </p>
+          </button>
+        </div>
+        <div class="scrollable-content__add-menu">
+          <h3 class="scrollable-content__text title title_size_s">
+            хотите принять участие в акции?
+          </h3>
+          <p class="scrollable-content__sub-text text_size_primary">
+            заполните заявку, и мы с вами обязательно свяжемся.
+          </p>
+          <button class="button button_color_none button_border_black">
+            <p class="text text_color_black">узнать подробности</p>
+            <div class="icon icon_type_arrow-black"></div>
+          </button>
+        </div>
+      </div>
+      <!-- Верхняя панель -->
+      <div class="control-panel">
+          <div class="button button_type_switcher button_color_grey">
+            <button
+              class="button-map button button_type_switcher-tab button_color_violet button_state_disabled"
+            >
+              <div class="icon icon_type_map icon_visibility_on"></div>
+              <p class="text text_size_primary text_color_white">карта</p>
+            </button>
+            <button class="button-list button button_type_switcher-tab button_color_violet">
+              <div class="icon icon_type_menu-white icon_visibility_on"></div>
+              <p class="text text_size_primary text_color_white">список</p>
+            </button>
+        </div>
+
+        <p class="control-panel__card-number text text_size_primary">показано 1-12 из 128</p>
+      </div>
+      <!-- Панель с карточками и картой -->
+      <div class="cards">
+        <!-- Блок когда нет лайкнутых карт -->
+        <div class="cards__page-without-card cards__page-without-card_opened">
+          <div class="cards__text-without-card">
+            <h2 class="cards__text title title_size_l">ой!</h2>
+            <h3 class="cards__text title title_size_s">
+              в вашем списке сохранённых событий пока что пусто
+            </h3>
+            <button class="button button_color_violet">
+              <p class="text text_color_white">смотреть все события</p>
+            </button>
+          </div>
+          <div class="cards__image-without-card"></div>
+        </div>
+        <!-- Блок с загруженными картами -->
+        <div class="cards__page-with-card cards__page-with-card_opened"></div>
+        <!-- Блок с картой -->
+        <div id="map" class="cards__map"></div>
+      </div>
+    </section>
+    <!-- Секция попап -->
+    <section class="popup-card">
+      <div class="popup-card__image">
+        <button class="popup-card__button-cross"></button>
+      </div>
+      <div class="popup-card__warning">
+        <div class="icon icon_type_warning"></div>
+        <p class="text text_size_secondary">перечисляем в пользу Ночлежки 10% от выручки </p>
+      </div>
+      <div class="popup-card__container">
+        <div class="popup-card__info">
+          <p class="popup-card__type text text_size_primary text_color_grey">лекция</p>
+          <p class="popup-card__time text text_size_primary text_color_grey">1 мая, 12:30-13:50</p>
+        </div>
+        <div class="popup-card__about-place">
+          <h3 class="popup-card__title title title_size_s">Идентичность: почему нам сложно меняться?</h3>
+          <p class="popup-card__description text text_size_secondary">
+            Мы думаем и общаемся с помощью нарратива - историй. Вся наша жизнь состоит из их множества, каждая из них совершенно по разному влияет на нас, какие-то из них легко заметить, а какие-то могут годами прятаться. Далеко не в каждой из этих историй мы являемся авторами, но никогда не поздно обратить на это внимание и переписать их, сделав подлинно своими.
+            С психологом Марией Бархатовой рассмотрим идентичность с позиции нарративной практики:
+            На встрече поищем ваши желаемые черты и сделаем первые шаги к их укреплению. А домой заберём инструменты для успешного продолжения.
+          </p>
+        </div>
+        <div class="popup-card__data-place">
+          <div class="popup-card__info popup-card__info_color_grey">
+            <p class="text text_size_primary">длительность</p>
+            <p class="popup-card__duration text text_size_primary">1 час 20 минут</p>
+          </div>
+          <div class="popup-card__info">
+            <p class="text text_size_primary">стоимость</p>
+            <p class="popup-card__cost text text_size_primary">1 час 20 минут</p>
+          </div>
+          <div class="popup-card__info popup-card__info_color_grey">
+            <p class="text text_size_primary">площадка</p>
+            <p class="popup-card__area text text_size_primary">1 час 20 минут</p>
+          </div>
+          <div class="popup-card__info">
+            <p class="text text_size_primary">адрес</p>
+            <p class="popup-card__address text text_size_primary">1 час 20 минут</p>
+          </div>
+          <div class="popup-card__info">
+            <p class="text text_size_primary"></p>
+            <p class="popup-card__address-number text text_size_primary text_color_violet">+ 3</p>
+          </div>
+          <div class="popup-card__info popup-card__info_color_grey">
+            <p class="text text_size_primary">телефон</p>
+            <p class="popup-card__phone text text_size_primary">1 час 20 минут</p>
+          </div>
+          <div class="popup-card__info">
+            <p class="text text_size_primary">соц. сети</p>
+            <p class="popup-card__social text text_size_primary">1 час 20 минут</p>
+          </div>
+        </div>
+        <div class="popup-card__social-place">
+          <p class="popup-card__social-text text text_size_primary">поделитесь событием в соцсетях:</p>
+          <div class="popup-card__social-links">
+            <a href="#">
+              <img class="popup-card__social-icon" src="<%=require('./images/icons/social-media/VK-icon.svg')%>" alt="Иконка вк">
+            </a>
+          </div>
+          <button
+          class="popup-card__copy-button button button_color_transparent button_size_min-width"
+        >
+        <div class="icon icon_type_link-arrow"></div>
+          <p class="text text_size_secondary text_color_black">
+            скопировать ссылку
+          </p>
+        </button>
+        </div>
+      </div>
+      <div class="popup-card__buttons">
+        <button
+        class="button button_color_none button_size_min-width button_border_black"
+      >
+        <div class="icon icon_type_heart"></div>
+        <p class="text text_size_primary text_color_black">хочу пойти</p>
+      </button>
+      <button class="button button_color_violet button_size_min-width">
+        <p class="text text_size_primary text_color_white">купить билет</p>
+      </button>
+      </div>
+    </section>
+    <!-- Секция с формой пожертвования -->
+    <section id="donate-form" class="donation-form">
+      <div class="donation-form__box">
+      <div class="donation-form__header">
+        <h2 class="donation-form__title title title_size_m">пожертвовать</h2>
+        <button class="donation-form__button-close"></button>
+      </div>
+      <div class="donation-form__main">
+        <h3 class="donation-form__subtitle title title_size_s">сумма</h3>
+        <div class="donation-form__prices">
+          <button class="button button_color_none button_size_min-width button_border_black">
+            <p class="text text_size_primary text_color_black">100 ₽</p>
+          </button>
+          <button class="button button_color_none button_size_min-width button_border_black">
+            <p class="text text_size_primary text_color_black">300 ₽</p>
+          </button>
+          <button class="button button_color_none button_size_min-width button_border_black">
+            <p class="text text_size_primary text_color_black">500 ₽</p>
+          </button>
+          <button class="button button_color_none button_size_min-width button_border_black">
+            <p class="text text_size_primary text_color_black">1000 ₽</p>
+          </button>
+          <button class="button button_color_none button_size_min-width button_border_black">
+            <p class="text text_size_primary text_color_black">3000 ₽</p>
+          </button>
+          <input type="text" class="button button_color_none button_size_min-width button_border_black">
+          </input>
+        </div>
+        <div class="donation-form__email-section">
+          <h3 class="donation-form__subtitle title title_size_s">email</h3>
+          <input type="email" placeholder="укажите почту для отправки чека" class="donation-form__email button button_color_none button_size_min-width button_border_black">
+        </div>
+      </div>
+      <div class="donation-form__payment">
+        <h3 class="donation-form__subtitle title title_size_s">способ оплаты</h3>
+        <div class="donation-form__bank">
+          <input id="bank-card" name="payment-method" type="radio" checked>
+          <label for="bank-card" class="text text_size_primary">банковской картой</label>
+        </div>
+        <div class="donation-form__bank">
+          <input id="paypal" name="payment-method" type="radio">
+          <label for="paypal" class="text text_size_primary">PayPal</label>
+        </div>
+      </div>
+      <p class="donation-form__approval text text_size_secondary"> Нажимая кнопку «пожертвовать» вы соглашаетесь с условиями <span class="text text_color_violet">оферты, политики</span> в отношении обработки и защиты персональных данных и даёте <span class="text text_color_violet">согласие</span> на их обработку</p>
+      <button class="donation-form__submit button button_color_violet button_size_min-width">
+        <p class="text text_size_primary text_color_white">купить билет</p>
+      </button>
+    </div>
+    </section>
+    <button class="piter filter-geolocation">Питербург</button>
+    <button class="moscow filter-geolocation">Москва</button>
+    <button class="sochi filter-geolocation">Сочи</button>
+  </main>
+
+<!--  Темплейт с кнопкой фильтра дат -->
+    <template id="filter-button">
+      <button
+      class="scrollable-content__button button button_color_none button_border_black button_state_filter-unchecked"
+    >
+        <p class="scrollable-content__button-text text text_color_black">
+        все
+        </p>
+    </button>
+    </template>
+
+    <!-- Темплейт с кнопкой фильтра событий -->
+    <template id="filter-event-button">
+      <button
+      class="scrollable-content__button button button_color_none button_border_black button_state_filter-unchecked"
+    >
+        <p class="scrollable-content__button-text text text_color_black">
+        все
+        </p>
+        <div class="scrollable-content__button-cross icon icon_type_cross-white"></div>
+    </button>
+    </template>
+
+		<!---TEMPlATES--->
+		<template id="card">
+			<li class="card">
+				<div class="card card__image"></div>
+				<button class="button button_type_like" type="button"></button>
+				<div class="card card__caption">
+					<div class="card card__caption_type_date-type">
+						<p class="card__event-type text text_color_grey text_size_secondary">лекция</p>
+						<p class="card__event-date text text_color_grey text_size_secondary">
+							1 мая, 12:30-13:50
+						</p>
+					</div>
+					<div class="card card__caption_type_title">
+						<h2 class="card__event-name title title_size_s title_align_left">
+							идентичность: почему нам сложно меняться?
+						</h2>
+					</div>
+					<div class="card card__caption_type_description">
+						<p
+							class="card__event-description text text_color_black text_size_secondary text_align_left"
+						>
+							лектор: Мария Бархатова
+						</p>
+					</div>
+					<div class="card card__caption_type_address-more">
+						<p
+							class="card__event-address text text_color_grey text_size_secondary text_overflow_ellipsis"
+						>
+							улица Блохина, 22
+						</p>
+						<button class="button button_color_transparent button_type_text">
+							<p
+								class="text text_color_grey text_size_secondary text_clipping_no-wrap"
+							>
+								+ ещё 3
+							</p>
+						</button>
+					</div>
+				</div>
+			</li>
+		</template>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=9d774e8f-6471-4003-be6e-62a532de3666&load=package.standard&lang=ru-RU"></script>
+	</body>
+</html>

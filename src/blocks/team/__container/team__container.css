@@ -1,0 +1,20 @@
+.team__container {
+  display: flex;
+  gap: 24px;
+  overflow-x: scroll;
+}
+
+.team__container::-webkit-scrollbar {
+  display: none;
+}
+
+/* .team__container::-webkit-scrollbar-thumb {
+  background-color: #7100FF;
+  border-radius: 100px;
+} */
+
+@media screen and (max-width: 1024px) {
+  .team__container {
+    gap: 20px;
+  }
+}

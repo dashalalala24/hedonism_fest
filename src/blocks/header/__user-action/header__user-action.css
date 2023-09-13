@@ -1,0 +1,6 @@
+.header__user-action {
+	display: flex;
+	flex-direction: row;
+  align-items: center;
+	column-gap: 32px;
+}

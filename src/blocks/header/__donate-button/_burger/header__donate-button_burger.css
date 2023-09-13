@@ -1,0 +1,9 @@
+.header__donate-button_burger {
+  margin: 20px;
+}
+
+@media screen and (min-width: 1169px) {
+  .header__donate-button_burger {
+    display: none;
+  }
+}

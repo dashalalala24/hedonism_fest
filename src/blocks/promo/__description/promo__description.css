@@ -1,0 +1,13 @@
+.promo__description {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  flex-basis: 420px;
+  text-align: start;
+}
+
+@media screen and (max-width: 1024px) {
+  .promo__description {
+    flex-basis: content;
+  }
+}

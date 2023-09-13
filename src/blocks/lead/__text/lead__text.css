@@ -1,0 +1,12 @@
+.lead__text {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -126px;
+}
+
+@media screen and (max-width: 670px) {
+  .lead__text {
+    top: 18px;
+  }
+}

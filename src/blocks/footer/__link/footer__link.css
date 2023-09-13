@@ -1,0 +1,14 @@
+.footer__link {
+  padding: 12px 24px 12px 0;
+  display: block;
+  text-align: start;
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__link {
+    justify-content: space-between;
+  }
+}

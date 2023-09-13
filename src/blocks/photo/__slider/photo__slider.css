@@ -1,0 +1,31 @@
+.photo__slider {
+  display: none;
+  width: 320px;
+  height: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1024px){
+  .photo__slider {
+    display: block;
+  }
+}
+
+.tns-nav {
+  text-align: center;
+  margin: 12px 0 0 ;
+}
+
+.tns-nav button {
+  width: 12px;
+  height: 12px;
+  background-color: #96949E;
+  border: none;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.tns-nav .tns-nav-active {
+  background-color: #3B3748;
+}

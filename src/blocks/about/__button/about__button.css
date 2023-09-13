@@ -1,0 +1,11 @@
+.about__button {
+  text-decoration: none;
+  font-weight: 500;
+  width: 204px;
+  height: 48px;
+}
+
+.about__button:hover {
+  border: solid 2px #5100b8;
+  color: #5100b8;
+}

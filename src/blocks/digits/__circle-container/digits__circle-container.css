@@ -1,0 +1,11 @@
+.digits__circle-container {
+  width: 543px;
+  height: 480px;
+}
+
+@media screen and (max-width: 1024px) {
+  .digits__circle-container {
+    width: 320px;
+    height: auto;
+  }
+}

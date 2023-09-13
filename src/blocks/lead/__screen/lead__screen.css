@@ -1,0 +1,14 @@
+.lead__screen {
+  width: 100%;
+  background-image: url(../../../images/lead/lead-screen.svg);
+  background-size: cover;
+  background-position: center;
+  min-height: 720px;
+}
+
+@media screen and (max-width: 670px) {
+  .lead__screen {
+    background-image: url(../../../images/lead/lead-screen-mobile.svg);
+    min-height: 600px;
+  }
+}

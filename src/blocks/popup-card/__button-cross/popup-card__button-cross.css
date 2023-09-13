@@ -1,0 +1,17 @@
+.popup-card__button-cross {
+    position: absolute;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: #0000;
+    background: url(../../../images/icons/card/button-cross-popup.svg) no-repeat center;;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 52px;
+    cursor: pointer;
+}
+
+.popup-card__button-cross:hover {
+    opacity: .8;
+}

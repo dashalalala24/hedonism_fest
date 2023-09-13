@@ -1,0 +1,9 @@
+.header__btn-dropdown {
+  width: 234px;
+}
+
+@media screen and (max-width: 1168px) {
+  .header__btn-dropdown {
+    display: none;
+  }
+}
